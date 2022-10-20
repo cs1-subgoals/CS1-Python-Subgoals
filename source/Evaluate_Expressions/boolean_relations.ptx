@@ -1,0 +1,62 @@
+<section xml:id="boolean_relations">
+    <title>Boolean Relations</title>
+    <introduction>
+        <title>Subgoals for evaluating an expression:</title>
+        <title>Subgoals for evaluating an expression:</title>
+        <p>
+            <ol label="1">
+                <li>
+                    <p>Decide order of operations</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Decompose as necessary</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <p>Determine operator behavior based on operands</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Operator and operands must be compatible</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <p>Solve arithmetic, expression, or operation</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Decompose as necessary</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <p>You can watch this video or read through the content below it.</p>
+        <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable?</p>
+        <program language="python"><input>
+alpha = 42
+beta = 1
+gamma = 5
+<!--result = beta <= alpha This line is causing an error, below too, so appears to be with the <= characters-->
+</input></program>
+</introduction>
+<subsection xml:id="subsec-boolrSG1">
+    <title>SG1: Decide order of operations</title>
+    <p>There are three operators in this expression: two <!--<=--> (less than or equal to comparison) and one <c>and</c> (boolean logical AND) operator. The <c>and</c> operator determines if two boolean expressions are both <c>True</c>, and has a very low operator precedence. Specifically, the and precendence is lower than the <!--<=--> comparison operator precedence, and so that operation will be last. Therefore, the two <!--<=--> will happen first, in left to right order. </p>
+</subsection>
+<subsection xml:id="subsec-boolrSG2">
+    <title>SG2: Determine operator behavior based on operands</title>
+    <p>The first <!--<=--> will be between two integers, which is a valid comparison that produces a boolean. The second <!--<=--> is also between two integers, and once again produces a boolean. The resulting boolean values are then used as operands to the <c>and</c>, which will in this case produce a boolean value.</p>
+</subsection>
+<subsection xml:id="subsec-boolrSG3">
+    <title>SG3: Solve arithmetic, expression, or operation</title>
+    <p>1. In the first comparison, <c>beta</c> is substituted for <c>1</c> and <c>gamma</c> is substituted for <c>5</c>. Then, the <!--<=--> determines if <c>1</c> is less than or equal to <c>5</c> , which it is. Therefore, the expression evaluates to <c>True</c>.</p>
+    <p>2. In the second comparison, <c>gamma</c> is substituted for <c>5</c> and <c>alpha</c> is substituted for <c>42</c>. Then, the <!--<=--> determines if <c>5</c> is less than or equal to <c>42</c>, which it is. Therefore, the expression evaluates to <c>True</c>.</p>
+    <p>3. The two boolean values are used as the operands for the <c>and</c>, causing the expression <c>True and True</c> to be evaluated - the result is <c>True</c>, which is assigned to the <c>result</c> variable.</p>
+    
