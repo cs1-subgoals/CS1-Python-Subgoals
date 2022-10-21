@@ -1,0 +1,77 @@
+<section xml:id="if-else-stat">
+    <title>If Else Statements</title>
+        <introduction>
+        <title>Subgoals for evaluating an expression:</title>
+        <p>
+            <ol label="1">
+                <li>
+                    <p>Diagram which statements go together by indentation</p>
+                </li>
+                <li>
+                    <p>For conditional, determine whether expression is true</p>
+                </li>
+                <li>
+                    <p>If true, follow true branch; If false, follow next elif/else branch or exit conditional if no else branch</p>
+                </li>
+                <li>
+                    <p>Repeat 2 and 3 as necessary</p>
+                </li>
+            </ol>
+        </p>
+        <p>You can watch this video or read through the content below it.</p>
+        <p>Given the following declarations:</p>
+        <program language="python"><input>
+alpha = 2
+beta = 1
+delta = 3
+eta = 0
+gamma = 0
+omega = 2.5
+theta = -1.3
+kappa = 3.0
+mu = 0.0
+rho = 0.0
+</input></program>
+        <p>Evaluate these statements and determine the value of all variables used.</p>
+        <program language="python"><input>
+if alpha > delta:
+    eta = alpha + 2
+else:
+    gamma = alpha + 5
+</input></program>
+    </introduction>
+    <subsection xml:id="subsec-ifel1">
+        <title>1. Diagram which statements go together by indentation</title>
+        <p>The first indented line (<c>eta = alpha + 2</c>) goes with the <c>if</c> statement, and the second indented line (<c>gamma = alpha + 5</c>) goes with the <c>else</c> statement.</p>
+    </subsection>
+    <subsection xml:id="subsec-ifel2">
+        <title>2. For conditional, determine whether expression is true</title>
+        <p>We evaluate <c>alpha > delta</c>, substituting <c>2</c> for <c>alpha</c> and <c>3</c> for <c>delta</c>.</p>
+        <p><c>2 > 3</c> is <c>False</c>.</p>
+    </subsection>
+    <subsection xml:id="subsec-ifel3">
+        <title>3. If true, follow true branch; If false, follow next elif/else branch or exit conditional if no else branch</title>
+        <p>The condition is <c>False</c>, so we execute the else branch.</p>
+        <program language="python"><input>
+gamma = alpha + 5
+</input></program>
+        <p>Substituting <c>2</c> for <c>alpha</c>, we evaluate the right-hand side to be <c>7</c> and store that in <c>gamma</c>. Therefore, the final value in the variables are:</p>
+        <p>
+            <ul>
+                <li>
+                    <p><c>alpha: 2</c></p>
+                </li>
+                <li>
+                    <p><c>delta: 3</c></p>
+                </li>
+                <li>
+                    <p><c>gamma: 7</c></p>
+                </li>
+            </ul>
+        </p>
+    </subsection>
+    <subsection xml:id="subsec-ifel4">
+        <title>4. Repeat 2 and 3 as necessary</title>
+        <p>Repeating is not necessary in this case.</p>
+    </subsection>
+</section>

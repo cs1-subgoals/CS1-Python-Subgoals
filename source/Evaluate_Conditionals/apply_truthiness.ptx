@@ -1,0 +1,93 @@
+<section xml:id="apply_truth">
+    <title>Apply Truthiness</title>
+        <introduction>
+        <title>Subgoals for evaluating an expression:</title>
+        <p>
+            <ol label="1">
+                <li>
+                    <p>Diagram which statements go together by indentation</p>
+                </li>
+                <li>
+                    <p>For conditional, determine whether expression is true</p>
+                </li>
+                <li>
+                    <p>If true, follow true branch; If false, follow next elif/else branch or exit conditional if no else branch</p>
+                </li>
+                <li>
+                    <p>Repeat 2 and 3 as necessary</p>
+                </li>
+            </ol>
+        </p>
+        <p>You can watch this video or read through the content below it.</p>
+        <p>Given the following declarations:</p>
+        <program language="python"><input>
+alpha = 2
+beta = 1
+delta = 3
+eta = 0
+gamma = 0
+</input></program>
+        <p>Evaluate these statements and determine what will be printed.</p>
+        <program language="python"><input>
+if alpha and beta:
+    if gamma and delta:
+        print("alpha, beta, gamma, delta")
+    elif gamma or delta:
+        print("alpha and beta, but not gamma and delta")
+    else:
+        print("alpha and beta, neither gamma nor delta")
+else:
+    print("Neither")
+</input></program>
+    </introduction>
+    <subsection xml:id="subsec-aptru1">
+        <title>1. Diagram which statements go together by indentation</title>
+        <p>In this diagram, the first thing to note is the outer <c>if/else</c> statement highlighted in blue.</p>
+        <p>The <c>True</c> branch of the parent block contains an inner <c>if/elif/else</c> block.</p>
+        <p>The <c>else</c> block only contains a single statement.</p>
+        <figure align="">
+            <image source="Evaluate_Conditionals/Figures/we7-app-tru-all.png" width="auto"/>
+        </figure>
+    </subsection>
+    <subsection xml:id="subsec-aptru2-1">
+        <title>2. For conditional, determine whether expression is true</title>
+        <p>Because there is an outer <c>if</c> statement, we start with that one, and then repeat SG2 and SG3 for the other relevant statements.</p>
+        <p>We evaluate <c>alpha and beta</c>, substituting <c>2</c> for <c>alpha</c> and <c>1</c> for <c>beta</c>. The <c>and</c> operator evaluates each operand in turn until it encounters a value that is <c>False</c> according to the rules of Truthiness. Since all the values are <c>True</c> according to the rules of Truthiness, the last value (<c>1</c>) is used as the result of the expression. According to the rules of Truthiness, any non-zero value will be considered <c>True</c>, so in this case the expression evaluates to <c>True</c>.</p>
+    </subsection>
+    <subsection xml:id="subsec-aptru3-1">
+        <title>3. If true, follow true branch; If false, follow next elif/else branch or exit conditional if no else branch</title>
+        <p>The condition is <c>True</c>, so we execute the <c>True</c> branch.</p>
+        <p>The <c>True</c> branch contains an <c>if</c>/<c>elif</c>/<c>else</c> statement, so we must repeat SG2 and SG3.</p>
+        <figure align="">
+            <image source="Evaluate_Conditionals/Figures/we7-app-tru-1.png" width="auto"/>
+        </figure>
+    </subsection>
+    <subsection xml:id="subsec-aptru2-2">
+        <title>2. For conditional, determine whether expression is true</title>
+        <p>Start with the <c>if</c> in the inner block.</p>
+        <p>First we evaluate <c>gamma and delta</c>, which is substituted as <c>0 and 3</c>. The <c>and</c> operator evaluates each operand in turn, and immediately encounters <c>0</c>, which is <c>False</c> according to the rules of Truthiness. That value is the result, and therefore the conditional expression will be considered <c>False</c>.</p>
+    </subsection>
+    <subsection xml:id="subsec-aptru3-2">
+        <title>3. If true, follow true branch; If false, follow next elif/else branch or exit conditional if no else branch</title>
+        <p>The condition is <c>False</c>, so we follow the <c>elif</c> branch next and repeat SG2 and SG3.</p>
+    </subsection>
+    <subsection xml:id="subsec-aptru2-3">
+        <title>2. For conditional, determine whether expression is true</title>
+        <p>In the <c>elif</c> branch, we evaluate <c>gamma or delta</c>, which is substituted as <c>0 or 3</c>. The <c>or</c> operator evaluates each operand in turn until it encounters a value that is <c>True</c> according to the rules of Truthiness. The <c>0</c> is skipped because it is not <c>True</c> according to the rules of Truthiness, but the <c>3</c> is <c>True</c> according to the rules of Truthiness. Therefore, the result of the expression is <c>3</c> and the conditional expression will be considered <c>True</c>.</p>
+    </subsection>
+    <subsection xml:id="subsec-aptru3-3">
+        <title>3. If true, follow true branch; If false, follow next elif/else branch or exit conditional if no else branch</title>
+        <p>The condition is <c>True</c>, so we execute the body of the <c>elif</c> statement (and will skip over the <c>else</c> statement).</p>
+        <program language="python"><input>
+print("alpha and beta, but not gamma and delta")
+</input></program>
+        <p>The line prints the text shown, and then skips over the rest of the <c>else</c> statements.</p>
+    </subsection>
+    <subsection xml:id="subsec-aptruAnswer">
+        <title>Answer</title>
+        <p>The final printed text is:</p>
+        <program language="python"><input>
+alpha and beta, but not gamma and delta
+</input></program>
+    </subsection>
+</section>
