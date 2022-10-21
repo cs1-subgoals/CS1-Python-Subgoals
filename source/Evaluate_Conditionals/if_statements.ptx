@@ -1,0 +1,75 @@
+<section xml:id="if-stat">
+    <title>If Statements</title>
+        <introduction>
+        <title>Subgoals for evaluating an expression:</title>
+        <p>
+            <ol label="1">
+                <li>
+                    <p>Diagram which statements go together by indentation</p>
+                </li>
+                <li>
+                    <p>For conditional, determine whether expression is true</p>
+                </li>
+                <li>
+                    <p>If true, follow true branch; If false, follow next elif/else branch or exit conditional if no else branch</p>
+                </li>
+                <li>
+                    <p>Repeat 2 and 3 as necessary</p>
+                </li>
+            </ol>
+        </p>
+        <p>You can watch this video or read through the content below it.</p>
+        <p>Given the following declarations:</p>
+        <program language="python"><input>
+alpha = 2
+beta = 1
+delta = 3
+eta = 0
+gamma = 0
+omega = 2.5
+theta = -1.3
+kappa = 3.0
+mu = 0.0
+rho = 0.0
+</input></program>
+        <p>Evaluate these statements and determine the value of all variables used.</p>
+        <program language="python"><input>
+if kappa > omega:
+    rho = kappa + 2
+</input></program>
+    </introduction>
+    <subsection xml:id="subsec-if1">
+        <title>1. Diagram which statements go together by indentation</title>
+        <p>There is only a single indented statement in the body.</p>
+    </subsection>
+    <subsection xml:id="subsec-if2">
+        <title>2. For conditional, determine whether expression is true</title>
+        <p>We evaluate <c>kappa > omega</c>, substituting <c>3.0</c> for <c>kappa</c> and <c>2.5</c> for <c>omega</c>.</p>
+        <p><c>3.0 > 2.5</c> is <c>True</c>.</p>
+    </subsection>
+    <subsection xml:id="subsec-if3">
+        <title>3. If true, follow true branch; If false, follow next elif/else branch or exit conditional if no else branch</title>
+        <p>The condition is <c>True</c>, so we execute the true branch.</p>
+        <program language="python"><input>
+rho = kappa + 2
+</input></program>
+        <p>Substituting <c>3.0</c> for <c>kappa</c>, we evaluate the right-hand side to be <c>5.0</c> and store that in <c>rho</c>. Therefore, the final value in the variables are:</p>
+        <p>
+            <ul>
+                <li>
+                    <p><c>rho: 5.0</c></p>
+                </li>
+                <li>
+                    <p><c>kappa: 3.0</c></p>
+                </li>
+                <li>
+                    <p><c>omega: 2.5</c></p>
+                </li>
+            </ul>
+        </p>
+    </subsection>
+    <subsection xml:id="subsec-if4">
+        <title>4. Repeat 2 and 3 as necessary</title>
+        <p>Repeating is not necessary in this case.</p>
+    </subsection>
+</section>

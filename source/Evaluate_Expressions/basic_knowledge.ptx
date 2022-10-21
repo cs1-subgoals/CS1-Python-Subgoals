@@ -1,0 +1,96 @@
+<section xml:id="basic_knowl">
+    <title>Declaration and Initialization</title>
+        <introduction>
+        <title>Subgoals for evaluating an expression:</title>
+        <p>
+            <ol label="1">
+                <li>
+                    <p>Decide order of operations</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Decompose as necessary</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <p>Determine operator behavior based on operands</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Operator and operands must be compatible</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <p>Solve arithmetic, expression, or operation</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Decompose as necessary</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <p>You can watch this video or read through the content below it.</p>
+        <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable?</p>
+        <program language="python"><input>
+alpha = 2
+beta = 3.0
+delta = 3
+
+gamma = alpha + beta
+</input></program>
+    </introduction>
+    <subsection xml:id="subsec-bkSG1">
+        <title>SG1: Decide order of operations</title>
+        <p>There is only one operator (an addition <c>+</c>) so that will be evaluated first.</p>
+    </subsection>
+    <subsection xml:id="subsec-bkSG2">
+        <title>SG2: Determine operator behavior based on operands</title>
+        <p>The expression <c>alpha + beta</c> is an addition between two integer values. This is a valid operation, and will produce an integer.</p>
+    </subsection>
+    <subsection xml:id="subsec-bkSG3">
+        <title>SG3: Solve arithmetic, expression, or operation</title>
+        <p>The variable <c>alpha</c> is substituted for the value <c>2</c> and the variable <c>delta</c> is substituted for the value <c>3</c>. Adding them together produces the value <c>4</c>. This value is stored in <c>gamma</c>.</p>
+    </subsection>
+    <subsection xml:id="subsec-bkQs">
+        <title>Questions to check understanding</title>
+        <ol>
+            <li>
+                <p>
+                    Is the left-hand-side (LHS) of the statement a variable? What type?
+                </p>
+                <answer>
+                    <p>
+                        Yes, the variable <c>gamma</c> holds an integer value.
+                    </p>
+                </answer>
+            </li>
+            <li>
+                <p>
+                    What is the resulting type after evaluating the right-hand-side (RHS)?
+                </p>
+                <answer>
+                    <p>
+                        The RHS evaluates to an integer.
+                    </p>
+                </answer>
+            </li>
+            <li>
+                <p>
+                    Would adding <c>beta</c> instead of <c>delta</c> instead change the resulting type?
+                </p>
+                <answer>
+                    <p>
+                        Yes, the variable <c>beta</c> holds a float value, and adding together a float and an integer produces a float instead of an integer.
+                    </p>
+                </answer>
+            </li>
+        </ol>
+    </subsection>
+</section>
