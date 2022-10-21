@@ -1,0 +1,99 @@
+<section xml:id="basic_op_prec">
+    <title>Basic Operation Precedence</title>
+        <introduction>
+        <title>Subgoals for evaluating an expression:</title>
+        <p>
+            <ol label="1">
+                <li>
+                    <p>Decide order of operations</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Decompose as necessary</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <p>Determine operator behavior based on operands</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Operator and operands must be compatible</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <p>Solve arithmetic, expression, or operation</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Decompose as necessary</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <p>You can watch this video or read through the content below it.</p>
+        <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable? Note any possible side effects.</p>
+        <program language="python"><input>
+alpha = 3
+beta = 1
+delta = 3
+omega = 2.5
+theta = -1.3
+kappa = 2.0
+
+mu = alpha / kappa + delta
+</input></program>
+    </introduction>
+    <subsection xml:id="subsec-bopSG1">
+        <title>SG1: Decide order of operations</title>
+        <p>The expression is the right-hand-side (RHS) of the statement: <c>alpha / kappa + delta</c>. In this expression, division has a higher precedence than summation, so we first evaluate <c>alpha / kappa</c>. Then, we will evaluate the addition of <c>delta</c> to that result.</p>
+    </subsection>
+    <subsection xml:id="subsec-bopSG2">
+        <title>SG2: Determine operator behavior based on operands</title>
+        <p>The expression <c>alpha / kappa</c> is a division between an integer (<c>alpha</c>) and a float (<c>kappa</c>). That is a valid operation, and will produce a float. That float will be added to <c>delta</c>, which is an integer. Adding together a float and an integer is also valid, and will produce a float.</p>
+    </subsection>
+    <subsection xml:id="subsec-bopSG3">
+        <title>SG3: Solve arithmetic, expression, or operation</title>
+        <p>The variable <c>alpha</c> is substituted for the value <c>3</c> and the variable <c>kappa</c> is substituted for the value <c>2.0</c>. Dividing them produces the float <c>1.5</c>. The value of <c>delta</c> (3) is then added to the result, for a total of <c>4.5</c>. This value is stored in <c>mu</c>.</p>
+    </subsection>
+    <subsection xml:id="subsec-bopQs">
+        <title>Questions to check understanding</title>
+        <ol>
+            <li>
+                <p>
+                    Is the left-hand-side (LHS) of the statement a variable? What type?
+                </p>
+                <answer>
+                    <p>
+                        Yes, the variable <c>mu</c> will be a float.
+                    </p>
+                </answer>
+            </li>
+            <li>
+                <p>
+                    What is the resulting type after evaluating the right-hand-side (RHS)?
+                </p>
+                <answer>
+                    <p>
+                        A float.
+                    </p>
+                </answer>
+            </li>
+            <li>
+                <p>
+                    Would dividing <c>kappa</c> by <c>alpha</c> instead change the resulting type?
+                </p>
+                <answer>
+                    <p>
+                        Although it would change its value, it would not change its type. Division with / always produces a float.
+                    </p>
+                </answer>
+            </li>
+        </ol>
+    </subsection>
+</section>
