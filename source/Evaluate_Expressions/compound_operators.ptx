@@ -1,0 +1,107 @@
+<section xml:id="compound_operators">
+    <title>Compound Operators</title>
+    <introduction>
+        <title>Subgoals for evaluating an expression:</title>
+        <p>
+            <ol label="1">
+                <li>
+                    <p>Decide order of operations</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Decompose as necessary</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <p>Determine operator behavior based on operands</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Operator and operands must be compatible</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <p>Solve arithmetic, expression, or operation</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Decompose as necessary</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <p>You can watch this video or read through the content below it.</p>
+        <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable?</p>
+        <program language="python"><input>
+alpha = 2
+beta = 5
+delta = 7
+gamma = 5
+omega = 2.5
+theta = -1.3
+kappa = 3.0
+
+gamma += delta / alpha + beta % alpha
+</input></program>
+</introduction>
+<subsection xml:id="subsec-compoundSG1">
+    <title>SG1: Decide order of operations</title>
+    <p>The expression is usually the right-hand-side (RHS) of the statement, but compound assignment operators are a special shorthand than includes the compounded operation with the left-hand-side (LHS). A much simpler example could be <c>gamma += 1</c>, which would be a shorthand for <c>gamma = gamma +1</c></p>
+    <p>Thus, the entire expression for this example is <c>gamma + (delta / alpha + beta % alpha)</c>, which will be assigned back into gamma.</p>
+    <p>For that expression, the highest priority operator is the division, followed by the modulo. Then, the remaining additions will occur, starting with the one on the right and ending with the one on the left.</p>
+</subsection>
+<subsection xml:id="subsec-compoundSG2">
+    <title>SG2: Determine operator behavior based on operands</title>
+    <p>The expression <c>delta / alpha</c> is a division between two integers, so will result in a float. The expression <c>beta % alpha</c> is a modulo between two integers, and so will result in an integer. The result of those two expressions will be added together, producing a float, which when added to the current value of <c>gamma</c> will also produce a float.</p>
+</subsection>
+<subsection xml:id="subsec-comoundSG3">
+    <title>SG3: Solve arithmetic, expression, or operation</title>
+    <p>The variable <c>delta</c> is substituted for the value <c>7</c> and the variable <c>alpha</c> is substituted for the value <c>2</c>. Dividing them produces the float <c>3.5</c> </p>
+    <p>The variable <c>beta</c> is substituted for the value <c>5</c> and the variable <c>alpha</c> is substituted for the value <c>2</c>. Their modulo is <c>1</c>.</p>
+    <p>Adding those two numbers together produces <c>4.5</c>.</p>
+    <p>The existing value stored in <c>gamma</c> is <c>5</c>, so adding <c>4.5</c> produces <c>9.5</c>, which is stored back into <c>gamma</c>.</p>
+</subsection>
+<subsection xml:id="subsec-compQs">
+    <title>Questions to check understanding</title>
+    <ol>
+        <li>
+            <p>
+                Is the left-hand-side (LHS) of the statement a variable? What type?
+            </p>
+            <answer>
+                <p>
+                    Yes, the variable <c>gamma</c> will be a float.
+                </p>
+            </answer>
+        </li>
+        <li>
+            <p>
+                What is the resulting type after evaluating the right-hand-side (RHS)?
+            </p>
+            <answer>
+                <p>
+                    A float.
+                </p>
+            </answer>
+        </li>
+        <li>
+            <p>
+                Would dividing using the <c>//</c> operator instead of the <c>/</c> operator change the type of the result?
+            </p>
+            <answer>
+                <p>
+                    Yes, since the result of that division would be an integer (<c>3</c>), and all the other operations involved integers.
+                </p>
+            </answer>
+        </li>
+
+    </ol>
+</subsection>
+</section>
+

@@ -1,0 +1,93 @@
+<section xml:id="boolean_truthiness">
+    <title>Boolean Truthiness</title>
+    <introduction>
+        <title>Subgoals for evaluating an expression:</title>
+        <p>
+            <ol label="1">
+                <li>
+                    <p>Decide order of operations</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Decompose as necessary</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <p>Determine operator behavior based on operands</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Operator and operands must be compatible</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <p>Solve arithmetic, expression, or operation</p>
+                    <p>
+                        <ol label="i">
+                            <li>
+                                <p>Decompose as necessary</p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <p>You can watch this video or read through the content below it.</p>
+        <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable?</p>
+        <program language="python"><input>
+alpha = 0
+beta = 1
+gamma = 5
+<!--result = alpha > beta or gamma problem with > operand??-->     
+</input></program>
+</introduction>
+<subsection xml:id="subsec-boolean-truthSG1"> 
+    <title>SG1: Decide order of operations</title>
+    <p>The two operators in this expression are the <c>></c> and <c>or</c> (boolean logical OR). The <c>or</c> operator has a very low precedence, much lower than any of the comparison operators. Therefore, the comparison will be evaluated first, followed by the logical <c>or</c>.</p> 
+</subsection>
+<subsection xml:id="subsec-boolean-truthSG2">
+    <title>SG2: Determine operator behavior based on operands</title>
+     <p>The <c>alpha</c> and <c>beta</c> variables are integers, which are valid operands for the <c>></c> comparison. That expression evaluates to a boolean. That boolean and the integer variable <c>gamma</c> will be used for operands for the <c>or</c> operator. The <c>or</c> operator allows basically any type of value to be used, with the result type dependent on which operand evaluates to True (from left to right). So the <c>or</c> will evaluate either to a boolean (because of its left operand, the result of the <c>></c> operation) or an integer (because of its right operand <c>gamma</c>).</p>
+</subsection>
+<subsection xml:id="subsec-boolean-truthSG3">
+    <title>SG3: Solve arithmetic, expression, or operation</title>      
+        <ol label="1">
+            <li>
+                <p>In the first comparison, <c>alpha</c> is substituted for <c>0</c> and <c>beta</c> is substituted for <c>1</c>. Then, the <c>></c> determines if <c>0</c> is greater than <c>1</c>, which it is not. Therefore, the expression evaluates to <c>False</c>.</p>
+                <p>The boolean value <c>False</c> is used as the right operand. Each operand will be checked from left to right, with the result being the first operand that evaluates to <c>True</c> according to the rules of Truthiness. Since <c>False</c> is nota value that evaluates to True in truthiness rules, the second operand is checked. The value <c>5</c> is a Truthy value (any non-zero integer is considered True for the purposes of Truthiness), so <c>5</c> is the value that is assigned to <c>result</c>.</p>
+            </li>
+        </ol>    
+</subsection>
+<subsection xml:id="subsec-bool-truthQs">
+        <title>Questions to check understanding</title>
+        <ol>
+            <li>
+                <p>
+                    Would putting parentheses around <c>beta or gamme</c> change the result?
+                </p>
+                <answer>
+                    <p>
+                        Yes, but not in the way you might expect. The expression <c>beta or gamme</c> will be evaluated first, and produce an integer (specifically <c>1</c> since that is a Truthy value). Then, that result will be used as the right operand to the <c>></c> comparison, resulting in a boolean value (<c>False</c>, since <c>0 > 1</c>). 
+                    </p>
+                </answer>
+            </li>
+            <li>
+                     <p>
+                        What expression would actually ask the question, "is either beta or gamma greater than alpha?"  
+                    </p>
+                <answer>
+                    <p>
+                        You would need to repeat the comparison as <c>alpha > beta or alpha > gamma</c>
+                    </p>
+                </answer>
+            </li>
+        </ol>
+       
+    </subsection>
+</section>
+        
+        
