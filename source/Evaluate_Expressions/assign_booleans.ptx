@@ -42,20 +42,21 @@
 alpha = 42
 beta = 1
 gamma = 5
-<!--result = beta <= alpha This line is causing an error, below too, so appears to be with the <= characters-->
+
+result = beta &lt;= alpha
 </input></program>
     </introduction>
     <subsection xml:id="subsec-boolSG1">
         <title>SG1: Decide order of operations</title>
-        <p>There is only a single operator, the <!--<=--> (less than or equal to operator), so that is the only one that needs to be evaluated.</p>
+        <p>There is only a single operator, the <c>&lt;=</c> (less than or equal to operator), so that is the only one that needs to be evaluated.</p>
     </subsection>
-    <subsection xml:id="subsec-boolSG1">
+    <subsection xml:id="subsec-boolSG2">
         <title>SG2: Determine operator behavior based on operands</title>
-        <p>The <!--<=--> operator will determine if one value is less than or equal than the other, and requires that they be compatible types. Integers and floats are compatible with each other, but in this case both <c>alpha</c> and <c>beta</c> are integers, which are definitely compatible. The result will be a boolean value.</p>
+        <p>The <c>&lt;=</c> operator will determine if one value is less than or equal than the other, and requires that they be compatible types. Integers and floats are compatible with each other, but in this case both <c>alpha</c> and <c>beta</c> are integers, which are definitely compatible. The result will be a boolean value.</p>
     </subsection>
-    <subsection xml:id="subsec-boolSG1">
+    <subsection xml:id="subsec-boolSG3">
         <title>SG3: Solve arithmetic, expression, or operation</title>
-        <p>First, <c>beta</c> is substituted for <c>1</c> and <c>alpha</c> is substituted for <c>42</c>. Then, the <!--<=--> determines if <c>1</c> is less than or equal to <c>42</c>, which it is. Therefore, the expression evaluates to <c>True</c>, which is assigned to the variable <c>result</c>.</p>
+        <p>First, <c>beta</c> is substituted for <c>1</c> and <c>alpha</c> is substituted for <c>42</c>. Then, the <c>&lt;=</c> determines if <c>1</c> is less than or equal to <c>42</c>, which it is. Therefore, the expression evaluates to <c>True</c>, which is assigned to the variable <c>result</c>.</p>
     </subsection>
     <subsection xml:id="subsec-boolQs">
         <title>Questions to check understanding</title>

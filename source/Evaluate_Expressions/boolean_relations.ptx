@@ -59,4 +59,5 @@ gamma = 5
     <p>1. In the first comparison, <c>beta</c> is substituted for <c>1</c> and <c>gamma</c> is substituted for <c>5</c>. Then, the <!--<=--> determines if <c>1</c> is less than or equal to <c>5</c> , which it is. Therefore, the expression evaluates to <c>True</c>.</p>
     <p>2. In the second comparison, <c>gamma</c> is substituted for <c>5</c> and <c>alpha</c> is substituted for <c>42</c>. Then, the <!--<=--> determines if <c>5</c> is less than or equal to <c>42</c>, which it is. Therefore, the expression evaluates to <c>True</c>.</p>
     <p>3. The two boolean values are used as the operands for the <c>and</c>, causing the expression <c>True and True</c> to be evaluated - the result is <c>True</c>, which is assigned to the <c>result</c> variable.</p>
-    
+</subsection>
+</section>
