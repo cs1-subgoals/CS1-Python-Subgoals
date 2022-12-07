@@ -9,4 +9,6 @@
         <xi:include href='./operation_precedence.ptx' />
         <xi:include href='./basic_knowledge.ptx' />
         <xi:include href='./basic_operation_precedence.ptx' />
+        <xi:include href='./boolean_relations.ptx' />
+
     </chapter>
