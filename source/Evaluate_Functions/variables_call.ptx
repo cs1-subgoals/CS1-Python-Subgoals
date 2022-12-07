@@ -30,7 +30,6 @@
 def foo(alpha, beta):
     delta = alpha * beta - gamma
     return delta * 2
-
 alpha = 9
 gamma = 1
 </input></program>
@@ -96,20 +95,20 @@ delta = alpha * beta - gamma
             </p>
         </li>
     </ul>
-    <p>The expression becomes <c>7 * 9 - 1</c>, which is <c>62</c>. The value <c>62</c> is assigned to a new local variable <c>delta</c>.
+    <p>The expression becomes <c>7 * 9 - 1</c>, which is <c>62</c>. The value <c>62</c> is assigned to a new local variable <c>delta</c>.</p>
    <!--insert picture here-->
     <figure align="">
             <image source="Evaluate_Functions/Figures/we2-var-call-foo-delta.png" width="auto"/>
         </figure>
-    <p>After we execute the first line of the body, we execute the second line, which is a <c>return</c> statement.
+    <p>After we execute the first line of the body, we execute the second line, which is a <c>return</c> statement.</p>
     <program language="python"><input>
     return delta * 2
     </input></program>
-    <p>In that line of code, we substitute <c>62</c> for <c>delta</c> and then multiply the result by <c>2</c>. The final result is <c>124</c>.
+    <p>In that line of code, we substitute <c>62</c> for <c>delta</c> and then multiply the result by <c>2</c>. The final result is <c>124</c>.</p>
     </subsection>
     <subsection xml:id="var_call_5">
         <title>5. At return to call site, pass values back to call site</title>
-        <p>The original function call to <c>foo</c> is now complete, with the value <c>124</c> to be returned. We substitute the <c>foo(7, alpha)</c> expression for <c>124</c>.
+        <p>The original function call to <c>foo</c> is now complete, with the value <c>124</c> to be returned. We substitute the <c>foo(7, alpha)</c> expression for <c>124</c>.</p>
     </subsection> 
     <subsection xml:id="var_call_6">
         <title>6. Delete stack frame with local variables after return to call site</title>
