@@ -1,6 +1,6 @@
 <section xml:id="eval_funcs">
     <title>Evaluate Functions</title>
-    <introduction>
+    <subsection>
         <title>Simple Call</title>
         <p>
             <ul>
@@ -11,7 +11,7 @@
                     <p>No arguments</p>
                 </li>
                 <li>
-                    <p>Two argumentss</p>
+                    <p>Two arguments</p>
                 </li>
                     <p>
                         <ul>
@@ -40,7 +40,7 @@ alpha = 9
 kappa = foo(7, alpha, 1)
 gamma = kappa + 1
 </input></program>
-    </introduction>
+    </subsection>
     <subsection xml:id="eval_func_key_args">
         <title>Keyword Arguments</title>
         <program language="python"><input>
