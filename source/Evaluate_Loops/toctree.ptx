@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Evaluate Conditionals</title>
+        <title>Evaluate Loops</title>
         <xi:include href='./while_counter.ptx' />
         <xi:include href='./evaluate_loop.ptx' />
     </chapter>

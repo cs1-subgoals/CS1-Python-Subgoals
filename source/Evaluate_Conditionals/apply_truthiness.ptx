@@ -86,7 +86,7 @@ print("alpha and beta, but not gamma and delta")
     <subsection xml:id="subsec-aptruAnswer">
         <title>Answer</title>
         <p>The final printed text is:</p>
-        <program language="python"><input>
+        <program language=""><input>
 alpha and beta, but not gamma and delta
 </input></program>
     </subsection>

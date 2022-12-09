@@ -1,7 +1,7 @@
 <section xml:id="eval_funcs">
-    <title>Simple Call</title>
+    <title>Evaluate Functions</title>
     <introduction>
-        <title>Subgoals for evaluating an expression:</title>
+        <title>Simple Call</title>
         <p>
             <ul>
                 <li>
