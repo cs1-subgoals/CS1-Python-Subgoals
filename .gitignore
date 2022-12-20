@@ -1,0 +1,6 @@
+/__pycache__/*
+/published/*
+/build/*
+build_info
+output/
+.error_schema.log
