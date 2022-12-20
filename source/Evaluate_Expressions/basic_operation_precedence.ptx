@@ -1,41 +1,10 @@
-<section xml:id="basic_op_prec">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="basic_op_prec" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Basic Operation Precedence</title>
         <introduction>
         <title>Subgoals for evaluating an expression:</title>
-        <p>
-            <ol label="1">
-                <li>
-                    <p>Decide order of operations</p>
-                    <p>
-                        <ol label="i">
-                            <li>
-                                <p>Decompose as necessary</p>
-                            </li>
-                        </ol>
-                    </p>
-                </li>
-                <li>
-                    <p>Determine operator behavior based on operands</p>
-                    <p>
-                        <ol label="i">
-                            <li>
-                                <p>Operator and operands must be compatible</p>
-                            </li>
-                        </ol>
-                    </p>
-                </li>
-                <li>
-                    <p>Solve arithmetic, expression, or operation</p>
-                    <p>
-                        <ol label="i">
-                            <li>
-                                <p>Decompose as necessary</p>
-                            </li>
-                        </ol>
-                    </p>
-                </li>
-            </ol>
-        </p>
+        <xi:include href='./subgoals_evaluate_expressions.ptx' />
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable? Note any possible side effects.</p>
         <program language="python"><input>
