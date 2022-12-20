@@ -1,0 +1,144 @@
+<section xml:id="var_call">
+    <title>Variables Call</title>
+    <introduction>
+        <title>Subgoals for evaluating a function call:</title>
+        <p>
+            <ol label="1">
+                <li>
+                    <p>Create stack frame for global variabless</p>
+                </li>
+                <li>
+                    <p>Ensure function is defined before function call before beginning body of function</p>
+                </li>
+                <li>
+                    <p>Determine parameter values based on positional arguments, keyword arguments, and default values to initialize local variables</p>
+                </li>
+                <li>
+                    <p>Use stack frame for function to trace local variables</p>
+                </li>
+                <li>
+                    <p>At return to call site, pass values back to call site</p>
+                </li>
+                <li>
+                    <p>Delete stack frame with local variables after return to call site</p>
+                </li>
+            </ol>
+        </p>
+        <p>You can watch this video or read through the content below it.</p>
+        <p>Given the following declarations</p>
+        <program language="python"><input>
+def foo(alpha, beta):
+    delta = alpha * beta - gamma
+    return delta * 2
+alpha = 9
+gamma = 1
+</input></program>
+<p>Evaluate these statements and determine the final value of the top-level variables.</p>
+<program language="python"><input>
+kappa = foo(7, alpha) - 20
+</input></program>
+    </introduction>
+    <subsection xml:id="var_call_1">
+        <title>1. Create stack frame for global variables</title>
+        <p>Prior to the execution of the function, there are two global variables (<c>alpha</c> and <c>gamma</c>). The variable <c>kappa</c> will not be defined until after the function <c>foo</c> is executed, so for now our stack frame only has two variables.</p>
+        <!--tried inserting picture below make sure it works-->
+        <figure align="">
+            <image source="Evaluate_Functions/Figures/we2-var-call-globals.png" width="auto"/>
+        </figure>
+    </subsection>
+    <subsection xml:id="var_call_2">
+        <title>2. Ensure function is defined before function call before beginning body of function</title>
+        <p>The function <c>foo</c> was defined at the very start of the program, and <c>foo</c> is being called at the very end. Therefore, it is safe to say that the function is defined before it was called.</p>
+    </subsection>
+    <subsection xml:id="var_call_3">
+        <title>3. Determine parameter values based on positional arguments, keyword arguments, and default values to initialize local variables</title>
+        <p>When we execute <c>foo</c>, we must match each provided argument with the corresponding parameters.</p>
+        <ul>
+            <li>
+                <p>
+                    The first argument <c>7</c> is matched to the parameter <c>alpha</c>
+                </p>
+            </li>
+             <li>
+                <p>
+                    The second argument <c>alpha</c> is substituted for <c>9</c> (the value associated with that variable in the Global frame), and then <c>9</c> is matched to the parameter <c>beta</c>
+                </p>
+            </li>
+        </ul>
+        <!--insert picture here-->
+        <figure align="">
+            <image source="Evaluate_Functions/Figures/we2-var-call-foo-parameters.png" width="auto"/>
+        </figure>
+        <p>Notice that the global variable <c>alpha</c> is completely distinct from the parameter <c>alpha</c> inside the function <c>foo</c> frame. The two variables have the same name, but they are in different frames so they each have their own separate values.</p>
+    </subsection>
+    <subsection xml:id="var_call_4">
+        <title>4. Use stack frame for function to trace local variables</title>
+        <p>We begin executing the body of the function, one line at a time.</p>
+    <program language="python"><input>
+delta = alpha * beta - gamma
+    </input></program>
+   <p>In the first line, we evaluate the right-hand side first, substituting the appropriate values:</p>
+   <ul>
+        <li>
+            <p>
+                The <c>alpha</c> is substituted for the <c>alpha</c> variable local to the <c>foo</c> frame, which has the value <c>9</c> currently.
+            </p>     
+        </li>
+        <li>
+            <p>
+                The <c>beta</c> is substituted for the <c>beta</c> variable local to the <c>foo</c> frame, which has the value <c>9</c> currently.
+            </p>
+        </li>
+        <li>
+            <p>
+                The <c>gamme</c> is substituted for the <c>gamme</c> variable from the global frame (since there are no local variables with that name), which has the value <c>1</c> currently.
+            </p>
+        </li>
+    </ul>
+    <p>The expression becomes <c>7 * 9 - 1</c>, which is <c>62</c>. The value <c>62</c> is assigned to a new local variable <c>delta</c>.</p>
+   <!--insert picture here-->
+    <figure align="">
+            <image source="Evaluate_Functions/Figures/we2-var-call-foo-delta.png" width="auto"/>
+        </figure>
+    <p>After we execute the first line of the body, we execute the second line, which is a <c>return</c> statement.</p>
+    <program language="python"><input>
+    return delta * 2
+    </input></program>
+    <p>In that line of code, we substitute <c>62</c> for <c>delta</c> and then multiply the result by <c>2</c>. The final result is <c>124</c>.</p>
+    </subsection>
+    <subsection xml:id="var_call_5">
+        <title>5. At return to call site, pass values back to call site</title>
+        <p>The original function call to <c>foo</c> is now complete, with the value <c>124</c> to be returned. We substitute the <c>foo(7, alpha)</c> expression for <c>124</c>.</p>
+    </subsection> 
+    <subsection xml:id="var_call_6">
+        <title>6. Delete stack frame with local variables after return to call site</title>
+        <p>Because the function call is completed, we must delete the stack frame. The variables that existed inside the stack frame are not considered among the final global variables.</p>
+    <!--insert picture below-->
+   <figure align="">
+            <image source="Evaluate_Functions/Figures/we2-var-call-foo-final.png" width="auto"/>
+        </figure>
+        <p>We can now finish executing the original right-hand side of the expression: <c>124 - 20</c> is <c>104</c>, so the final result <c>104</c> is assigned to <c>kappa</c>.</p>
+    </subsection>
+     <subsection xml:id="var_call_ans">
+        <title>Answer</title>
+      <ul>
+        <li>
+            <p>
+                <c>alpha</c>: <c>9</c>
+            </p>     
+        </li>
+        <li>
+            <p>
+                <c>gamma</c>: <c>1</c>
+            </p>     
+        </li>
+        <li>
+            <p>
+                <c>kappa</c>: <c>104</c>
+            </p>     
+        </li>
+    </ul>
+    <p>These are the only variables in the global frame, since the other stack frame was deleted.</p>
+    </subsection>
+</section>
+

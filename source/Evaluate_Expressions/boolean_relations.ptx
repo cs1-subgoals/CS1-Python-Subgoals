@@ -48,16 +48,16 @@ gamma = 5
 </introduction>
 <subsection xml:id="subsec-boolrSG1">
     <title>SG1: Decide order of operations</title>
-    <p>There are three operators in this expression: two <!--<=--> (less than or equal to comparison) and one <c>and</c> (boolean logical AND) operator. The <c>and</c> operator determines if two boolean expressions are both <c>True</c>, and has a very low operator precedence. Specifically, the and precendence is lower than the <!--<=--> comparison operator precedence, and so that operation will be last. Therefore, the two <!--<=--> will happen first, in left to right order. </p>
+    <p>There are three operators in this expression: two <c>&lt;=</c> and one <c>and</c> (boolean logical AND) operator. The <c>and</c> operator determines if two boolean expressions are both <c>True</c>, and has a very low operator precedence. Specifically, the and precendence is lower than the &lt;= comparison operator precedence, and so that operation will be last. Therefore, the two &lt;= will happen first, in left to right order. </p>
 </subsection>
 <subsection xml:id="subsec-boolrSG2">
     <title>SG2: Determine operator behavior based on operands</title>
-    <p>The first <!--<=--> will be between two integers, which is a valid comparison that produces a boolean. The second <!--<=--> is also between two integers, and once again produces a boolean. The resulting boolean values are then used as operands to the <c>and</c>, which will in this case produce a boolean value.</p>
+    <p>The first <c>&lt;=</c> will be between two integers, which is a valid comparison that produces a boolean. The second &lt;= is also between two integers, and once again produces a boolean. The resulting boolean values are then used as operands to the <c>and</c>, which will in this case produce a boolean value.</p>
 </subsection>
 <subsection xml:id="subsec-boolrSG3">
     <title>SG3: Solve arithmetic, expression, or operation</title>
-    <p>1. In the first comparison, <c>beta</c> is substituted for <c>1</c> and <c>gamma</c> is substituted for <c>5</c>. Then, the <!--<=--> determines if <c>1</c> is less than or equal to <c>5</c> , which it is. Therefore, the expression evaluates to <c>True</c>.</p>
-    <p>2. In the second comparison, <c>gamma</c> is substituted for <c>5</c> and <c>alpha</c> is substituted for <c>42</c>. Then, the <!--<=--> determines if <c>5</c> is less than or equal to <c>42</c>, which it is. Therefore, the expression evaluates to <c>True</c>.</p>
+    <p>1. In the first comparison, <c>beta</c> is substituted for <c>1</c> and <c>gamma</c> is substituted for <c>5</c>. Then, the &lt;= determines if <c>1</c> is less than or equal to <c>5</c> , which it is. Therefore, the expression evaluates to <c>True</c>.</p>
+    <p>2. In the second comparison, <c>gamma</c> is substituted for <c>5</c> and <c>alpha</c> is substituted for <c>42</c>. Then, the &lt; determines if <c>5</c> is less than or equal to <c>42</c>, which it is. Therefore, the expression evaluates to <c>True</c>.</p>
     <p>3. The two boolean values are used as the operands for the <c>and</c>, causing the expression <c>True and True</c> to be evaluated - the result is <c>True</c>, which is assigned to the <c>result</c> variable.</p>
 </subsection>
 </section>

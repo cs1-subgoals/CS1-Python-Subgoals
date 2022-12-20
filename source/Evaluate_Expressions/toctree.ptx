@@ -2,7 +2,13 @@
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Evaluate Expressions</title>
         <xi:include href='./assign_booleans.ptx' />
+        <xi:include href='./boolean_truthiness.ptx' />
+        <xi:include href='./compound_operators.ptx' />
+        <xi:include href='./declaration_and_initialization.ptx' />
+        <xi:include href='./evaluate_expressions.ptx' />
+        <xi:include href='./operation_precedence.ptx' />
         <xi:include href='./basic_knowledge.ptx' />
         <xi:include href='./basic_operation_precedence.ptx' />
         <xi:include href='./boolean_relations.ptx' />
+
     </chapter>
