@@ -3,6 +3,8 @@
         <title>Evaluate Expressions</title>
         <xi:include href='./declaration_and_initialization.ptx' />
         <xi:include href='./basic_knowledge.ptx' />
+        <xi:include href='./expressions-bkn-p1.ptx' />
+        <xi:include href='./expressions-bkn-p2.ptx' />
         <xi:include href='./basic_operation_precedence.ptx' />
         <xi:include href='./operation_precedence.ptx' />
         <xi:include href='./compound_operators.ptx' />

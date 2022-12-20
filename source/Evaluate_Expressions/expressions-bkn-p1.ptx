@@ -1,190 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="expressions-statements_expressions-we1-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<section xml:id="expressions-bkn-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluate Expressions-WE1-P1</title>
+
+    <subsection>
+        <title>Subgoals for evaluating an expression:</title>
+        <xi:include href='./subgoals_evaluate_expressions.ptx' />
+        <p>For all given problems below indicate if the code is valid or invalid. Each problem is
+            independent of the others (e.g. Question 2 does not depend on Question 1, only the
+            &#8220;Given&#8221; code).</p>
+    </subsection>
+
+    <transition />
+
+    <subsection>
         <title>Expressions-WE1-P1</title>
-        <subsection>
-            <title>Subgoals for evaluating an assignment statement</title>
-            <p><ol label="1">
-                <li>
-                    <p>Determine resultant data type of expression</p>
-                </li>
-                <li>
-                    <p>Update variable for pre-increment or pre-decrement operators (side effect)</p>
-                </li>
-                <li>
-                    <p>Evaluate arithmetic expression according to operator precedence</p>
-                </li>
-                <li>
-                    <p>If an assignment statement (=), is Left Hand Side (LHS) a variable? Check data type of value against data type of variable.</p>
-                </li>
-                <li>
-                    <p>Update variable for post-increment or post-decrement operators (side effect)</p>
-                </li>
-            </ol></p>
-            <p>For all given problems below indicate if the code is valid or invalid. Each problem is independent of the others (e.g. Question 2 does not depend on Question 1, only the &#8220;Given&#8221; code).</p>
-        </subsection>
-        <transition/>
-        <subsection>
-            <title>Expressions-WE1-P1</title>
-            <p><term>Given</term></p>
-            <program language="java"><input>
-int alpha, beta = 1, gamma;
-double omega = 2.5, theta, lambda;
-</input></program>
-<exercises>
-    <exercise xml:id="m-Expr-WE1-P1-1">
-        <statement>
-
-            <p>Q1: alpha = beta;</p>
-
-        </statement>
-<choices>
-
-            <choice correct="yes">
+        <p>
+            <term>Given</term>
+        </p>
+        <program language="python">
+            <input>
+beta = 1
+omega = 2.5
+</input>
+        </program>
+        <exercises>
+            <exercise xml:id="m-Expr-WE1-P1-1">
                 <statement>
-                    <p>valid</p>
+                    <p>Q1: <program language="python"><input>alpha = beta</input></program></p>
                 </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>valid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
+                    <choice>
+                        <statement>
+                            <p>invalid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
+                </choices>
+            </exercise>
 
-            <choice>
+            <exercise xml:id="m-Expr-WE1-P1-2">
                 <statement>
-                    <p>invalid</p>
+                    <p>Q2: <program language="python"><input>beta = omega</input></program></p>
                 </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-</choices>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>valid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
 
-    </exercise>
+                    <choice>
+                        <statement>
+                            <p>invalid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
+                </choices>
 
-    <exercise xml:id="m-Expr-WE1-P1-2">
-        <statement>
+            </exercise>
 
-            <p>Q2: alpha = omega;</p>
-
-        </statement>
-<choices>
-
-            <choice>
+            <exercise xml:id="m-Expr-WE1-P1-3">
                 <statement>
-                    <p>valid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
 
-            <choice correct="yes">
+                    <p>Q3: <program language="python"><input>theta = 22</input></program></p>
+
+                </statement>
+                <choices>
+
+                    <choice correct="yes">
+                        <statement>
+                            <p>valid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
+
+                    <choice>
+                        <statement>
+                            <p>invalid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
+                </choices>
+
+            </exercise>
+
+            <exercise xml:id="m-Expr-WE1-P1-4">
                 <statement>
-                    <p>invalid</p>
+
+                    <p>Q4: <program language="python"><input>omega = gamma</input></program></p>
+
                 </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-</choices>
+                <choices>
 
-    </exercise>
+                    <choice>
+                        <statement>
+                            <p>valid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
 
-    <exercise xml:id="m-Expr-WE1-P1-3">
-        <statement>
+                    <choice correct="yes">
+                        <statement>
+                            <p>invalid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
+                </choices>
 
-            <p>Q3: theta = 22;</p>
+            </exercise>
 
-        </statement>
-<choices>
-
-            <choice correct="yes">
+            <exercise xml:id="m-Expr-WE1-P1-5">
                 <statement>
-                    <p>valid</p>
+
+                    <p>Q5: <program language="python"><input>55 = omega</input></program></p>
+
                 </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
+                <choices>
 
-            <choice>
-                <statement>
-                    <p>invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-</choices>
+                    <choice>
+                        <statement>
+                            <p>valid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
 
-    </exercise>
+                    <choice correct="yes">
+                        <statement>
+                            <p>invalid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
+                </choices>
 
-    <exercise xml:id="m-Expr-WE1-P1-4">
-        <statement>
-
-            <p>Q4: omega = gamma;</p>
-
-        </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>valid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise xml:id="m-Expr-WE1-P1-5">
-        <statement>
-
-            <p>Q5: theta = lambda;</p>
-
-        </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>valid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-</exercises>
-        </subsection>
-    <program xml:id="ac-express-we1-p1" interactive="activecode" language="java">
+            </exercise>
+        </exercises>
+    </subsection>
+    <program xml:id="ac-express-we1-p1" interactive="activecode" language="python">
         <input>
-public class main{
-   public static void main(String args[]){
-
-   }
-}
         </input>
     </program>
-    </section>
+</section>
