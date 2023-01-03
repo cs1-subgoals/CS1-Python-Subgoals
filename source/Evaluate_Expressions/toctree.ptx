@@ -2,6 +2,8 @@
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Evaluate Expressions</title>
         <xi:include href='./declaration_and_initialization.ptx' />
+        <xi:include href='./expressions-dai-p1.ptx' />
+        <xi:include href='./expressions-dai-p2.ptx' />
         <xi:include href='./basic_knowledge.ptx' />
         <xi:include href='./expressions-bkn-p1.ptx' />
         <xi:include href='./expressions-bkn-p2.ptx' />

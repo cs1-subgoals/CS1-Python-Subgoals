@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="expressions-statements_expressions-we1-p2"
-    xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <title>Expressions-WE2-P1</title>
+<section xml:id="expressions-bkn-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluate Expressions-WE1-P1</title>
+
     <subsection>
         <title>Subgoals for evaluating an expression:</title>
         <xi:include href='./subgoals_evaluate_expressions.ptx' />
@@ -10,28 +10,75 @@
             independent of the others (e.g. Question 2 does not depend on Question 1, only the
             &#8220;Given&#8221; code).</p>
     </subsection>
+
     <transition />
+
     <subsection>
-        <title>Expressions-WE2-P2</title>
+        <title>Expressions-WE1-P1</title>
         <p>
             <term>Given</term>
         </p>
         <program language="python">
             <input>
-alpha = 2
 beta = 1
-delta = 3
-eta = 10
 omega = 2.5
-theta = -1.3
-kappa = 3.0
 </input>
         </program>
         <exercises>
-            <exercise xml:id="m-Expr-WE2-P1-11">
+            <exercise xml:id="m-Expr-WE1-P1-1">
+                <statement>
+                    <p>Q1: <program language="python"><input>alpha = beta</input></program></p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>valid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
+                    <choice>
+                        <statement>
+                            <p>invalid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
+                </choices>
+            </exercise>
+
+            <exercise xml:id="m-Expr-WE1-P1-2">
+                <statement>
+                    <p>Q2: <program language="python"><input>beta = omega</input></program></p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>valid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
+
+                    <choice>
+                        <statement>
+                            <p>invalid</p>
+                        </statement>
+                        <feedback>
+                            <p />
+                        </feedback>
+                    </choice>
+                </choices>
+
+            </exercise>
+
+            <exercise xml:id="m-Expr-WE1-P1-3">
                 <statement>
 
-                    <p>Q11: gamma = beta + theta</p>
+                    <p>Q3: <program language="python"><input>theta = 22</input></program></p>
 
                 </statement>
                 <choices>
@@ -57,12 +104,15 @@ kappa = 3.0
 
             </exercise>
 
-            <exercise xml:id="m-Expr-WE2-P1-12">
+            <exercise xml:id="m-Expr-WE1-P1-4">
                 <statement>
-                    <p>Q12: eta = 42</p>
+
+                    <p>Q4: <program language="python"><input>omega = gamma</input></program></p>
+
                 </statement>
                 <choices>
-                    <choice correct="yes">
+
+                    <choice>
                         <statement>
                             <p>valid</p>
                         </statement>
@@ -70,7 +120,8 @@ kappa = 3.0
                             <p />
                         </feedback>
                     </choice>
-                    <choice>
+
+                    <choice correct="yes">
                         <statement>
                             <p>invalid</p>
                         </statement>
@@ -79,15 +130,18 @@ kappa = 3.0
                         </feedback>
                     </choice>
                 </choices>
+
             </exercise>
 
-            <exercise xml:id="m-Expr-WE2-P1-13">
+            <exercise xml:id="m-Expr-WE1-P1-5">
                 <statement>
-                    <p>Q13: rho = delta</p>
+
+                    <p>Q5: <program language="python"><input>55 = omega</input></program></p>
+
                 </statement>
                 <choices>
 
-                    <choice correct="yes">
+                    <choice>
                         <statement>
                             <p>valid</p>
                         </statement>
@@ -96,7 +150,7 @@ kappa = 3.0
                         </feedback>
                     </choice>
 
-                    <choice>
+                    <choice correct="yes">
                         <statement>
                             <p>invalid</p>
                         </statement>
@@ -109,10 +163,8 @@ kappa = 3.0
             </exercise>
         </exercises>
     </subsection>
-
-    <program xml:id="ac-express-we1-p2" interactive="activecode" language="python">
+    <program xml:id="ac-express-we1-p1" interactive="activecode" language="python">
         <input>
-
         </input>
     </program>
 </section>
