@@ -31,7 +31,7 @@ omega = 2.5
                 <setup>
                     <var>
                         <p>What is the value of alpha?</p>
-                        <condition string="1">
+                        <condition number="1">
                             <feedback>
                                 <p>Correct</p>
                             </feedback>
@@ -46,7 +46,7 @@ omega = 2.5
                 <setup>
                     <var>
                         <p>What is the value of alpha?</p>
-                        <condition string="1">
+                        <condition number="1">
                             <feedback>
                                 <p>Correct</p>
                             </feedback>
@@ -61,7 +61,7 @@ omega = 2.5
                 <setup>
                     <var>
                         <p>What is the value of theta?</p>
-                        <condition string="22">
+                        <condition number="22">
                             <feedback>
                                 <p>Correct</p>
                             </feedback>
@@ -77,7 +77,7 @@ omega = 2.5
                 <setup>
                     <var>
                         <p>What is the value of omega?</p>
-                        <condition string="1">
+                        <condition number="1">
                             <feedback>
                                 <p>Correct</p>
                             </feedback>

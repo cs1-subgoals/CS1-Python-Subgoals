@@ -34,7 +34,7 @@ kappa = 3.0
         </statement><setup><var><p>What is the value of gamma?</p><condition number="3"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
         <exercise>
             <statement>
-    <p>Q15: rho = delta + kappa <var/>  </p></statement><setup><var><p>What is the value of rho?</p><condition string="6\.0?"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
+    <p>Q15: rho = delta + kappa <var/>  </p></statement><setup><var><p>What is the value of rho?</p><condition number="6.0" tolerance=".001"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
     <exercise xml:id="m-Expr-WE2-P2-16">
         <statement>
 
