@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="expressions-bop-p2" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluate Expressions-WE3-P2</title>
+    <subsection>
+        <title>Subgoals for evaluating an expression:</title>
+        <xi:include href='./subgoals_evaluate_expressions.ptx' />
+        <p>For the assignment statements below, either give the new value of the assigned variable,
+            or enter &#8220;invalid&#8221; if the statement would result in a error.
+            Each problem is independent of the others (e.g. Question 2
+            does not depend on Question 1, only the &#8220;Given&#8221; code).</p>
+    </subsection>
+    <transition />
+    <subsection>
+        <title>Evaluate Expressions-WE3-P2</title>
+        <p>
+            <term>Given</term>
+        </p>
+        <program language="python">
+            <input>
+alpha = 2
+beta = 1
+delta = 3
+eta = 10
+omega = 2.5
+theta = -1.3
+kappa = 3.0
+</input>
+        </program>
+        <exercises>
+        <exercise>
+            <statement>
+    <p>Q21: rho = beta * theta <var/>  </p></statement><setup><var><p>What is the value of rho?</p><condition number="-1.3" tolerance=".01"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
+        <exercise>
+            <statement>
+    <p>Q22: eta = alpha * beta <var/>  </p></statement><setup><var><p>What is the value of eta?</p><condition number="2"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
+        <exercise>
+            <statement>
+    <p>Q23: kappa = beta + delta <var/>  </p></statement><setup><var><p>What is the value of kappa?</p><condition number="4"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
+        <exercise>
+            <statement>
+    <p>Q24: beta = beta / alpha <var/>  </p></statement><setup><var><p>What is the value of beta?</p><condition number=".5" tolerance=".01"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
+</exercises>
+    </subsection>
+
+    <program xml:id="ac-express-we3-p2" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</section>
