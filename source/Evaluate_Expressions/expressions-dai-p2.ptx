@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="expressions-statements_expressions-we1-p2" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <title>Expressions-WE1-P2</title>
+<section xml:id="expressions-dai-p2" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluate Expressions-WE1-P2</title>
     <subsection>
         <title>Subgoals for evaluating an expression:</title>
         <xi:include href='./subgoals_evaluate_expressions.ptx' />
@@ -12,7 +12,7 @@
     </subsection>
     <transition />
     <subsection>
-        <title>Expressions-WE1-P2</title>
+        <title>Evaluate Expressions-WE1-P2</title>
         <p>
             <term>Given</term>
         </p>
@@ -57,10 +57,7 @@ omega = 2.5
             </exercise>
 
             <exercise xml:id="m-Expr-WE1-P2-8">
-                <statement>
-                    <p>Q8: <program language="python"><input>theta = 22</input></program> <var />
-                    </p>
-                </statement>
+                <statement><p>Q8: <program language="python"><input>theta = 22</input></program> <var /></p></statement>
                 <setup>
                     <var>
                         <p>What is the value of theta?</p>

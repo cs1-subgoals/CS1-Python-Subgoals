@@ -67,10 +67,10 @@ while counter &lt; 50:
     <subsection xml:id="subsec-wcSG2">
         <title>Trace the loop, writing updated values for every iteration or until you identify the pattern</title>
         <p>For every iteration of loop, write down values.</p>
-        <image source="Evaluate_Loops/Figures/Slide6.png" width="auto"/>
+        <image source="Evaluate_Loops/Figures/Slide6.png" width="90%"/>
         <p><c>counter</c> increments by <c>1</c> But only when the <c>counter</c> is evenly divisible by <c>5</c> is the value added to <c>total</c>.</p>
-        <image source="Evaluate_Loops/Figures/WL1Whlie-Slide7.png" width="auto"/>
-        <image source="Evaluate_Loops/Figures/WL1While-Slide8.png" width="auto"/>
+        <image source="Evaluate_Loops/Figures/WL1Whlie-Slide7.png" width="90%"/>
+        <image source="Evaluate_Loops/Figures/WL1While-Slide8.png" width="90%"/>
         <answer>
                 <p>
                     Output is <c>225</c>

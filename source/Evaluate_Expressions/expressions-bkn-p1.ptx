@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="expressions-statements_expressions-we1-p2"
+<section xml:id="expressions-bkn-p1"
     xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <title>Expressions-WE2-P1</title>
+    <title>Evaluate Expressions-WE2-P1</title>
     <subsection>
         <title>Subgoals for evaluating an expression:</title>
         <xi:include href='./subgoals_evaluate_expressions.ptx' />
@@ -12,7 +12,7 @@
     </subsection>
     <transition />
     <subsection>
-        <title>Expressions-WE2-P2</title>
+        <title>Evaluate Expressions-WE2-P1</title>
         <p>
             <term>Given</term>
         </p>
@@ -110,7 +110,7 @@ kappa = 3.0
         </exercises>
     </subsection>
 
-    <program xml:id="ac-express-we1-p2" interactive="activecode" language="python">
+    <program xml:id="ac-express-we2-p1" interactive="activecode" language="python">
         <input>
 
         </input>

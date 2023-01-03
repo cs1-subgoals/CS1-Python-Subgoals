@@ -46,7 +46,7 @@ else:
         <p>The <c>True</c> branch of the parent block contains an inner <c>if/elif/else</c> block.</p>
         <p>The <c>else</c> block only contains a single statement.</p>
         <figure align="">
-            <image source="Evaluate_Conditionals/Figures/we7-app-tru-all.png" width="auto"/>
+            <image source="Evaluate_Conditionals/Figures/we7-app-tru-all.png" width="90%"/>
         </figure>
     </subsection>
     <subsection xml:id="subsec-aptru2-1">
@@ -59,7 +59,7 @@ else:
         <p>The condition is <c>True</c>, so we execute the <c>True</c> branch.</p>
         <p>The <c>True</c> branch contains an <c>if</c>/<c>elif</c>/<c>else</c> statement, so we must repeat SG2 and SG3.</p>
         <figure align="">
-            <image source="Evaluate_Conditionals/Figures/we7-app-tru-1.png" width="auto"/>
+            <image source="Evaluate_Conditionals/Figures/we7-app-tru-1.png" width="90%"/>
         </figure>
     </subsection>
     <subsection xml:id="subsec-aptru2-2">

@@ -43,7 +43,7 @@ kappa = foo(7, alpha) - 20
         <p>Prior to the execution of the function, there are two global variables (<c>alpha</c> and <c>gamma</c>). The variable <c>kappa</c> will not be defined until after the function <c>foo</c> is executed, so for now our stack frame only has two variables.</p>
         <!--tried inserting picture below make sure it works-->
         <figure align="">
-            <image source="Evaluate_Functions/Figures/we2-var-call-globals.png" width="auto"/>
+            <image source="Evaluate_Functions/Figures/we2-var-call-globals.png" width="90%"/>
         </figure>
     </subsection>
     <subsection xml:id="var_call_2">
@@ -67,7 +67,7 @@ kappa = foo(7, alpha) - 20
         </ul>
         <!--insert picture here-->
         <figure align="">
-            <image source="Evaluate_Functions/Figures/we2-var-call-foo-parameters.png" width="auto"/>
+            <image source="Evaluate_Functions/Figures/we2-var-call-foo-parameters.png" width="90%"/>
         </figure>
         <p>Notice that the global variable <c>alpha</c> is completely distinct from the parameter <c>alpha</c> inside the function <c>foo</c> frame. The two variables have the same name, but they are in different frames so they each have their own separate values.</p>
     </subsection>
@@ -98,7 +98,7 @@ delta = alpha * beta - gamma
     <p>The expression becomes <c>7 * 9 - 1</c>, which is <c>62</c>. The value <c>62</c> is assigned to a new local variable <c>delta</c>.</p>
    <!--insert picture here-->
     <figure align="">
-            <image source="Evaluate_Functions/Figures/we2-var-call-foo-delta.png" width="auto"/>
+            <image source="Evaluate_Functions/Figures/we2-var-call-foo-delta.png" width="90%"/>
         </figure>
     <p>After we execute the first line of the body, we execute the second line, which is a <c>return</c> statement.</p>
     <program language="python"><input>
@@ -115,7 +115,7 @@ delta = alpha * beta - gamma
         <p>Because the function call is completed, we must delete the stack frame. The variables that existed inside the stack frame are not considered among the final global variables.</p>
     <!--insert picture below-->
    <figure align="">
-            <image source="Evaluate_Functions/Figures/we2-var-call-foo-final.png" width="auto"/>
+            <image source="Evaluate_Functions/Figures/we2-var-call-foo-final.png" width="90%"/>
         </figure>
         <p>We can now finish executing the original right-hand side of the expression: <c>124 - 20</c> is <c>104</c>, so the final result <c>104</c> is assigned to <c>kappa</c>.</p>
     </subsection>

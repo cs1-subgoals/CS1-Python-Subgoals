@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="expressions-statements_expressions-we2-p2" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <title>Expressions-WE2-P2</title>
+<section xml:id="expressions-bkn-p2" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluate Expressions-WE2-P2</title>
     <subsection>
         <title>Subgoals for evaluating an expression:</title>
         <xi:include href='./subgoals_evaluate_expressions.ptx' />
@@ -12,7 +12,7 @@
     </subsection>
     <transition />
     <subsection>
-        <title>Expressions-WE2-P2</title>
+        <title>Evaluate Expressions-WE2-P2</title>
         <p>
             <term>Given</term>
         </p>
@@ -30,7 +30,8 @@ kappa = 3.0
         <exercises>
         <exercise>
             <statement>
-    <p>Q14: gamma = beta + alpha <var/>  </p></statement><setup><var><p>What is the value of gamma?</p><condition string="3"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
+    <p>Q14: gamma = beta + alpha <var/>  </p>
+        </statement><setup><var><p>What is the value of gamma?</p><condition number="3"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
         <exercise>
             <statement>
     <p>Q15: rho = delta + kappa <var/>  </p></statement><setup><var><p>What is the value of rho?</p><condition string="6\.0?"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
@@ -84,7 +85,7 @@ kappa = 3.0
 </exercises>
     </subsection>
 
-    <program xml:id="ac-express-we1-p2" interactive="activecode" language="python">
+    <program xml:id="ac-express-we2-p2" interactive="activecode" language="python">
         <input>
 
         </input>
