@@ -13,6 +13,7 @@
         <xi:include href='./operation_precedence.ptx' />
         <xi:include href='./compound_operators.ptx' />
         <xi:include href='./assign_booleans.ptx' />
+        <xi:include href='./expressions-abo-p1.ptx' />
         <xi:include href='./boolean_relations.ptx' />
         <xi:include href='./boolean_truthiness.ptx' />
     </chapter>
