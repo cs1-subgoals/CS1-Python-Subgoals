@@ -11,6 +11,8 @@
         <xi:include href='./expressions-bop-p1.ptx' />
         <xi:include href='./expressions-bop-p2.ptx' />
         <xi:include href='./operation_precedence.ptx' />
+        <xi:include href='./expressions-opr-p1.ptx' />
+        <xi:include href='./expressions-opr-p2.ptx' />
         <xi:include href='./compound_operators.ptx' />
         <xi:include href='./assign_booleans.ptx' />
         <xi:include href='./expressions-abo-p1.ptx' />
