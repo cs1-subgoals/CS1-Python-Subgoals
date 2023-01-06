@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="expressions-opr-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Expressions-WE4-P1</title>
+        <title>Evaluate Expressions-WE4-P1</title>
         <subsection>
             <title>Subgoals for evaluating an assignment statement</title>
             <xi:include href='./subgoals_evaluate_expressions.ptx' />
