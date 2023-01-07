@@ -3,23 +3,21 @@
 <!-- TEMPLATE -->
 
 <section xml:id="expressions-btr-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Evaluate Expressions-WE_-P1</title> <!-- insert WE number -->
+        <title>Evaluate Conditionals-WE_-P1</title> <!-- insert WE number -->
         <subsection>
-            <title>Subgoals for evaluating an assignment statement</title>
-            <xi:include href='./subgoals_evaluate_expressions.ptx' />
-            <p>For all given problems below indicate if the code is valid or invalid. 
-                Each problem is independent of the others (e.g. Question 2 does not depend 
-                on Question 1, only the &#8220;Given&#8221; code).</p>
+            <title>Subgoals for Evaluating Selection Statements</title>
+            <xi:include href='./subgoals_evaluate_conditionals.ptx' />
+            <p>Each question below is independent, but they all use this given setup</p>
         </subsection>
         <transition/>
         <subsection>
-            <title>Expressions-WE_-P1</title> <!-- insert WE number -->
+            <title>Conditionals-WE_-P1</title> <!-- insert WE number -->
             <p><term>Given</term></p>
             <program language="python"><input>
 <!-- variables go here -->
             </input></program>
             <exercises>
-                <exercise xml:id="m-Expr-WE_-P1-__"> <!-- insert WE number & question number -->
+                <exercise xml:id="m-Cond-WE_-P1-__"> <!-- insert WE number & question number -->
                     <statement><p>Q_: </p></statement>
                     <choices>
                         <choice correct="yes">
@@ -32,7 +30,7 @@
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE_-P1-__"> <!-- insert WE number & question number -->
+                <exercise xml:id="m-Cond-WE_-P1-__"> <!-- insert WE number & question number -->
                     <statement><p>Q_: </p></statement>
                     <choices>
                         <choice correct="yes">
@@ -47,7 +45,7 @@
                 </exercise>
             </exercises>
         </subsection>
-        <program xml:id="ac-express-WE_-p1" interactive="activecode" language="python"> <!-- insert WE number -->
+        <program xml:id="ac-conditionals-WE_-p1" interactive="activecode" language="python"> <!-- insert WE number -->
             <input></input>
         </program>
     </section>
