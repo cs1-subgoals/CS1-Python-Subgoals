@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="conditionals-ies-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Evaluate Conditionals-WE2-P1</title>
+        <subsection>
+            <title>Subgoals for Evaluating Selection Statements</title>
+            <xi:include href='./subgoals_evaluate_conditionals.ptx' />
+        </subsection>
+        <transition/>
+        <subsection>
+            <title>Conditionals-WE2-P1</title>
+            <p>Each question below is independent, but they all use this given setup</p>
+            <program language="python"><input>
+alpha = 2
+beta = 1
+delta = 3
+eta = 0
+gamma = 0
+omega = 2.5
+theta = -1.3
+kappa = 3.0
+lambda = 0.0
+rho = 0.0
+            </input></program>
+            <exercises>
+                <exercise xml:id="m-Cond-WE2-P1-6">
+                    <statement><p>Q6: What is the output of the following code?</p>
+                        <program language="python"><input>
+x = 0
+if (x = 0):  # look closely!
+    print("0 is true")
+else:
+    print("0 is false")
+                        </input></program></statement>
+                    <choices>
+                        <choice><statement><p>0 is true</p></statement>
+                        <feedback><p/></feedback></choice>
+                        <choice><statement><p>0 is false</p></statement>
+                        <feedback><p/></feedback></choice>
+                        <choice correct="yes"><statement><p>There is no output because a compiler error occurs</p></statement>
+                        <feedback><p/></feedback></choice>
+                        <choice><statement><p>There is no output because an exception occurs</p></statement>
+                        <feedback><p/></feedback></choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Select-WE2-P1-7">
+                    <statement><p>Q7: What is the output of the following code?</p>
+                        <program language="python"><input>
+if (false):
+    print("it is true")
+else:
+     print("it is false")
+                        </input></program></statement>
+                    <choices>
+                        <choice><statement><p>it is true</p></statement>
+                        <feedback><p/></feedback></choice>
+                        <choice correct="yes"><statement><p>it is false</p></statement>
+                        <feedback><p/></feedback></choice>
+                        <choice><statement><p>There is no output because a compiler error occurs</p></statement>
+                        <feedback><p/></feedback></choice>
+                        <choice><statement> <p>There is no output because an exception occurs</p></statement>
+                        <feedback><p/></feedback></choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Cond-WE2-P1-8">
+                    <statement><p>Q8: What is the output of the following code?</p>
+                        <program language="python"><input>
+if (12&lt;12):
+    print("Never")
+else:
+    print("Always")
+                        </input></program></statement>
+                    <choices>
+                        <choice><statement><p>Never</p></statement>
+                        <feedback><p/></feedback></choice>
+                        <choice correct="yes"><statement><p>Always</p></statement>
+                        <feedback><p/></feedback></choice>
+                        <choice><statement><p>There is no output because a compiler error occurs</p></statement>
+                        <feedback><p/></feedback></choice>
+                        <choice><statement><p>There is no output because an exception occurs</p></statement>
+                        <feedback><p/></feedback></choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Cond-WE2-P1-9">
+                    <statement><p>Q9: What is the output of the following code?</p>
+                        <program language="python"><input>
+var1 = 15.0
+var2 = 25.12
+if (2 * var1&gt;= var2):
+    print("O.K.")
+else:
+    print("Not O.K.")
+                        </input></program></statement>
+                    <choices>
+                        <choice correct="yes"><statement><p>O.K.</p></statement>
+                        <feedback><p/></feedback></choice>
+                        <choice><statement><p>Not O.K.</p></statement>
+                        <feedback><p/> </feedback></choice>
+                        <choice> <statement><p>There is no output because a compiler error occurs</p> </statement>
+                        <feedback><p/></feedback></choice>
+                        <choice><statement><p>There is no output because an exception occurs</p></statement>
+                        <feedback><p/> </feedback></choice>
+                    </choices>
+                </exercise>
+            </exercises>
+        </subsection>
+    <program xml:id="ac-conditionals-we2-p1" interactive="activecode" language="python">
+        <input></input>
+    </program>
+</section>
