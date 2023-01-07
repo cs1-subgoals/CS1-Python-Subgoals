@@ -21,4 +21,5 @@
         <xi:include href='./boolean_relations.ptx' />
         <xi:include href='./expressions-bre-p1.ptx' />
         <xi:include href='./boolean_truthiness.ptx' />
+        <xi:include href='./expressions-btr-p1.ptx' />
     </chapter>
