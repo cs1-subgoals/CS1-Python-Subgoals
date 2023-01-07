@@ -49,7 +49,7 @@ kappa = 3.0
                                 <feedback><p/></feedback>
                             </choice>
                             <choice>
-                                <statement><p>the value of eta cannot be changed</p></statement>
+                                <statement><p>eta is a constant</p></statement>
                                 <feedback><p/></feedback>
                             </choice>
                             <choice>
