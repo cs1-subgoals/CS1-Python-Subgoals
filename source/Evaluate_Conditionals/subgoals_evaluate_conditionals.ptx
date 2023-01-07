@@ -1,0 +1,27 @@
+<p>
+    <ol label="1">
+        <li>
+            <p>Diagram which statements go together by indentation</p>
+        </li>
+        <li>
+            <p>For conditional, determine whether expression is true</p>
+            <p>
+                <ol label="i">
+                    <li>
+                        <p>If true, follow true branch</p>
+                    </li>
+                </ol>
+            </p>
+            <p>
+                <ol label="i">
+                    <li>
+                        <p>If false, follow next elif/else branch or exit conditional if no else branch</p>
+                    </li>
+                </ol>
+            </p>
+        </li>
+        <li>
+            <p>Repeat step 2 as necessary</p>
+        </li>
+    </ol>
+</p>
