@@ -2,5 +2,7 @@
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Evaluate Loops</title>
         <xi:include href='./while_counter.ptx' />
+        <xi:include href='./loops-whc-p1.ptx' />
         <xi:include href='./evaluate_loop.ptx' />
+        <xi:include href='./loops-evl-p1.ptx' />
     </chapter>
