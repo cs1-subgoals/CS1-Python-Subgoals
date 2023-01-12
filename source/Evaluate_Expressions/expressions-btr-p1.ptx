@@ -19,28 +19,28 @@
 <!-- variables go here -->
             </input></program>
             <exercises>
-                <exercise xml:id="m-Expr-WE_-P1-__"> <!-- insert WE number & question number -->
-                    <statement><p>Q_: </p></statement>
+                <exercise xml:id="m-Expr-WE_-P1-__"> <!-- insert WE number -->
+                    <statement><p>Q1: </p></statement>
                     <choices>
                         <choice correct="yes">
-                            <statement><p>valid</p></statement>
+                            <statement><p></p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice>
-                            <statement><p>invalid</p></statement>
+                            <statement><p></p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE_-P1-__"> <!-- insert WE number & question number -->
-                    <statement><p>Q_: </p></statement>
+                <exercise xml:id="m-Expr-WE_-P1-__"> <!-- insert WE number -->
+                    <statement><p>Q2: </p></statement>
                     <choices>
                         <choice correct="yes">
-                            <statement><p>valid</p></statement>
+                            <statement><p></p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice>
-                            <statement><p>invalid</p></statement>
+                            <statement><p></p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
