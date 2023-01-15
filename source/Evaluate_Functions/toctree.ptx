@@ -2,5 +2,7 @@
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Evaluate Functions</title>
         <xi:include href='./variables_call.ptx' />
+        <xi:include href='./functions-vca-p1.ptx' />
         <xi:include href='./evaluate_functions.ptx' />
+        <xi:include href='./functions-evf-p1.ptx' />
     </chapter>   
