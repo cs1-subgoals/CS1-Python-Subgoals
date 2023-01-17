@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="write_selection_statement" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xml:lang="en-US">
+    <title>Write Selection Statement</title>
+    <introduction>
+    <p>Subgoals for writing conditionals:</p>
+    <ol>
+        <li>
+            <p>Define how many mutually exclusive paths are needed</p>
+        </li>
+        <li>
+            <p>Order paths from most restrictive to least restrictive</p>
+        </li>
+        <li>
+            <p>Write conditional statement with Boolean expression</p>
+        </li>
+        <li>
+            <p>Follow with true path including action in indentation</p>
+        </li>
+        <li>
+            <p>Repeat 3 and 4 until all paths are included</p>
+        </li>
+        <li>
+            <p>(Optional) Follow with else path including action in indentation</p>
+        </li>
+    </ol>
+    <p>You can watch this video or read through the content below it.</p>
+    <p>Problem: Write the Java selection statements to solve the following specifications:</p>
+    <blockquote>
+        <p>If integer variable <c>current</c> is odd, change its value so that it is now 4 times <c>current</c> plus 1; otherwise change its value so that it is now half of <c>current</c> (rounded down when <c>current</c> is odd).</p>
+    </blockquote>
+    </introduction>
+    <subsection xml:id="subsec-op-precSG1">
+        <title>1. Define how many mutually exclusive paths are needed</title>
+        <p>In this case, the problem says to do one action if variable is odd, and a different
+            action otherwise.</p>
+        <p>An integer can only be odd or even, so there are two mutually exclusive paths.</p>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG2">
+        <title>2. Order paths from most restrictive to least restrictive</title>
+        <p>Since there are only two branches, the order does not matter.</p>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG3">
+        <title>3. Write conditional statement with Boolean expression</title>
+        <p>To determine if the <c>current</c> variable is odd, we can check that the remainder
+            (modulo) after dividing by 2 is one:</p>
+        <program language="python">
+            <input>
+                if current % 2 == 1:
+
+            </input>
+        </program>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG4">
+        <title>4. Follow with true path including action in indentation</title>
+        <p>In the True branch, we multiply the variable by 4 and add 1.</p>
+        <program language="python">
+            <input>
+                if current % 2 == 1:
+                current = current * 4 + 1
+
+            </input>
+        </program>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG5">
+        <title>5. Repeat 3 and 4 until all paths are included</title>
+        <p>N/A since there is only the true and else path, which is below.</p>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG6">
+        <title>6. (Optional) Follow with else path including action in indentation</title>
+        <p>In the else branch, we change the value to be half of its current value. We must make
+            sure we keep the result as an integer, so we use integer division.</p>
+        <program language="python">
+            <input>
+                if current % 2 == 1:
+                current = current * 4 + 1
+                else:
+                current //= 2
+
+            </input>
+        </program>
+        <answer>
+        <program language="python">
+            <input>
+                if current % 2 == 1:
+                current = current * 4 + 1
+                else:
+                current //= 2
+
+            </input>
+        </program></answer>
+    </subsection>
+</section>
