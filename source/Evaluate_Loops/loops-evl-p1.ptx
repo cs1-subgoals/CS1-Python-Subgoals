@@ -3,7 +3,6 @@
 <section xml:id="loops-evl-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Loops-WE1-P1</title>
     <subsection>
-        <title>Subgoals for Evaluating a Loop</title>
         <xi:include href='./subgoals_evaluate_loops.ptx' />
     </subsection>
     <transition/>
@@ -68,7 +67,7 @@
                 </choice>
             </choices>
         </exercise>
-        <exercise xml:id="m-Loops-WE_-P1-3">
+        <exercise xml:id="m-Loops-WE_-P1-3"> <!-- insert WE number -->
             <statement>
                 <p>Q3:</p>
                 <program language="python"><input>
@@ -126,7 +125,7 @@
                 </choice>
             </choices>
         </exercise>
-        <exercise xml:id="m-Loops-WE_-P1-5">
+        <exercise xml:id="m-Loops-WE_-P1-5"> <!-- insert WE number -->
             <statement>
                 <p>Q5:</p>
                 <program language="python"><input>

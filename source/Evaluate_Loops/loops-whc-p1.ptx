@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="loops-evl-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<section xml:id="loops-whc-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Loops-WE1-P1</title>
     <subsection>
-        <title>Subgoals for Evaluating a Loop</title>
         <xi:include href='./subgoals_evaluate_loops.ptx' />
     </subsection>
     <transition/>

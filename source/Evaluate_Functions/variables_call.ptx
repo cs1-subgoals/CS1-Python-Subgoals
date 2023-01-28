@@ -1,7 +1,6 @@
 <section xml:id="var_call">
     <title>Variables Call</title>
     <introduction>
-        <title>Subgoals for evaluating a function call:</title>
         <xi:include href='./subgoals_evaluate_functions.ptx' />
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following declarations</p>
