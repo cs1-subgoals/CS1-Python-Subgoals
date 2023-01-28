@@ -2,4 +2,5 @@
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Write Function</title>
         <xi:include href='./average_numbers.ptx' />
+        <xi:include href='./function-avn-p1.ptx' />
     </chapter>
