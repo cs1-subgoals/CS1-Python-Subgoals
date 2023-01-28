@@ -1,0 +1,23 @@
+<title>Subgoals for writing expressions:</title>
+    <p>
+        <ol>
+            <li>
+                <p>Craft name of variable</p>
+            </li>
+            <li>
+                <p>Determine operators, function calls, or method calls that will produce the value of
+                    variable</p>
+            </li>
+            <li>
+                <p>Decide order of operands and operators</p>
+                <ol>
+                    <li>
+                        <p>Operators and operands must be compatible</p>
+                    </li>
+                    <li>
+                        <p>Decompose as necessary</p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </p>

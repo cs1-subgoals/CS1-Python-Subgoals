@@ -3,27 +3,7 @@
 <section xml:id="convert_temperature" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Convert Temperature</title>
     <introduction>
-    <p>Subgoals for writing expressions:</p>
-    <ol>
-        <li>
-            <p>Craft name of variable</p>
-        </li>
-        <li>
-            <p>Determine operators, function calls, or method calls that will produce the value of
-                variable</p>
-        </li>
-        <li>
-            <p>Decide order of operands and operators</p>
-            <ol>
-                <li>
-                    <p>Operators and operands must be compatible</p>
-                </li>
-                <li>
-                    <p>Decompose as necessary</p>
-                </li>
-            </ol>
-        </li>
-    </ol>
+        <xi:include href='./subgoals_write_expression.ptx' />
     <p>You can watch this video or read through the content below it.</p>
     <p>Problem: Write an expression that will convert the float variable <c>fahrenheit</c> to be in
         degrees celsius instead.</p>
