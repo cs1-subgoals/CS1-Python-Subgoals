@@ -1,0 +1,31 @@
+<title>Subgoals for using libraries:</title>
+    <p>
+        <ol>
+            <li>
+                <p>Import module or function (if needed)</p>
+                <ol>
+                    <li>
+                        <p>With alias (optional)</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Determine whether parameters are appropriate for function</p>
+                <ol>
+                    <li>
+                        <p>Number of parameters passed must match function documentation</p>
+                    </li>
+                    <li>
+                        <p>Type of parameters passes must match function documentation</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Determine what the function will return (i.e., data type), print, and/or change state
+                    of arguments and where it will be stored (nowhere, somewhere)</p>
+            </li>
+            <li>
+                <p>Evaluate expression as necessary</p>
+            </li>
+        </ol>
+    </p>
