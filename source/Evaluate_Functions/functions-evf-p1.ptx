@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- TEMPLATE -->
+
+<section xml:id="functions-evf-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Evaluate Functions-WE_-P1</title> <!-- insert WE number -->
+        <subsection>
+            <xi:include href='./subgoals_evaluate_functions.ptx' />
+            <p>Each question below is independent, but they all use this given setup</p>
+        </subsection>
+        <transition/>
+        <subsection>
+            <title>Evaluate Functions-WE_-P1</title> <!-- insert WE number -->
+            <p><term>Given</term></p>
+            <program language="python"><input>
+<!-- variables go here -->
+            </input></program>
+            <exercises>
+                <exercise xml:id="m-Func-WE_-P1-__"> <!-- insert WE number -->
+                    <statement><p>Q1:</p></statement>
+                    <choices>
+                        <choice correct="yes">
+                            <statement><p></p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p></p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Func-WE_-P1-__"> <!-- insert WE number -->
+                    <statement><p>Q2:</p></statement>
+                    <choices>
+                        <choice correct="yes">
+                            <statement><p></p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p></p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+            </exercises>
+        </subsection>
+        <program xml:id="ac-functions-WE_-p1" interactive="activecode" language="python"> <!-- insert WE number -->
+            <input></input>
+        </program>
+    </section>
