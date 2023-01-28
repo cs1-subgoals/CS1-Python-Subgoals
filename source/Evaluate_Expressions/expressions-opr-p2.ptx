@@ -3,7 +3,6 @@
 <section xml:id="expressions-opr-p2" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Evaluate Expressions-WE4-P2</title>
         <subsection>
-            <title>Subgoals for evaluating an assignment statement</title>
             <xi:include href='./subgoals_evaluate_expressions.ptx' />
             <p>For the assignment statements below, either give the new value of the assigned variable, 
                 or explain why the statement is invalid. Each problem is independent of the others 

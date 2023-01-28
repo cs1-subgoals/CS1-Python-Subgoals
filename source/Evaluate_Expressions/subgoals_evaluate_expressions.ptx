@@ -1,34 +1,35 @@
-<p>
-    <ol label="1">
-        <li>
-            <p>Decide order of operations</p>
-            <p>
-                <ol label="i">
-                    <li>
-                        <p>Decompose as necessary</p>
-                    </li>
-                </ol>
-            </p>
-        </li>
-        <li>
-            <p>Determine operator behavior based on operands</p>
-            <p>
-                <ol label="i">
-                    <li>
-                        <p>Operator and operands must be compatible</p>
-                    </li>
-                </ol>
-            </p>
-        </li>
-        <li>
-            <p>Solve arithmetic, expression, or operation</p>
-            <p>
-                <ol label="i">
-                    <li>
-                        <p>Decompose as necessary</p>
-                    </li>
-                </ol>
-            </p>
-        </li>
-    </ol>
-</p>
+<title>Subgoals for evaluating an assignment statement</title>
+    <p>
+        <ol label="1">
+            <li>
+                <p>Decide order of operations</p>
+                <p>
+                    <ol label="i">
+                        <li>
+                            <p>Decompose as necessary</p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+            <li>
+                <p>Determine operator behavior based on operands</p>
+                <p>
+                    <ol label="i">
+                        <li>
+                            <p>Operator and operands must be compatible</p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+            <li>
+                <p>Solve arithmetic, expression, or operation</p>
+                <p>
+                    <ol label="i">
+                        <li>
+                            <p>Decompose as necessary</p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+        </ol>
+    </p>

@@ -3,7 +3,6 @@
 <section xml:id="expressions-bre-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Expressions-WE9-P1</title>
     <subsection>
-        <title>Subgoals for evaluating an assignment statement</title>
         <xi:include href='./subgoals_evaluate_expressions.ptx' />
         <p>For the assignment statements below, give the new value of the assigned variable. 
             Each problem is independent of the others (e.g. Question 2 does not depend on 

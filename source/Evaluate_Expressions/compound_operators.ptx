@@ -3,7 +3,6 @@
 <section xml:id="compound_operators" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Compound Operators</title>
     <introduction>
-        <title>Subgoals for evaluating an expression:</title>
         <xi:include href='./subgoals_evaluate_expressions.ptx' />
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable?</p>
