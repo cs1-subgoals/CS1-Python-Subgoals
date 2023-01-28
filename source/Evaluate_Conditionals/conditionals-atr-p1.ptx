@@ -2,10 +2,9 @@
 
 <!-- TEMPLATE -->
 
-<section xml:id="expressions-btr-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<section xml:id="conditionals-atr-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Evaluate Conditionals-WE_-P1</title> <!-- insert WE number -->
         <subsection>
-            <title>Subgoals for Evaluating Selection Statements</title>
             <xi:include href='./subgoals_evaluate_conditionals.ptx' />
             <p>Each question below is independent, but they all use this given setup</p>
         </subsection>

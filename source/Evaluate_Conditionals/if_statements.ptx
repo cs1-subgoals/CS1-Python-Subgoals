@@ -1,7 +1,6 @@
 <section xml:id="if-stat">
     <title>If Statements</title>
         <introduction>
-        <title>Subgoals for evaluating an expression:</title>
         <xi:include href='./subgoals_evaluate_conditionals.ptx' />
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following declarations:</p>

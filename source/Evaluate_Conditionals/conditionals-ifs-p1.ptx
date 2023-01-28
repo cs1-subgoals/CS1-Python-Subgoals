@@ -3,7 +3,6 @@
 <section xml:id="conditionals-ifs-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Evaluate Conditionals-WE1-P1</title>
         <subsection>
-            <title>Subgoals for Evaluating Selection Statements</title>
             <xi:include href='./subgoals_evaluate_conditionals.ptx' />
         </subsection>
         <transition/>
