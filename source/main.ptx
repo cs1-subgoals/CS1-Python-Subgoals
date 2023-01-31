@@ -31,9 +31,14 @@
     <!--<xi:include href="./ch_first.ptx" />-->
     <!--<xi:include href="./ch_empty.ptx"/>-->
     <xi:include href="Evaluate_Expressions/toctree.ptx"/>
+    <xi:include href="Write_Expressions/toctree.ptx"/>
     <xi:include href="Evaluate_Conditionals/toctree.ptx"/>
+    <xi:include href="Write_Conditional/toctree.ptx"/>
     <xi:include href="Evaluate_Loops/toctree.ptx"/>
+    <xi:include href="Write_Loop/toctree.ptx"/>
+    <xi:include href="Use_Library/toctree.ptx"/>
     <xi:include href="Evaluate_Functions/toctree.ptx"/>
+    <xi:include href="Write_Function/toctree.ptx"/>
     
     <!-- Of course you will want to add more chapters as you proceed-->
 
