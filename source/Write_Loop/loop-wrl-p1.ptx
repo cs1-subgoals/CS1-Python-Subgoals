@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="loop-wrl-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">        
+    <title>WriteLoops-WE5-P1</title>
+        <subsection>
+            <xi:include href='./subgoals_write_loop.ptx' />
+        </subsection>
+        <transition/>
+        <subsection>
+            <title>WriteLoops-WE1-P1</title>
+            <exercises>
+                <exercise xml:id="parsons-WrLoops-WE1-P1-1" indent="show" language="python">
+                    <statement>
+                        <p>Put the code in the right order to create a program that will calculate and print the sum of 10 natural numbers.</p>
+                    </statement>
+                    <blocks>
+                        <block order="5">
+                            <cline>def main(args: [str]):</cline>
+                        </block>
+                        <block order="3">
+                            <cline>      sum = 0</cline>
+                        </block>
+                        <block order="1">
+                            <cline>      for i in range(0, 10):</cline>
+                        </block>
+                        <block order="6">
+                            <cline>         sum += i</cline>
+                        </block>
+                        <block order="2">
+                            <cline>      print(sum)</cline>
+                        </block>
+                        <block order="4">
+                        </block>
+                    </blocks>
+                </exercise>
+                <exercise>
+                    <statement>
+                        <p>Q2: Fill in the blanks in the following code to create a program that will print the even numbers between 1 and 20. <var/>
+                        <var/>
+                        <var/>
+                        <var/>
+                        <var/>
+                    </p>
+                </statement>
+                <setup>
+                    <var>
+                        <program language="python"><input>
+    def main(args: [str]):
+        for ___A___ in ___B___:
+            if (___C___ % ___D___ == ___E___):
+                print(___A___)
+    </input></program>
+                        <line_block>
+                            <line>Blank A: <BlankNode/>
+                            </line>
+                            <line>Blank B: <BlankNode/>
+                            </line>
+                            <line>Blank C: <BlankNode/>
+                            </line>
+                            <line>Blank D: <BlankNode/>
+                            </line>
+                            <line>Blank E: <BlankNode/>
+                            </line>
+                        </line_block>
+                    </var>
+                    <var>
+                        <condition number="1">
+                            <feedback>
+                                <p>Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string="^\s*x\s*$">
+                            <feedback>
+                                <p>Incorrect.</p>
+                            </feedback>
+                        </condition>
+                    </var>
+                    <var>
+                        <condition number="20">
+                            <feedback>
+                                <p>Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string="^\s*x\s*$">
+                            <feedback>
+                                <p>Incorrect.</p>
+                            </feedback>
+                        </condition>
+                    </var>
+                    <var>
+                        <condition string="^\s*i\s*$">
+                            <feedback>
+                                <p>Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string="^\s*x\s*$">
+                            <feedback>
+                                <p>Incorrect.</p>
+                            </feedback>
+                        </condition>
+                    </var>
+                    <var>
+                        <condition number="2">
+                            <feedback>
+                                <p>Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string="^\s*x\s*$">
+                            <feedback>
+                                <p>Incorrect.</p>
+                            </feedback>
+                        </condition>
+                    </var>
+                </setup>
+            </exercise>
+            <exercise xml:id="parsons-WrLoops-WE1-P1-3" indent="show" language="python">
+                <statement>
+                    <p>Put the code in the right order to create a program that will generate an integer between 0 and 10,000 (inclusive), 
+                        print the number, calculate and print the number of digits in the number.</p>
+                </statement>
+                <blocks>
+                    <block order="4">
+                        <cline>import random</cline> 
+                        <cline>def main(args: [str]):</cline>
+                    </block>
+                    <block order="7">
+                        <cline>      x = random.randint(0, 10000)</cline>
+                    </block>
+                    <block order="5">
+                        <cline>      digits = 0</cline>
+                        <cline>      y = x</cline>
+                    </block>
+                    <block order="6">
+                        <cline>      while (y &gt; 0):</cline>
+                    </block>
+                    <block order="3">
+                        <cline>         digits += 1</cline>
+                        <cline>         y = y/10</cline>
+                    </block>
+                    <block order="2">
+                    </block>
+                    <block order="1">
+                        <cline>      print(x + " has " + digits + " digits.")</cline>
+                    </block>
+                    <block order="8">
+                    </block>
+                </blocks>
+            </exercise>
+            <exercise xml:id="parsons-WrLoops-WE1-P1-4" indent="show" language="python">
+                <statement>
+                    <p>Put the code in the right order to create a program that will print out all Armstrong numbers between 1 and 500. 
+                        If the sum of the cubes of each digit of the number is equal to the number itself, then the number is called an 
+                        Armstrong number. For example, 153 = (1*1*1) + (5*5*5) + (3*3*3)</p>
+                </statement>
+                <blocks>
+                    <block order="7">
+                        <cline>import math</cline>
+                        <cline>def main(args: [str]):</cline>
+                    </block>
+                    <block order="3">
+                        <cline>      for i in range (100, 500)</cline>        
+                    </block>
+                    <block order="5">
+                        <cline>          dig1 = i/100</cline>
+                        <cline>          dig2 = (i/10)%10</cline>
+                        <cline>          dig3 = i%10</cline>
+                    </block>
+                    <block order="2">
+                        <cline>          total = math.pow(dig1,3) + math.pow(dig2,3) + math.pow(dig3,3)</cline>
+                    </block>
+                    <block order="8">
+                        <cline>          if (total == i):</cline>
+                    </block>
+                    <block order="1">
+                        <cline>              print(i + " Armstrong number.")</cline>
+                    </block>
+                    <block order="4">
+                    </block>
+                    <block order="6">
+                    </block>
+                </blocks>
+            </exercise>
+        </exercises>
+    </subsection>
+
+    <program xml:id="ac-writeloops-we1-p1" interactive="activecode" language="python">
+        <input></input>
+    </program>
+</section>

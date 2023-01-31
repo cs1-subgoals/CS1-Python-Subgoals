@@ -2,36 +2,9 @@
 
 <section xml:id="use_math" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Use Math</title>
+    <xi:include href='./subgoals_evaluate_loops.ptx' />
     <introduction>
-    <p>Subgoals for using libraries:</p>
-    <ol>
-        <li>
-            <p>Import module or function (if needed)</p>
-            <ol>
-                <li>
-                    <p>With alias (optional)</p>
-                </li>
-            </ol>
-        </li>
-        <li>
-            <p>Determine whether parameters are appropriate for function</p>
-            <ol>
-                <li>
-                    <p>Number of parameters passed must match function documentation</p>
-                </li>
-                <li>
-                    <p>Type of parameters passes must match function documentation</p>
-                </li>
-            </ol>
-        </li>
-        <li>
-            <p>Determine what the function will return (i.e., data type), print, and/or change state
-                of arguments and where it will be stored (nowhere, somewhere)</p>
-        </li>
-        <li>
-            <p>Evaluate expression as necessary</p>
-        </li>
-    </ol>
+    
     <p>You can watch this video or read through the content below it.</p>
     <p>Problem:</p>
     <p>Given the following code:</p>

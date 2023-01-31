@@ -1,39 +1,7 @@
 <section xml:id="while_counter">
     <title>While Counter</title>
         <introduction>
-        <title>Subgoals for evaluating a loop:</title>
-        <p>
-            <ol label="1">
-                <li>
-                    <p>Determine loop components</p>
-                    <p>
-                        <ol label="i">
-                            <li>
-                                <p>Start condition and values</p>
-                            </li>
-                            <li>
-                                <p>
-                                    Iteration variable and/or update condition
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Termination/final condition
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Body that is repeated based on indentation
-                                </p>
-                            </li>
-                        </ol>
-                    </p>
-                </li>
-                <li>
-                    <p>Trace the loop, writing updated values for every iteration or until you identify the pattern</p>
-                </li>
-            </ol>
-        </p>
+        <xi:include href='./subgoals_evaluate_loops.ptx' />
         <p>You can watch this video or read through the content below it.</p>
         <p>Problem: Given the following code, what is the output?</p>
         <program language="python"><input>

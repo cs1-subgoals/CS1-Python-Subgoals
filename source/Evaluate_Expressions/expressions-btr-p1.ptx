@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- TEMPLATE -->
+
+<section xml:id="expressions-btr-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Evaluate Expressions-WE_-P1</title> <!-- insert WE number -->
+        <subsection>
+            <xi:include href='./subgoals_evaluate_expressions.ptx' />
+            <p>For all given problems below indicate if the code is valid or invalid. 
+                Each problem is independent of the others (e.g. Question 2 does not depend 
+                on Question 1, only the &#8220;Given&#8221; code).</p>
+        </subsection>
+        <transition/>
+        <subsection>
+            <title>Expressions-WE_-P1</title> <!-- insert WE number -->
+            <p><term>Given</term></p>
+            <program language="python"><input>
+<!-- variables go here -->
+            </input></program>
+            <exercises>
+                <exercise xml:id="m-Expr-WE_-P1-__"> <!-- insert WE number -->
+                    <statement><p>Q1: </p></statement>
+                    <choices>
+                        <choice correct="yes">
+                            <statement><p></p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p></p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Expr-WE_-P1-__"> <!-- insert WE number -->
+                    <statement><p>Q2: </p></statement>
+                    <choices>
+                        <choice correct="yes">
+                            <statement><p></p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p></p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+            </exercises>
+        </subsection>
+        <program xml:id="ac-express-WE_-p1" interactive="activecode" language="python"> <!-- insert WE number -->
+            <input></input>
+        </program>
+    </section>

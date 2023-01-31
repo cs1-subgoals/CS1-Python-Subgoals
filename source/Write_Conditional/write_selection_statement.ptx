@@ -4,27 +4,7 @@
     xml:lang="en-US">
     <title>Write Selection Statement</title>
     <introduction>
-    <p>Subgoals for writing conditionals:</p>
-    <ol>
-        <li>
-            <p>Define how many mutually exclusive paths are needed</p>
-        </li>
-        <li>
-            <p>Order paths from most restrictive to least restrictive</p>
-        </li>
-        <li>
-            <p>Write conditional statement with Boolean expression</p>
-        </li>
-        <li>
-            <p>Follow with true path including action in indentation</p>
-        </li>
-        <li>
-            <p>Repeat 3 and 4 until all paths are included</p>
-        </li>
-        <li>
-            <p>(Optional) Follow with else path including action in indentation</p>
-        </li>
-    </ol>
+        <xi:include href='./subgoals_write_conditional.ptx' />
     <p>You can watch this video or read through the content below it.</p>
     <p>Problem: Write the Java selection statements to solve the following specifications:</p>
     <blockquote>

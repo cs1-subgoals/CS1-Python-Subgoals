@@ -3,35 +3,7 @@
 <section xml:id="average_numbers" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Average Numbers</title>
     <introduction>
-    <p>Subgoals for writing functions:</p>
-    <ol>
-        <li>
-            <p>Define and initialize global variables</p>
-        </li>
-        <li>
-            <p>Write function header with function name and parameters (must include () even without
-                parameters)</p>
-            <ol>
-                <li>
-                    <p>Optional -- Set default values for parameters</p>
-                </li>
-            </ol>
-        </li>
-        <li>
-            <p>Write function body</p>
-            <ol>
-                <li>
-                    <p>Distinguish between global and local variables based on indentation</p>
-                </li>
-            </ol>
-        </li>
-        <li>
-            <p>Determine what to return, if anything, to call site</p>
-        </li>
-        <li>
-            <p>Call function with appropriate arguments</p>
-        </li>
-    </ol>
+        <xi:include href='./subgoals_write_function.ptx' />
     <p>You can watch this video or read through the content below it.</p>
     <p>Problem: Define a function <c>average3</c> that consumes three integers and produces a new
         integer that is the truncated average of the numbers. Use the function to calculate the

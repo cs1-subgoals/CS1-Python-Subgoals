@@ -1,23 +1,7 @@
 <section xml:id="apply_truth">
     <title>Apply Truthiness</title>
         <introduction>
-        <title>Subgoals for evaluating an expression:</title>
-        <p>
-            <ol label="1">
-                <li>
-                    <p>Diagram which statements go together by indentation</p>
-                </li>
-                <li>
-                    <p>For conditional, determine whether expression is true</p>
-                </li>
-                <li>
-                    <p>If true, follow true branch; If false, follow next elif/else branch or exit conditional if no else branch</p>
-                </li>
-                <li>
-                    <p>Repeat 2 and 3 as necessary</p>
-                </li>
-            </ol>
-        </p>
+        <xi:include href='./subgoals_evaluate_conditionals.ptx' />
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following declarations:</p>
         <program language="python"><input>

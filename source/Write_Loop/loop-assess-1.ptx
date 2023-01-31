@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="loop-assess-1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US"> 
+        <title>Assessment: Writing Loops</title>
+        <subsection>
+            <xi:include href='./subgoals_write_loop.ptx' />
+        </subsection>
+        <transition/>
+        <exercises>
+            <TimedNode line="27" runestone_options="{'nofeedback': None, 'subchapter': 'wrloops-assess1', 'chapter': 'WriteLoops', 'basecourse': 'Subgoals', 'optional': '', 'optclass': '', 'divid': 'assess-wrloops-1', 'qnumber': '', 'question_label': '6.2.1'}" 
+                source="/Users/bmiller/Runestone/books/thinkcspy/Subgoals/_sources/WriteLoops/wrloops-assess1.rst">
+
+            <exercise xml:id="assess-wrloops-1-1">
+            <statement>
+
+            <p>Q1: Given the following code segment:</p>
+            <program language="python"><input>
+x = 1
+while ( /* condition */ ):
+   if (x % 2 == 0):
+      print(x + "  ")
+   x = x + 2
+</input></program>
+            <p>Consider the following conditions to replace <c>/* condition */</c>  in the code segment:</p>
+            <p><ol label="I">
+                <li>
+                    <p>x &lt; 0</p>
+                </li>
+                <li>
+                    <p>x &lt;= 1</p>
+                </li>
+                <li>
+                    <p>x &lt; 10</p>
+                </li>
+            </ol></p>
+            <p>For which of the conditions will nothing be printed?</p>
+
+        </statement>
+        <choices>
+            <choice>
+                <statement><p>I only</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>II only</p></statement>
+                <feedback> <p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>I and II only</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>I and III only</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice correct="yes">
+                <statement><p>I, II and III</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+        </choices>
+    </exercise>
+    <exercise xml:id="assess-wrloops-1-2">
+        <statement>
+            <p>Q2: Given the following code segment which is intended to print the number of integers that evenly divide the integer inputVal. (You may assume that inputVal &gt; 0.)</p>
+            <program language="python"><input>
+count = 0
+inputVal = /* user entered value */
+for k in range(1, inputVal):
+   if ( /* condition */ ):
+      count++;
+print(count)
+
+Which of the following can be used to replace /* condition */ so that numDivisors will work as intended?
+</input></program>
+
+        </statement>
+        <choices>
+            <choice correct="yes">
+                <statement><p>inputVal % k == 0</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>k % inputVal == 0</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>inputVal % k != 0</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>inputVal / k == 0</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>k / inputVal &gt; 0</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+        </choices>
+    </exercise>
+    <exercise xml:id="assess-wrloops-1-3">
+        <statement>
+            <p>Q3: Which of the following code segments will produce the output:</p>
+            <p>1   4   7   10   13   16   19</p>
+            <p><ol label="I">
+                <li>
+                </li>
+            </ol></p>
+            <program language="python"><input>
+k = 1
+while (k &lt; 20):
+   if (k % 3 == 1):
+      print(k + "  ")
+   k = k + 3
+</input></program>
+            <p><ol label="I">
+                <li>
+                </li>
+            </ol></p>
+            <program language="python"><input>
+for k in range(1, 19):
+   if (k % 3 == 1):
+      print(k + "  ")
+</input></program>
+            <p><ol label="I">
+                <li>
+                </li>
+            </ol></p>
+            <program language="python"><input>
+k = 1
+while (k &lt; 20):
+   print(k + "  ")
+   k = k + 3
+</input></program>
+
+        </statement>
+        <choices>
+            <choice>
+                <statement><p>I only</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>II only</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>I and II only</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>I and III only</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice correct="yes">
+                <statement><p>I, II and III</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+        </choices>
+    </exercise>
+    <exercise xml:id="assess-wrloops-1-4">
+        <statement>
+            <p>Q4: What is the maximum number of times &#8220;Hello&#8221; can be printed?</p>
+            <program language="python"><input>
+k = // a random number such that 1 &lt;= k &lt;= n 
+for p in range(2, k):
+    for r in range(1, k-1):
+      print("Hello")
+</input></program>
+
+        </statement>
+        <choices>
+            <choice>
+                <statement><p>2</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>n - 1</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>n - 2</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice correct="yes">
+                <statement><p>(n - 1) * (n - 1)</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+            <choice>
+                <statement><p>n * n</p></statement>
+                <feedback><p/></feedback>
+            </choice>
+        </choices>
+        </exercise>
+        </TimedNode>
+    </exercises>
+    </section>

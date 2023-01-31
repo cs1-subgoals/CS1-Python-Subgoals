@@ -2,4 +2,5 @@
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Write Conditional</title>
         <xi:include href='./write_selection_statement.ptx' />
+        <xi:include href='./conditional-wss-p1.ptx' />
     </chapter>
