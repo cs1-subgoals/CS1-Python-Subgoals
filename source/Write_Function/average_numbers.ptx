@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="average_numbers" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Average Numbers</title>
+    <introduction>
+    <p>Subgoals for writing functions:</p>
+    <ol>
+        <li>
+            <p>Define and initialize global variables</p>
+        </li>
+        <li>
+            <p>Write function header with function name and parameters (must include () even without
+                parameters)</p>
+            <ol>
+                <li>
+                    <p>Optional -- Set default values for parameters</p>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p>Write function body</p>
+            <ol>
+                <li>
+                    <p>Distinguish between global and local variables based on indentation</p>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p>Determine what to return, if anything, to call site</p>
+        </li>
+        <li>
+            <p>Call function with appropriate arguments</p>
+        </li>
+    </ol>
+    <p>You can watch this video or read through the content below it.</p>
+    <p>Problem: Define a function <c>average3</c> that consumes three integers and produces a new
+        integer that is the truncated average of the numbers. Use the function to calculate the
+        average of the numbers <c>100</c>, <c>300</c>, and <c>150</c>.</p>
+    </introduction>
+    <subsection xml:id="subsec-op-precSG1">
+        <title>1. Define and initialize global variables</title>
+        <p>This function does not require any global variables.</p>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG2">
+        <title>2. Write function header with function name and parameters (must include () even
+            without parameters)</title>
+        <p>We only know that the three parameters are integers, so their names are fairly generic.</p>
+        <program language="python">
+            <input>
+                def average3(num1, num2, num3):
+                pass
+
+            </input>
+        </program>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG3">
+        <title>3. Write function body</title>
+        <program language="python">
+            <input>
+                def average3(num1, num2, num3):
+                result = (num1 + num2 + num3) // 3
+
+            </input>
+        </program>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG4">
+        <title>4. Determine what to return, if anything, to call site</title>
+        <p>The function is meant to return the result of the expression, so that is what is
+            returned.</p>
+        <program language="python">
+            <input>
+                def average3(num1, num2, num3):
+                result = (num1 + num2 + num3) // 3
+                return result
+
+            </input>
+        </program>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG5">
+        <title>5. Call function with appropriate arguments</title>
+        <p>We can call the function with the desired arguments:</p>
+        <program language="python">
+            <input>
+                average3(100, 300, 150)
+
+            </input>
+        </program>
+        <answer>
+        <p>We must also remember to print the result, if we want to see the final result.</p>
+        <program language="python">
+            <input>
+                def average3(num1, num2, num3):
+                result = (num1 + num2 + num3) // 3
+                return result
+
+                print(average3(100, 300, 150))
+
+            </input>
+        </program>
+        </answer>
+    </subsection>
+</section>

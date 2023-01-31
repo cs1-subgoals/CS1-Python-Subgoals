@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="convert_temperature" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Convert Temperature</title>
+    <introduction>
+    <p>Subgoals for writing expressions:</p>
+    <ol>
+        <li>
+            <p>Craft name of variable</p>
+        </li>
+        <li>
+            <p>Determine operators, function calls, or method calls that will produce the value of
+                variable</p>
+        </li>
+        <li>
+            <p>Decide order of operands and operators</p>
+            <ol>
+                <li>
+                    <p>Operators and operands must be compatible</p>
+                </li>
+                <li>
+                    <p>Decompose as necessary</p>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <p>You can watch this video or read through the content below it.</p>
+    <p>Problem: Write an expression that will convert the float variable <c>fahrenheit</c> to be in
+        degrees celsius instead.</p>
+    </introduction>
+    <subsection xml:id="subsec-op-precSG1">
+        <title>1. Craft name of variable</title>
+        <p>Since the original variable was named <c>fahrenheit</c>, a corresponding name for the
+            result variable might be <c>celsius</c>.</p>
+        <program language="python">
+            <input>
+                celsius = ___
+
+            </input>
+        </program>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG2">
+        <title>2. Determine operators, function calls, or method calls that will produce the value
+            of variable</title>
+        <p>The formula for converting fahrenheit to celsius is:</p>
+        <blockquote>
+            <p>Subtract 32 (<c>-</c>) Multiply by 5 (<c>*</c>) Divide by 9 (<c>/</c>)</p>
+        </blockquote>
+        <p>Therefore, we will use those three operators.</p>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG3">
+        <title>3. Decide order of operands and operators</title>
+        <p>The subtraction must occur first, before the multiplication, so we wrap that part of the
+            expression in parentheses.</p>
+        <program language="python">
+            <input>
+                (fahrenheit - 32)
+
+            </input>
+        </program>
+        <p>The multiplication and division have the same priority and are transitive, so we can
+            leave them in the regular order.</p>
+        <program language="python">
+            <input>
+                (fahrenheit -32) * 5 / 9
+
+            </input>
+        </program>
+        <answer>
+        <program language="python">
+            <input>
+                celsius = (fahrenheit -32) * 5 / 9
+
+            </input>
+        </program>
+        </answer>
+    </subsection>
+</section>

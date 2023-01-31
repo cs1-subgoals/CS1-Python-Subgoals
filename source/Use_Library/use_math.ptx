@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="use_math" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Use Math</title>
+    <introduction>
+    <p>Subgoals for using libraries:</p>
+    <ol>
+        <li>
+            <p>Import module or function (if needed)</p>
+            <ol>
+                <li>
+                    <p>With alias (optional)</p>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p>Determine whether parameters are appropriate for function</p>
+            <ol>
+                <li>
+                    <p>Number of parameters passed must match function documentation</p>
+                </li>
+                <li>
+                    <p>Type of parameters passes must match function documentation</p>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p>Determine what the function will return (i.e., data type), print, and/or change state
+                of arguments and where it will be stored (nowhere, somewhere)</p>
+        </li>
+        <li>
+            <p>Evaluate expression as necessary</p>
+        </li>
+    </ol>
+    <p>You can watch this video or read through the content below it.</p>
+    <p>Problem:</p>
+    <p>Given the following code:</p>
+    <program language="python">
+        <input>
+            a_number = int(input(&quot;What number do you want to know the length of?&quot;))
+
+        </input>
+    </program>
+    <p>Use the <c>log10</c> function of the built-in <c>math</c> library to calculate the number of
+        digits in a number taken from the user.</p>
+    </introduction>
+    <subsection xml:id="subsec-op-precSG1">
+        <title>1. Import module or function (if needed)</title>
+        <p>First, we need to import the desired library, which is named <c>math</c>. We do not need
+            to alias the name because <c>math</c> is already short and descriptive.</p>
+        <program language="python">
+            <input>
+                import math
+
+            </input>
+        </program>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG2">
+        <title>2. Determine whether parameters are appropriate for function</title>
+        <p>According to the documentation, the <c>log10</c> function consumes <c>x</c>, which is an
+            integer.</p>
+        <p>
+            <image source="Use_Library/Figures/math_log10_docs.png" width="90%"/>
+        </p>
+        <p>That integer is the value we will get from the user.</p>
+        <program language="python">
+            <input>
+                math.log10(a_number)
+
+            </input>
+        </program>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG3">
+        <title>3. Determine what the function will return (i.e., data type), print, and/or change
+            state of arguments and where it will be stored (nowhere, somewhere)</title>
+        <p>The function will return the base-10 logarithm of X, which will tell us the number of
+            digits required. Since we need to print the result, we'll need to store the function
+            call's result in a variable <c>digits</c>.</p>
+        <program language="python">
+            <input>
+                digits = math.log10(a_number)
+
+            </input>
+        </program>
+    </subsection>
+    <subsection xml:id="subsec-op-precSG4">
+        <title>4. Evaluate expression as necessary</title>
+        <p>We then finish the program by printing:</p>
+        <program language="python">
+            <input>
+                print(digits)
+
+            </input>
+        </program>
+        <answer>
+        <p>The completed program:</p>
+        <program language="python">
+            <input>
+                import math
+
+                a_number = int(input(&quot;What number do you want to know the length of?&quot;))
+                digits = math.log10(a_number)
+                print(digits)
+
+            </input>
+        </program>
+        </answer>
+    </subsection>
+</section>
