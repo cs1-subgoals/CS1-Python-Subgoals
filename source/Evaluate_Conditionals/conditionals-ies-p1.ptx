@@ -26,7 +26,7 @@ rho = 0.0
                     <statement><p>Q6: What is the output of the following code?</p>
                         <program language="python"><input>
 x = 0
-if (x = 0):  # look closely!
+if x = 0:  # look closely!
     print("0 is true")
 else:
     print("0 is false")
