@@ -2,8 +2,8 @@
 
 <section xml:id="expressions-bkn-p2" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Expressions-WE2-P2</title>
-    <subsection>
-        <xi:include href='./subgoals_evaluate_expressions.ptx' />
+    <xi:include href='./subgoals_evaluate_expressions.ptx' />
+        <subsection>
         <p>For the assignment statements below, either give the new value of the assigned variable,
             or enter &#8220;invalid&#8221; if the statement would result in a error.
             Each problem is independent of the others (e.g. Question 2

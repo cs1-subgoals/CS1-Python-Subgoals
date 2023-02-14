@@ -2,9 +2,8 @@
 
 <section xml:id="expressions-abo-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Expressions-WE8-P1</title>
-
+    <xi:include href='./subgoals_evaluate_expressions.ptx' />
     <subsection>
-        <xi:include href='./subgoals_evaluate_expressions.ptx' />
         <p>For all given problems below indicate if the code is valid or invalid. Each problem is
             independent of the others (e.g. Question 2 does not depend on Question 1, only the
             &#8220;Given&#8221; code).</p>

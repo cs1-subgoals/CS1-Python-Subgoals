@@ -2,8 +2,8 @@
 
 <section xml:id="assign_bools" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Assign Booleans</title>
-    <introduction>
-        <xi:include href='./subgoals_evaluate_expressions.ptx' />
+    <xi:include href='./subgoals_evaluate_expressions.ptx' />
+    <subsection>
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable?</p>
         <program language="python"><input>
@@ -13,7 +13,7 @@ gamma = 5
 
 result = beta &lt;= alpha
 </input></program>
-    </introduction>
+    </subsection>
     <subsection xml:id="subsec-boolSG1">
         <title>SG1: Decide order of operations</title>
         <p>There is only a single operator, the <c>&lt;=</c> (less than or equal to operator), so that is the only one that needs to be evaluated.</p>

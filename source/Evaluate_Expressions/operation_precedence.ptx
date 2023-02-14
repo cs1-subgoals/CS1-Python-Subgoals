@@ -2,8 +2,8 @@
 
 <section xml:id="operation_precedence" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Operation Precedence</title>
-    <introduction>
-        <xi:include href='./subgoals_evaluate_expressions.ptx' />
+    <xi:include href='./subgoals_evaluate_expressions.ptx' />
+    <subsection>
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable?</p>
         <program language="python"><input>
@@ -17,7 +17,7 @@ kappa = 3.0
 gamma = delta / (alpha + beta) % alpha
 <!--result = beta <= alpha This line is causing an error, below too, so appears to be with the <= characters-->
 </input></program>
-</introduction>
+</subsection>
 <subsection xml:id="subsec-op-precSG1">
     <title>SG1: Decide order of operations</title>
     <p>The expression is the right-hand-side (RHS) of the statement: <c> delta /(alpha + beta) % alpha</c>. In this expression, the parentheses have the highest priority, so the addition inside of the parentheses will be evaluated first. Then, since division and modulo have the same priority, the division with <c>delta</c> will occur next, with the result module the final <c>alpha</c></p>

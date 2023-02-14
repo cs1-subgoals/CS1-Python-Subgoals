@@ -2,8 +2,8 @@
 
 <section xml:id="basic_op_prec" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Basic Operation Precedence</title>
-        <introduction>
-        <xi:include href='./subgoals_evaluate_expressions.ptx' />
+    <xi:include href='./subgoals_evaluate_expressions.ptx' />    
+    <subsection>
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable? Note any possible side effects.</p>
         <program language="python"><input>
@@ -16,7 +16,7 @@ kappa = 2.0
 
 mu = alpha / kappa + delta
 </input></program>
-    </introduction>
+    </subsection>
     <subsection xml:id="subsec-bopSG1">
         <title>SG1: Decide order of operations</title>
         <p>The expression is the right-hand-side (RHS) of the statement: <c>alpha / kappa + delta</c>. In this expression, division has a higher precedence than summation, so we first evaluate <c>alpha / kappa</c>. Then, we will evaluate the addition of <c>delta</c> to that result.</p>

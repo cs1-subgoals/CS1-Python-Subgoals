@@ -2,8 +2,8 @@
 
 <section xml:id="boolean_truthiness" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Boolean Truthiness</title>
-    <introduction>
-        <xi:include href='./subgoals_evaluate_expressions.ptx' />
+    <xi:include href='./subgoals_evaluate_expressions.ptx' />
+    <subsection>
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable?</p>
         <program language="python"><input>
@@ -12,7 +12,7 @@ beta = 1
 gamma = 5
 <!--result = alpha > beta or gamma problem with > operand??-->     
 </input></program>
-</introduction>
+</subsection>
 <subsection xml:id="subsec-boolean-truthSG1"> 
     <title>SG1: Decide order of operations</title>
     <p>The two operators in this expression are the <c>></c> and <c>or</c> (boolean logical OR). The <c>or</c> operator has a very low precedence, much lower than any of the comparison operators. Therefore, the comparison will be evaluated first, followed by the logical <c>or</c>.</p> 
