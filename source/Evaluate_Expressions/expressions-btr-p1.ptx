@@ -18,7 +18,7 @@
 <!-- variables go here -->
             </input></program>
             <exercises>
-                <exercise xml:id="m-Expr-WE_-P1-__"> <!-- insert WE number -->
+                <exercise xml:id="m-Expr-WE10_-P1-75"> <!-- insert WE number -->
                     <statement><p>Q1: </p></statement>
                     <choices>
                         <choice correct="yes">
@@ -31,7 +31,7 @@
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE_-P1-__"> <!-- insert WE number -->
+                <exercise xml:id="m-Expr-WE10_-P1-76"> <!-- insert WE number -->
                     <statement><p>Q2: </p></statement>
                     <choices>
                         <choice correct="yes">
@@ -46,7 +46,7 @@
                 </exercise>
             </exercises>
         </subsection>
-        <program xml:id="ac-express-WE_-p1" interactive="activecode" language="python"> <!-- insert WE number -->
+        <program xml:id="ac-express-WE10_-p1-77" interactive="activecode" language="python"> <!-- insert WE number -->
             <input></input>
         </program>
     </section>
