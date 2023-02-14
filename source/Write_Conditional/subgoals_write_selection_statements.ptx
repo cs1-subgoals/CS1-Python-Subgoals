@@ -1,6 +1,6 @@
 <title>Subgoals for Writing Selection Statements</title>
             <p><term>If Statement</term></p>
-            <p><ol label="1">
+            <p><ol marker="1">
                 <li>
                     <p>Define how many mutually exclusive paths are needed</p>
                 </li>
@@ -21,7 +21,7 @@
                 </li>
             </ol></p>
             <p><term>OR Switch Statement</term></p>
-            <p><ol label="1">
+            <p><ol marker="1">
                 <li>
                     <p>Determine variable / expression for mutually exclusive ranges</p>
                 </li>

@@ -1,6 +1,6 @@
 <title>Subgoals for evaluating a function call:</title>
     <p>
-        <ol label="1">
+        <ol marker="1">
             <li>
                 <p>Create stack frame for global variabless</p>
             </li>

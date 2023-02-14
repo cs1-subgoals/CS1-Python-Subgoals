@@ -1,13 +1,13 @@
 <title>Subgoals for Evaluating a Loop</title>
     <p>
-        <ol label="1">
+        <ol marker="1">
             <li>
                 <p>Diagram which statements go together.</p>
             </li>
             <li>
                 <p>Define and initialize variables</p>
                 <p>
-                    <ol label="a">
+                    <ol marker="a">
                         <li>
                             <p>Determine the start condition.</p>
                         </li>
@@ -26,7 +26,7 @@
             <li>
                 <p>Trace the loop.</p>
                 <p>
-                    <ol label="a">
+                    <ol marker="a">
                         <li>
                             <p>For every iteration of the loop, write down the values.</p>
                         </li>

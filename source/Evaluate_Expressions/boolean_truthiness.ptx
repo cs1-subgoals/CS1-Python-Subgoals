@@ -23,7 +23,7 @@ gamma = 5
 </subsection>
 <subsection xml:id="subsec-boolean-truthSG3">
     <title>SG3: Solve arithmetic, expression, or operation</title>      
-        <ol label="1">
+        <ol>
             <li>
                 <p>In the first comparison, <c>alpha</c> is substituted for <c>0</c> and <c>beta</c> is substituted for <c>1</c>. Then, the <c>></c> determines if <c>0</c> is greater than <c>1</c>, which it is not. Therefore, the expression evaluates to <c>False</c>.</p>
                 <p>The boolean value <c>False</c> is used as the right operand. Each operand will be checked from left to right, with the result being the first operand that evaluates to <c>True</c> according to the rules of Truthiness. Since <c>False</c> is nota value that evaluates to True in truthiness rules, the second operand is checked. The value <c>5</c> is a Truthy value (any non-zero integer is considered True for the purposes of Truthiness), so <c>5</c> is the value that is assigned to <c>result</c>.</p>

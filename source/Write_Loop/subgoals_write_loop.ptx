@@ -1,8 +1,8 @@
 <title>Subgoals for Writing a Loop</title>
-            <p><ol label="1">
+            <p><ol marker="1">
                 <li>
                     <p>Determine purpose of loop</p>
-                    <p><ol label="a">
+                    <p><ol marker="a">
                         <li>
                             <p>Pick a loop structure (while, for, do_while)</p>
                         </li>
@@ -13,7 +13,7 @@
                 </li>
                 <li>
                     <p>Determine termination condition</p>
-                    <p><ol label="a">
+                    <p><ol marker="a">
                         <li>
                             <p>Invert termination condition to continuation condition</p>
                         </li>
@@ -21,7 +21,7 @@
                 </li>
                 <li>
                     <p>Write the loop body</p>
-                    <p><ol label="a">
+                    <p><ol marker="a">
                         <li>
                             <p>Update Loop Control Variable to reach termination</p>
                         </li>
