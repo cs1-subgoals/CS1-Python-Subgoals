@@ -34,7 +34,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -43,7 +43,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -56,14 +56,14 @@ y = 6
     <exercise xml:id="m-Expr-WE8-P1-53">
         <statement>
 
-            <p>Q53: result  = x + 2 &lt; y;</p>
+            <p>Q53: result  = x + 2 &lt; y</p>
 
         </statement>
 <choices>
 
             <choice>
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -72,7 +72,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -92,7 +92,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -101,7 +101,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -121,7 +121,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -130,7 +130,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -150,7 +150,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -159,7 +159,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -179,7 +179,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -188,7 +188,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -208,7 +208,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -217,7 +217,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -237,7 +237,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -246,7 +246,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -266,7 +266,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -275,7 +275,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -295,7 +295,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -304,7 +304,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -324,7 +324,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -333,7 +333,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -353,7 +353,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -362,7 +362,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -382,7 +382,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -391,7 +391,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -411,7 +411,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -420,7 +420,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -440,7 +440,7 @@ y = 6
 
             <choice>
                 <statement>
-                    <p>true</p>
+                    <p>True</p>
                 </statement>
                 <feedback>
                     <p/>
@@ -449,7 +449,7 @@ y = 6
 
             <choice correct="yes">
                 <statement>
-                    <p>false</p>
+                    <p>False</p>
                 </statement>
                 <feedback>
                     <p/>

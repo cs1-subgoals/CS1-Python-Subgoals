@@ -20,11 +20,11 @@
                     <statement><p>Q67: Line #1</p></statement>
                     <choices>
                         <choice>
-                            <statement><p>true</p></statement>
+                            <statement><p>True</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice correct="yes">
-                            <statement><p>false</p></statement>
+                            <statement><p>False</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
@@ -33,11 +33,11 @@
                     <statement><p>Q68: Line #2</p></statement>
                     <choices>
                         <choice>
-                        <statement><p>true</p></statement>
+                        <statement><p>True</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice correct="yes">
-                            <statement><p>false</p></statement>
+                            <statement><p>False</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
@@ -46,11 +46,11 @@
                     <statement><p>Q69: Line #3</p></statement>
                     <choices>
                         <choice>
-                            <statement><p>true</p></statement>
+                            <statement><p>True</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice correct="yes">
-                            <statement><p>false</p></statement>
+                            <statement><p>False</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
@@ -59,11 +59,11 @@
                     <statement><p>Q70: Line #4</p></statement>
                     <choices>
                         <choice>
-                            <statement><p>true</p></statement>
+                            <statement><p>True</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice correct="yes">
-                            <statement><p>false</p></statement>
+                            <statement><p>False</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
@@ -72,11 +72,11 @@
                     <statement><p>Q71: Line #5</p></statement>
                     <choices>
                         <choice correct="yes">
-                            <statement><p>true</p></statement>
+                            <statement><p>True</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice>
-                            <statement><p>false</p></statement>
+                            <statement><p>False</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
@@ -85,11 +85,11 @@
                     <statement><p>Q72: Line #6</p></statement>
                     <choices>
                         <choice correct="yes">
-                            <statement><p>true</p></statement>
+                            <statement><p>True</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice>
-                            <statement><p>false</p></statement>
+                            <statement><p>False</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
@@ -98,11 +98,11 @@
                     <statement><p>Q73: Line #7</p></statement>
                     <choices>
                         <choice>
-                            <statement><p>true</p></statement>
+                            <statement><p>True</p></statement>
                             <feedback><p/> </feedback>
                         </choice>
                         <choice correct="yes">
-                            <statement><p>false</p></statement>
+                            <statement><p>False</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
@@ -111,11 +111,11 @@
                     <statement><p>Q74: Line #8</p></statement>
                     <choices>
                         <choice correct="yes">
-                            <statement><p>true</p></statement>
+                            <statement><p>True</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice>
-                            <statement><p>false</p></statement>
+                            <statement><p>False</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
