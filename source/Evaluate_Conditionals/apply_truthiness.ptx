@@ -1,4 +1,4 @@
-<section xml:id="apply_truth">
+<section xml:id="apply_truth"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Apply Truthiness</title>
         <xi:include href='./subgoals_evaluate_conditionals.ptx' />
         <subsection>

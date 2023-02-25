@@ -1,4 +1,4 @@
-<section xml:id="if-else-stat">
+<section xml:id="if-else-stat"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>If Else Statements</title>
         <xi:include href='./subgoals_evaluate_conditionals.ptx' />
         <subsection>

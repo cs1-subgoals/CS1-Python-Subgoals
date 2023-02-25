@@ -15,7 +15,10 @@
             <title>Expressions-WE10-P1</title> <!-- insert WE number -->
             <p><term>Given</term></p>
             <program language="python"><input>
-<!-- variables go here -->
+alpha = 10
+beta = 0
+gamma = -.1
+delta = 0.0
             </input></program>
             <exercises>
                 <exercise xml:id="m-Expr-WE10_-P1-75"> <!-- insert WE number -->

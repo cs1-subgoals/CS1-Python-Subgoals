@@ -1,4 +1,4 @@
-<section xml:id="while_counter">
+<section xml:id="while_counter"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>While Counter</title>
         <xi:include href='./subgoals_evaluate_loops.ptx' />
         <subsection>
