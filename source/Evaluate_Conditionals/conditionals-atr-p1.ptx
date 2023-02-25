@@ -4,8 +4,8 @@
 
 <section xml:id="conditionals-atr-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Evaluate Conditionals-WE_-P1</title> <!-- insert WE number -->
+        <xi:include href='./subgoals_evaluate_conditionals.ptx' />
         <subsection>
-            <xi:include href='./subgoals_evaluate_conditionals.ptx' />
             <p>Each question below is independent, but they all use this given setup</p>
         </subsection>
         <transition/>
@@ -29,7 +29,7 @@
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Cond-WE_-P1-__"> <!-- insert WE number -->
+                <exercise xml:id="m-Cond-WE_-P2-__"> <!-- insert WE number -->
                     <statement><p>Q2:</p></statement>
                     <choices>
                         <choice correct="yes">

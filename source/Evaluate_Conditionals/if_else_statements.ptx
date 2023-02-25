@@ -1,7 +1,7 @@
 <section xml:id="if-else-stat">
     <title>If Else Statements</title>
-        <introduction>
         <xi:include href='./subgoals_evaluate_conditionals.ptx' />
+        <subsection>
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following declarations:</p>
         <program language="python"><input>
@@ -23,7 +23,7 @@ if alpha > delta:
 else:
     gamma = alpha + 5
 </input></program>
-    </introduction>
+    </subsection>
     <subsection xml:id="subsec-ifel1">
         <title>1. Diagram which statements go together by indentation</title>
         <p>The first indented line (<c>eta = alpha + 2</c>) goes with the <c>if</c> statement, and the second indented line (<c>gamma = alpha + 5</c>) goes with the <c>else</c> statement.</p>

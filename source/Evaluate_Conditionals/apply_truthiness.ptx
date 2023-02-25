@@ -1,7 +1,7 @@
 <section xml:id="apply_truth">
     <title>Apply Truthiness</title>
-        <introduction>
         <xi:include href='./subgoals_evaluate_conditionals.ptx' />
+        <subsection>
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following declarations:</p>
         <program language="python"><input>
@@ -23,7 +23,7 @@ if alpha and beta:
 else:
     print("Neither")
 </input></program>
-    </introduction>
+    </subsection>
     <subsection xml:id="subsec-aptru1">
         <title>1. Diagram which statements go together by indentation</title>
         <p>In this diagram, the first thing to note is the outer <c>if/else</c> statement highlighted in blue.</p>
