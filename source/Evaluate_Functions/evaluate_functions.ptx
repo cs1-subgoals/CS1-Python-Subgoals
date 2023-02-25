@@ -1,5 +1,6 @@
 <section xml:id="eval_funcs">
     <title>Evaluate Functions</title>
+    <xi:include href='./subgoals_evaluate_functions.ptx' />
     <subsection>
         <title>Simple Call</title>
         <p>
