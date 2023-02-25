@@ -2,28 +2,24 @@
 
 <section xml:id="use_math" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Use Math</title>
-    <xi:include href='./subgoals_evaluate_loops.ptx' />
-    <introduction>
-    
+    <xi:include href='./subgoals_use_lib.ptx' />
+    <subsection>
     <p>You can watch this video or read through the content below it.</p>
     <p>Problem:</p>
     <p>Given the following code:</p>
     <program language="python">
-        <input>
-            a_number = int(input(&quot;What number do you want to know the length of?&quot;))
-
-        </input>
+        <input>a_number = int(input(&quot;What number do you want to know the length of?&quot;))</input>
     </program>
     <p>Use the <c>log10</c> function of the built-in <c>math</c> library to calculate the number of
         digits in a number taken from the user.</p>
-    </introduction>
+    </subsection>
     <subsection xml:id="subsec-use-mathSG1">
         <title>1. Import module or function (if needed)</title>
         <p>First, we need to import the desired library, which is named <c>math</c>. We do not need
             to alias the name because <c>math</c> is already short and descriptive.</p>
         <program language="python">
             <input>
-                import math
+import math
 
             </input>
         </program>
