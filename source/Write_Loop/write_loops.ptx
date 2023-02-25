@@ -53,38 +53,32 @@
             if so, we must update the <c>maximum</c>. This check is unnecessary during the first
             iteration of the loop, but is critical on every subsequent iteration.</p>
         <program language="python">
-            <input>
-                while user_input != -1:
-                if user_input &gt; maximum:
-                maximum = user_input
-
-            </input>
+            <input>while user_input != -1:
+    if user_input &gt; maximum:
+        maximum = user_input</input>
         </program>
         <p>We then need to update the <c>user_input</c> loop control variable so that the loop has a
             chance to end at some point based on the user's value.</p>
         <program language="python">
-            <input>
-                while user_input != -1:
-                if user_input &gt; maximum:
-                maximum = user_input
-                user_input = int(input(&quot;Enter a value, enter -1 to end.&quot;))
+            <input>while user_input != -1:
+    if user_input &gt; maximum:
+        maximum = user_input
+    user_input = int(input(&quot;Enter a value, enter -1 to end.&quot;))
 
             </input>
         </program>
         <answer>
         <program language="python">
             <input>
-                user_input = int(input(&quot;Enter a value, enter -1 to end.&quot;))
-                maximum = user_input
+user_input = int(input(&quot;Enter a value, enter -1 to end.&quot;))
+maximum = user_input
 
-                while user_input != -1:
-                if user_input &gt; maximum:
-                maximum = user_input
-                user_input = int(input(&quot;Enter a value, enter -1 to end.&quot;))
+while user_input != -1:
+    if user_input &gt; maximum:
+        maximum = user_input
+    user_input = int(input(&quot;Enter a value, enter -1 to end.&quot;))
 
-                print(maximum)
-
-            </input>
+print(maximum)</input>
         </program>
         </answer>
     </subsection>

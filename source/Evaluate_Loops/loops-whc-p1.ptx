@@ -12,9 +12,9 @@
                 <p>Q1: What is the output of the following loop?</p>
                 <program language="python"><input>
 i = 0
-while (i &lt; 3): 
-   print("hi")
-   i += 1
+while i &lt; 3: 
+    print("hi")
+    i += 1
                 </input></program>
                 <figure align=""><image source="Evaluate_Loops/Figures/LoopsQ1.png" width="50%" 
                     alt="A is hi; B is hi0 h1 h2 (multiline); C is hi hi hi (multiline); D is hi hi hi single line); E is hi hi hi hi (multiline)"/></figure>
@@ -47,9 +47,9 @@ while (i &lt; 3):
                 <p>Q2: What is the output of the following loop?</p>
                 <program language="python"><input>
 i = 10
-while (i &gt; 1):
-   print(i + " ")
-   i-=1
+while i &gt; 1:
+    print(i + " ")
+    i-=1
                 </input></program>
             </statement>
             <choices>
@@ -80,9 +80,9 @@ while (i &gt; 1):
                 <p>Q3: What is the output of the following loop?</p>
                 <program language="python"><input>
 i = 10
-while (i &gt; 1):
-   print(i + " ")
-   i++
+while i &gt; 1:
+    print(i + " ")
+    i+= 1
                 </input></program>
             </statement>
             <choices>
@@ -114,9 +114,9 @@ while (i &gt; 1):
                 <program language="python"><input>
 i = 0
 total = 0
-while (i &lt;= 50):
-   total += i
-   i += 5
+while i &lt;= 50:
+    total += i
+    i += 5
 print(i)
                 </input></program>
             </statement>
@@ -148,11 +148,11 @@ print(i)
                 <p>Q5: What is the value of <c>counter</c> after the execution of the folowing code?</p>
                 <program language="python"><input>
 counter = 0
-while (counter &gt; 100): 
-   if (counter % 2 == 1):
-      print(counter + " is odd.")
-   else:
-      print(counter + " is even.")
+while counter &gt; 100: 
+    if counter % 2 == 1:
+        print(counter + " is odd.")
+    else:
+        print(counter + " is even.")
 counter += 1
 print(counter)
                 </input></program>

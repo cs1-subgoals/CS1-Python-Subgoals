@@ -67,7 +67,7 @@
                 <block order="1">
                     <cline>import random</cline>
                     <cline>x = 1500 + random.randint(0, 1500)</cline>
-                    <cline>result = false</cline>
+                    <cline>result = False</cline>
                 </block><block order="2">
                     <cline>print(x)</cline>
                 </block><block order="3">
@@ -76,15 +76,15 @@
                     <cline>    if x % 100 == 0:</cline>
                 </block><block order="5">
                     <cline>        if x % 400 == 0:</cline>
-                    <cline>            result = true</cline>
+                    <cline>            result = True</cline>
                     <cline>        else:</cline>
-                    <cline>            result = false</cline>
+                    <cline>            result = False</cline>
                 </block><block order="6">
                     <cline>    else:</cline>
-                    <cline>        result = true</cline>
+                    <cline>        result = True</cline>
                 </block><block order="7">
                     <cline>else:</cline>
-                    <cline>    result = false</cline>
+                    <cline>    result = False</cline>
                 </block><block order="8">
                     <cline>print(result)</cline>
                 </block>
