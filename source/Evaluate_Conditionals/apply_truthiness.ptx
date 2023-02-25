@@ -1,7 +1,7 @@
 <section xml:id="apply_truth"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Apply Truthiness</title>
-        <xi:include href='./subgoals_evaluate_conditionals.ptx' />
-        <subsection>
+    <xi:include href='./subgoals_evaluate_conditionals.ptx' />
+    <subsection>
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following declarations:</p>
         <program language="python"><input>

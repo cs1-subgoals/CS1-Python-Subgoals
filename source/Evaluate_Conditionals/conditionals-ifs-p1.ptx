@@ -28,7 +28,7 @@ rho = 0.0
                         <input>if theta&gt;omega:
     rho = kappa + 2</input>
                     </program>
-                    <p>The value in variable <c>rho</c> is <var />.</p>
+                    <p>The value in variable <c>rho</c> is <var /></p>
                 </statement>
                 <setup>
                     <var>
@@ -38,17 +38,15 @@ rho = 0.0
             </exercise>
             <exercise>
                 <statement>
-                    <p>Q2: <var /></p>
+                    <p>Q2: After executing the following code:</p>
+                    <program language="python">
+                        <input>if beta&lt;alpha:
+    eta = 42</input>
+                    </program>
+                    <p>The value in variable <c>eta</c> is <var /></p>
                 </statement>
                 <setup>
                     <var>
-                        <program language="python">
-                            <input>
-                                if beta&lt;alpha:
-                                eta = 42
-                            </input>
-                        </program>
-                        <p>What is the value of eta?</p>
                         <condition number="42">
                             <feedback>
                                 <p>Correct</p>
@@ -59,18 +57,18 @@ rho = 0.0
             </exercise>
             <exercise>
                 <statement>
-                    <p>Q3: After executing the following code, the value in variable <c>eta</c> is <BlankNode />
-                        and the value in variable <c>beta</c> is <BlankNode />. <var /><var /></p>
+                    <p>Q3: After executing the following code:</p>
+                    <program language="python">
+                        <input>if kappa &lt; delta:
+    eta = 42
+beta = 22
+                        </input>
+                    </program>
+                    <p>the value in variable <c>eta</c> is <var />
+                        and the value in variable <c>beta</c> is <var /></p>
                 </statement>
                 <setup>
                     <var>
-                        <program language="python">
-                            <input>
-                                if (kappa&lt;delta):
-                                eta = 42
-                                beta = 22
-                            </input>
-                        </program>
                         <condition number="0">
                             <feedback>
                                 <p>Correct</p>
@@ -93,18 +91,18 @@ rho = 0.0
             </exercise>
             <exercise>
                 <statement>
-                    <p>Q4: After executing the following code, the value in variable <c>eta</c> is <BlankNode />
-                        and the value in variable <c>beta</c> is <BlankNode />. <var /><var /></p>
+                    <p>Q4: After executing the following code:</p>
+                    <program language="python">
+                        <input>if gamma &lt; kappa:
+    beta = 22
+eta = 42
+                        </input>
+                    </program>
+                    <p>The value in variable <c>eta</c> is <var />
+                        and the value in variable <c>beta</c> is <var />.</p>
                 </statement>
                 <setup>
                     <var>
-                        <program language="python">
-                            <input>
-                                if (gamma&lt;kappa):
-                                beta = 22
-                                eta = 42
-                            </input>
-                        </program>
                         <condition number="42">
                             <feedback>
                                 <p>Correct</p>
