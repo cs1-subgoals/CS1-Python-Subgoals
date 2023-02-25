@@ -2,9 +2,7 @@
 
 <section xml:id="loop-wrl-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">        
     <title>WriteLoops-WE5-P1</title>
-        <subsection>
-            <xi:include href='./subgoals_write_loop.ptx' />
-        </subsection>
+        <xi:include href='./subgoals_write_loop.ptx' />
         <transition/>
         <subsection>
             <title>WriteLoops-WE1-P1</title>

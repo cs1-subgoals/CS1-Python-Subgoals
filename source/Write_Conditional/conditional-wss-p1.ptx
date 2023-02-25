@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="loop-wrl-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US"> 
+<section xml:id="conditional-wss-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US"> 
         <title>WriteSelection-WE2-P1</title>
         <xi:include href='./subgoals_write_selection_statements.ptx' />
         <transition/>
