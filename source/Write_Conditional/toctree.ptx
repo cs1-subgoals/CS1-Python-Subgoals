@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Write Conditional</title>
-        <xi:include href='./write_selection_statement.ptx' />
-        <xi:include href='./conditional-wss-p1.ptx' />
+        <xi:include href='./write_conditional.ptx' />
+        <xi:include href='./conditional-wc-p1.ptx' />
     </chapter>
