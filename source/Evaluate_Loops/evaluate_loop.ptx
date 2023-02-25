@@ -1,5 +1,6 @@
 <section xml:id="eval_loop">
     <title>Evaluate Loops</title>
+    <xi:include href='./subgoals_evaluate_loops.ptx' />
     <subsection xml:id="subsec-wlcntr">
         <title>While Loops Counter</title>
         <program language="python"><input>

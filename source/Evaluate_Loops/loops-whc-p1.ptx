@@ -2,9 +2,7 @@
 
 <section xml:id="loops-whc-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Loops-WE1-P1</title>
-    <subsection>
-        <xi:include href='./subgoals_evaluate_loops.ptx' />
-    </subsection>
+    <xi:include href='./subgoals_evaluate_loops.ptx' />
     <transition/>
     <subsection>
         <title>Evaluate Loops-WE1-P1</title>

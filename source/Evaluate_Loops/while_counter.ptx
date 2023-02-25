@@ -1,10 +1,10 @@
 <section xml:id="while_counter">
     <title>While Counter</title>
-        <introduction>
         <xi:include href='./subgoals_evaluate_loops.ptx' />
-        <p>You can watch this video or read through the content below it.</p>
-        <p>Problem: Given the following code, what is the output?</p>
-        <program language="python"><input>
+        <subsection>
+            <p>You can watch this video or read through the content below it.</p>
+            <p>Problem: Given the following code, what is the output?</p>
+            <program language="python"><input>
 counter = 0
 total = 0
 while counter &lt; 50:
@@ -13,7 +13,7 @@ while counter &lt; 50:
     counter += 1
 print(total)
 </input></program>
-    </introduction>
+        </subsection>
     <subsection xml:id="subsec-wcSG1">
         <title>Determine loop components</title>
         <p>Starting values:</p>
