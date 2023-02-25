@@ -3,14 +3,13 @@
 <!-- TEMPLATE -->
 
 <section xml:id="function-avn-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">        
-    <title>WriteFunction-WE_-P1</title> <!-- insert WE number -->
-        <subsection>
-        </subsection>
-        <transition/>
-        <subsection>
-            <title>WriteFunction-WE_-P1</title> <!-- insert WE number -->
+    <title>WriteFunction-WE1-P1</title> <!-- insert WE number -->
+    <xi:include href='./subgoals_write_function.ptx' />
+    <transition/>
+    <subsection>
+            <title>WriteFunction-WE1-P1</title> <!-- insert WE number -->
             <exercises>
-                <exercise xml:id="parsons-WrFunction-WE_-P1-1" indent="show" language="python"> <!-- insert WE number -->
+                <exercise xml:id="parsons-WrFunction-WE1-P1-1" indent="show" language="python"> <!-- insert WE number -->
                     <statement>
                         <p>Put the code in the right order to create a program that will calculate and print the sum of 10 natural numbers.</p>
                     </statement>
@@ -38,8 +37,8 @@
                     <statement>
                         <p>Q2: <var/>
                         <var/>
-                    </p>
-                </statement>
+                        </p>
+                    </statement>
                 <setup>
                     <var>
                         <program language="python"><input></input></program>
@@ -47,7 +46,6 @@
                             <line><BlankNode/>
                             </line>
                             <line><BlankNode/>
-                            </line>
                             </line>
                         </line_block>
                     </var>
@@ -60,11 +58,11 @@
                         </condition>
                     </var>
                 </setup>
-            </exercise>
+        </exercise>
         </exercises>
     </subsection>
 
-    <program xml:id="ac-writefunctions-we_-p1" interactive="activecode" language="python"> <!-- insert WE number -->
+    <program xml:id="ac-writefunctions-we1-p1" interactive="activecode" language="python"> <!-- insert WE number -->
         <input></input>
     </program>
 </section> 
