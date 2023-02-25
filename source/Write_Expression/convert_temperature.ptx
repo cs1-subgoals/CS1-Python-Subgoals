@@ -2,13 +2,13 @@
 
 <section xml:id="convert_temperature" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Convert Temperature</title>
-    <introduction>
-        <xi:include href='./subgoals_write_expression.ptx' />
+    <xi:include href='./subgoals_write_expression.ptx' />
+    <subsection>
     <p>You can watch this video or read through the content below it.</p>
     <p>Problem: Write an expression that will convert the float variable <c>fahrenheit</c> to be in
         degrees celsius instead.</p>
-    </introduction>
-    <subsection xml:id="subsec-op-precSG1">
+    </subsection>
+    <subsection xml:id="subsec-conv-tempSG1">
         <title>1. Craft name of variable</title>
         <p>Since the original variable was named <c>fahrenheit</c>, a corresponding name for the
             result variable might be <c>celsius</c>.</p>
@@ -19,7 +19,7 @@
             </input>
         </program>
     </subsection>
-    <subsection xml:id="subsec-op-precSG2">
+    <subsection xml:id="subsec-conv-tempSG2">
         <title>2. Determine operators, function calls, or method calls that will produce the value
             of variable</title>
         <p>The formula for converting fahrenheit to celsius is:</p>
@@ -28,7 +28,7 @@
         </blockquote>
         <p>Therefore, we will use those three operators.</p>
     </subsection>
-    <subsection xml:id="subsec-op-precSG3">
+    <subsection xml:id="subsec-conv-tempSG3">
         <title>3. Decide order of operands and operators</title>
         <p>The subtraction must occur first, before the multiplication, so we wrap that part of the
             expression in parentheses.</p>

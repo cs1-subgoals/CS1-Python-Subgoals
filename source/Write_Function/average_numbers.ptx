@@ -9,11 +9,11 @@
         integer that is the truncated average of the numbers. Use the function to calculate the
         average of the numbers <c>100</c>, <c>300</c>, and <c>150</c>.</p>
     </introduction>
-    <subsection xml:id="subsec-op-precSG1">
+    <subsection xml:id="subsec-avg-numSG1">
         <title>1. Define and initialize global variables</title>
         <p>This function does not require any global variables.</p>
     </subsection>
-    <subsection xml:id="subsec-op-precSG2">
+    <subsection xml:id="subsec-avg-numSG2">
         <title>2. Write function header with function name and parameters (must include () even
             without parameters)</title>
         <p>We only know that the three parameters are integers, so their names are fairly generic.</p>
@@ -25,7 +25,7 @@
             </input>
         </program>
     </subsection>
-    <subsection xml:id="subsec-op-precSG3">
+    <subsection xml:id="subsec-avg-numSG3">
         <title>3. Write function body</title>
         <program language="python">
             <input>
@@ -35,7 +35,7 @@
             </input>
         </program>
     </subsection>
-    <subsection xml:id="subsec-op-precSG4">
+    <subsection xml:id="subsec-avg-numSG4">
         <title>4. Determine what to return, if anything, to call site</title>
         <p>The function is meant to return the result of the expression, so that is what is
             returned.</p>
@@ -48,7 +48,7 @@
             </input>
         </program>
     </subsection>
-    <subsection xml:id="subsec-op-precSG5">
+    <subsection xml:id="subsec-avg-numSG5">
         <title>5. Call function with appropriate arguments</title>
         <p>We can call the function with the desired arguments:</p>
         <program language="python">

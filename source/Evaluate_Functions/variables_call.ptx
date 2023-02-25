@@ -1,7 +1,7 @@
 <section xml:id="var_call">
     <title>Variables Call</title>
-    <introduction>
-        <xi:include href='./subgoals_evaluate_functions.ptx' />
+    <xi:include href='./subgoals_evaluate_functions.ptx' />
+    <subsection>
         <p>You can watch this video or read through the content below it.</p>
         <p>Given the following declarations</p>
         <program language="python"><input>
@@ -15,7 +15,7 @@ gamma = 1
 <program language="python"><input>
 kappa = foo(7, alpha) - 20
 </input></program>
-    </introduction>
+    </subsection>
     <subsection xml:id="var_call_1">
         <title>1. Create stack frame for global variables</title>
         <p>Prior to the execution of the function, there are two global variables (<c>alpha</c> and <c>gamma</c>). The variable <c>kappa</c> will not be defined until after the function <c>foo</c> is executed, so for now our stack frame only has two variables.</p>

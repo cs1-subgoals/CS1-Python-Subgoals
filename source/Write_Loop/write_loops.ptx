@@ -40,12 +40,12 @@
     <p>Problem: Write a loop that will prompt the user to continue to enter numbers until a sentinel
         value (<c>-1</c>) is entered, and then find the maximum value entered.</p>
     </introduction>
-    <subsection xml:id="subsec-op-precSG1">
+    <subsection xml:id="subsec-wri-loopSG1">
         <title>1. Determine purpose of loop to pick loop structure (for, while)</title>
         <p>Generally, while loops are a good choice for sentinel loops, since you cannot know up
             front how many times the code will need to iterate.</p>
     </subsection>
-    <subsection xml:id="subsec-op-precSG2">
+    <subsection xml:id="subsec-wri-loopSG2">
         <title>2. Define variables before loop that have dependencies within the loop</title>
         <p>The user must input at least one number in order for us to find a maximum. The variable <c>
             user_input</c> will also be used as the loop control variable, so we must define it
@@ -66,7 +66,7 @@
             </input>
         </program>
     </subsection>
-    <subsection xml:id="subsec-op-precSG3">
+    <subsection xml:id="subsec-wri-loopSG3">
         <title>3. Based on loop structure</title>
         <p>The terminiation condition for this loop is when the user's inputted value is equal to
             the sentinel. We need to invert that condition to identify the continuation condition
@@ -79,7 +79,7 @@
             </input>
         </program>
     </subsection>
-    <subsection xml:id="subsec-op-precSG4">
+    <subsection xml:id="subsec-wri-loopSG4">
         <title>4. Write loop body</title>
         <p>First, we must check whether the latest <c>maximum</c> is greater than the <c>user_input</c>;
             if so, we must update the <c>maximum</c>. This check is unnecessary during the first

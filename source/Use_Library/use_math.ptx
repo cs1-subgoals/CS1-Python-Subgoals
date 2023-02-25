@@ -17,7 +17,7 @@
     <p>Use the <c>log10</c> function of the built-in <c>math</c> library to calculate the number of
         digits in a number taken from the user.</p>
     </introduction>
-    <subsection xml:id="subsec-op-precSG1">
+    <subsection xml:id="subsec-use-mathSG1">
         <title>1. Import module or function (if needed)</title>
         <p>First, we need to import the desired library, which is named <c>math</c>. We do not need
             to alias the name because <c>math</c> is already short and descriptive.</p>
@@ -28,7 +28,7 @@
             </input>
         </program>
     </subsection>
-    <subsection xml:id="subsec-op-precSG2">
+    <subsection xml:id="subsec-use-mathSG2">
         <title>2. Determine whether parameters are appropriate for function</title>
         <p>According to the documentation, the <c>log10</c> function consumes <c>x</c>, which is an
             integer.</p>
@@ -43,7 +43,7 @@
             </input>
         </program>
     </subsection>
-    <subsection xml:id="subsec-op-precSG3">
+    <subsection xml:id="subsec-use-mathSG3">
         <title>3. Determine what the function will return (i.e., data type), print, and/or change
             state of arguments and where it will be stored (nowhere, somewhere)</title>
         <p>The function will return the base-10 logarithm of X, which will tell us the number of
@@ -56,7 +56,7 @@
             </input>
         </program>
     </subsection>
-    <subsection xml:id="subsec-op-precSG4">
+    <subsection xml:id="subsec-use-mathSG4">
         <title>4. Evaluate expression as necessary</title>
         <p>We then finish the program by printing:</p>
         <program language="python">

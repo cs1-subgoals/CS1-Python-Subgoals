@@ -4,62 +4,60 @@
 
 <section xml:id="expression-cot-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">        
     <title>WriteExpression-WE_-P1</title> <!-- insert WE number -->
-        <subsection>
-        </subsection>
-        <transition/>
-        <subsection>
-            <title>WriteExpression-WE_-P1</title> <!-- insert WE number -->
-            <exercises>
-                <exercise xml:id="parsons-WrExpression-WE_-P1-1" indent="show" language="python"> <!-- insert WE number -->
-                    <statement>
-                        <p>Put the code in the right order to create a program that will calculate and print the sum of 10 natural numbers.</p>
-                    </statement>
-                    <blocks>
-                        <block order="">
-                            <cline></cline>
-                        </block>
-                        <block order="">
-                            <cline></cline>
-                        </block>
-                        <block order="">
-                            <cline></cline>
-                        </block>
-                        <block order="">
-                            <cline></cline>
-                        </block>
-                        <block order="">
-                            <cline></cline>
-                        </block>
-                        <block order="">
-                        </block>
-                    </blocks>
-                </exercise>
-                <exercise>
-                    <statement>
-                        <p>Q2: <var/>
-                        <var/>
-                    </p>
+    <xi:include href='./subgoals_write_expression.ptx' />
+    <transition/>
+    <subsection>
+        <title>WriteExpression-WE_-P1</title> <!-- insert WE number -->
+        <exercises>
+            <exercise xml:id="parsons-WrExpression-WE_-P1-1" indent="show" language="python"> <!-- insert WE number -->
+                <statement>
+                    <p>Put the code in the right order to create a program that will calculate and print the sum of 10 natural numbers.</p>
                 </statement>
-                <setup>
-                    <var>
-                        <program language="python"><input></input></program>
-                        <line_block>
-                            <line><BlankNode/>
-                            </line>
-                            <line><BlankNode/>
-                            </line>
-                            </line>
-                        </line_block>
-                    </var>
-                    <var>
-                        <condition number="">
-                            <feedback><p>Correct</p></feedback>
-                        </condition>
-                        <condition string="^\s*x\s*$">
-                            <feedback><p>Incorrect.</p></feedback>
-                        </condition>
-                    </var>
-                </setup>
+                <blocks>
+                    <block order="">
+                        <cline></cline>
+                    </block>
+                    <block order="">
+                        <cline></cline>
+                    </block>
+                    <block order="">
+                        <cline></cline>
+                    </block>
+                    <block order="">
+                        <cline></cline>
+                    </block>
+                    <block order="">
+                        <cline></cline>
+                    </block>
+                    <block order="">
+                    </block>
+                </blocks>
+            </exercise>
+            <exercise>
+                <statement>
+                    <p>Q2: <var/>
+                    <var/>
+                </p>
+            </statement>
+            <setup>
+                <var>
+                    <program language="python"><input></input></program>
+                    <line_block>
+                        <line><BlankNode/>
+                        </line>
+                        <line><BlankNode/>
+                        </line>
+                    </line_block>
+                </var>
+                <var>
+                    <condition number="">
+                        <feedback><p>Correct</p></feedback>
+                    </condition>
+                    <condition string="^\s*x\s*$">
+                        <feedback><p>Incorrect.</p></feedback>
+                    </condition>
+                </var>
+            </setup>
             </exercise>
         </exercises>
     </subsection>
