@@ -6,7 +6,7 @@
         <title>Evaluate Expressions-WE10-P1</title> <!-- insert WE number -->
         <xi:include href='./subgoals_evaluate_expressions.ptx' />
         <subsection>
-            <p>For all given problems below indicate if the code is valid or invalid. 
+            <p>For all given problems below, evaluate what value is assigned to the variable . 
                 Each problem is independent of the others (e.g. Question 2 does not depend 
                 on Question 1, only the &#8220;Given&#8221; code).</p>
         </subsection>
@@ -17,32 +17,54 @@
             <program language="python"><input>
 alpha = 10
 beta = 0
-gamma = -.1
+gamma = -2.5
 delta = 0.0
             </input></program>
             <exercises>
                 <exercise xml:id="m-Expr-WE10_-P1-75"> <!-- insert WE number -->
-                    <statement><p>Q1: </p></statement>
+                    <statement><p>Q1: What is the value stored in result?</p>
+                        <program language="python"><input>result = alpha and beta</input></program></statement>
                     <choices>
                         <choice correct="yes">
-                            <statement><p></p></statement>
+                            <statement><p>0</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice>
-                            <statement><p></p></statement>
+                            <statement><p>10</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>False</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>True</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
                 </exercise>
                 <exercise xml:id="m-Expr-WE10_-P1-76"> <!-- insert WE number -->
-                    <statement><p>Q2: </p></statement>
+                    <statement><p>Q2: What is the value stored in result?</p>
+                        <program language="python"><input>result = delta or alpha or gamma + 5</input></program></statement>
                     <choices>
                         <choice correct="yes">
-                            <statement><p></p></statement>
+                            <statement><p>10</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice>
-                            <statement><p></p></statement>
+                            <statement><p>15</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>0.0</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>2.5</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>-2.5</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
