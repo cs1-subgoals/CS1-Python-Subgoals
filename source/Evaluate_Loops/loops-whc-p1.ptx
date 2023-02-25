@@ -48,7 +48,7 @@ while i &lt; 3:
                 <program language="python"><input>
 i = 10
 while i &gt; 1:
-    print(i + " ")
+    print(i, end=" ")
     i-=1
                 </input></program>
             </statement>
@@ -81,7 +81,7 @@ while i &gt; 1:
                 <program language="python"><input>
 i = 10
 while i &gt; 1:
-    print(i + " ")
+    print(i, end=" ")
     i+= 1
                 </input></program>
             </statement>

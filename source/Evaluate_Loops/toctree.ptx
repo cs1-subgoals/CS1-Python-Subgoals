@@ -3,6 +3,8 @@
         <title>Evaluate Loops</title>
         <xi:include href='./while_counter.ptx' />
         <xi:include href='./loops-whc-p1.ptx' />
-        <xi:include href='./evaluate_loop.ptx' />
-        <xi:include href='./loops-evl-p1.ptx' />
+        <xi:include href='./for_loop_range.ptx' />
+        <xi:include href='./loops-flr-p1.ptx' />
+        <!--<xi:include href='./evaluate_loop.ptx' />
+        <xi:include href='./loops-evl-p1.ptx' />-->
     </chapter>

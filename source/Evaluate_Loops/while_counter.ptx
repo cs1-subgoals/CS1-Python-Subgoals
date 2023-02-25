@@ -21,7 +21,7 @@ print(total)
 counter = 0
 total = 0
 </input></program>
-        <p>Terminiation condition:</p>
+        <p>Termination condition:</p>
         <program language="python"><input>
 while counter &lt; 50:
 </input></program>

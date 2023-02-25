@@ -5,9 +5,9 @@
     <xi:include href='./subgoals_evaluate_loops.ptx' />
     <transition/>
     <subsection>
-        <title>Evaluate Loops-WE2-P1</title> <!-- insert WE number -->
+        <title>Evaluate Loops-WEN-P1</title> <!-- insert WE number -->
     <exercises>
-        <exercise xml:id="m-Loops-WE2-P1-1"> <!-- insert WE number -->
+        <exercise xml:id="m-Loops-WEN-P1-1"> <!-- insert WE number -->
             <statement>
                 <p>Q1:</p>
                 <program language="python"><input>
@@ -36,7 +36,7 @@
                 </choice>
             </choices>
         </exercise>
-        <exercise xml:id="m-Loops-WE2-P1-2"> <!-- insert WE number -->
+        <exercise xml:id="m-Loops-WEN-P1-2"> <!-- insert WE number -->
             <statement>
                 <p>Q2:</p>
                 <program language="python"><input>
@@ -65,7 +65,7 @@
                 </choice>
             </choices>
         </exercise>
-        <exercise xml:id="m-Loops-WE2-P1-3"> <!-- insert WE number -->
+        <exercise xml:id="m-Loops-WEN-P1-3"> <!-- insert WE number -->
             <statement>
                 <p>Q3:</p>
                 <program language="python"><input>
@@ -94,7 +94,7 @@
                 </choice>
             </choices>
         </exercise>
-        <exercise xml:id="m-Loops-WE2-P1-4"> <!-- insert WE number -->
+        <exercise xml:id="m-Loops-WEN-P1-4"> <!-- insert WE number -->
             <statement>
                 <p>Q4:</p>
                 <program language="python"><input>
@@ -123,7 +123,7 @@
                 </choice>
             </choices>
         </exercise>
-        <exercise xml:id="m-Loops-WE2-P1-5"> <!-- insert WE number -->
+        <exercise xml:id="m-Loops-WEN-P1-5"> <!-- insert WE number -->
             <statement>
                 <p>Q5:</p>
                 <program language="python"><input>
@@ -154,7 +154,7 @@
         </exercise>
     </exercises>
     </subsection>
-    <program xml:id="ac-loops-WE2-p1" interactive="activecode" language="python"> <!-- insert WE number -->
+    <program xml:id="ac-loops-WEN-p1" interactive="activecode" language="python"> <!-- insert WE number -->
         <input></input>
     </program>
 </section>
