@@ -3,14 +3,14 @@
 <section xml:id="write_selection_statement" xmlns:xi="http://www.w3.org/2001/XInclude"
     xml:lang="en-US">
     <title>Write Selection Statement</title>
-    <introduction>
-        <xi:include href='./subgoals_write_conditional.ptx' />
+    <xi:include href='./subgoals_write_conditional.ptx' />
+    <subsection>
     <p>You can watch this video or read through the content below it.</p>
     <p>Problem: Write the Java selection statements to solve the following specifications:</p>
     <blockquote>
         <p>If integer variable <c>current</c> is odd, change its value so that it is now 4 times <c>current</c> plus 1; otherwise change its value so that it is now half of <c>current</c> (rounded down when <c>current</c> is odd).</p>
     </blockquote>
-    </introduction>
+    </subsection>
     <subsection xml:id="subsec-write-selSG1">
         <title>1. Define how many mutually exclusive paths are needed</title>
         <p>In this case, the problem says to do one action if variable is odd, and a different

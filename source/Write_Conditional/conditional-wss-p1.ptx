@@ -2,9 +2,7 @@
 
 <section xml:id="loop-wrl-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US"> 
         <title>WriteSelection-WE2-P1</title>
-        <subsection>
-            <xi:include href='./subgoals_write_selection_statements.ptx' />
-        </subsection>
+        <xi:include href='./subgoals_write_selection_statements.ptx' />
         <transition/>
         <subsection>
             <title>WrSelect-WE2-P1</title>
