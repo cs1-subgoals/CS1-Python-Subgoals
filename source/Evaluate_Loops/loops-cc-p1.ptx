@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="loops-cc-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US"> 
+    <title>Evaluate Conditionals-WE3-P1</title>
+    <xi:include href='./subgoals_evaluate_loops.ptx' />
+    <transition/>
+    <subsection>
+        <title>Evaluate Loops-WE3-P1</title>
+    <exercises>
+        <exercise xml:id="parsons-Loops-WE3-P1-1" indent="show" language="python">
+            <statement>
+                <p>Put the code in the right order to create a program that will continue to generate 
+                    integers between 1 and 100 (inclusive) until the value generated is less than 
+                    6 or greater than 95. Print the numbers generated.</p>
+            </statement>
+            <blocks>
+                <block order="1">
+                    <cline>from random import randint</cline>
+                </block>
+                <block order="2">
+                    <cline>repeat = True</cline>
+                </block>
+                <block order="3">
+                    <cline>while repeat:</cline>
+                </block>
+                <block order="4">
+                    <cline>    x = randint(1, 100)</cline>
+                </block>
+                <block order="5">
+                    <cline>    print("Value is", x)</cline>
+                </block>
+                <block order="6">
+                    <cline>    repeat = x >= 6 and x &lt;= 95</cline>
+                </block>
+            </blocks>
+        </exercise>
+    </exercises>
+</subsection>
+
+    <program xml:id="ac-loops-we3-p1" interactive="activecode" language="python">
+        <input></input>
+    </program>
+</section>
