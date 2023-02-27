@@ -7,6 +7,8 @@
         <xi:include href='./loops-flr-p1.ptx' />
         <xi:include href='./complex_conditional.ptx' />
         <xi:include href='./loops-cc-p1.ptx' />
+        <xi:include href='./while_loops_sentinel.ptx' />
+        <xi:include href='./loops-wls-p1.ptx' />
         <!--<xi:include href='./evaluate_loop.ptx' />
         <xi:include href='./loops-evl-p1.ptx' />-->
     </chapter>
