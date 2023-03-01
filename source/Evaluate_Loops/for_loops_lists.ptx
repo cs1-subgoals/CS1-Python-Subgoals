@@ -1,0 +1,35 @@
+<section xml:id="for_loops_lists"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>For Loops with Lists</title>
+        <xi:include href='./subgoals_evaluate_loops.ptx' />
+        <subsection>
+            <p>You can watch this video or read through the content below it.</p>
+            <p>Problem: Given the following code, what is the output?</p>
+            <program language="python"><input>
+mixed_numbers = [5, 3, -4, 7, 2]
+total = 0
+for number in mixed_numbers:
+    total = total + number
+print("Total:", total)
+</input></program>
+        </subsection>
+    <subsection xml:id="subsec-fllSG1">
+        <title>Determine loop components</title>
+        <p>Starting values:</p>
+        <program language="python"><input>
+total = 0
+mixed_numbers = [5, 3, -4, 7, 2]
+# The initial value for number will be 5, since that is the first element of the list
+</input></program>
+        <p>Termination condition: When we have finished processing the last element of the list (2)</p>
+        <p>Body that is repeated based on indentation:</p>
+        <program language="python"><input>
+total = total + number
+</input></program>
+    </subsection>
+    <subsection xml:id="subsec-fllSG2">
+        <title>Trace the loop, writing updated values for every iteration or until you identify the pattern</title>
+        <p>For every iteration of loop, write down values.</p>
+        <image source="Evaluate_Loops/Figures/WL5Slide1.png" width="90%"/>
+        <pre>Total: 13</pre>
+    </subsection>
+</section>

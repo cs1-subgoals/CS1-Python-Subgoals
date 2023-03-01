@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="loops-fll-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluate Loops-WE5-P1</title>
+    <xi:include href='./subgoals_evaluate_loops.ptx' />
+    <transition/>
+    <subsection>
+        <title>Evaluate Loops-WE5-P1</title>
+        <p>All of the following problems use the same setup, but they are independent of each other.</p>
+        <program language="python"><input>
+high_numbers = [300, 200, 100, 400, 500, 300]
+low_numbers = [1, 3, 2, 4, 5, 3]
+mixed_numbers = [5, 3, -4, 7, 2]
+        </input></program>
+    <exercises>
+        <exercise xml:id="m-Loops-WE5-P1-1">
+            <statement>
+                <p>Q1: What is the output of the following loop?</p>
+                <program language="python"><input>
+total = 0
+for number in high_numbers:
+    total = total + number // 100
+print(total)
+</input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>3</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>6</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>18</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>18.0</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>300</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1800</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Loops-WE5-P1-2">
+            <statement>
+                <p>Q2: What is the output of the following loop?</p>
+                <program language="python"><input>
+total = 0
+for number in high_numbers:
+total = total + 100
+print(total)
+                </input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>6</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>18</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>600</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1800</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1900</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>2400</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Loops-WE5-P1-3">
+            <statement>
+                <p>Q3: What is the output of the following loop?</p>
+                <program language="python"><input>
+combined = ""
+for number in low_numbers:
+    combined = combined + str(number)
+print(combined)
+</input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>18</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>"18"</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>"132453"</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>6</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>"354231"</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+    </exercises>
+    </subsection>
+    <program xml:id="ac-loops-WE5-p1" interactive="activecode" language="python">
+        <input></input>
+    </program>
+</section>
