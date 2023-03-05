@@ -1,0 +1,97 @@
+<section xml:id="nested_loops"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Nested Loops</title>
+        <xi:include href='./subgoals_evaluate_loops.ptx' />
+        <subsection>
+            <p>You can watch this video or read through the content below it.</p>
+            <p>Problem: Given the following code, what is the output?</p>
+            <program language="python"><input>
+i = 0
+j = 0
+m = 8
+n = 5
+while i &lt; n:
+    j = 0
+    while j &lt; m:
+        print("*", end="")
+        j += 1
+    print()
+    i += 1
+</input></program>
+        </subsection>
+    <subsection xml:id="subsec-nelSG1">
+        <title>Determine loop components</title>
+        <p>Starting values:</p>
+        <program language="python"><input>
+i = 0
+j = 0
+m = 8
+n = 5
+</input></program>
+        <p>Termination condition: When <code>i</code> is greater than <code>n</code></p>
+        <p>Body that is repeated based on indentation:</p>
+        <program language="python"><input>
+j = 0
+while j &lt; m:
+    print("*", end="")
+    j += 1
+print()
+i += 1
+</input></program>
+    </subsection>
+    <subsection xml:id="subsec-nelSG2">
+        <title>SG2: Trace the loop, writing updated values for every iteration or until you identify the pattern</title>
+        <p>Think of an analog clock:</p>
+        <p>Second hand goes completely around before minute hand moves</p>
+        <p>Just like inner loop:</p>
+        <p>Inner loop must finish before outer loop increments once</p>
+        <figure align="">
+            <image source="Evaluate_Loops/Figures/AnalogClock.png" width="50%" alt="Clock"/>
+        </figure>
+        <p>Looking at ONLY the outer loop: &lt;NL&gt; is a new line</p>
+        <figure align="">
+            <image source="Evaluate_Loops/Figures/WL3Slide7.png" width="50%" alt="Counter"/>
+        </figure>
+        <p>
+            <c>Now Repeat for inner loop</c>
+        </p>
+    </subsection>
+    <subsection>
+        <title>SG1: Determine loop components</title>
+        <p>Starting values:</p>
+        <program language="python"><input>
+j = 0
+m = 8
+</input></program>
+        <p>Termination condition: When <code>j</code> is less than <code>m</code>.</p>
+        <p>Body that is repeated based on indentation:</p>
+        <program language="python"><input>
+print("*", end="")
+j += 1
+</input></program>
+    </subsection>
+    <subsection>
+        <title>SG2: Trace the loop, writing updated values for every iteration or until you identify the pattern</title>
+        <p>Looking at Only the inner loop:</p>
+        <figure align="">
+            <image source="Evaluate_Loops/Figures/WL3Slide11.png" width="25%" alt="Counter"/>
+        </figure>
+        <p>Remember, this was just for the first iteration of the outer loop, while i is still value 0.</p>
+        <figure align="">
+            <image source="Evaluate_Loops/Figures/WL3Slide12.png" width="35%" alt="Counter"/>
+        </figure>
+        <p>Continuing to the next iteration of the outer loop, i is 1 and j is re-started at value 0:</p>
+        <figure align="">
+            <image source="Evaluate_Loops/Figures/WL3Slide13.png" width="45%" alt="Counter"/>
+        </figure>
+        <p>Again, increment i to 2, and j is re-started at 0:</p>
+        <figure align="">
+            <image source="Evaluate_Loops/Figures/WL3Slide14.png" width="50%" alt="Counter"/>
+        </figure>
+        <p>Note that outer loop goes 5 times,</p>
+        <p>Inner loop goes 8 times (for each outer loop)</p>
+        <figure align="">
+            <image source="Evaluate_Loops/Figures/WL3Slide15.png" width="25%" alt="Counter"/>
+        </figure>
+        <p>The final output will be 5 lines of 8 asterisks (*).</p>
+    </subsection>
+</section>
