@@ -12,28 +12,30 @@
                         <p>Put the code in the right order to create a program that will calculate and print the sum of 10 natural numbers.</p>
                     </statement>
                     <blocks>
-                        <block order="5">
-                            <cline>def main(args: [str]):</cline>
-                        </block>
-                        <block order="3">
-                            <cline>      sum = 0</cline>
-                        </block>
                         <block order="1">
-                            <cline>      for i in range(0, 10):</cline>
-                        </block>
-                        <block order="6">
-                            <cline>         sum += i</cline>
+                            <cline>sum = 0</cline>
                         </block>
                         <block order="2">
-                            <cline>      print(sum)</cline>
+                            <cline>for i in range(0, 10):</cline>
+                        </block>
+                        <block order="3">
+                            <cline>    sum += i</cline>
                         </block>
                         <block order="4">
+                            <cline>print(sum)</cline>
                         </block>
                     </blocks>
                 </exercise>
                 <exercise>
                     <statement>
-                        <p>Q2: Fill in the blanks in the following code to create a program that will print the even numbers between 1 and 20. <var/>
+                        <!-- TODO: I have no idea how to setup this particular kind of question. Maybe convert it to something else? -->
+                        <p>Q2: Fill in the blanks in the following code to create a program that will print the even numbers between 1 and 20.
+<program language="python"><input>
+for ___A___ in ___B___:
+    if ___C___ % ___D___ == ___E___:
+        print(___A___)
+</input></program>
+                        <var/>
                         <var/>
                         <var/>
                         <var/>
@@ -42,12 +44,6 @@
                 </statement>
                 <setup>
                     <var>
-                        <program language="python"><input>
-    def main(args: [str]):
-        for ___A___ in ___B___:
-            if (___C___ % ___D___ == ___E___):
-                print(___A___)
-    </input></program>
                         <line_block>
                             <line>Blank A: <BlankNode/>
                             </line>
@@ -117,30 +113,23 @@
                         print the number, calculate and print the number of digits in the number.</p>
                 </statement>
                 <blocks>
-                    <block order="4">
+                    <block order="1">
                         <cline>import random</cline> 
-                        <cline>def main(args: [str]):</cline>
-                    </block>
-                    <block order="7">
-                        <cline>      x = random.randint(0, 10000)</cline>
-                    </block>
-                    <block order="5">
-                        <cline>      digits = 0</cline>
-                        <cline>      y = x</cline>
-                    </block>
-                    <block order="6">
-                        <cline>      while (y &gt; 0):</cline>
-                    </block>
-                    <block order="3">
-                        <cline>         digits += 1</cline>
-                        <cline>         y = y/10</cline>
+                        <cline>x = random.randint(0, 10000)</cline>
                     </block>
                     <block order="2">
+                        <cline>digits = 0</cline>
+                        <cline>y = x</cline>
                     </block>
-                    <block order="1">
-                        <cline>      print(x + " has " + digits + " digits.")</cline>
+                    <block order="3">
+                        <cline>while y &gt; 0:</cline>
                     </block>
-                    <block order="8">
+                    <block order="4">
+                        <cline>    digits += 1</cline>
+                        <cline>    y = y/10</cline>
+                    </block>
+                    <block order="5">
+                        <cline>print(x, "has", digits, "digits.")</cline>
                     </block>
                 </blocks>
             </exercise>
@@ -151,30 +140,22 @@
                         Armstrong number. For example, 153 = (1*1*1) + (5*5*5) + (3*3*3)</p>
                 </statement>
                 <blocks>
-                    <block order="7">
-                        <cline>import math</cline>
-                        <cline>def main(args: [str]):</cline>
-                    </block>
-                    <block order="3">
-                        <cline>      for i in range (100, 500)</cline>        
-                    </block>
-                    <block order="5">
-                        <cline>          dig1 = i/100</cline>
-                        <cline>          dig2 = (i/10)%10</cline>
-                        <cline>          dig3 = i%10</cline>
+                    <block order="1">
+                        <cline>for i in range(100, 500)</cline>        
                     </block>
                     <block order="2">
-                        <cline>          total = math.pow(dig1,3) + math.pow(dig2,3) + math.pow(dig3,3)</cline>
+                        <cline>    dig1 = i/100</cline>
+                        <cline>    dig2 = (i/10)%10</cline>
+                        <cline>    dig3 = i%10</cline>
+                    </block>
+                    <block order="3">
+                        <cline>    total = dig1**3 + dig2**3 + dig3**3</cline>
                     </block>
                     <block order="8">
-                        <cline>          if (total == i):</cline>
+                        <cline>    if total == i:</cline>
                     </block>
                     <block order="1">
-                        <cline>              print(i + " Armstrong number.")</cline>
-                    </block>
-                    <block order="4">
-                    </block>
-                    <block order="6">
+                        <cline>        print(i, "Armstrong number.")</cline>
                     </block>
                 </blocks>
             </exercise>

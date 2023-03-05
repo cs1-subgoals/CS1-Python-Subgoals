@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="loops-flr-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluate Loops-WE2-P1</title>
+    <xi:include href='./subgoals_evaluate_loops.ptx' />
+    <transition/>
+    <subsection>
+        <title>Evaluate Loops-WE2-P1</title>
+    <exercises>
+        <exercise xml:id="m-Loops-WE2-P1-1">
+            <statement>
+                <p>Q1: What is the value stored in total after the following code executes?</p>
+                <program language="python"><input>
+total = 0
+for x in range(50, 0, -5):
+    total += x
+                </input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>50</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>0</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>275</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>270</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>5</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Loops-WE2-P1-2">
+            <statement>
+                <p>Q2: What is the output of the following loop?</p>
+                <program language="python"><input>
+for y in range(0, 10):
+    print(y * y, end=" ")
+                </input></program>
+            </statement>
+            <choices>
+                <choice correct="yes">
+                    <statement><p>0 1 4 9 16 25 36 49 64 81</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1 4 9 16 25 36 49 64 81</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1 4 9 16 25 36 49 64</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>0 1 2 3 4 5 6 7 8 9 10</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1 2 3 4 5 6 7 8 9 10</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Loops-WE2-P1-3">
+            <statement>
+                <p>Q3: What is the output of the following loop?</p>
+                <program language="python"><input>
+for y in range(100, 10, 1):
+    print(y)
+                </input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement> <p>100</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>10</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>100 90 80 70 60 50 40 30 20</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>100 90 80 70 60 50 40 30 20 10</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>no output produced</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Loops-WE2-P1-4">
+            <statement>
+                <p>Q4: After the following code is executed:</p>
+                <program language="python"><input>
+a = 0
+b = 0
+for x in range(1, 15):
+    if x % 2 == 0:
+        a += x
+    else:
+        b += x
+                </input></program>
+                <p>The value of <code>a</code> is <var/> and the value of <code>b</code> is <var/></p>
+            </statement>
+            <setup>
+                <var>
+                    <condition number="56">
+                        <feedback><p>Correct</p></feedback>
+                    </condition>
+                    <condition number="49">
+                        <feedback><p>Correct</p></feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
+    </exercises>
+    </subsection>
+    <program xml:id="ac-loops-we2-p1" interactive="activecode" language="python">
+        <input></input>
+    </program>
+</section>

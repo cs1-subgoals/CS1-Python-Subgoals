@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="loops-wls-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluate Loops-WE4-P1</title>
+    <xi:include href='./subgoals_evaluate_loops.ptx' />
+    <transition/>
+    <subsection>
+        <title>Evaluate Loops-WE4-P1</title>
+    <exercises>
+        <exercise xml:id="m-Loops-WE4-P1-1">
+            <statement>
+                <p>Q1: What is the output of the following loop if the user input is: 10, 20, 30, 35, 40, -1</p>
+                <program language="python"><input>
+print("Enter a negative score to signal the end of the input.")
+total = 0
+count = 0
+score = int(input("Score: "))
+while score >= 0:
+    count += 1
+    total += score
+    score = int(input("Score: "))
+print(total/count)
+</input></program>
+            </statement>
+            <choices>
+                <choice correct="yes">
+                    <statement><p>27.0</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>27</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>22.5</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>22</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>Runtime error</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Loops-WE4-P1-2">
+            <statement>
+                <p>Q2: What is the output of the following loop if the user input is: 10, 20, 30, 35, 40, -1?</p>
+                <program language="python"><input>
+print("Enter a negative score to signal the end of the input.")
+total = 0
+count = 0
+score = int(input("Score: "))
+while score >= 0:
+    score = int(input("Score: "))
+    count += 1
+    total += score
+print(total/count)
+                </input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>27.0</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>22.5</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>24.8</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>20.666667</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>Runtime error</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Loops-WE4-P1-3">
+            <statement>
+                <p>Q3: What is the output of the following loop if the user input is: 10, 20, 30, 35, 40, -1</p>
+                <program language="python"><input>
+print("Enter a negative score to signal the end of the input.")
+total = 0
+count = 0
+score = int(input("Score: "))
+while score >= 0:
+    total += score
+    score = int(input("Score: "))
+    count += 1
+print(total/count)
+</input></program>
+            </statement>
+            <choices>
+                <choice correct="yes">
+                    <statement><p>27.0</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>27</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>22.5</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>22</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>Runtime error</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+    </exercises>
+    </subsection>
+    <program xml:id="ac-loops-we4-p1" interactive="activecode" language="python">
+        <input></input>
+    </program>
+</section>

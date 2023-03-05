@@ -1,4 +1,4 @@
-<section xml:id="var_call">
+<section xml:id="var_call"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Variables Call</title>
     <xi:include href='./subgoals_evaluate_functions.ptx' />
     <subsection>

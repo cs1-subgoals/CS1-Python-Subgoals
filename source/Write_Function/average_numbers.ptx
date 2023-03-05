@@ -19,8 +19,8 @@
         <p>We only know that the three parameters are integers, so their names are fairly generic.</p>
         <program language="python">
             <input>
-                def average3(num1, num2, num3):
-                pass
+def average3(num1, num2, num3):
+    pass
 
             </input>
         </program>
@@ -29,8 +29,8 @@
         <title>3. Write function body</title>
         <program language="python">
             <input>
-                def average3(num1, num2, num3):
-                result = (num1 + num2 + num3) // 3
+def average3(num1, num2, num3):
+    result = (num1 + num2 + num3) // 3
 
             </input>
         </program>
@@ -41,9 +41,9 @@
             returned.</p>
         <program language="python">
             <input>
-                def average3(num1, num2, num3):
-                result = (num1 + num2 + num3) // 3
-                return result
+def average3(num1, num2, num3):
+    result = (num1 + num2 + num3) // 3
+    return result
 
             </input>
         </program>
@@ -61,11 +61,11 @@
         <p>We must also remember to print the result, if we want to see the final result.</p>
         <program language="python">
             <input>
-                def average3(num1, num2, num3):
-                result = (num1 + num2 + num3) // 3
-                return result
+def average3(num1, num2, num3):
+    result = (num1 + num2 + num3) // 3
+    return result
 
-                print(average3(100, 300, 150))
+print(average3(100, 300, 150))
 
             </input>
         </program>

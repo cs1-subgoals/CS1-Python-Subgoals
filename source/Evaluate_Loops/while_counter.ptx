@@ -1,4 +1,4 @@
-<section xml:id="while_counter">
+<section xml:id="while_counter"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>While Counter</title>
         <xi:include href='./subgoals_evaluate_loops.ptx' />
         <subsection>
@@ -21,7 +21,7 @@ print(total)
 counter = 0
 total = 0
 </input></program>
-        <p>Terminiation condition:</p>
+        <p>Termination condition:</p>
         <program language="python"><input>
 while counter &lt; 50:
 </input></program>

@@ -1,4 +1,4 @@
-<section xml:id="eval_funcs">
+<section xml:id="eval_funcs"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Functions</title>
     <xi:include href='./subgoals_evaluate_functions.ptx' />
     <subsection>

@@ -10,7 +10,7 @@
 alpha = 42
 beta = 1
 gamma = 5
-<!--result = beta <= alpha This line is causing an error, below too, so appears to be with the <= characters-->
+result = beta &lt;= alpha
 </input></program>
 </subsection>
 <subsection xml:id="subsec-boolrSG1">

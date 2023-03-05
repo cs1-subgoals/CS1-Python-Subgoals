@@ -1,0 +1,42 @@
+<section xml:id="for_loop_range"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>For Loop Range</title>
+        <xi:include href='./subgoals_evaluate_loops.ptx' />
+        <subsection>
+            <p>You can watch this video or read through the content below it.</p>
+            <p>Problem: Given the following code, what is the output?</p>
+            <program language="python"><input>
+total = 0
+for x in range(5, 50):
+    if x % 5 == 0:
+        total += x
+print(total)
+</input></program>
+        </subsection>
+    <subsection xml:id="subsec-flrSG1">
+        <title>Determine loop components</title>
+        <p>Starting values: The initial value in <code>x</code> will be <code>5</code>. </p>
+        <program language="python"><input>
+total = 0
+</input></program>
+        <p>Iteration Variable: The iteration variable <code>x</code> will be increased by <code>5</code> every iteration.</p>
+        <p>Termination condition: When <code>x</code> is <code>50</code></p>
+        <p>Body that is repeated based on indentation:</p>
+        <program language="python"><input>
+if x % 5 == 0:
+    total += x
+</input></program>
+    </subsection>
+    <subsection xml:id="subsec-flrSG2">
+        <title>Trace the loop, writing updated values for every iteration or until you identify the pattern</title>
+        <p>For every iteration of loop, write down values.</p>
+        <image source="Evaluate_Loops/Figures/WL1ASlide6.png" width="90%"/>
+        <p><c>x</c> increments by <c>1</c> But only when the <c>x</c> is evenly divisible by <c>5</c> is the value added to <c>total</c>.</p>
+        <image source="Evaluate_Loops/Figures/WL1ASlide7.png" width="90%"/>
+        <image source="Evaluate_Loops/Figures/WL1ASlide8.png" width="90%"/>
+        <answer>
+                <p>
+                    Output is <c>225</c>
+                </p>
+        </answer>
+    </subsection>
+</section>

@@ -10,7 +10,7 @@
 alpha = 0
 beta = 1
 gamma = 5
-<!--result = alpha > beta or gamma problem with > operand??-->     
+result = alpha &gt; beta or gamma
 </input></program>
 </subsection>
 <subsection xml:id="subsec-boolean-truthSG1"> 

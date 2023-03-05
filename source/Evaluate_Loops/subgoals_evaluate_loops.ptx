@@ -3,36 +3,26 @@
     <p>
         <ol marker="1">
             <li>
-                <p>Diagram which statements go together.</p>
-            </li>
-            <li>
-                <p>Define and initialize variables</p>
+                <p>Determine Loop Components</p>
                 <p>
                     <ol marker="a">
                         <li>
-                            <p>Determine the start condition.</p>
+                            <p>Start condition and values</p>
                         </li>
                         <li>
-                            <p>Determine the update condition.</p>
+                            <p>Iteration variable and/or update condition</p>
                         </li>
                         <li>
-                            <p>Determine the termination condition.</p>
+                            <p>Termination/final condition</p>
                         </li>
                         <li>
-                            <p>Determine body that is repeated.</p>
+                            <p>Body that is repeated based on indentation</p>
                         </li>
                     </ol>
                 </p>
             </li>
             <li>
-                <p>Trace the loop.</p>
-                <p>
-                    <ol marker="a">
-                        <li>
-                            <p>For every iteration of the loop, write down the values.</p>
-                        </li>
-                    </ol>
-                </p>
+                <p>Trace the loop, writing updated values for every iteration or until you identify the pattern</p>
             </li>
         </ol>
     </p>
