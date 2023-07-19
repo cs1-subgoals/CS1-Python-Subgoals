@@ -4,7 +4,7 @@
     <title>Convert Temperature</title>
     <xi:include href='./subgoals_write_expression.ptx' />
     <subsection>
-    <p>You can watch this video or read through the content below it.</p>
+    <!-- <p>You can watch this video or read through the content below it.</p> -->
     <p>Problem: Write an expression that will convert the float variable <c>fahrenheit</c> to be in
         degrees celsius instead.</p>
     </subsection>

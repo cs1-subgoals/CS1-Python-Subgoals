@@ -4,7 +4,7 @@
     <title>Basic Knowledge</title>
     <xi:include href='./subgoals_evaluate_expressions.ptx' />    
     <subsection>
-        <p>You can watch this video or read through the content below it.</p>
+        <!-- <p>You can watch this video or read through the content below it.</p> -->
         <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable?</p>
         <program language="python"><input>
 alpha = 2

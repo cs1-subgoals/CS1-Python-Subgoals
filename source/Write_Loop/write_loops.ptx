@@ -4,7 +4,7 @@
     <title>Write Loops</title>
     <xi:include href='./subgoals_write_loop.ptx' />
     <subsection>
-    <p>You can watch this video or read through the content below it.</p>
+    <!-- <p>You can watch this video or read through the content below it.</p> -->
     <p>Problem: Write a loop that will prompt the user to continue to enter numbers until a sentinel
         value (<c>-1</c>) is entered, and then find the maximum value entered.</p>
     </subsection>

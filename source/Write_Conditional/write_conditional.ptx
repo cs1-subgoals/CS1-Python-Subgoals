@@ -5,7 +5,7 @@
     <title>Write Conditional</title>
     <xi:include href='./subgoals_write_conditional.ptx' />
     <subsection>
-    <p>You can watch this video or read through the content below it.</p>
+    <!-- <p>You can watch this video or read through the content below it.</p> -->
     <p>Problem: Write the Python conditionals to solve the following specifications:</p>
     <blockquote>
         <p>If integer variable <c>current</c> is odd, change its value so that it is now 4 times <c>current</c> plus 1; otherwise change its value so that it is now half of <c>current</c> (rounded down when <c>current</c> is odd).</p>

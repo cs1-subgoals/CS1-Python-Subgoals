@@ -2,7 +2,7 @@
     <title>If Else Statements</title>
         <xi:include href='./subgoals_evaluate_conditionals.ptx' />
         <subsection>
-        <p>You can watch this video or read through the content below it.</p>
+        <!-- <p>You can watch this video or read through the content below it.</p> -->
         <p>Given the following declarations:</p>
         <program language="python"><input>
 alpha = 2

@@ -4,7 +4,7 @@
     <title>Average Numbers</title>
     <xi:include href='./subgoals_write_function.ptx' />
     <subsection>
-    <p>You can watch this video or read through the content below it.</p>
+    <!-- <p>You can watch this video or read through the content below it.</p> -->
     <p>Problem: Define a function <c>average3</c> that consumes three integers and produces a new
         integer that is the truncated average of the numbers. Use the function to calculate the
         average of the numbers <c>100</c>, <c>300</c>, and <c>150</c>.</p>

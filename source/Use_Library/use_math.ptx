@@ -4,7 +4,7 @@
     <title>Use Math</title>
     <xi:include href='./subgoals_use_lib.ptx' />
     <subsection>
-    <p>You can watch this video or read through the content below it.</p>
+    <!-- <p>You can watch this video or read through the content below it.</p> -->
     <p>Problem:</p>
     <p>Given the following code:</p>
     <program language="python">

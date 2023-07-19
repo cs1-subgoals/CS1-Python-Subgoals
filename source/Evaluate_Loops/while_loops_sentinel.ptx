@@ -2,7 +2,7 @@
     <title>While Loops Sentinel</title>
         <xi:include href='./subgoals_evaluate_loops.ptx' />
         <subsection>
-            <p>You can watch this video or read through the content below it.</p>
+            <!-- <p>You can watch this video or read through the content below it.</p> -->
             <p>Problem: Given the following code, what is the output if the user enters the values: 10, 15, 20, 25, 30, 35, -1?</p>
             <program language="python"><input>
 print("Enter a negative score to signal the end of input.")

@@ -2,7 +2,7 @@
     <title>For Loops with Lists</title>
         <xi:include href='./subgoals_evaluate_loops.ptx' />
         <subsection>
-            <p>You can watch this video or read through the content below it.</p>
+            <!-- <p>You can watch this video or read through the content below it.</p> -->
             <p>Problem: Given the following code, what is the output?</p>
             <program language="python"><input>
 mixed_numbers = [5, 3, -4, 7, 2]
