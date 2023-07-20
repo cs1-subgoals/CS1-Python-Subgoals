@@ -24,15 +24,19 @@ omega = 2.5
         <exercises>
             <exercise xml:id="m-Expr-WE1-P2-6">
                 <statement>
-                    <p>Q6: <program language="python"><input>alpha = beta</input></program> <var />
+                    <p>Q6: What is the value of alpha?<program language="python"><input>alpha = beta</input></program> <var />
                     </p>
                 </statement>
                 <setup>
                     <var>
-                        <p>What is the value of alpha?</p>
-                        <condition number="1">
+                        <condition number='1'>
                             <feedback>
                                 <p>Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string='.*'>
+                            <feedback>
+                                <p>Incorrect</p>
                             </feedback>
                         </condition>
                     </var>
@@ -40,14 +44,18 @@ omega = 2.5
             </exercise>
             <exercise xml:id="m-Expr-WE1-P2-7">
                 <statement>
-                    <p>Q7: <program language="python"><input>alpha = omega</input></program> <var /></p>
+                    <p>Q7: What is the value of alpha?<program language="python"><input>alpha = omega</input></program> <var /></p>
                 </statement>
                 <setup>
                     <var>
-                        <p>What is the value of alpha?</p>
-                        <condition number="1">
+                        <condition number="2.5">
                             <feedback>
                                 <p>Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string='.*'>
+                            <feedback>
+                                <p>Incorrect</p>
                             </feedback>
                         </condition>
                     </var>
@@ -56,13 +64,17 @@ omega = 2.5
             </exercise>
 
             <exercise xml:id="m-Expr-WE1-P2-8">
-                <statement><p>Q8: <program language="python"><input>theta = 22</input></program> <var /></p></statement>
+                <statement><p>Q8: What is the value of theta?<program language="python"><input>theta = 22</input></program> <var /></p></statement>
                 <setup>
                     <var>
-                        <p>What is the value of theta?</p>
                         <condition number="22">
                             <feedback>
                                 <p>Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string='.*'>
+                            <feedback>
+                                <p>Incorrect</p>
                             </feedback>
                         </condition>
                     </var>
@@ -70,15 +82,19 @@ omega = 2.5
             </exercise>
             <exercise xml:id="m-Expr-WE1-P2-9">
                 <statement>
-                    <p>Q9: <program language="python"><input>omega = beta</input></program> <var />
+                    <p>Q9: What is the value of omega?<program language="python"><input>omega = beta</input></program> <var />
                     </p>
                 </statement>
                 <setup>
                     <var>
-                        <p>What is the value of omega?</p>
                         <condition number="1">
                             <feedback>
                                 <p>Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string='.*'>
+                            <feedback>
+                                <p>Incorrect</p>
                             </feedback>
                         </condition>
                     </var>

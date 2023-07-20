@@ -29,11 +29,42 @@ kappa = 3.0
         <exercises>
         <exercise>
             <statement>
-    <p>Q14: gamma = beta + alpha <var/>  </p>
-        </statement><setup><var><p>What is the value of gamma?</p><condition number="3"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
+                <p>Q14: What is the value of gamma?<program language="python"><input>gamma = beta + alpha </input></program><var/>  </p>
+            </statement>
+            <setup>
+                <var>
+                    <condition number="3">
+                        <feedback>
+                            <p>Correct</p>
+                        </feedback>
+                    </condition>
+                    <condition string='.*'>
+                            <feedback>
+                                <p>Incorrect</p>
+                            </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
         <exercise>
             <statement>
-    <p>Q15: rho = delta + kappa <var/>  </p></statement><setup><var><p>What is the value of rho?</p><condition number="6.0" tolerance=".001"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
+                <p>Q15: What is the value of rho?<program language="python"><input>rho = delta + kappa</input></program> <var/>  </p>
+            </statement>
+            <setup>
+                <var>
+                    <condition number="6.0" tolerance=".001">
+                        <feedback>
+                            <p>Correct</p>
+                        </feedback>
+                    </condition>
+                    <condition string='.*'>
+                            <feedback>
+                                <p>Incorrect</p>
+                            </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
     <exercise xml:id="m-Expr-WE2-P2-16">
         <statement>
 

@@ -46,11 +46,18 @@ kappa = 3.0
                         </choices>
                     </exercise>
                     <exercise>
-                        <statement><p>Q33: alpha *= beta + delta<var/></p></statement>
-                            <setup><var>
-                                <p>What is the value of alpha?</p>
+                        <statement><p>Q33: What is the value of alpha?<program language="python"><input>alpha *= beta + delta</input></program><var/></p></statement>
+                            <setup>
+                                <var>
                                     <condition number="8">
-                                        <feedback><p>Correct</p></feedback>
+                                        <feedback>
+                                            <p>Correct</p>
+                                        </feedback>
+                                    </condition>
+                                    <condition string='.*'>
+                                        <feedback>
+                                            <p>Incorrect</p>
+                                        </feedback>
                                     </condition>
                             </var></setup>
                     </exercise>
