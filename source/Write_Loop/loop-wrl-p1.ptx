@@ -29,79 +29,78 @@
                 <exercise>
                     <statement>
                         <!-- TODO: I have no idea how to setup this particular kind of question. Maybe convert it to something else? -->
-                        <p>Q2: Fill in the blanks in the following code to create a program that will print the even numbers between 1 and 20.
+                        <p>Q2: Fill in the blanks in the following code to create a program that will print the even numbers between 1 and 20 (inclusive).
 <program language="python"><input>
-for ___A___ in ___B___:
+for x in range(__A__, __B__):
     if ___C___ % ___D___ == ___E___:
-        print(___A___)
+        print(___C___)
 </input></program>
-                        <var/>
-                        <var/>
-                        <var/>
-                        <var/>
-                        <var/>
                     </p>
+                    <p>Blank A: <var/></p>
+                    <p>Blank B: <var/></p>
+                    <p>Blank C: <var/></p>
+                    <p>Blank D: <var/></p>
+                    <p>Blank E: <var/></p>
                 </statement>
                 <setup>
                     <var>
-                        <line_block>
-                            <line>Blank A: <BlankNode/>
-                            </line>
-                            <line>Blank B: <BlankNode/>
-                            </line>
-                            <line>Blank C: <BlankNode/>
-                            </line>
-                            <line>Blank D: <BlankNode/>
-                            </line>
-                            <line>Blank E: <BlankNode/>
-                            </line>
-                        </line_block>
-                    </var>
-                    <var>
                         <condition number="1">
                             <feedback>
-                                <p>Correct</p>
+                                <p>A is Correct</p>
                             </feedback>
                         </condition>
-                        <condition string="^\s*x\s*$">
+                        <condition string='.*'>
                             <feedback>
-                                <p>Incorrect.</p>
-                            </feedback>
-                        </condition>
-                    </var>
-                    <var>
-                        <condition number="20">
-                            <feedback>
-                                <p>Correct</p>
-                            </feedback>
-                        </condition>
-                        <condition string="^\s*x\s*$">
-                            <feedback>
-                                <p>Incorrect.</p>
+                                <p>A is Incorrect</p>
                             </feedback>
                         </condition>
                     </var>
                     <var>
-                        <condition string="^\s*i\s*$">
+                        <condition number="21">
                             <feedback>
-                                <p>Correct</p>
+                                <p>B is Correct</p>
                             </feedback>
                         </condition>
-                        <condition string="^\s*x\s*$">
+                        <condition string='.*'>
                             <feedback>
-                                <p>Incorrect.</p>
+                                <p>B is Incorrect</p>
+                            </feedback>
+                        </condition>
+                    </var>
+                    <var>
+                        <condition string="x">
+                            <feedback>
+                                <p>C is Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string='.*'>
+                            <feedback>
+                                <p>C is Incorrect</p>
                             </feedback>
                         </condition>
                     </var>
                     <var>
                         <condition number="2">
                             <feedback>
-                                <p>Correct</p>
+                                <p>D is Correct</p>
                             </feedback>
                         </condition>
-                        <condition string="^\s*x\s*$">
+                        <condition string='.*'>
                             <feedback>
-                                <p>Incorrect.</p>
+                                <p>D is Incorrect</p>
+                            </feedback>
+                        </condition>
+                    </var>
+                    <var>
+                        <condition number="0">
+                            <feedback>
+                                <p>E is Correct</p>
+                            </feedback>
+                        </condition>
+                        <!--<condition string="^\s*x\s*$">-->
+                        <condition string='.*'>
+                            <feedback>
+                                <p>E is Incorrect</p>
                             </feedback>
                         </condition>
                     </var>

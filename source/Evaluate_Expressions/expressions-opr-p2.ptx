@@ -23,13 +23,15 @@ kappa = 3.0
             </input></program>
             <exercises>
                     <exercise>
-                        <statement><p>Q27: lambda = alpha / kappa + delta<var/></p></statement>
+                        <statement><p>Q27: What is the value of lambda? <program language="python"><input>lambda = alpha / kappa + delta</input></program><var/></p></statement>
                                 <setup><var>
                                     <condition number="3.6667">
                                         <feedback><p>Correct</p></feedback>
                                     </condition>
-                                    <condition string="^\s*x\s*$">
-                                        <feedback><p>Incorrect</p></feedback>
+                                    <condition string='.*'>
+                                        <feedback>
+                                            <p>Incorrect</p>
+                                        </feedback>
                                     </condition>
                                 </var></setup>
                     </exercise>

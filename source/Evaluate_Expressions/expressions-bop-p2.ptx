@@ -29,16 +29,80 @@ kappa = 3.0
         <exercises>
         <exercise>
             <statement>
-    <p>Q21: rho = beta * theta <var/>  </p></statement><setup><var><p>What is the value of rho?</p><condition number="-1.3" tolerance=".01"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
+                <p>Q21: What is the value of rho?<program language="python"><input>rho = beta * theta </input></program><var/>  </p>
+            </statement>
+            <setup>
+                <var>
+                    <condition number="-1.3" tolerance=".01">
+                        <feedback>
+                            <p>Correct</p>
+                        </feedback>
+                    </condition>
+                    <condition string='.*'>
+                            <feedback>
+                                <p>Incorrect</p>
+                            </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
         <exercise>
             <statement>
-    <p>Q22: eta = alpha * beta <var/>  </p></statement><setup><var><p>What is the value of eta?</p><condition number="2"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
+                <p>Q22: What is the value of eta?<program language="python"><input>eta = alpha * beta</input></program><var/>  </p>
+            </statement>
+            <setup>
+                <var>
+                    <condition number="2">
+                        <feedback>
+                            <p>Correct</p>
+                        </feedback>
+                    </condition>
+                    <condition string='.*'>
+                            <feedback>
+                                <p>Incorrect</p>
+                            </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
         <exercise>
             <statement>
-    <p>Q23: kappa = beta + delta <var/>  </p></statement><setup><var><p>What is the value of kappa?</p><condition number="4"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
+                <p>Q23: What is the value of kappa?<program language="python"><input>kappa = beta + delta</input></program> <var/>  </p>
+            </statement>
+            <setup>
+                <var>
+                    <condition number="4">
+                        <feedback>
+                            <p>Correct</p>
+                        </feedback>
+                    </condition>
+                    <condition string='.*'>
+                            <feedback>
+                                <p>Incorrect</p>
+                            </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
         <exercise>
             <statement>
-    <p>Q24: beta = beta / alpha <var/>  </p></statement><setup><var><p>What is the value of beta?</p><condition number=".5" tolerance=".01"><feedback><p>Correct</p></feedback></condition></var></setup></exercise>
+                <p>Q24: What is the value of beta?<program language="python"><input>beta = beta / alpha</input></program> <var/>  </p>
+            </statement>
+            <setup>
+                <var>
+                    <condition number=".5" tolerance=".01">
+                        <feedback>
+                            <p>Correct</p>
+                        </feedback>
+                    </condition>
+                    <condition string='.*'>
+                            <feedback>
+                                <p>Incorrect</p>
+                            </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
 </exercises>
     </subsection>
 
