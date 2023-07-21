@@ -17,7 +17,6 @@ gamma = 0
 omega = 2.5
 theta = -1.3
 kappa = 3.0
-rho = 0.0
             </input>
         </program>
         <exercises>
@@ -25,10 +24,10 @@ rho = 0.0
                 <statement>
                     <p>Q1: After executing the following code:</p>
                     <program language="python">
-                        <input>if theta&gt;omega:
-    rho = kappa + 2</input>
+                        <input>if theta &gt; omega:
+    gamma = kappa + 2</input>
                     </program>
-                    <p>The value in variable <c>rho</c> is <var /></p>
+                    <p>The value in variable <c>gamma</c> is <var /></p>
                 </statement>
                 <setup>
                     <var>
@@ -45,7 +44,7 @@ rho = 0.0
                 <statement>
                     <p>Q2: After executing the following code:</p>
                     <program language="python">
-                        <input>if beta&lt;alpha:
+                        <input>if beta &lt; alpha:
     eta = 42</input>
                     </program>
                     <p>The value in variable <c>eta</c> is <var /></p>
@@ -145,12 +144,26 @@ eta = 42
             </exercise>
             <exercise xml:id="ca-Cond-WE1-P1-5">
                 <statement>
-                    <p>Click on the statements belonging to the if-branch in the following code</p>
+                    <p>Q5: Click on the statements belonging to the if-branch in the following code</p>
                 </statement>
                 <areas language="python">
                     <cline><area correct="no">if kappa &lt; delta:</area></cline>
                     <cline>    <area correct="yes">eta = 42</area></cline>
                     <cline><area correct="no">beta = 22</area></cline>
+                </areas>
+            </exercise>
+            <exercise xml:id="ca-Cond-WE1-P1-6">
+                <statement>
+                    <p>Q6: Click on the statements belonging to the second if-branch (<c>if eta > delta:</c>) in the following code</p>
+                </statement>
+                <areas language="python">
+                    <cline><area correct="no">if gamma == eta:</area></cline>
+                    <cline>    <area correct="no">eta = eta + 5</area></cline>
+                    <cline>    <area correct="no">if eta > delta:</area></cline>
+                    <cline>        <area correct="yes">delta = 10</area></cline>
+                    <cline>    <area correct="no">theta = delta + 2</area></cline>
+                    <cline><area correct="no">alpha = 2</area></cline>
+                    <cline><area correct="no">beta = 4</area></cline>
                 </areas>
             </exercise>
         </exercises>
