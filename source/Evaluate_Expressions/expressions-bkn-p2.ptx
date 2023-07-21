@@ -5,7 +5,7 @@
     <xi:include href='./subgoals_evaluate_expressions.ptx' />
         <subsection>
         <p>For the assignment statements below, either give the new value of the assigned variable,
-            or enter &#8220;invalid&#8221; if the statement would result in a error.
+            or enter &#8220;invalid&#8221; if the statement would result in an error.
             Each problem is independent of the others (e.g. Question 2
             does not depend on Question 1, only the &#8220;Given&#8221; code).</p>
     </subsection>
@@ -19,17 +19,14 @@
             <input>
 alpha = 2
 beta = 1
-delta = 3
-eta = 10
-omega = 2.5
+delta = '3.0'
 theta = -1.3
-kappa = 3.0
 </input>
         </program>
         <exercises>
         <exercise>
             <statement>
-                <p>Q14: What is the value of gamma?<program language="python"><input>gamma = beta + alpha </input></program><var/>  </p>
+                <p>Q15: What is the value of gamma?<program language="python"><input>gamma = beta + alpha </input></program><var/>  </p>
             </statement>
             <setup>
                 <var>
@@ -48,11 +45,11 @@ kappa = 3.0
         </exercise>
         <exercise>
             <statement>
-                <p>Q15: What is the value of rho?<program language="python"><input>rho = delta + kappa</input></program> <var/>  </p>
+                <p>Q16: What is the value of rho?<program language="python"><input>rho = alpha + theta</input></program><var/></p>
             </statement>
             <setup>
                 <var>
-                    <condition number="6.0" tolerance=".001">
+                    <condition number="0.7" tolerance=".001">
                         <feedback>
                             <p>Correct</p>
                         </feedback>
@@ -68,48 +65,48 @@ kappa = 3.0
     <exercise xml:id="m-Expr-WE2-P2-16">
         <statement>
 
-            <p>Q16: alpha = omega</p>
+            <p>Q17: <program language="python"><input>alpha = delta</input></program></p>
             <p>What type of value is stored in alpha?</p>
 
         </statement>
-<choices>
+            <choices>
 
-            <choice>
-                <statement>
-                    <p>Integer</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
+                <choice>
+                    <statement>
+                        <p>Number (integer)</p>
+                    </statement>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>Float</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
+                <choice correct="yes">
+                    <statement>
+                        <p>String</p>
+                    </statement>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>constant</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
+                <choice>
+                    <statement>
+                        <p>Number (double)</p>
+                    </statement>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>This is an invalid operation</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-</choices>
+                <choice>
+                    <statement>
+                        <p>This is an invalid operation</p>
+                    </statement>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
 
     </exercise>
 </exercises>

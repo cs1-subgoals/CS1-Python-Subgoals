@@ -5,8 +5,9 @@
         <xi:include href='./subgoals_evaluate_expressions.ptx' />
         <subsection>
             <p>For the assignment statements below, either give the new value of the assigned variable, 
-                or explain why the statement is invalid. Each problem is independent of the others 
-                (e.g. Question 2 does not depend on Question 1, only the &#8220;Given&#8221; code). 
+                or enter &#8220;invalid&#8221; if the statement would result in an error.
+                Each problem is independent of the others (e.g. Question 2 does not depend on Question 1,
+                only the &#8220;Given&#8221; code). 
                 <term>If you must round a numeric answer, use 4 decimal places of precision.</term></p>
         </subsection>
         <transition/>
@@ -20,12 +21,14 @@ delta = 3
 omega = 2.5
 theta = -1.3
 kappa = 3.0
+gamma = '4'
+zeta = '2.5'
             </input></program>
             <exercises>
-                    <exercise>
-                        <statement><p>Q27: What is the value of lambda? <program language="python"><input>lambda = alpha / kappa + delta</input></program><var/></p></statement>
+                    <exercise xml:id="m-Expr-WE4-P2-32">
+                        <statement><p>Q32: What is the value of lambda? <program language="python"><input>lambda = beta / alpha + delta</input></program><var/></p></statement>
                                 <setup><var>
-                                    <condition number="3.6667">
+                                    <condition number="3.5">
                                         <feedback><p>Correct</p></feedback>
                                     </condition>
                                     <condition string='.*'>
@@ -35,14 +38,40 @@ kappa = 3.0
                                     </condition>
                                 </var></setup>
                     </exercise>
-                    <exercise xml:id="m-Expr-WE4-P2-28">
+                    <exercise xml:id="m-Expr-WE4-P2-33">
+                        <statement><p>Q33: What is the value of lambda? <program language="python"><input>lambda = (gamma + zeta) * delta</input></program><var/></p></statement>
+                                <setup><var>
+                                    <condition string="(&quot;|')42.542.542.5(&quot;|')">
+                                        <feedback><p>Correct</p></feedback>
+                                    </condition>
+                                    <condition string='.*'>
+                                        <feedback>
+                                            <p>Incorrect</p>
+                                        </feedback>
+                                    </condition>
+                                </var></setup>
+                    </exercise>
+                    <exercise xml:id="m-Expr-WE4-P2-34">
+                        <statement><p>Q34: What is the value of lambda? <program language="python"><input>lambda = (delta * omega) + gamma</input></program><var/></p></statement>
+                                <setup><var>
+                                    <condition string="(i|I)nvalid">
+                                        <feedback><p>Correct</p></feedback>
+                                    </condition>
+                                    <condition string='.*'>
+                                        <feedback>
+                                            <p>Incorrect</p>
+                                        </feedback>
+                                    </condition>
+                                </var></setup>
+                    </exercise>
+                    <exercise xml:id="m-Expr-WE4-P2-35">
                         <statement>
-                            <p>Q28: eta = alpha * beta + (omega &#8211; theta) * kappa</p>
+                            <p>Q35: <program language="python"><input>eta = alpha * beta + (omega - theta) * gamma</input></program></p>
                             <p>Why is this statement invalid?</p>
                         </statement>
                         <choices>
                             <choice correct="yes">
-                                <statement><p>cannot assign a float to an int variable</p></statement>
+                                <statement><p>Cannot perform math operations on a string</p></statement>
                                 <feedback><p/></feedback>
                             </choice>
                             <choice>
@@ -54,34 +83,9 @@ kappa = 3.0
                                 <feedback><p/></feedback>
                             </choice>
                             <choice>
-                                <statement><p>cannot assign an int to a float variable</p></statement>
+                                <statement><p>cannot perform string operations on a number</p></statement>
                                 <feedback><p/></feedback>
                             </choice>
-                    </choices>
-                </exercise>
-                <p><term>Given</term></p>
-                <program language="python"><input>
-r = 8
-                </input></program>
-                <exercise xml:id="m-Expr-WE4-P2-29">
-                    <statement><p>Q29: Which statement will calculate the volume of a sphere most accurately?</p></statement>
-                    <choices>
-                        <choice>
-                            <statement><p>volume = 4 / 3 * 3.14 * r * r * r</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>volume = 4 / 3 * 3.14159 * r * r * r</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice correct="yes">
-                            <statement><p>volume = 4.0 / 3 * 3.14 * r * r * r</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>An accurate result is not possible with these data types.</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
                     </choices>
                 </exercise>
             </exercises>

@@ -18,11 +18,13 @@ beta = 1
 delta = 3 
 omega = 2.5 
 theta = -1.3 
-kappa = 3.0 
+kappa = 3.0
+gamma = '4'
+zeta = '2.5'
             </input></program>
             <exercises>
-                <exercise xml:id="m-Expr-WE4-P1-25">
-                    <statement><p>Q25: lambda = alpha / kappa + delta</p></statement>
+                <exercise xml:id="m-Expr-WE4-P1-28">
+                    <statement><p>Q28: <program language="python"><input>lambda = alpha / kappa + delta</input></program></p></statement>
                     <choices>
                         <choice correct="yes">
                             <statement><p>valid</p></statement>
@@ -34,8 +36,34 @@ kappa = 3.0
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE4-P1-26">
-                    <statement><p>Q26: eta = alpha * beta + (omega &#8211; theta) * kappa</p></statement>
+                <exercise xml:id="m-Expr-WE4-P1-29">
+                    <statement><p>Q29: <program language="python"><input>eta = alpha * beta + (gamma - theta) * kappa</input></program></p></statement>
+                    <choices>
+                        <choice>
+                            <statement><p>valid</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice correct="yes">
+                            <statement><p>invalid</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Expr-WE4-P1-30">
+                    <statement><p>Q30: <program language="python"><input>lambda = (gamma + zeta) * delta</input></program></p></statement>
+                    <choices>
+                        <choice correct="yes">
+                            <statement><p>valid</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>invalid</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Expr-WE4-P1-31">
+                    <statement><p>Q31: <program language="python"><input>epsilon = (gamma + zeta) * omega</input></program></p></statement>
                     <choices>
                         <choice>
                             <statement><p>valid</p></statement>

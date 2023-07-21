@@ -21,6 +21,7 @@
             <input>
 beta = 1
 omega = 2.5
+delta = '3.0'
 </input>
         </program>
         <exercises>

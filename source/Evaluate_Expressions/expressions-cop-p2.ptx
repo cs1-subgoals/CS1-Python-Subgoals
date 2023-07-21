@@ -5,8 +5,9 @@
         <xi:include href='./subgoals_evaluate_expressions.ptx' />
         <subsection>
             <p>For the assignment statements below, either give the new value of the assigned variable, 
-                or explain why the statement is invalid. Each problem is independent of the others 
-                (e.g. Question 2 does not depend on Question 1, only the &#8220;Given&#8221; code).</p>
+                or enter &#8220;invalid&#8221; if the statement would result in an error.
+                Each problem is independent of the others (e.g. Question 2 does not depend on
+                Question 1, only the &#8220;Given&#8221; code).</p>
         </subsection>
         <transition/>
         <subsection>
@@ -18,48 +19,80 @@ beta = 1
 delta = 3
 omega = 2.5
 theta = -1.3
-kappa = 3.0
+kappa = '3'
             </input></program>
             <exercises>
-                <exercise xml:id="m-Expr-WE5-P2-32">
+                <exercise xml:id="m-Expr-WE5-P2-40">
+                    <statement><p>Q40: What is the value of kappa?<program language="python"><input>kappa /= beta</input></program><var/></p></statement>
+                        <setup>
+                            <var>
+                                <condition string="(i|I)nvalid">
+                                    <feedback>
+                                        <p>Correct</p>
+                                    </feedback>
+                                </condition>
+                                <condition string='.*'>
+                                    <feedback>
+                                        <p>Incorrect</p>
+                                    </feedback>
+                                </condition>
+                        </var></setup>
+                </exercise>
+                <exercise xml:id="m-Expr-WE5-P2-41">
+                    <statement><p>Q41: What is the value of alpha?<program language="python"><input>alpha *= beta + delta</input></program><var/></p></statement>
+                        <setup>
+                            <var>
+                                <condition number="8">
+                                    <feedback>
+                                        <p>Correct</p>
+                                    </feedback>
+                                </condition>
+                                <condition string='.*'>
+                                    <feedback>
+                                        <p>Incorrect</p>
+                                    </feedback>
+                                </condition>
+                        </var></setup>
+                </exercise>
+                <exercise xml:id="m-Expr-WE5-P2-42">
+                    <statement><p>Q42: What is the value of alpha?<program language="python"><input>alpha *= kappa</input></program><var/></p></statement>
+                        <setup>
+                            <var>
+                                <condition string="(&quot;|')33(&quot;|')">
+                                    <feedback>
+                                        <p>Correct</p>
+                                    </feedback>
+                                </condition>
+                                <condition string='.*'>
+                                    <feedback>
+                                        <p>Incorrect</p>
+                                    </feedback>
+                                </condition>
+                        </var></setup>
+                </exercise>
+                <exercise xml:id="m-Expr-WE5-P2-43">
                     <statement>
-                        <p>Q32: delta += omega</p>
+                        <p>Q43: delta *= omega</p>
                         <p>Why is this statement invalid?</p>
                     </statement>
                         <choices>
+                            <choice>
+                                <statement><p>omega does not have a value</p></statement>
+                                <feedback><p/></feedback>
+                            </choice>
                             <choice correct="yes">
-                                <statement><p>cannot assign a float to an int variable</p></statement>
+                                <statement><p>cannot multiple by a non-integer value</p></statement>
                                 <feedback><p/></feedback>
                             </choice>
                             <choice>
-                                <statement><p>eta does not have a value</p></statement>
+                                <statement><p>cannot perform string operations on a number</p></statement>
                                 <feedback><p/></feedback>
                             </choice>
                             <choice>
-                                <statement><p>eta is a constant</p></statement>
-                                <feedback><p/></feedback>
-                            </choice>
-                            <choice>
-                                <statement><p>cannot assign an int to a float variable</p></statement>
+                                <statement><p>cannot perform math operations on a string</p></statement>
                                 <feedback><p/></feedback>
                             </choice>
                         </choices>
-                    </exercise>
-                    <exercise>
-                        <statement><p>Q33: What is the value of alpha?<program language="python"><input>alpha *= beta + delta</input></program><var/></p></statement>
-                            <setup>
-                                <var>
-                                    <condition number="8">
-                                        <feedback>
-                                            <p>Correct</p>
-                                        </feedback>
-                                    </condition>
-                                    <condition string='.*'>
-                                        <feedback>
-                                            <p>Incorrect</p>
-                                        </feedback>
-                                    </condition>
-                            </var></setup>
                     </exercise>
             </exercises>
         </subsection>

@@ -18,11 +18,11 @@ beta = 1
 delta = 3
 omega = 2.5
 theta = -1.3
-kappa = 3.0
+kappa = '3'
             </input></program>
             <exercises>
-                <exercise xml:id="m-Expr-WE5-P1-30">
-                    <statement><p>Q30: delta += alpha</p></statement>
+                <exercise xml:id="m-Expr-WE5-P1-36">
+                    <statement><p>Q36: <program language="python"><input>delta += omega</input></program></p></statement>
                     <choices>
                         <choice correct="yes">
                             <statement><p>valid</p></statement>
@@ -34,8 +34,34 @@ kappa = 3.0
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE5-P1-31">
-                    <statement><p>Q31: alpha *= beta + delta</p></statement>
+                <exercise xml:id="m-Expr-WE5-P1-37">
+                    <statement><p>Q37: <program language="python"><input>kappa *= beta + delta</input></program></p></statement>
+                    <choices>
+                        <choice correct="yes">
+                            <statement><p>valid</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>invalid</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Expr-WE5-P1-38">
+                    <statement><p>Q38: <program language="python"><input>eta -= 10</input></program></p></statement>
+                    <choices>
+                        <choice>
+                            <statement><p>valid</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice correct="yes">
+                            <statement><p>invalid</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Expr-WE5-P1-39">
+                    <statement><p>Q39: <program language="python"><input>delta += theta * alpha</input></program></p></statement>
                     <choices>
                         <choice correct="yes">
                             <statement><p>valid</p></statement>

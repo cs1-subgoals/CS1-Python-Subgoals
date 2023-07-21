@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!-- TEMPLATE -->
-
 <section xml:id="expressions-btr-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Evaluate Expressions-WE10-P1</title> <!-- insert WE number -->
+        <title>Evaluate Expressions-WE10-P1</title>
         <xi:include href='./subgoals_evaluate_expressions.ptx' />
         <subsection>
             <p>For all given problems below, evaluate what value is assigned to the variable . 
@@ -12,17 +9,17 @@
         </subsection>
         <transition/>
         <subsection>
-            <title>Expressions-WE10-P1</title> <!-- insert WE number -->
+            <title>Expressions-WE10-P1</title>
             <p><term>Given</term></p>
             <program language="python"><input>
 alpha = 10
 beta = 0
 gamma = -2.5
-delta = 0.0
+delta = 'string'
             </input></program>
             <exercises>
-                <exercise xml:id="m-Expr-WE10_-P1-75"> <!-- insert WE number -->
-                    <statement><p>Q1: What is the value stored in result?</p>
+                <exercise xml:id="m-Expr-WE10_-P1-67">
+                    <statement><p>Q67: What is the value stored in result?</p>
                         <program language="python"><input>result = alpha and beta</input></program></statement>
                     <choices>
                         <choice correct="yes">
@@ -43,8 +40,8 @@ delta = 0.0
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE10_-P1-76"> <!-- insert WE number -->
-                    <statement><p>Q2: What is the value stored in result?</p>
+                <exercise xml:id="m-Expr-WE10_-P1-68">
+                    <statement><p>Q68: What is the value stored in result?</p>
                         <program language="python"><input>result = delta or alpha or gamma + 5</input></program></statement>
                     <choices>
                         <choice correct="yes">
@@ -69,9 +66,87 @@ delta = 0.0
                         </choice>
                     </choices>
                 </exercise>
+                <exercise xml:id="m-Expr-WE10_-P1-69">
+                    <statement><p>Q69: What is the value stored in result?</p>
+                        <program language="python"><input>result = True or alpha</input></program></statement>
+                    <choices>
+                        <choice correct="yes">
+                            <statement><p>True</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>False</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>1</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>10</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>Invalid Code</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Expr-WE10_-P1-70">
+                    <statement><p>Q70: What is the value stored in result?</p>
+                        <program language="python"><input>result = delta or alpha</input></program></statement>
+                    <choices>
+                        <choice>
+                            <statement><p>10</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>True</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>False</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice correct="yes">
+                            <statement><p>'string'</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>Invalid Code</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Expr-WE10_-P1-71">
+                    <statement><p>Q71: What is the value stored in result?</p>
+                        <program language="python"><input>result = delta or gamma</input></program></statement>
+                    <choices>
+                        <choice>
+                            <statement><p>-2.5</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice correct="yes">
+                            <statement><p>'string'</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>True</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>False</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>Invalid Code</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
             </exercises>
         </subsection>
-        <program xml:id="ac-express-WE10_-p1-77" interactive="activecode" language="python"> <!-- insert WE number -->
+        <program xml:id="ac-express-WE10_-p1-77" interactive="activecode" language="python">
             <input></input>
         </program>
     </section>
