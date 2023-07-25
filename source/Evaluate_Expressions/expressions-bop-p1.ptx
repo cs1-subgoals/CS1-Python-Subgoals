@@ -116,7 +116,7 @@ kappa = '3'
     <exercise xml:id="m-Expr-WE3-P1-21">
         <statement>
 
-            <p>Q21: <program language="python"><input>beta = beta / alpha</input></program></p>
+            <p>Q21: <program language="python"><input>eta = eta // omega</input></program></p>
 
         </statement>
 <choices>

@@ -18,8 +18,8 @@ gamma = -2.5
 delta = 'string'
             </input></program>
             <exercises>
-                <exercise xml:id="m-Expr-WE10_-P1-67">
-                    <statement><p>Q67: What is the value stored in result?</p>
+                <exercise xml:id="m-Expr-WE10_-P1-68">
+                    <statement><p>Q68: What is the value stored in result?</p>
                         <program language="python"><input>result = alpha and beta</input></program></statement>
                     <choices>
                         <choice correct="yes">
@@ -40,8 +40,8 @@ delta = 'string'
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE10_-P1-68">
-                    <statement><p>Q68: What is the value stored in result?</p>
+                <exercise xml:id="m-Expr-WE10_-P1-69">
+                    <statement><p>Q69: What is the value stored in result?</p>
                         <program language="python"><input>result = delta or alpha or gamma + 5</input></program></statement>
                     <choices>
                         <choice correct="yes">
@@ -66,8 +66,8 @@ delta = 'string'
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE10_-P1-69">
-                    <statement><p>Q69: What is the value stored in result?</p>
+                <exercise xml:id="m-Expr-WE10_-P1-70">
+                    <statement><p>Q70: What is the value stored in result?</p>
                         <program language="python"><input>result = True or alpha</input></program></statement>
                     <choices>
                         <choice correct="yes">
@@ -92,8 +92,8 @@ delta = 'string'
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE10_-P1-70">
-                    <statement><p>Q70: What is the value stored in result?</p>
+                <exercise xml:id="m-Expr-WE10_-P1-71">
+                    <statement><p>Q71: What is the value stored in result?</p>
                         <program language="python"><input>result = delta or alpha</input></program></statement>
                     <choices>
                         <choice>
@@ -118,8 +118,8 @@ delta = 'string'
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE10_-P1-71">
-                    <statement><p>Q71: What is the value stored in result?</p>
+                <exercise xml:id="m-Expr-WE10_-P1-72">
+                    <statement><p>Q72: What is the value stored in result?</p>
                         <program language="python"><input>result = delta or gamma</input></program></statement>
                     <choices>
                         <choice>

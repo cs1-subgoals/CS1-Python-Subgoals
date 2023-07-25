@@ -88,6 +88,30 @@ zeta = '2.5'
                             </choice>
                     </choices>
                 </exercise>
+                <exercise xml:id="m-Expr-WE4-P2-36">
+                    <statement>
+                        <p>Q36: Given <program language="python"><input>r = 8</input></program></p>
+                        <p>Which statement will calculate the volume of a sphere most accurately?</p>
+                    </statement>
+                    <choices>
+                        <choice>
+                            <statement><c>volume = 4 // 3 * 3.14 * r * r * r</c></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><c>volume = 4 // 3 * 3.14159 * r * r * r</c></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice correct="yes">
+                            <statement><c>volume = 4 / 3 * 3.14 * r * r * r</c></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>An accurate result is not possible with these data types</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
             </exercises>
         </subsection>
         <program xml:id="ac-express-we4-p2" interactive="activecode" language="python">

@@ -22,8 +22,8 @@ theta = -1.3
 kappa = '3'
             </input></program>
             <exercises>
-                <exercise xml:id="m-Expr-WE5-P2-40">
-                    <statement><p>Q40: What is the value of kappa?<program language="python"><input>kappa /= beta</input></program><var/></p></statement>
+                <exercise xml:id="m-Expr-WE5-P2-41">
+                    <statement><p>Q41: What is the value of kappa?<program language="python"><input>kappa /= beta</input></program><var/></p></statement>
                         <setup>
                             <var>
                                 <condition string="(i|I)nvalid">
@@ -38,8 +38,8 @@ kappa = '3'
                                 </condition>
                         </var></setup>
                 </exercise>
-                <exercise xml:id="m-Expr-WE5-P2-41">
-                    <statement><p>Q41: What is the value of alpha?<program language="python"><input>alpha *= beta + delta</input></program><var/></p></statement>
+                <exercise xml:id="m-Expr-WE5-P2-42">
+                    <statement><p>Q42: What is the value of alpha?<program language="python"><input>alpha *= beta + delta</input></program><var/></p></statement>
                         <setup>
                             <var>
                                 <condition number="8">
@@ -54,8 +54,8 @@ kappa = '3'
                                 </condition>
                         </var></setup>
                 </exercise>
-                <exercise xml:id="m-Expr-WE5-P2-42">
-                    <statement><p>Q42: What is the value of alpha?<program language="python"><input>alpha *= kappa</input></program><var/></p></statement>
+                <exercise xml:id="m-Expr-WE5-P2-43">
+                    <statement><p>Q43: What is the value of alpha?<program language="python"><input>alpha *= kappa</input></program><var/></p></statement>
                         <setup>
                             <var>
                                 <condition string="(&quot;|')33(&quot;|')">
@@ -70,9 +70,9 @@ kappa = '3'
                                 </condition>
                         </var></setup>
                 </exercise>
-                <exercise xml:id="m-Expr-WE5-P2-43">
+                <exercise xml:id="m-Expr-WE5-P2-44">
                     <statement>
-                        <p>Q43: delta *= omega</p>
+                        <p>Q44: delta *= omega</p>
                         <p>Why is this statement invalid?</p>
                     </statement>
                         <choices>

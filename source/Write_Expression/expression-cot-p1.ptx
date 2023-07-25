@@ -1,63 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- TEMPLATE -->
-
 <section xml:id="expression-cot-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">        
-    <title>WriteExpression-WE1-P1</title> <!-- insert WE number -->
+    <title>WriteExpression-WE1-P1</title>
     <xi:include href='./subgoals_write_expression.ptx' />
     <transition/>
     <subsection>
-        <title>WriteExpression-WE1-P1</title> <!-- insert WE number -->
+        <title>WriteExpression-WE1-P1</title>
         <exercises>
-            <exercise xml:id="parsons-WrExpression-WE1-P1-1" indent="show" language="python"> <!-- insert WE number -->
+            <exercise xml:id="parsons-WrExpression-WE1-P1-1">
                 <statement>
-                    <p>Put the code in the right order to create a program that will calculate and print the sum of 10 natural numbers.</p>
+                    <p>Q1: Write an expression that will calculate a 6% tax on the number variable <c>subtotal</c></p><var/>
                 </statement>
-                <blocks>
-                    <block order="">
-                        <cline></cline>
-                    </block>
-                    <block order="">
-                        <cline></cline>
-                    </block>
-                    <block order="">
-                        <cline></cline>
-                    </block>
-                    <block order="">
-                        <cline></cline>
-                    </block>
-                    <block order="">
-                        <cline></cline>
-                    </block>
-                    <block order="">
+                <setup>
+                    <var>
+                        <condition string="tax = (subtotal \* 0?.06)|(0?.06 \* subtotal)">
+                            <feedback>
+                                <p>Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string='.*'>
+                                <feedback>
+                                    <p>Incorrect</p>
+                                </feedback>
+                        </condition>
+                    </var>
+                </setup>
+            </exercise>
+            <exercise xml:id="parsons-WrExpression-WE1-P1-2">
+                <statement>
+                    <p>Q2: Write an expression that will calculate the distance travelled in miles given the variables
+                        <c>speed</c> (in miles per hour) and <c>time</c> (in hours).</p><var/>
+                </statement>
+                <setup>
+                    <var>
+                        <condition string="(miles)|(m)|(distance)|(d) = (speed \* time)|(time \* speed)">
+                            <feedback>
+                                <p>Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string='.*'>
+                                <feedback>
+                                    <p>Incorrect</p>
+                                </feedback>
+                        </condition>
+                    </var>
+                </setup>
+            </exercise>
+            <exercise xml:id="parsons-WrExpression-WE1-P1-3">
+                <statement>
+                    <p>Q3: Write an expression that will calculate the number of pennies equivalent to a given an amount of money
+                        represented by the number variable <c>money</c>.</p><var/>
+                </statement>
+                <setup>
+                    <var>
+                        <condition string="(P|pennies)|(p)|(P) = (money * 100)|(100 * money)">
+                            <feedback>
+                                <p>Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string='.*'>
+                                <feedback>
+                                    <p>Incorrect.</p>
+                                </feedback>
+                        </condition>
+                    </var>
+                </setup>
+                <hint>
+                    <p>
+                        $1.25 is equivalent to 125 pennies.
+                    </p>
+                </hint>
+            </exercise>
+            <exercise xml:id="parsons-WrExpression-WE1-P1-4">
+                <statement>
+                    <p>Q4: Write an expression that will calculate the simple interest given the initial principal
+                        variable <c>P</c>, the interest rate variable <c>R</c>, and the time variable <c>t</c>.
+                        The equation for simple interest is <me>A = P(1 + \frac{R}{100}T)</me></p><var/>
+                </statement>
+                <setup>
+                    <var>
+                        <condition string="(total)|(t)|(A)|(a)|(interest)|(i)|(future_value) = P \* \(1 \+ \(?\(R \/ 100\) \* t\)\)?">
+                            <feedback>
+                                <p>Correct</p>
+                            </feedback>
+                        </condition>
+                        <condition string='.*'>
+                                <feedback>
+                                    <p>Incorrect</p>
+                                </feedback>
+                        </condition>
+                    </var>
+                </setup>
+            </exercise>
+            <exercise xml:id="parsons-WrExpression-WE1-P1-5" indent="show" language="python">
+                <statement>
+                    <p>Q5: Put the code in the right order to create a program that will calculate and print
+                        the sum of the first 5 natural numbers.</p>
+                </statement>
+                <blocks><block order="1">
+                    <cline>sum = 0</cline>
+                    </block><block order="2">
+                    <cline>sum += 1</cline>
+                    </block><block order="3">
+                    <cline>sum += 2</cline>
+                    </block><block order="4">
+                    <cline>sum += 3</cline>
+                    </block><block order="5">
+                    <cline>sum += 4</cline>
+                    </block><block order="6">
+                    <cline>sum += 5</cline>
+                    </block><block order="7">
+                    <cline>print(sum)</cline>
                     </block>
                 </blocks>
-            </exercise>
-            <exercise>
-                <statement>
-                    <p>Q2: <var/>
-                    <var/>
-                </p>
-            </statement>
-            <setup>
-                <var>
-                    <program language="python"><input></input></program>
-                    <line_block>
-                        <line><BlankNode/>
-                        </line>
-                        <line><BlankNode/>
-                        </line>
-                    </line_block>
-                </var>
-                <var>
-                    <condition number="">
-                        <feedback><p>Correct</p></feedback>
-                    </condition>
-                    <condition string="^\s*x\s*$">
-                        <feedback><p>Incorrect.</p></feedback>
-                    </condition>
-                </var>
-            </setup>
             </exercise>
         </exercises>
     </subsection>

@@ -17,8 +17,8 @@
             Complete this truth table by choosing &#8220;true&#8221; or &#8220;false&#8221; for each Line #.</p>
         <figure align=""><image source="Evaluate_Expressions/truth-table.png" width="50%" alt="3 input truth table"/></figure>
         <exercises>
-                <exercise xml:id="m-Expr-WE9-P1-59">
-                    <statement><p>Q59: Line #1</p></statement>
+                <exercise xml:id="m-Expr-WE9-P1-60">
+                    <statement><p>Q60: Line #1</p></statement>
                     <choices>
                         <choice>
                             <statement><p>True</p></statement>
@@ -30,8 +30,8 @@
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE9-P1-60">
-                    <statement><p>Q60: Line #2</p></statement>
+                <exercise xml:id="m-Expr-WE9-P1-61">
+                    <statement><p>Q61: Line #2</p></statement>
                     <choices>
                         <choice>
                         <statement><p>True</p></statement>
@@ -43,21 +43,8 @@
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE9-P1-61">
-                    <statement><p>Q61: Line #3</p></statement>
-                    <choices>
-                        <choice>
-                            <statement><p>True</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice correct="yes">
-                            <statement><p>False</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                    </choices>
-                </exercise>
                 <exercise xml:id="m-Expr-WE9-P1-62">
-                    <statement><p>Q62: Line #4</p></statement>
+                    <statement><p>Q62: Line #3</p></statement>
                     <choices>
                         <choice>
                             <statement><p>True</p></statement>
@@ -70,20 +57,20 @@
                     </choices>
                 </exercise>
                 <exercise xml:id="m-Expr-WE9-P1-63">
-                    <statement><p>Q63: Line #5</p></statement>
+                    <statement><p>Q63: Line #4</p></statement>
                     <choices>
-                        <choice correct="yes">
+                        <choice>
                             <statement><p>True</p></statement>
                             <feedback><p/></feedback>
                         </choice>
-                        <choice>
+                        <choice correct="yes">
                             <statement><p>False</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
                 </exercise>
                 <exercise xml:id="m-Expr-WE9-P1-64">
-                    <statement><p>Q64: Line #6</p></statement>
+                    <statement><p>Q64: Line #5</p></statement>
                     <choices>
                         <choice correct="yes">
                             <statement><p>True</p></statement>
@@ -96,7 +83,20 @@
                     </choices>
                 </exercise>
                 <exercise xml:id="m-Expr-WE9-P1-65">
-                    <statement><p>Q65: Line #7</p></statement>
+                    <statement><p>Q65: Line #6</p></statement>
+                    <choices>
+                        <choice correct="yes">
+                            <statement><p>True</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>False</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Expr-WE9-P1-66">
+                    <statement><p>Q66: Line #7</p></statement>
                     <choices>
                         <choice>
                             <statement><p>True</p></statement>
@@ -108,8 +108,8 @@
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Expr-WE9-P1-66">
-                    <statement><p>Q66: Line #8</p></statement>
+                <exercise xml:id="m-Expr-WE9-P1-67">
+                    <statement><p>Q67: Line #8</p></statement>
                     <choices>
                         <choice correct="yes">
                             <statement><p>True</p></statement>
