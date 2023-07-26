@@ -5,42 +5,173 @@
 <section xml:id="conditionals-atr-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Evaluate Conditionals-WE3-P1</title> <!-- insert WE number -->
         <xi:include href='./subgoals_evaluate_conditionals.ptx' />
-        <subsection>
-            <p>Each question below is independent, but they all use this given setup</p>
-        </subsection>
         <transition/>
         <subsection>
             <title>Conditionals-WE3-P1</title> <!-- insert WE number -->
-            <p><term>Given</term></p>
+            <p>Each question below is independent, but they all use this given setup</p>
             <program language="python"><input>
-<!-- variables go here -->
+a = 1
+b = 0
+c = 5            
             </input></program>
             <exercises>
-                <exercise xml:id="m-Cond-WE3-P1-__"> <!-- insert WE number -->
-                    <statement><p>Q1:</p></statement>
+                <exercise xml:id="m-Cond-WE2-P1-12">
+                    <statement><p>Q12: What is the only numerical value that has a truthiness of False?</p>
+                    </statement>
                     <choices>
-                        <choice correct="yes">
-                            <statement><p></p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p></p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
+                        <choice><statement><p>1</p></statement>
+                        <feedback><p/></feedback></choice>
+                        <choice correct="yes"><statement><p>0</p></statement>
+                        <feedback><p/> </feedback></choice>
+                        <choice> <statement><p>No numerical values have a truthiness of False</p> </statement>
+                        <feedback><p/></feedback></choice>
+                        <choice><statement><p>All numerical values have a truthiness of False</p></statement>
+                        <feedback><p/> </feedback></choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Cond-WE3-P2-__"> <!-- insert WE number -->
-                    <statement><p>Q2:</p></statement>
-                    <choices>
-                        <choice correct="yes">
-                            <statement><p></p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p></p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                    </choices>
+                <exercise xml:id="ca-Cond-WE1-P1-13">
+                    <statement>
+                        <p>Q13: Click on all conditions that are true in the following code before the code is executed:</p>
+                    </statement>
+                    <areas language="python">
+                        <cline><area correct="yes">if a + c:</area></cline>
+                        <cline>    <area correct="no">c = 12</area></cline>
+                        <cline>    <area correct="yes">if c:</area></cline>
+                        <cline>        <area correct="no">b = 1</area></cline>
+                        <cline><area correct="yes">elif a:</area></cline>
+                        <cline>    <area correct="no">a = c</area></cline>
+                        <cline><area correct="no">elif b:</area></cline>
+                        <cline>    <area correct="no">a = b</area></cline>
+                    </areas>
+                </exercise>
+                <exercise>
+                    <statement>
+                        <p>Q14: Enter the value of each variable after the following code is executed:</p>
+                        <program language="python">
+                            <input>
+if a + c:
+    c = 12
+    if c - a:
+            a = 1
+if b:
+    a = b
+elif a - a:
+    a = c
+else:
+    a = 13                               
+                            </input>
+                        </program>
+                        <p>The value of variable <c>a</c> is <var />,
+                            the value of variable <c>b</c> is <var />,
+                            and the value of variable <c>c</c> is <var />.</p>
+                    </statement>
+                    <setup>
+                        <var>
+                            <condition number="13">
+                                <feedback>
+                                    <p>Correct value of <c>a</c></p>
+                                </feedback>
+                            </condition>
+                            <condition string='.*'>
+                                <feedback>
+                                    <p>Incorrect value of <c>a</c></p>
+                                </feedback>
+                            </condition>
+                        </var>
+                        <var>
+                            <condition number="0">
+                                <feedback>
+                                    <p>Correct value of <c>b</c></p>
+                                </feedback>
+                            </condition>
+                            <condition string='.*'>
+                                <feedback>
+                                    <p>Incorrect value of <c>b</c></p>
+                                </feedback>
+                            </condition>
+                        </var>
+                        <var>
+                            <condition number="12">
+                                <feedback>
+                                    <p>Correct value of <c>c</c></p>
+                                </feedback>
+                            </condition>
+                            <condition string='.*'>
+                                <feedback>
+                                    <p>Incorrect value of <c>c</c></p>
+                                </feedback>
+                            </condition>
+                        </var>
+                    </setup>
+                </exercise>
+                <exercise>
+                    <statement>
+                        <p>Q15: What is the output of the following code?</p>
+                        <program language="python">
+                            <input>
+if b &gt;= c:
+    if b &gt;= a:
+        print("b")
+    elif a &gt;= c:
+        print("a")
+elif b &gt;= a:
+    print("c")
+elif a &gt;= c:
+    print("a")
+else:
+    print("c")                             
+                            </input>
+                        </program>
+                        <p><var /></p>
+                    </statement>
+                    <setup>
+                        <var>
+                            <condition string="c">
+                                <feedback>
+                                    <p>Correct</p>
+                                </feedback>
+                            </condition>
+                            <condition string='.*'>
+                                <feedback>
+                                    <p>Incorrect</p>
+                                </feedback>
+                            </condition>
+                        </var>
+                    </setup>
+                </exercise>
+                <exercise>
+                    <statement>
+                        <p>Q16: What is the output of the following code?</p>
+                        <program language="python">
+                            <input>
+if c == 2*a:
+    print("double")
+elif c == 3*a:
+    print("triple")
+elif c == 4*a:
+    print("quadruple")
+elif c == 5*a:
+    print("quintuple")
+else:
+    print("unknown")                                                       
+                            </input>
+                        </program>
+                        <p><var /></p>
+                    </statement>
+                    <setup>
+                        <var>
+                            <condition string="quintuple">
+                                <feedback>
+                                    <p>Correct</p>
+                                </feedback>
+                            </condition>
+                            <condition string='.*'>
+                                <feedback>
+                                    <p>Incorrect</p>
+                                </feedback>
+                            </condition>
+                        </var>
+                    </setup>
                 </exercise>
             </exercises>
         </subsection>

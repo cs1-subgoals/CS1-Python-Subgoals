@@ -27,7 +27,7 @@ kappa = 3.0
                         <input>if theta &gt; omega:
     gamma = kappa + 2</input>
                     </program>
-                    <p>The value in variable <c>gamma</c> is <var /></p>
+                    <p>The value of variable <c>gamma</c> is <var /></p>
                 </statement>
                 <setup>
                     <var>
@@ -47,7 +47,7 @@ kappa = 3.0
                         <input>if beta &lt; alpha:
     eta = 42</input>
                     </program>
-                    <p>The value in variable <c>eta</c> is <var /></p>
+                    <p>The value of variable <c>eta</c> is <var /></p>
                 </statement>
                 <setup>
                     <var>
@@ -73,8 +73,8 @@ kappa = 3.0
 beta = 22
                         </input>
                     </program>
-                    <p>the value in variable <c>eta</c> is <var />
-                        and the value in variable <c>beta</c> is <var /></p>
+                    <p>the value of variable <c>eta</c> is <var />
+                        and the value of variable <c>beta</c> is <var /></p>
                 </statement>
                 <setup>
                     <var>
@@ -112,8 +112,8 @@ beta = 22
 eta = 42
                         </input>
                     </program>
-                    <p>The value in variable <c>eta</c> is <var />
-                        and the value in variable <c>beta</c> is <var />.</p>
+                    <p>The value of variable <c>eta</c> is <var />
+                        and the value of variable <c>beta</c> is <var />.</p>
                 </statement>
                 <setup>
                     <var>
