@@ -9,7 +9,7 @@
             <p>Each question below is independent.</p>
             <exercises>
                 <exercise xml:id="m-Cond-WE2-P1-6">
-                    <statement><p>Q6: What is the output of the following code?</p>
+                    <statement><p>Q7: What is the output of the following code?</p>
                         <program language="python"><input>
 x = 0
 if x = 0:  # look closely!
@@ -29,7 +29,7 @@ else:
                     </choices>
                 </exercise>
                 <exercise xml:id="m-Select-WE2-P1-7">
-                    <statement><p>Q7: What is the output of the following code?</p>
+                    <statement><p>Q8: What is the output of the following code?</p>
                         <program language="python"><input>
 if False:
     print("it is true")
@@ -48,7 +48,7 @@ else:
                     </choices>
                 </exercise>
                 <exercise xml:id="m-Cond-WE2-P1-8">
-                    <statement><p>Q8: What is the output of the following code?</p>
+                    <statement><p>Q9: What is the output of the following code?</p>
                         <program language="python"><input>
 if 12 &lt; 12:
     print("Never")
@@ -67,7 +67,7 @@ else:
                     </choices>
                 </exercise>
                 <exercise xml:id="m-Cond-WE2-P1-9">
-                    <statement><p>Q9: What is the output of the following code?</p>
+                    <statement><p>Q10: What is the output of the following code?</p>
                         <program language="python"><input>
 var1 = 15.0
 var2 = 25.12
@@ -86,6 +86,39 @@ else:
                         <choice><statement><p>There is no output because an exception occurs</p></statement>
                         <feedback><p/> </feedback></choice>
                     </choices>
+                </exercise>
+                <exercise>
+                    <statement>
+                        <p>Q11: What is the output of the following code?</p>
+                        <program language="python">
+                            <input>
+a = 10
+b = 5
+c = 3
+if b &lt; c:
+    print(c)
+elif b &lt; a:
+    print(a)
+else:
+    print(b)                                
+                            </input>
+                        </program>
+                        <p><var /></p>
+                    </statement>
+                    <setup>
+                        <var>
+                            <condition number="10">
+                                <feedback>
+                                    <p>Correct</p>
+                                </feedback>
+                            </condition>
+                            <condition string='.*'>
+                                <feedback>
+                                    <p>Incorrect</p>
+                                </feedback>
+                            </condition>
+                        </var>
+                    </setup>
                 </exercise>
             </exercises>
         </subsection>
