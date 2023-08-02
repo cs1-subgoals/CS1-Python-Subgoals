@@ -90,6 +90,90 @@
                 </block>
             </blocks>
         </exercise>
+        <exercise xml:id="parsons-WrCond-WE2-P1-8" indent="show" language="python">
+            <statement>
+                <p>Put the code in the right order to create a program that will generate a random integer grade (0 to 100 inclusive) 
+                    and print the value. Then determine the letter grade where 90 to 100 is an &#8216;A&#8217;, 80 to 89 is a &#8216;B&#8217;, 
+                    70 to 79 is a &#8216;C&#8217;, 60 to 69 is a &#8216;D&#8217;, and 0 to 59 is an &#8216;F&#8217;. Then print the letter grade.</p>
+            </statement>
+            <blocks>
+                <block order="1">
+                    <cline>import random</cline>
+                    <cline>grade = random.randint(0, 100)</cline>
+                </block><block order="2">
+                    <cline>print(grade)</cline>
+                </block><block order="3">
+                    <cline>if grade &gt;= 90:</cline>
+                </block><block order="4">
+                    <cline>    letter_grade = "A"</cline>
+                </block><block order="5">
+                    <cline>elif grade &gt;= 80:</cline>
+                </block><block order="6">
+                    <cline>    letter_grade = "B"</cline>
+                </block><block order="7">
+                    <cline>elif grade &gt;= 70:</cline>
+                </block><block order="8">
+                    <cline>    letter_grade = "C"</cline>
+                </block><block order="9">
+                    <cline>elif grade &gt;= 60:</cline>
+                </block><block order="10">
+                    <cline>    letter_grade = "D"</cline>
+                </block><block order="11">
+                    <cline>else:</cline>
+                </block><block order="12">
+                    <cline>    letter_grade = "F"</cline>
+                </block><block order="13">
+                    <cline>print(letter_grade)</cline>
+                </block>
+            </blocks>
+        </exercise>
+        <exercise xml:id="parsons-WrCond-WE2-P1-9" indent="show" language="python">
+            <statement>
+                <p>Put the code in the right order to create a program that will generate random numbers (1 to 10 inclusive) 
+                    for variables a, b, and c, and print the value of each variable. Then compare a to b, a to c, and b to c, and print statements for each 
+                    comparison, reporting for each pair of variables if they are equal, greater than, or less than. </p>
+            </statement>
+            <blocks>
+                <block order="1">
+                    <cline>import random</cline>
+                    <cline>a = random.randint(0, 10)</cline>
+                    <cline>b = random.randint(0, 10)</cline>
+                    <cline>c = random.randint(0, 10)</cline>
+                </block><block order="2">
+                    <cline>print(a)</cline>
+                    <cline>print(b)</cline>
+                    <cline>print(c)</cline>
+                    <cline>if a == b:</cline>
+                </block><block order="3">
+                    <cline>    print("a and b are equal")</cline>
+                </block><block order="4">
+                    <cline>elif a > b:</cline>
+                    <cline>    print("a is greater than b")</cline>
+                    <cline>else:</cline>
+                    <cline>    print("a is less than b")</cline>
+                    <cline>if a == c:</cline>
+                </block><block order="5">
+                    <cline>    print("a and c are equal")</cline>
+                </block><block order="6">
+                    <cline>elif a > c:</cline>
+                    <cline>    print("a is greater than c")</cline>
+                    <cline>else:</cline>
+                    <cline>    print("a is less than c")</cline>
+                </block><block order="7">
+                    <cline>if b == c:</cline>
+                </block><block order="8">
+                    <cline>    print("b and c are equal")</cline>
+                </block><block order="9">
+                    <cline>elif b > c:</cline>
+                </block><block order="10">
+                    <cline>    print("b is greater than c")</cline>
+                </block><block order="11">
+                    <cline>else:</cline>
+                </block><block order="12">
+                    <cline>    print("b is less than c")</cline>
+                </block>
+            </blocks>
+        </exercise>
     </exercises>
 </subsection>
 

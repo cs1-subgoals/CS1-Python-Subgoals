@@ -3,4 +3,5 @@
         <title>Write Conditional</title>
         <xi:include href='./write_conditional.ptx' />
         <xi:include href='./conditional-wc-p1.ptx' />
+        <xi:include href='./conditionals-assessment.ptx' />
     </chapter>
