@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="loops-nl-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluate Loops-WE6-P1</title>
+    <xi:include href='./subgoals_evaluate_loops.ptx' />
+    <transition/>
+    <subsection>
+        <title>Evaluate Loops-WE6-P1</title>
+    <exercises>
+        <exercise xml:id="m-Loops-WE6-P1-26">
+            <statement>
+                <p>Q26: What is the output of the following loop?</p>
+                <program language="python"><input>
+i = 1
+while i &lt;= 3:
+    j = 1
+    s = “”
+    while j &lt;= 3:
+        s += str(i * j)
+    print(s, end=” “)
+</input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>111 222 333</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>123 246 369</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1111 2222 3333</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1234 2468 36912</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>12 24 36</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Loops-WE6-P1-27">
+            <statement>
+                <p>Q27: What is the output of the following loop?</p>
+                <program language="python"><input>
+for i in range(1, 5):
+    for j in range(i):
+        print(i, end=” “)
+</input></program>
+            </statement>
+            <choices>
+                <choice correct="yes">
+                    <statement><p>1 1 2 1 2 3 1 2 3 4</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1 2 1 2 3 1 2 3 4</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1 1 2 1 2 3 1 2 3 4 5</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>0 1 0 1 2 0 1 2 3 0 1 2 3 4</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>0 1 0 1 2 0 1 2 3 0 1 2 3 4 0 1 2 3 4 5</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Loops-WE6-P1-28">
+            <statement>
+                <p>Q28: What is the output of the following loop?</p>
+                <program language="python"><input>
+numbers = [1, 2, 3]
+for number in numbers:
+    for i in range(1, 4):
+        print(number ** i, end = “ “)
+</input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>1 2 3 2 4 6 3 6 9</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1 2 3 4 2 4 6 8 3 6 9 12</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1 1 1 1 2 4 8 16 3 9 27 81</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>1 1 1 2 4 8 3 9 27</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1 2 4 3 6 9</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Loops-WE6-P1-29">
+            <statement>
+                <p>Q29: What is the output of the following loop?</p>
+                <program language="python"><input>
+for i in range(4):
+    counter = 0
+    while counter &lt; 4:
+        print(i, end=” “)
+        counter += 1
+</input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>1 1 1 2 2 2 3 3 3</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1 1 1 1 2 2 2 2 3 3 3 3 4 4 4 4</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>0 0 0 1 1 1 2 2 2 3 3 3</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>0 0 0 0 1 1 1 1 2 2 2 2 3 3 3 3</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>0 0 0 0 1 1 1 1 2 2 2 2 3 3 3 3 4 4 4 4</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Loops-WE6-P1-30">
+            <statement>
+                <p>Q30: What is the output of the following loop?</p>
+                <program language="python"><input>
+x = [1, 2]
+y = [3, 4]
+for i in x:
+    for j in y:
+        print(“(“ + i + “, “ + j + “)”, end=” “)
+</input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>(1, 3) (2, 4)</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>(1, 3) (2, 3) (1, 4) (2, 4)</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>(1, 3) (1, 4) (2, 3) (2, 4)</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>(1, 2) (1, 3) (1, 4) (2, 3) (2, 4)</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>(1, 4) (1, 3) (2, 4) (2, 3)</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+    </exercises>
+    </subsection>
+    <program xml:id="ac-loops-WE6-p1" interactive="activecode" language="python">
+        <input></input>
+    </program>
+</section>
