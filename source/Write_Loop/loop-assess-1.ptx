@@ -62,7 +62,7 @@ while ___:
             <p>Q2: Given the following code segment which is intended to print the number of integers that evenly divide the integer input_val. (You may assume that input_val &gt; 0.)</p>
             <program language="python"><input>
 count = 0
-input_val = input()
+input_val = int(input())
 for k in range(1, input_val):
     if ___:
         count += 1;
@@ -106,7 +106,7 @@ print(count)
 k = 1
 while k &lt; 20:
     if k % 3 == 1:
-        print(k, endl=" ")
+        print(k, end=" ")
     k = k + 3
 </input></program>
             <p><ol marker="I">
@@ -116,7 +116,7 @@ while k &lt; 20:
             <program language="python"><input>
 for k in range(1, 19):
     if k % 3 == 1:
-        print(k, endl=" ")
+        print(k, end=" ")
 </input></program>
             <p><ol marker="I">
                 <li>
@@ -125,7 +125,7 @@ for k in range(1, 19):
             <program language="python"><input>
 k = 1
 while k &lt; 20:
-    print(k, endl=" ")
+    print(k, end=" ")
     k = k + 3
 </input></program>
 
@@ -143,11 +143,11 @@ while k &lt; 20:
                 <statement><p>I and II only</p></statement>
                 <feedback><p/></feedback>
             </choice>
-            <choice>
+            <choice correct="yes">
                 <statement><p>I and III only</p></statement>
                 <feedback><p/></feedback>
             </choice>
-            <choice correct="yes">
+            <choice>
                 <statement><p>I, II and III</p></statement>
                 <feedback><p/></feedback>
             </choice>
@@ -159,7 +159,7 @@ while k &lt; 20:
             <program language="python"><input>
 k = # a random number such that 1 &lt;= k &lt;= n 
 for p in range(2, k):
-    for r in range(1, k-1):
+    for r in range(1, k - 1):
         print("Hello")
 </input></program>
 
@@ -178,7 +178,7 @@ for p in range(2, k):
                 <feedback><p/></feedback>
             </choice>
             <choice correct="yes">
-                <statement><p>(n - 1) * (n - 1)</p></statement>
+                <statement><p>(n - 2) * (n - 2)</p></statement>
                 <feedback><p/></feedback>
             </choice>
             <choice>
@@ -187,6 +187,88 @@ for p in range(2, k):
             </choice>
         </choices>
         </exercise>
+        <exercise>
+            <statement>
+                <p>Q5: Fill in the blanks in the following code to create a program that will print the prime numbers between 1 and 100 (inclusive).
+<program language="python"><input>
+for i in range(__A__, __B__):
+    is_prime = False
+    for j in range(__C__, __D__):
+        if i % j == __E__:
+            is_prime = True
+    if is_prime:
+        print(i, end=" ")
+</input></program>
+            </p>
+            <p>Blank A: <var/></p>
+            <p>Blank B: <var/></p>
+            <p>Blank C: <var/></p>
+            <p>Blank D: <var/></p>
+            <p>Blank E: <var/></p>
+        </statement>
+        <setup>
+            <var>
+                <condition number="1">
+                    <feedback>
+                        <p>A is Correct</p>
+                    </feedback>
+                </condition>
+                <condition string='.*'>
+                    <feedback>
+                        <p>A is Incorrect</p>
+                    </feedback>
+                </condition>
+            </var>
+            <var>
+                <condition number="101">
+                    <feedback>
+                        <p>B is Correct</p>
+                    </feedback>
+                </condition>
+                <condition string='.*'>
+                    <feedback>
+                        <p>B is Incorrect</p>
+                    </feedback>
+                </condition>
+            </var>
+            <var>
+                <condition number="2">
+                    <feedback>
+                        <p>C is Correct</p>
+                    </feedback>
+                </condition>
+                <condition string='.*'>
+                    <feedback>
+                        <p>C is Incorrect</p>
+                    </feedback>
+                </condition>
+            </var>
+            <var>
+                <condition string="i">
+                    <feedback>
+                        <p>D is Correct</p>
+                    </feedback>
+                </condition>
+                <condition string='.*'>
+                    <feedback>
+                        <p>D is Incorrect</p>
+                    </feedback>
+                </condition>
+            </var>
+            <var>
+                <condition number="0">
+                    <feedback>
+                        <p>E is Correct</p>
+                    </feedback>
+                </condition>
+                <condition string='.*'>
+                    <feedback>
+                        <p>E is Incorrect</p>
+                    </feedback>
+                </condition>
+            </var>
+        </setup>
+    </exercise>
         </TimedNode>
     </exercises>
     </section>
