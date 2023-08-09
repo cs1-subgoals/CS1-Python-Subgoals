@@ -65,7 +65,7 @@ print(subtract(100, 50, c=.1))
     <subsection xml:id="eval_func_nested_calls">
         <title>Nested Calls</title>
         <program language="python"><input>
-        def add5(number):
+def add5(number):
     number = number + 5
     return number
 

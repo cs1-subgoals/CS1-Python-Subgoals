@@ -1,50 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!-- TEMPLATE -->
-
 <section xml:id="functions-evf-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Evaluate Functions-WE2-P1</title> <!-- insert WE number -->
-        <xi:include href='./subgoals_evaluate_functions.ptx' />
-        <subsection>
-            <p>Each question below is independent, but they all use this given setup</p>
-        </subsection>
-        <transition/>
-        <subsection>
-            <title>Evaluate Functions-WE2-P1</title> <!-- insert WE number -->
-            <p><term>Given</term></p>
-            <program language="python"><input>
-<!-- variables go here -->
-            </input></program>
-            <exercises>
-                <exercise xml:id="m-Func-WE2-P1-__"> <!-- insert WE number -->
-                    <statement><p>Q1:</p></statement>
-                    <choices>
-                        <choice correct="yes">
-                            <statement><p></p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p></p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                    </choices>
-                </exercise>
-                <exercise xml:id="m-Func-WE2-P2-__"> <!-- insert WE number -->
-                    <statement><p>Q2:</p></statement>
-                    <choices>
-                        <choice correct="yes">
-                            <statement><p></p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p></p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                    </choices>
-                </exercise>
-            </exercises>
-        </subsection>
-        <program xml:id="ac-functions-WE2-p1" interactive="activecode" language="python"> <!-- insert WE number -->
-            <input></input>
-        </program>
-    </section>
+    <title>Evaluate Functions-WE2-P1</title>
+    <xi:include href='./subgoals_evaluate_functions.ptx' />
+    <transition/>
+    <exercises>
+        <exercise xml:id="m-Func-WE1-P1-6">
+            <statement>
+                <p>Q6: What is the output of the following code?</p>
+                <program language="python"><input>
+                    a = 10
+                    c = 3
+
+                    def foo(a, b):
+                        b += a
+                        return bar(b, c)
+                    def bar(alpha, beta):
+                        return alpha // beta
+
+                    result = foo(2, 4)
+                    print(result)
+                </input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>2</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>4</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>4.3</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>Compiler error</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Func-WE1-P1-7">
+            <statement>
+                <p>Q7: What is the output of the following code?</p>
+                <program language="python"><input>
+                    def alpha(var1):
+                        return var1 - 5
+
+                    def beta(var1):
+                        return var1 * var1
+
+                    my_var = 3
+                    result = alpha(beta(my_var))
+                    print(result)
+                </input></program>
+            </statement>
+            <choices>
+                <choice correct="yes">
+                    <statement><p>4</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>-2</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>-4</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>Compiler error</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Func-WE1-P1-8">
+            <statement>
+                <p>Q8: What is the output of the following code?</p>
+                <program language="python"><input>
+                    a = 3
+                    b = 4
+
+                    def foo(a, b=10, c=3, d=1):
+                        return (a - d) // ( b + c )
+
+                    c = 1
+                    result = foo(13, 1, c=2)
+                    print(result)
+                </input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>6</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>4</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>Compiler error</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Func-WE1-P1-9">
+            <statement>
+                <p>Q9: What is the output of the following code?</p>
+                <program language="python"><input>
+                    def foo(alpha, beta=3, gamma=5):
+                        beta += gamma
+                        return beta / alpha
+
+                    beta = 5
+                    result = foo(4, gamma=1)
+                    print(result)
+                </input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>1.5</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>1</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>2.5</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>Compiler error</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="m-Func-WE1-P1-10">
+            <statement>
+                <p>Q10: What is the output of the following code?</p>
+                <program language="python"><input>
+                    a = 1
+                    def hello():
+                        return "Hello " * a
+
+                    a = 3
+                    result = hello()
+                    print(result)
+                </input></program>
+            </statement>
+            <choices>
+                <choice correct="yes">
+                    <statement><p>"Hello Hello Hello "</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>"Hello "</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>"Hello 3"</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>Compiler error</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+    </exercises>
+    <program xml:id="ac-functions-WE2-p1" interactive="activecode" language="python">
+        <input></input>
+    </program>
+</section>

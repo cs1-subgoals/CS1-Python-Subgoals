@@ -69,7 +69,7 @@ delta = alpha * beta - gamma
         </li>
         <li>
             <p>
-                The <c>gamme</c> is substituted for the <c>gamme</c> variable from the global frame (since there are no local variables with that name), which has the value <c>1</c> currently.
+                The <c>gamma</c> is substituted for the <c>gamma</c> variable from the global frame (since there are no local variables with that name), which has the value <c>1</c> currently.
             </p>
         </li>
     </ul>

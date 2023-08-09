@@ -3,7 +3,7 @@
     <p>
         <ol marker="1">
             <li>
-                <p>Create stack frame for global variabless</p>
+                <p>Create stack frame for global variables</p>
             </li>
             <li>
                 <p>Ensure function is defined before function call before beginning body of function</p>
