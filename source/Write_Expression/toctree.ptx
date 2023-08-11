@@ -3,4 +3,5 @@
         <title>Write Expression</title>
         <xi:include href='./convert_temperature.ptx' />
         <xi:include href='./expression-cot-p1.ptx' />
+        <xi:include href='./expression-assess.ptx' />
     </chapter>
