@@ -72,7 +72,7 @@ kappa = '3'
                 </exercise>
                 <exercise xml:id="m-Expr-WE5-P2-44">
                     <statement>
-                        <p>Q44: delta *= omega</p>
+                        <p>Q44: kappa *= omega</p>
                         <p>Why is this statement invalid?</p>
                     </statement>
                         <choices>

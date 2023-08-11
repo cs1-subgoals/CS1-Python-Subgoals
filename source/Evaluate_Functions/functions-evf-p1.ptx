@@ -127,14 +127,14 @@
                     <feedback><p/></feedback>
                 </choice>
                 <choice>
-                    <statement><p>1</p></statement>
+                    <statement correct="yes"><p>1</p></statement>
                     <feedback><p/></feedback>
                 </choice>
                 <choice>
                     <statement><p>2.5</p></statement>
                     <feedback><p/></feedback>
                 </choice>
-                <choice correct="yes">
+                <choice>
                     <statement><p>Compiler error</p></statement>
                     <feedback><p/></feedback>
                 </choice>

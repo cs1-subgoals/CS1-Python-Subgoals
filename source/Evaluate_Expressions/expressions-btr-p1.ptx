@@ -42,7 +42,7 @@ delta = 'string'
                 </exercise>
                 <exercise xml:id="m-Expr-WE10_-P1-69">
                     <statement><p>Q69: What is the value stored in result?</p>
-                        <program language="python"><input>result = delta or alpha or gamma + 5</input></program></statement>
+                        <program language="python"><input>result = beta or alpha or gamma + 5</input></program></statement>
                     <choices>
                         <choice correct="yes">
                             <statement><p>10</p></statement>

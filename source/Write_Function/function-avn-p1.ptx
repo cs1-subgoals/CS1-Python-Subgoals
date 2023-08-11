@@ -1,66 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!-- TEMPLATE -->
-
 <section xml:id="function-avn-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">        
-    <title>WriteFunction-WE1-P1</title> <!-- insert WE number -->
+    <title>WriteFunction-WE1-P1</title>
     <xi:include href='./subgoals_write_function.ptx' />
     <transition/>
-    <subsection>
-            <title>WriteFunction-WE1-P1</title> <!-- insert WE number -->
-            <exercises>
-                <exercise xml:id="parsons-WrFunction-WE1-P1-1" indent="show" language="python"> <!-- insert WE number -->
-                    <statement>
-                        <p>Put the code in the right order to create a program that will calculate and print the sum of 10 natural numbers.</p>
-                    </statement>
-                    <blocks>
-                        <block order="">
-                            <cline></cline>
-                        </block>
-                        <block order="">
-                            <cline></cline>
-                        </block>
-                        <block order="">
-                            <cline></cline>
-                        </block>
-                        <block order="">
-                            <cline></cline>
-                        </block>
-                        <block order="">
-                            <cline></cline>
-                        </block>
-                        <block order="">
-                        </block>
-                    </blocks>
-                </exercise>
-                <exercise>
-                    <statement>
-                        <p>Q2: <var/>
-                        <var/>
-                        </p>
-                    </statement>
-                <setup>
-                    <var>
-                        <program language="python"><input></input></program>
-                        <line_block>
-                            <line><BlankNode/>
-                            </line>
-                            <line><BlankNode/>
-                            </line>
-                        </line_block>
-                    </var>
-                    <var>
-                        <condition number="">
-                            <feedback><p>Correct</p></feedback>
-                        </condition>
-                        <condition string="^\s*x\s*$">
-                            <feedback><p>Incorrect.</p></feedback>
-                        </condition>
-                    </var>
-                </setup>
+    <exercises>
+        <exercise xml:id="ac-writefunctions-WE1-P1-1" indent="show" language="python">
+            <statement>
+                <p>Q1: Put the code in the right order to create a program that generates a random number between 0 and 10
+                    as a global variable, and then calls a function that takes no arguments to print out the square and
+                    the cube of that variable.</p>
+            </statement>
+            <blocks>
+                <block order="1">
+                    <cline>from random import randint</cline>
+                    <cline>x = randint(0, 10)</cline>
+                </block>
+                <block order="2">
+                    <cline>def print_square_and_cube():</cline>
+                </block>
+                <block order="3">
+                    <cline>    print(x, end=" ")</cline>
+                    <cline>    print(x * x, end=" ")</cline>
+                    <cline>    print(x ** 3)</cline>
+                </block>
+                <block order="4">
+                    <cline>print_square_and_cube()</cline>
+                </block>
+            </blocks>
         </exercise>
-        </exercises>
-    </subsection>
+        <exercise xml:id="ac-writefunctions-WE1-P1-2" indent="show" language="python">
+            <statement>
+                <p>Q2: Put the code in the right order to create a program that defines a function called <c>calculate_celsius</c>
+                    that returns the temperature in Celsius given a temperature in Fahrenheit. This function can optionally
+                    round the temperature in Celsius. Prompt the user for a temperature in Fahrenheit, and then use the
+                    <c>calculate_celsius</c> function to print out a message with the temperature in Celsius.</p>
+            </statement>
+            <blocks>
+                <block order="1">
+                    <cline>def calculate_celsius(temperature, round_result):</cline>
+                </block>
+                <block order="2">
+                    <cline>    celsius = (temperature - 32) * (5 / 9)</cline>
+                </block>
+                <block order="3">
+                    <cline>    if round:</cline>
+                    <cline>        return round(celsius)</cline>
+                </block>
+                <block order="4">
+                    <cline>    else:</cline>
+                    <cline>        return celsius</cline>
+                </block>
+                <block order="5">
+                    <cline>fahrenheit = int(input("Enter a temperature in Fahrenheit"))</cline>
+                </block>
+                <block order="6">
+                    <cline>celsius = calculate_celsius(fahrenheit, True)</cline>
+                </block>
+                <block order="7">
+                    <cline>print("Temperature in Celsius:", celsius)</cline>
+                </block>
+            </blocks>
+        </exercise>
+        <exercise xml:id="ac-writefunctions-WE1-P1-3" indent="show" language="python">
+            <statement>
+                <p>Q3: Put the code in the right order to create a program that takes 2-3 numbers and returns the summation
+                    of those numbers. The default value for the third input is set to a global variable called 
+                    <c>DEFAULT_VALUE</c>, which is defined at the top of the program as a random number between -10 and 10.
+                    If <c>DEFAULT_VALUE</c> is greater than 0, call the function with the values 3 and 5 and no third
+                    parameter and print out the result. Otherwise, call the function with the values 2 and 8 and the third
+                    parameter as 5, and print a message saying “Not using default value” and then print the result.</p>
+            </statement>
+            <blocks>
+                <block order="1">
+                    <cline>from random import randint</cline>
+                    <cline>DEFAULT_VALUE = randint(-10, 10)</cline>
+                </block>
+                <block order="2">
+                    <cline>def sum(num1, num2, num3=DEFAULT_VALUE):</cline>
+                </block>
+                <block order="3">
+                    <cline>    return num1 + num2 + num3</cline>
+                </block>
+                <block order="4">
+                    <cline>if DEFAULT_VALUE &gt; 0:</cline>
+                </block>
+                <block order="5">
+                    <cline>    result = sum(3, 5)</cline>
+                </block>
+                <block order="6">
+                    <cline>else:</cline>
+                </block>
+                <block order="7">
+                    <cline>    print("Not using default value")</cline>
+                    <cline>    result = sum(2, 8, 5)</cline>
+                </block>
+                <block order="8">
+                    <cline>print(result)</cline>
+                </block>
+            </blocks>
+        </exercise>
+        <exercise xml:id="ac-writefunctions-WE1-P1-4" indent="show" language="python">
+            <statement>
+                <p>Q4: Put the code in the right order to create a program that prints the sum and the average of a list
+                    of numbers.</p>
+            </statement>
+            <blocks>
+                <block order="1">
+                    <cline>def calculate_sum(numbers):</cline>
+                </block>
+                <block order="2">
+                    <cline>    sum = 0</cline>
+                </block>
+                <block order="3">
+                    <cline>    for number in numbers:</cline>
+                    <cline>        sum += number</cline>
+                </block>
+                <block order="4">
+                    <cline>    return sum</cline>
+                </block>
+                <block order="5">
+                    <cline>def calculate_average(numbers):</cline>
+                </block>
+                <block order="6">
+                    <cline>    sum = calculate_sum(numbers)</cline>
+                </block>
+                <block order="7">
+                    <cline>    return sum / len(numbers)</cline>
+                </block>
+                <block order="8">
+                    <cline>def calculate_statistics(numbers):</cline>
+                </block>
+                <block order="9">
+                    <cline>    sum = calculate_sum(numbers)</cline>
+                    <cline>    average = calculate_average(numbers)</cline>
+                </block>
+                <block order="10">
+                    <cline>    print("The sum is", sum, "and the average is", average)</cline>
+                </block>
+                <block order="11">
+                    <cline>calculate_statistics([1, 5, 9, 2, -12, 3, -4])</cline>
+                </block>
+            </blocks>
+        </exercise>
+        <exercise xml:id="ac-writefunctions-WE1-P1-5">
+            <statement>
+                <p>Q5: Given the following code, write a single line of python that will print out the result of the
+                    equation <c>6 * (3 + 2)</c></p>
+                <program language="python"><input>
+                    def sum(a, b):
+                        return a + b
+                    
+                    def multiply(a, b):
+                        return a * b            
+                </input></program><var/>
+            </statement>
+            <setup>
+                <var>
+                    <condition string="print\((multiply\(6, sum\(3, 2\)\))|(multiply\(6, sum\(2, 3\)\))|(multiply\(sum\(3, 2\), 6\))|(multiply\(sum\(2, 3\), 6\))\)">
+                        <feedback>
+                            <p>Correct</p>
+                        </feedback>
+                    </condition>
+                    <condition string='.*'>
+                        <feedback>
+                            <p>Incorrect</p>
+                        </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
+    </exercises>
 
     <program xml:id="ac-writefunctions-we1-p1" interactive="activecode" language="python"> <!-- insert WE number -->
         <input></input>
