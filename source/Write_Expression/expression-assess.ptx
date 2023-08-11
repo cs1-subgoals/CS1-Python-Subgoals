@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="expressions-assess" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US"> 
+    <title>Assessment: Expressions</title>
+    <xi:include href='./subgoals_write_expression.ptx' />
+    <transition/>
+    <exercises>
+        <TimedNode line="27" runestone_options="{'nofeedback': None, 'subchapter': 'wrloops-assess1', 'chapter': 'WriteLoops', 'basecourse': 'Subgoals', 'optional': '', 'optclass': '', 'divid': 'assess-wrloops-1', 'qnumber': '', 'question_label': '6.2.1'}" 
+                source="/Users/bmiller/Runestone/books/thinkcspy/Subgoals/_sources/WriteLoops/wrloops-assess1.rst">
+        <exercise xml:id="Exp-Assess-1">
+            <statement><p>Q1: What is the value of <c>beta</c> after the following code is executed?</p>
+                <program language="python"><input>
+alpha = 3
+beta = 7
+gamma = -3.5
+delta = '5'
+epsilon = 'numbers'                    
+beta //= alpha                 
+                </input></program>
+                <p><var /></p>
+            </statement>
+            <setup>
+                <var>
+                    <condition number="2">
+                        <feedback>
+                            <p>Correct</p>
+                        </feedback>
+                    </condition>
+                    <condition string='.*'>
+                        <feedback>
+                            <p>Incorrect</p>
+                        </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
+        <exercise xml:id="Expr-Assess-2">
+            <statement>
+                <p>Q2: Is the following code valid?</p>
+                <program language="python"><input>
+alpha = 3
+beta = 7
+gamma = -3.5
+delta = '5'
+epsilon = 'numbers'                    
+gamma += beta              
+                </input></program>
+            </statement>
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>Yes</p>
+                    </statement>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+                <choice>
+                    <statement>
+                        <p>No</p>
+                    </statement>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>Q3: What is the value of <c>zeta</c> after the following code is executed?</p>
+                <program language="python">
+                    <input>
+alpha = 3
+beta = 7
+gamma = -3.5
+delta = '5'
+epsilon = 'numbers'                    
+zeta = epsilon or alpha                                              
+                    </input>
+                </program>
+                <p><var /></p>
+            </statement>
+            <setup>
+                <var>
+                    <condition string="(&quot;|')numbers(&quot;|')">
+                        <feedback>
+                            <p>Correct</p>
+                        </feedback>
+                    </condition>
+                    <condition string='.*'>
+                        <feedback>
+                            <p>Incorrect</p>
+                        </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>Q4: What is the value of <c>eta</c> after the following code is executed?</p>
+                <program language="python">
+                    <input>
+alpha = 3
+beta = 7
+gamma = -3.5
+delta = '5'
+epsilon = 'numbers'                    
+eta = alpha*delta                                             
+                    </input>
+                </program>
+                <p><var /></p>
+            </statement>
+            <setup>
+                <var>
+                    <condition string="(&quot;|')555(&quot;|')">
+                        <feedback>
+                            <p>Correct</p>
+                        </feedback>
+                    </condition>
+                    <condition string='.*'>
+                        <feedback>
+                            <p>Incorrect</p>
+                        </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
+        <exercise xml:id="Expr-Assess-5" indent="show" language="python">
+            <statement>
+                <p>Q5: What is the value of <c>theta</c> after the following code is executed?</p>
+                <program language="python">
+                    <input>
+alpha = 3
+beta = 7
+gamma = -3.5
+delta = '5'
+epsilon = 'numbers'                    
+theta = gamma &lt; beta + delta                                            
+                    </input>
+                </program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement>
+                        <p>True</p>
+                    </statement>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+                <choice>
+                    <statement>
+                        <p>False</p>
+                    </statement>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement>
+                        <p>This code is invalid</p>
+                    </statement>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+        </TimedNode>
+    </exercises>
+    <program xml:id="expression-assess-p1" interactive="activecode" language="python">
+        <input></input>
+    </program>
+</section>
