@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="library-assess" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US"> 
+    <title>Assessment: APIs</title>
+    <xi:include href='./subgoals_use_lib.ptx' />
+    <transition/>
+    <exercises xml:id="library-assessment-exercises" label="library-assessment-exercises" time-limit="10" pause="no">
+        <exercise xml:id="Lib-Assess-1">
+            <statement>
+                <p>Q1: Write a program that generates a random number 1 to 1000 and prints that value. Then it evaluates the square root of that number and prints that value.</p>
+            </statement>
+            <blocks>
+                <block order="1">
+                    <cline>import random</cline>
+                    <cline>import math</cline>
+                </block>
+                <block order="2">
+                    <cline>number = random.randint(1, 1000)</cline>
+                    <cline>print(number)</cline>
+                </block>
+                <block order="3">
+                    <cline>sqrt = math.sqrt(number)</cline>
+                    <cline>print(sqrt)</cline>
+                </block>
+            </blocks>
+        </exercise>
+        <exercise xml:id="Lib-Assess-2">
+            <statement>
+                <p>Q2: What is the output of the following code?</p>
+                <program language="python"><input>
+                    print(int(math.sqrt(4)))
+                </input></program>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>2</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>2.0</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>4</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>There is no output due to a runtime error.</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+        <exercise xml:id="Lib-Assess-3">
+            <statement>
+                <p>Q3: Enter the output of the following program or enter “invalid” if the statement would result in an error.</p>
+                <program language="python"><input>
+                    import math
+                    print(int(math.sqrt(4)))
+                </input></program><var/>
+            </statement>
+            <setup>
+                <var>
+                    <condition number="2">
+                        <feedback>
+                            <p>Correct</p>
+                        </feedback>
+                    </condition>
+                    <condition string='.*'>
+                        <feedback>
+                            <p>Incorrect</p>
+                        </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
+        <exercise xml:id="Lib-Assess-4">
+            <statement>
+                <p>Q4: Write the code necessary to import the <c>random</c> library and alias it as <c>r</c>.</p>
+                <var/>
+            </statement>
+            <setup>
+                <var>
+                    <condition string="import random as r">
+                        <feedback>
+                            <p>Correct</p>
+                        </feedback>
+                    </condition>
+                    <condition string='.*'>
+                        <feedback>
+                            <p>Incorrect</p>
+                        </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
+        <exercise xml:id="Lib-Assess-5" indent="show" language="python">
+            <statement>
+                <p>Q5: Which of the following is the name of the function in the math library that returns the absolute value of a number?</p>
+            </statement>
+            <choices>
+                <choice>
+                    <statement><p>abs</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>absolute</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement><p>fabs</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+                <choice>
+                    <statement><p>There is no function in the math library that returns the absolute value of a number.</p></statement>
+                    <feedback><p/></feedback>
+                </choice>
+            </choices>
+        </exercise>
+    </exercises>
+    <program xml:id="library-assess-p1" interactive="activecode" language="python">
+        <input></input>
+    </program>
+</section>

@@ -4,7 +4,7 @@
     <title>Assessment: Expressions</title>
     <xi:include href='./subgoals_write_expression.ptx' />
     <transition/>
-    <exercises>
+    <exercises time-limit="10" pause="no">
         <TimedNode line="27" runestone_options="{'nofeedback': None, 'subchapter': 'wrloops-assess1', 'chapter': 'WriteLoops', 'basecourse': 'Subgoals', 'optional': '', 'optclass': '', 'divid': 'assess-wrloops-1', 'qnumber': '', 'question_label': '6.2.1'}" 
                 source="/Users/bmiller/Runestone/books/thinkcspy/Subgoals/_sources/WriteLoops/wrloops-assess1.rst">
         <exercise xml:id="Exp-Assess-1">
