@@ -3,4 +3,5 @@
         <title>Write Function</title>
         <xi:include href='./average_numbers.ptx' />
         <xi:include href='./function-avn-p1.ptx' />
+        <xi:include href='./function_assess.ptx' />
     </chapter>

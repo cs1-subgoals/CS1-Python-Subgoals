@@ -95,7 +95,7 @@
             <exercise xml:id="parsons-WrExpression-WE1-P1-5" indent="show" language="python">
                 <statement>
                     <p>Q5: Put the code in the right order to create a program that will calculate and print
-                        the sum of the first 5 natural numbers.</p>
+                        the sum of the first 5 natural numbers (you must sum the numbers in order).</p>
                 </statement>
                 <blocks><block order="1">
                     <cline>sum = 0</cline>
