@@ -5,42 +5,118 @@
 <section xml:id="lib-mat-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Use Library-WE1-P1</title> <!-- insert WE number -->
         <xi:include href='./subgoals_use_lib.ptx' />
-        <subsection>
-            <p>Each question below is independent, but they all use this given setup</p>
-        </subsection>
         <transition/>
         <subsection>
             <title>Use Library-WE1-P1</title> <!-- insert WE number -->
-            <p><term>Given</term></p>
             <program language="python"><input>
 <!-- variables go here -->
             </input></program>
             <exercises>
-                <exercise xml:id="m-Lib-WE1-P1-__"> <!-- insert WE number -->
-                    <statement><p>Q1:</p></statement>
+                <exercise xml:id="m-Lib-WE1-P1-1"> <!-- insert WE number -->
+                    <statement><p>Q1: What keyword is used to access a library?</p></statement>
                     <choices>
                         <choice correct="yes">
-                            <statement><p></p></statement>
+                            <statement><p>import</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice>
-                            <statement><p></p></statement>
+                            <statement><p>access</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>use</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>None of these</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
                 </exercise>
-                <exercise xml:id="m-Lib-WE1-P2-__"> <!-- insert WE number -->
-                    <statement><p>Q2:</p></statement>
+                <exercise xml:id="m-Lib-WE1-P1-2"> <!-- insert WE number -->
+                    <statement><p>Q2: What keyword is used to alias a library?</p></statement>
                     <choices>
-                        <choice correct="yes">
-                            <statement><p></p></statement>
+                        <choice>
+                            <statement><p>import</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                         <choice>
-                            <statement><p></p></statement>
+                            <statement><p>alias</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice correct="yes">
+                            <statement><p>as</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>in</p></statement>
                             <feedback><p/></feedback>
                         </choice>
                     </choices>
+                </exercise>
+                <exercise xml:id="m-Lib-WE1-P1-3"> <!-- insert WE number -->
+                    <statement><p>Q3: After importing the math library without an alias, how can the <c>log10</c> function be called on the integer <c>54</c>?</p></statement>
+                    <choices>
+                        <choice>
+                            <statement><p>math.log10.54</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice correct="yes">
+                            <statement><p>math.log10(54)</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>math(log10)(54)</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                        <choice>
+                            <statement><p>math(log10).54</p></statement>
+                            <feedback><p/></feedback>
+                        </choice>
+                    </choices>
+                </exercise>
+                <exercise xml:id="m-Lib-WE1-P1-4" indent="show" language="python">
+                    <statement>
+                        <p>Q4: Write a program that takes user input of an integer and prints half the absolute value of that integer.</p>
+                    </statement>
+                    <blocks>
+                        <block order="1">
+                            <cline>import math</cline>
+                        </block>
+                        <block order="2">
+                            <cline>x = int(input("Enter an integer: "))</cline>
+                        </block>
+                        <block order="3">
+                            <cline>absolute_value = math.fabs(x)</cline>
+                            <cline>half = absolute_value / 2</cline>
+                        </block>
+                        <block order="4">
+                            <cline>print(half)</cline>
+                        </block>
+                    </blocks>
+                </exercise>
+                <exercise xml:id="m-Lib-WE1-P1-5">
+                    <statement>
+                        <p>Q5: Enter the output of the following program or enter “invalid” if the statement would result in an error.</p>
+                        <program language="python"><input>
+                            import math
+                            print(math.fabs(-2.2))
+                        </input></program><var/>
+                    </statement>
+                    <setup>
+                        <var>
+                            <condition number="2.2">
+                                <feedback>
+                                    <p>Correct</p>
+                                </feedback>
+                            </condition>
+                            <condition string='.*'>
+                                <feedback>
+                                    <p>Incorrect</p>
+                                </feedback>
+                            </condition>
+                        </var>
+                    </setup>
                 </exercise>
             </exercises>
         </subsection>

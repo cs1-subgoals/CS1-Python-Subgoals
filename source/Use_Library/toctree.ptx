@@ -3,4 +3,5 @@
         <title>Use Library</title>
         <xi:include href='./use_math.ptx' />
         <xi:include href='./lib-mat-p1.ptx' />
+        <xi:include href='./lib-assess.ptx' />
     </chapter>
