@@ -9,13 +9,12 @@
     <exercises>
         <exercise xml:id="parsons-WrCond-WE2-P1-5" indent="show" language="python">
             <statement>
-                <p>Put the code in the right order to create a program that will generate an integer value between 0 and 25, 
+                <p>Put the code in the right order to create a program that will ask the user for an integer between 0 and 25, 
                     print the value, and if the value is greater than 18, print a message saying &#8220;This is an overload&#8221;; 
                     otherwise print a message saying &#8220;Not an overload&#8221;.</p>
             </statement>
             <blocks><block order="1">
-                <cline>import random</cline>
-                <cline>x = random.randint(0, 25)</cline>
+                <cline>x = int(input("Please enter an integer between 0 and 25: "))</cline>
                 <cline>print(x)</cline>
                 </block><block order="2">
                 <cline>if x &gt; 18:</cline>
@@ -30,16 +29,15 @@
         </exercise>
         <exercise xml:id="parsons-WrCond-WE2-P1-6" indent="show" language="python">
             <statement>
-                <p>Put the code in the right order to create a program that will generate an integer value between 3 and 7, 
+                <p>Put the code in the right order to create a program that will ask the user for an integer value between 3 and 7, 
                     print the value, and if the value is equal to 5 then set the string variable class_type equal to &#8216;G&#8217;, 
                     and print a message saying &#8220;graduate student&#8221;; otherwise set class_type equal to &#8216;U&#8217; and print 
                     a message saying &#8220;undergraduate&#8221;. Finally, print the class_type.</p>
             </statement>
             <blocks>
                 <block order="1">
-                    <cline>import random</cline>
                     <cline>class_type = 'x'</cline>
-                    <cline>x = 3 + random.randint(0, 4)</cline>
+                    <cline>x = 3 + int(input("Please enter an integer between 0 and 4: "))</cline>
                     <cline>print(x)</cline>
                 </block><block order="2">
                     <cline>if x == 5:</cline>
@@ -58,15 +56,14 @@
         </exercise>
         <exercise xml:id="parsons-WrCond-WE2-P1-7" indent="show" language="python">
             <statement>
-                <p>Put the code in the right order to create a program that will generate the value for a year (1500 to 3000 inclusive) and print the value. 
+                <p>Put the code in the right order to create a program that will ask the user for an integer to represent a year (1500 to 3000 inclusive) and print the value. 
                     Then it will print <em>true</em> if the year is a leap year, otherwise the program prints <em>false</em>. A leap year is a multiple of 4, 
                     with one exception: if the year is a multiple of 100 but <em>not</em> 400, then it is <em>not</em> a leap year. For example, the year 1900 
                     was not a leap year, but the year 2000 was indeed a leap year.</p>
             </statement>
             <blocks>
                 <block order="1">
-                    <cline>import random</cline>
-                    <cline>x = 1500 + random.randint(0, 1500)</cline>
+                    <cline>x = int(input("Please enter an year between 1500 and 3000: "))</cline>
                     <cline>result = False</cline>
                 </block><block order="2">
                     <cline>print(x)</cline>
@@ -92,14 +89,13 @@
         </exercise>
         <exercise xml:id="parsons-WrCond-WE2-P1-8" indent="show" language="python">
             <statement>
-                <p>Put the code in the right order to create a program that will generate a random integer grade (0 to 100 inclusive) 
+                <p>Put the code in the right order to create a program that will ask the user for an integer grade (0 to 100 inclusive) 
                     and print the value. Then determine the letter grade where 90 to 100 is an &#8216;A&#8217;, 80 to 89 is a &#8216;B&#8217;, 
                     70 to 79 is a &#8216;C&#8217;, 60 to 69 is a &#8216;D&#8217;, and 0 to 59 is an &#8216;F&#8217;. Then print the letter grade.</p>
             </statement>
             <blocks>
                 <block order="1">
-                    <cline>import random</cline>
-                    <cline>grade = random.randint(0, 100)</cline>
+                    <cline>grade = int(input("Please enter an integer grade between 0 and 100: "))</cline>
                 </block><block order="2">
                     <cline>print(grade)</cline>
                 </block><block order="3">
@@ -129,16 +125,15 @@
         </exercise>
         <exercise xml:id="parsons-WrCond-WE2-P1-9" indent="show" language="python">
             <statement>
-                <p>Put the code in the right order to create a program that will generate random numbers (1 to 10 inclusive) 
+                <p>Put the code in the right order to create a program that will ask the user for 3 numbers (1 to 10 inclusive) 
                     for variables a, b, and c, and print the value of each variable. Then compare a to b, a to c, and b to c, and print statements for each 
                     comparison, reporting for each pair of variables if they are equal, greater than, or less than. </p>
             </statement>
             <blocks>
                 <block order="1">
-                    <cline>import random</cline>
-                    <cline>a = random.randint(0, 10)</cline>
-                    <cline>b = random.randint(0, 10)</cline>
-                    <cline>c = random.randint(0, 10)</cline>
+                    <cline>a = int(input("Please enter an integer between 1 and 10: "))</cline>
+                    <cline>b = int(input("Please enter an integer between 1 and 10: "))</cline>
+                    <cline>c = int(input("Please enter an integer between 1 and 10: "))</cline>
                 </block><block order="2">
                     <cline>print(a)</cline>
                     <cline>print(b)</cline>

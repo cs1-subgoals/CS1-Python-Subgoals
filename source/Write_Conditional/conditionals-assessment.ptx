@@ -155,29 +155,27 @@ elif a:
         </exercise>
         <exercise xml:id="Cond-Assess-5" indent="show" language="python">
             <statement>
-                <p>Put the code in the right order to create a program that will generate a random number between -20 and 20 
+                <p>Put the code in the right order to create a program that will ask the user for a number between -20 and 20 
                     (inclusive).Print the number. Then check if the number is positive, negative, or neither. Print the result. </p>
             </statement>
             <blocks>
                 <block order="1">
-                    <cline>import random</cline>
+                    <cline>x = int(input("Please enter an integer between -20 and 20: "))</cline>
                 </block><block order="2">
-                    <cline>x = random.randint(-20,20)</cline>
-                </block><block order="3">
                     <cline>print(x)</cline>
-                </block><block order="4">
+                </block><block order="3">
                     <cline>if x > 0:</cline>
-                </block><block order="5">
+                </block><block order="4">
                     <cline>    result = "Positive"</cline>
-                </block><block order="6">
+                </block><block order="5">
                     <cline>elif x &lt; 0:</cline>
-                </block><block order="7">
+                </block><block order="6">
                     <cline>    result = "Negative"</cline>
-                </block><block order="8">
+                </block><block order="7">
                     <cline>else:</cline>
-                </block><block order="9">
+                </block><block order="8">
                     <cline>    result = "Neither"</cline>
-                </block><block order="10">
+                </block><block order="9">
                     <cline>print(result)</cline>
                 </block>
             </blocks>
@@ -190,34 +188,32 @@ elif a:
             </statement>
             <blocks>
                 <block order="1">
-                    <cline>import random</cline>
+                    <cline>x = int(input("Please enter an integer between 1 and 100: "))</cline>
                 </block><block order="2">
-                    <cline>x = random.randint(1,100)</cline>
-                </block><block order="3">
                     <cline>print(x)</cline>
-                </block><block order="4">
+                </block><block order="3">
                     <cline>if x % 2 == 0:</cline>
-                </block><block order="5">
+                </block><block order="4">
                     <cline>    print(x, "is a multiple of 2.")</cline>
-                </block><block order="6">
+                </block><block order="5">
                     <cline>elif x % 2 != 0:</cline>
-                </block><block order="7">
+                </block><block order="6">
                     <cline>    print(x, "is not a multiple of 2.")</cline>
-                </block><block order="8">
+                </block><block order="7">
                     <cline>if x % 3 == 0:</cline>
-                </block><block order="9">
+                </block><block order="8">
                     <cline>    print(x, "is a multiple of 3.")</cline>
-                </block><block order="10">
+                </block><block order="9">
                     <cline>elif x % 3 != 0:</cline>
-                </block><block order="11">
+                </block><block order="10">
                     <cline>    print(x, "is not a multiple of 3.")</cline>
-                </block><block order="12">
+                </block><block order="11">
                     <cline>if x % 5 == 0:</cline>
                 </block><block order="12">
                     <cline>    print(x, "is a multiple of 5.")</cline>
-                </block><block order="12">
+                </block><block order="13">
                     <cline>elif x % 5 != 0:</cline>
-                </block><block order="12">
+                </block><block order="14">
                     <cline>    print(x, "is not a multiple of 5.")</cline>
                 </block>
             </blocks>
