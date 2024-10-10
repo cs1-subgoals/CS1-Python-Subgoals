@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
     This file provides the overall configuration for your PreTeXt
-    project. To edit the content of your document, open `source/main.ptx`
+    project. To edit the content of your document, open `source/toc.ptx`
     (default location).
 -->
 <project>
   <targets>
+    <target name="runestone">
+      <format>html</format>
+      <source>pretext/toc.ptx</source>
+      <publication>publication/runestone.ptx</publication>
+      <output-dir>published/Subgoals</output-dir>
+    </target>
     <target name="html">
       <format>html</format>
-      <source>source/main.ptx</source>
+      <source>source/toc.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/html</output-dir>
     </target>
     <target name="latex">
       <format>latex</format>
-      <source>source/main.ptx</source>
+      <source>source/toc.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/latex</output-dir>
     </target>
     <target name="pdf" pdf-method="pdflatex">
       <format>pdf</format>
-      <source>source/main.ptx</source>
+      <source>source/toc.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/pdf</output-dir>
     </target>
     <target name="subset">
       <format>html</format>
-      <source>source/main.ptx</source>
+      <source>source/toc.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/subset</output-dir>
       <stringparam key="debug.skip-knowls" value="yes"/>
