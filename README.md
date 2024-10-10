@@ -8,7 +8,7 @@
     $> virtualenv venv
     ```
 
-    Follow the appropriate activation instructions for your [platform](https://docs.python.org/3/library/venv.html#how-venvs-work). For example, on windows you use `venv/scripts/activate` to activate the virtualenv, or `source venv/bin/activate` on most other platforms.
+    Follow the appropriate activation instructions for your [platform](https://docs.python.org/3/library/venv.html#how-venvs-work). For example, on windows you use `venv/scripts/activate` to activate the virtualenv, or `pretext venv/bin/activate` on most other platforms.
 
 3. Install dependencies (e.g., `pretextbook`):
 
