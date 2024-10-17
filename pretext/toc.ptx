@@ -30,6 +30,7 @@
     <!-- on the title (ch-shorttitle.ptx) both here and on disk    -->
     <!--<xi:include href="./ch_first.ptx" />-->
     <!--<xi:include href="./ch_empty.ptx"/>-->
+    <xi:include href="DemographicSurvey/toctree.ptx"/>
     <xi:include href="Evaluate_Expressions/toctree.ptx"/>
     <xi:include href="Write_Expression/toctree.ptx"/>
     <xi:include href="Evaluate_Conditionals/toctree.ptx"/>
