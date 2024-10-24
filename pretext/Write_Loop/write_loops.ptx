@@ -2,84 +2,116 @@
 
 <section xml:id="write_loops" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Write Loops</title>
+
     <xi:include href='./subgoals_write_loop.ptx' />
     <subsection>
-    <!-- <p>You can watch this video or read through the content below it.</p> -->
-    <p>Problem: Write a loop that will prompt the user to continue to enter numbers until a sentinel
-        value (<c>-1</c>) is entered, and then find the maximum value entered.</p>
+        <!--
+        <p>
+            You can watch this video or read through the content below it.
+        </p>
+        -->
+        <p>
+            Problem: Write a loop that will prompt the user to continue to enter numbers until a sentinel value (<c>-1</c>) is entered, and then find the maximum value entered.
+        </p>
     </subsection>
+
+
     <subsection xml:id="subsec-wri-loopSG1">
         <title>1. Determine purpose of loop to pick loop structure (for, while)</title>
-        <p>Generally, while loops are a good choice for sentinel loops, since you cannot know up
-            front how many times the code will need to iterate.</p>
+
+        <p>
+            Generally, while loops are a good choice for sentinel loops, since you cannot know up front how many times the code will need to iterate.
+        </p>
     </subsection>
+
+
     <subsection xml:id="subsec-wri-loopSG2">
         <title>2. Define variables before loop that have dependencies within the loop</title>
-        <p>The user must input at least one number in order for us to find a maximum. The variable <c>
-            user_input</c> will also be used as the loop control variable, so we must define it
-            before the loop begins.</p>
-        <program language="python">
-            <input>
-                user_input = int(input(&quot;Enter a value, enter -1 to end.&quot;))
 
-            </input>
-        </program>
-        <p>The <c>maximum</c> value must be updated during the loop based on its previous value, and
-            will be printed after the loop, so that variable will need to be initialized prior to
-            the loop.</p>
-        <program language="python">
-            <input>
-                maximum = user_input
+        <p>
+            The user must input at least one number in order for us to find a maximum.
+            The variable <c> user_input</c> will also be used as the loop control variable, so we must define it before the loop begins.
+        </p>
 
-            </input>
-        </program>
-    </subsection>
-    <subsection xml:id="subsec-wri-loopSG3">
-        <title>3. Based on loop structure</title>
-        <p>The terminiation condition for this loop is when the user's inputted value is equal to
-            the sentinel. We need to invert that condition to identify the continuation condition
-            instead. That continuation condition must involve the loop control variable, which in
-            this case will be <c>user_input</c>.</p>
-        <program language="python">
-            <input>
-                while user_input != -1:
 
-            </input>
-        </program>
-    </subsection>
-    <subsection xml:id="subsec-wri-loopSG4">
-        <title>4. Write loop body</title>
-        <p>First, we must check whether the latest <c>maximum</c> is greater than the <c>user_input</c>;
-            if so, we must update the <c>maximum</c>. This check is unnecessary during the first
-            iteration of the loop, but is critical on every subsequent iteration.</p>
-        <program language="python">
-            <input>while user_input != -1:
-    if user_input &gt; maximum:
-        maximum = user_input</input>
-        </program>
-        <p>We then need to update the <c>user_input</c> loop control variable so that the loop has a
-            chance to end at some point based on the user's value.</p>
-        <program language="python">
-            <input>while user_input != -1:
-    if user_input &gt; maximum:
-        maximum = user_input
-    user_input = int(input(&quot;Enter a value, enter -1 to end.&quot;))
-
-            </input>
-        </program>
-        <answer>
         <program language="python">
             <input>
 user_input = int(input(&quot;Enter a value, enter -1 to end.&quot;))
-maximum = user_input
+            </input>
+        </program>
 
+        <p>
+            The <c>maximum</c> value must be updated during the loop based on its previous value, and will be printed after the loop, so that variable will need to be initialized prior to the loop.
+        </p>
+
+
+        <program language="python">
+            <input>
+maximum = user_input
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection xml:id="subsec-wri-loopSG3">
+        <title>3. Based on loop structure</title>
+
+        <p>
+            The termination condition for this loop is when the user's inputted value is equal to the sentinel.
+            We need to invert that condition to identify the continuation condition instead.
+            That continuation condition must involve the loop control variable, which in this case will be <c>user_input</c>.
+        </p>
+
+
+        <program language="python">
+            <input>
+while user_input != -1:
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection xml:id="subsec-wri-loopSG4">
+        <title>4. Write loop body</title>
+
+        <p>
+            First, we must check whether the latest <c>maximum</c> is greater than the <c>user_input</c>; if so, we must update the <c>maximum</c>.
+            This check is unnecessary during the first iteration of the loop, but is critical on every subsequent iteration.
+        </p>
+
+
+        <program language="python">
+            <input>
+while user_input != -1:
+    if user_input &gt; maximum:
+        maximum = user_input</input>
+        </program>
+
+        <p>
+ We then need to update the <c>user_input</c> loop control variable so that the loop has a chance to end at some point based on the user's value. 
+        </p>
+
+
+        <program language="python">
+            <input>
 while user_input != -1:
     if user_input &gt; maximum:
         maximum = user_input
     user_input = int(input(&quot;Enter a value, enter -1 to end.&quot;))
-
-print(maximum)</input>
+            </input>
         </program>
+
+        <answer>
+            <program language="python">
+                <input>
+user_input = int(input(&quot;Enter a value, enter -1 to end.&quot;))
+maximum = user_input
+while user_input != -1:
+    if user_input &gt; maximum:
+        maximum = user_input
+    user_input = int(input(&quot;Enter a value, enter -1 to end.&quot;))
+print(maximum)</input>
+            </program>
         </answer>
     </subsection>
 </section>

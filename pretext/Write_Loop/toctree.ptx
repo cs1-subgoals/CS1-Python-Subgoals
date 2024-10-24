@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Write Loop</title>
-        <xi:include href='./write_loops.ptx' />
-        <xi:include href='./loop-wrl-p1.ptx' />
-        <xi:include href='./loop-assess-1.ptx' />
-    </chapter>
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Write Loop</title>
+
+    <xi:include href='./write_loops.ptx' />
+    <xi:include href='./loop-wrl-p1.ptx' />
+    <xi:include href='./loop-assess-1.ptx' />
+</chapter>
