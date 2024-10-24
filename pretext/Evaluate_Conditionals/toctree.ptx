@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Evaluate Conditionals</title>
-        <xi:include href='./if_statements.ptx' />
-        <xi:include href='./conditionals-ifs-p1.ptx' />
-        <xi:include href='./if_else_statements.ptx' />
-        <xi:include href='./conditionals-ies-p1.ptx' />
-        <xi:include href='./apply_truthiness.ptx' />
-        <xi:include href='./conditionals-atr-p1.ptx' />
-    </chapter>
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluate Conditionals</title>
+
+    <xi:include href='./if_statements.ptx' />
+    <xi:include href='./conditionals-ifs-p1.ptx' />
+    <xi:include href='./if_else_statements.ptx' />
+    <xi:include href='./conditionals-ies-p1.ptx' />
+    <xi:include href='./apply_truthiness.ptx' />
+    <xi:include href='./conditionals-atr-p1.ptx' />
+</chapter>

@@ -1,97 +1,306 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="conditionals-ies-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Evaluate Conditionals-WE2-P1</title>
-        <xi:include href='./subgoals_evaluate_conditionals.ptx' />
-        <transition/>
-        <subsection>
-            <title>Conditionals-WE2-P1</title>
-            <p>Each question below is independent.</p>
-            <exercises>
-                <exercise xml:id="m-Cond-WE2-P1-6">
-                    <statement><p>Q7: What is the output of the following code?</p>
-                        <program language="python"><input>
+    <title>Evaluate Conditionals-WE2-P1</title>
+
+    <xi:include href='./subgoals_evaluate_conditionals.ptx' />
+    <transition/>
+    <subsection>
+        <title>Conditionals-WE2-P1</title>
+
+        <p>
+            Each question below is independent.
+        </p>
+
+        <exercises>
+        <exercise xml:id="m-Cond-WE2-P1-6">
+            <statement>
+                <p>
+                    Q7: What is the output of the following code?
+                </p>
+
+
+                <program language="python">
+                    <input>
 x = 0
 if x = 0:  # look closely!
     print("0 is true")
 else:
     print("0 is false")
-                        </input></program></statement>
-                    <choices>
-                        <choice><statement><p>0 is true</p></statement>
-                        <feedback><p/></feedback></choice>
-                        <choice><statement><p>0 is false</p></statement>
-                        <feedback><p/></feedback></choice>
-                        <choice correct="yes"><statement><p>There is no output because a compiler error occurs</p></statement>
-                        <feedback><p/></feedback></choice>
-                        <choice><statement><p>There is no output because an exception occurs</p></statement>
-                        <feedback><p/></feedback></choice>
-                    </choices>
-                </exercise>
-                <exercise xml:id="m-Select-WE2-P1-7">
-                    <statement><p>Q8: What is the output of the following code?</p>
-                        <program language="python"><input>
+                    </input>
+                </program>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            0 is true
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            0 is false
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            There is no output because a compiler error occurs
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            There is no output because an exception occurs
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Select-WE2-P1-7">
+            <statement>
+                <p>
+                    Q8: What is the output of the following code?
+                </p>
+
+
+                <program language="python">
+                    <input>
 if False:
     print("it is true")
 else:
      print("it is false")
-                        </input></program></statement>
-                    <choices>
-                        <choice><statement><p>it is true</p></statement>
-                        <feedback><p/></feedback></choice>
-                        <choice correct="yes"><statement><p>it is false</p></statement>
-                        <feedback><p/></feedback></choice>
-                        <choice><statement><p>There is no output because a compiler error occurs</p></statement>
-                        <feedback><p/></feedback></choice>
-                        <choice><statement> <p>There is no output because an exception occurs</p></statement>
-                        <feedback><p/></feedback></choice>
-                    </choices>
-                </exercise>
-                <exercise xml:id="m-Cond-WE2-P1-8">
-                    <statement><p>Q9: What is the output of the following code?</p>
-                        <program language="python"><input>
+                    </input>
+                </program>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            it is true
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            it is false
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            There is no output because a compiler error occurs
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            There is no output because an exception occurs
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Cond-WE2-P1-8">
+            <statement>
+                <p>
+                    Q9: What is the output of the following code?
+                </p>
+
+
+                <program language="python">
+                    <input>
 if 12 &lt; 12:
     print("Never")
 else:
     print("Always")
-                        </input></program></statement>
-                    <choices>
-                        <choice><statement><p>Never</p></statement>
-                        <feedback><p/></feedback></choice>
-                        <choice correct="yes"><statement><p>Always</p></statement>
-                        <feedback><p/></feedback></choice>
-                        <choice><statement><p>There is no output because a compiler error occurs</p></statement>
-                        <feedback><p/></feedback></choice>
-                        <choice><statement><p>There is no output because an exception occurs</p></statement>
-                        <feedback><p/></feedback></choice>
-                    </choices>
-                </exercise>
-                <exercise xml:id="m-Cond-WE2-P1-9">
-                    <statement><p>Q10: What is the output of the following code?</p>
-                        <program language="python"><input>
+                    </input>
+                </program>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            Never
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            Always
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            There is no output because a compiler error occurs
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            There is no output because an exception occurs
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Cond-WE2-P1-9">
+            <statement>
+                <p>
+                    Q10: What is the output of the following code?
+                </p>
+
+
+                <program language="python">
+                    <input>
 var1 = 15.0
 var2 = 25.12
 if 2 * var1 &gt;= var2:
     print("O.K.")
 else:
     print("Not O.K.")
-                        </input></program></statement>
-                    <choices>
-                        <choice correct="yes"><statement><p>O.K.</p></statement>
-                        <feedback><p/></feedback></choice>
-                        <choice><statement><p>Not O.K.</p></statement>
-                        <feedback><p/> </feedback></choice>
-                        <choice> <statement><p>There is no output because a compiler error occurs</p> </statement>
-                        <feedback><p/></feedback></choice>
-                        <choice><statement><p>There is no output because an exception occurs</p></statement>
-                        <feedback><p/> </feedback></choice>
-                    </choices>
-                </exercise>
-                <exercise>
+                    </input>
+                </program>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
                     <statement>
-                        <p>Q11: What is the output of the following code?</p>
-                        <program language="python">
-                            <input>
+                        <p>
+                            O.K.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Not O.K.
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            There is no output because a compiler error occurs
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            There is no output because an exception occurs
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>
+                    Q11: What is the output of the following code?
+                </p>
+
+
+                <program language="python">
+                    <input>
 a = 10
 b = 5
 c = 3
@@ -101,27 +310,32 @@ elif b &lt; a:
     print(a)
 else:
     print(b)                                
-                            </input>
-                        </program>
-                        <p><var /></p>
-                    </statement>
-                    <setup>
-                        <var>
-                            <condition number="10">
-                                <feedback>
-                                    <p>Correct</p>
-                                </feedback>
-                            </condition>
-                            <condition string='.*'>
-                                <feedback>
-                                    <p>Incorrect</p>
-                                </feedback>
-                            </condition>
-                        </var>
-                    </setup>
-                </exercise>
-            </exercises>
-        </subsection>
+                    </input>
+                </program>
+
+                <p>
+                    <var />
+                </p>
+            </statement>
+            <setup> <var> <condition number="10">
+            <feedback>
+                <p>
+                    Correct
+                </p>
+            </feedback>
+            </condition> <condition string='.*'>
+
+            <feedback>
+                <p>
+                    Incorrect
+                </p>
+            </feedback>
+            </condition> </var> </setup>
+        </exercise>
+        </exercises>
+    </subsection>
+
+
     <program xml:id="ac-conditionals-we2-p1" interactive="activecode" language="python">
         <input></input>
     </program>

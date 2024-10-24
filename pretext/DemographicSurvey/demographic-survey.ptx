@@ -1,4 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <section xml:id="demographic-survey_demographic-survey" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Demographic Survey</title>
-    <p>Please complete this <url href="https://www.cs1subgoals.org/" visual="demographic survey"/> once.</p>
+
+    <p>
+        Please complete this <url href="https://www.cs1subgoals.org/" visual="demographic survey"/> once.
+    </p>
 </section>
