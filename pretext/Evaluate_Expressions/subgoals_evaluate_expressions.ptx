@@ -1,33 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <introduction>
-<title>Subgoals for evaluating an assignment statement</title>
+    <title>Subgoals for evaluating an assignment statement</title>
+
     <p>
         <ol>
             <li>
-                <p>Decide order of operations</p>
+                <p>
+                    Decide order of operations
+                </p>
+
                 <p>
                     <ol marker="i">
                         <li>
-                            <p>Decompose as necessary</p>
+                            <p>
+                                Decompose as necessary
+                            </p>
                         </li>
                     </ol>
                 </p>
             </li>
+
             <li>
-                <p>Determine operator behavior based on operands</p>
+                <p>
+                    Determine operator behavior based on operands
+                </p>
+
                 <p>
                     <ol marker="i">
                         <li>
-                            <p>Operator and operands must be compatible</p>
+                            <p>
+                                Operator and operands must be compatible
+                            </p>
                         </li>
                     </ol>
                 </p>
             </li>
+
             <li>
-                <p>Solve arithmetic, expression, or operation</p>
+                <p>
+                    Solve arithmetic, expression, or operation
+                </p>
+
                 <p>
                     <ol marker="i">
                         <li>
-                            <p>Decompose as necessary</p>
+                            <p>
+                                Decompose as necessary
+                            </p>
                         </li>
                     </ol>
                 </p>

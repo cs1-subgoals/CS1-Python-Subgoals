@@ -2,47 +2,84 @@
 
 <section xml:id="assign_bools" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Assign Booleans</title>
+
     <xi:include href='./subgoals_evaluate_expressions.ptx' />
     <subsection>
-        <!-- <p>You can watch this video or read through the content below it.</p> -->
-        <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable?</p>
-        <program language="python"><input>
+        <!--
+        <p>
+            You can watch this video or read through the content below it.
+        </p>
+        -->
+        <p>
+            Given the following code snippet, evaluate the final statement (the last line).
+            If invalid, give the reason.
+            If valid, what value is assigned to the variable?
+        </p>
+
+
+        <program language="python">
+            <input>
 alpha = 42
 beta = 1
 gamma = 5
-
 result = beta &lt;= alpha
-</input></program>
+            </input>
+        </program>
     </subsection>
+
+
     <subsection xml:id="subsec-boolSG1">
         <title>SG1: Decide order of operations</title>
-        <p>There is only a single operator, the <c>&lt;=</c> (less than or equal to operator), so that is the only one that needs to be evaluated.</p>
+
+        <p>
+            There is only a single operator, the <c>&lt;=</c> (less than or equal to operator), so that is the only one that needs to be evaluated.
+        </p>
     </subsection>
+
+
     <subsection xml:id="subsec-boolSG2">
         <title>SG2: Determine operator behavior based on operands</title>
-        <p>The <c>&lt;=</c> operator will determine if one value is less than or equal than the other, and requires that they be compatible types. Integers and floats are compatible with each other, but in this case both <c>alpha</c> and <c>beta</c> are integers, which are definitely compatible. The result will be a boolean value.</p>
+
+        <p>
+            The <c>&lt;=</c> operator will determine if one value is less than or equal than the other, and requires that they be compatible types.
+            Integers and floats are compatible with each other, but in this case both <c>alpha</c> and <c>beta</c> are integers, which are definitely compatible.
+            The result will be a boolean value.
+        </p>
     </subsection>
+
+
     <subsection xml:id="subsec-boolSG3">
         <title>SG3: Solve arithmetic, expression, or operation</title>
-        <p>First, <c>beta</c> is substituted for <c>1</c> and <c>alpha</c> is substituted for <c>42</c>. Then, the <c>&lt;=</c> determines if <c>1</c> is less than or equal to <c>42</c>, which it is. Therefore, the expression evaluates to <c>True</c>, which is assigned to the variable <c>result</c>.</p>
+
+        <p>
+            First, <c>beta</c> is substituted for <c>1</c> and <c>alpha</c> is substituted for <c>42</c>.
+            Then, the <c>&lt;=</c> determines if <c>1</c> is less than or equal to <c>42</c>, which it is.
+            Therefore, the expression evaluates to <c>True</c>, which is assigned to the variable <c>result</c>.
+        </p>
     </subsection>
+
+
     <subsection xml:id="subsec-boolQs">
         <title>Questions to check understanding</title>
+
         <ol>
             <li>
                 <p>
                     If the <c>></c> operator was used, would the <c>result</c> still be a boolean variable?
                 </p>
+
                 <answer>
                     <p>
                         Yes, any comparison operator used on two integers will produce a boolean (although that value could be either <c>True</c> or <c>False</c>).
                     </p>
                 </answer>
             </li>
+
             <li>
                 <p>
                     If <c>alpha</c> was a float, would the <c>result</c> still be a boolean variable?
                 </p>
+
                 <answer>
                     <p>
                         Yes, the comparison operators allow you to combine integers and floats, and the result will still be a boolean value.
@@ -52,4 +89,3 @@ result = beta &lt;= alpha
         </ol>
     </subsection>
 </section>
-

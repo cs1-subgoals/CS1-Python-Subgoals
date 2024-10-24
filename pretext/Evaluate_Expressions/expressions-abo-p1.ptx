@@ -2,494 +2,785 @@
 
 <section xml:id="expressions-abo-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Expressions-WE8-P1</title>
+
     <xi:include href='./subgoals_evaluate_expressions.ptx' />
     <subsection>
-        <p>For all given problems below indicate if the result will be True or False or if the expression
-            is invalid. Each problem is independent of the others (e.g. Question 2 does not depend on
-            Question 1, only the &#8220;Given&#8221; code).</p>
+        <p>
+            For all given problems below indicate if the result will be True or False or if the expression is invalid.
+            Each problem is independent of the others (e.g.
+            Question 2 does not depend on Question 1, only the &#8220;Given&#8221; code).
+        </p>
     </subsection>
-
     <transition />
-
     <subsection>
         <title>Expressions-WE8-P1</title>
+
         <p>
             <term>Given</term>
         </p>
+
+
         <program language="python">
             <input>
 x = 4
 y = 6
-</input>
+            </input>
         </program>
+
         <exercises>
-    <exercise xml:id="m-Expr-WE8-P1-45">
-        <statement>
-            <p>Q45: <program language="python"><input>result = x &lt; y</input></program></p>
-        </statement>
-        <choices>
-            <choice correct="yes">
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-46">
-        <statement>
-            <p>Q46: <program language="python"><input>result = x + 2 &lt; y</input></program></p>
-        </statement>
-        <choices>
-            <choice>
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice correct="yes">
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-47">
-        <statement>
-            <p>Q47: <program language="python"><input>result = x != y</input></program></p>
-        </statement>
-        <choices>
-            <choice correct="yes">
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-48">
-        <statement>
-            <p>Q48: <program language="python"><input>result = x and (3 &gt;= y)</input></program></p>
-        </statement>
-        <choices>
-            <choice>
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice correct="yes">
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-49">
-        <statement>
-            <p>Q49: <program language="python"><input>result = y == x</input></program></p>
-        </statement>
-        <choices>
-            <choice>
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice correct="yes">
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-50">
-        <statement>
-            <p>Q50: <program language="python"><input>result = y == x + 2</input></program></p>
-        </statement>
-        <choices>
-            <choice correct="yes">
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-51">
-        <statement>
-            <p>Q51: <program language="python"><input>result = 7 == 7</input></program></p>
-        </statement>
-        <choices>
-            <choice correct="yes">
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-52">
-        <statement>
-            <p>Q52: <program language="python"><input>result = 13 &lt; 100</input></program></p>
-        </statement>
-        <choices>
-            <choice correct="yes">
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-53">
-        <statement>
-            <p>Q53: <program language="python"><input>result = -17.32 &lt; -17.32</input></program></p>
-        </statement>
-        <choices>
-            <choice>
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice correct="yes">
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-54">
-        <statement>
-            <p>Q54: <program language="python"><input>result = '3' == 3</input></program></p>
-        </statement>
-        <choices>
-            <choice>
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice correct="yes">
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-55">
-        <statement>
-            <p>Q55: <program language="python"><input>result = '13' + 3 == 16</input></program></p>
-        </statement>
-        <choices>
-            <choice>
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice correct="yes">
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-56">
-        <statement>
-            <p>Q56: <program language="python"><input>result = -18 &lt; -15</input></program></p>
-        </statement>
-        <choices>
-            <choice correct="yes">
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-57">
-        <statement>
-            <p>Q57: <program language="python"><input>result = 4.2 &gt; 3.7</input></program></p>
-        </statement>
-        <choices>
-            <choice correct="yes">
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-58">
-        <statement>
-            <p>Q58: <program language="python"><input>result = 13 &lt;= 13</input></program></p>
-        </statement>
-        <choices>
-            <choice correct="yes">
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-    <exercise xml:id="m-Expr-WE8-P1-59">
-        <statement>
-            <p>Q59: <program language="python"><input>result = 0.012 &gt; 0.013</input></program></p>
-        </statement>
-        <choices>
-            <choice>
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice correct="yes">
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-            <choice>
-                <statement>
-                    <p>Invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-</exercises>
+        <exercise xml:id="m-Expr-WE8-P1-45">
+            <statement>
+                <p>
+                    Q45:
+                    <program language="python">
+                        <input>result = x &lt; y</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-46">
+            <statement>
+                <p>
+                    Q46:
+                    <program language="python">
+                        <input>result = x + 2 &lt; y</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-47">
+            <statement>
+                <p>
+                    Q47:
+                    <program language="python">
+                        <input>result = x != y</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-48">
+            <statement>
+                <p>
+                    Q48:
+                    <program language="python">
+                        <input>result = x and (3 &gt;= y)</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-49">
+            <statement>
+                <p>
+                    Q49:
+                    <program language="python">
+                        <input>result = y == x</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-50">
+            <statement>
+                <p>
+                    Q50:
+                    <program language="python">
+                        <input>result = y == x + 2</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-51">
+            <statement>
+                <p>
+                    Q51:
+                    <program language="python">
+                        <input>result = 7 == 7</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-52">
+            <statement>
+                <p>
+                    Q52:
+                    <program language="python">
+                        <input>result = 13 &lt; 100</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-53">
+            <statement>
+                <p>
+                    Q53:
+                    <program language="python">
+                        <input>result = -17.32 &lt; -17.32</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-54">
+            <statement>
+                <p>
+                    Q54:
+                    <program language="python">
+                        <input>result = '3' == 3</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-55">
+            <statement>
+                <p>
+                    Q55:
+                    <program language="python">
+                        <input>result = '13' + 3 == 16</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-56">
+            <statement>
+                <p>
+                    Q56:
+                    <program language="python">
+                        <input>result = -18 &lt; -15</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-57">
+            <statement>
+                <p>
+                    Q57:
+                    <program language="python">
+                        <input>result = 4.2 &gt; 3.7</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-58">
+            <statement>
+                <p>
+                    Q58:
+                    <program language="python">
+                        <input>result = 13 &lt;= 13</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE8-P1-59">
+            <statement>
+                <p>
+                    Q59:
+                    <program language="python">
+                        <input>result = 0.012 &gt; 0.013</input>
+                    </program>
+                </p>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+        </exercises>
     </subsection>
+
+
     <program xml:id="ac-express-we6-p1" interactive="activecode" language="python">
         <input>
         </input>

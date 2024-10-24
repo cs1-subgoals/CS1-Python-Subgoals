@@ -2,79 +2,109 @@
 
 <section xml:id="expressions-bkn-p2" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Expressions-WE2-P2</title>
+
     <xi:include href='./subgoals_evaluate_expressions.ptx' />
-        <subsection>
-        <p>For the assignment statements below, either give the new value of the assigned variable,
-            or enter &#8220;invalid&#8221; if the statement would result in an error.
-            Each problem is independent of the others (e.g. Question 2
-            does not depend on Question 1, only the &#8220;Given&#8221; code).</p>
+    <subsection>
+        <p>
+            For the assignment statements below, either give the new value of the assigned variable, or enter &#8220;invalid&#8221; if the statement would result in an error.
+            Each problem is independent of the others (e.g.
+            Question 2 does not depend on Question 1, only the &#8220;Given&#8221; code).
+        </p>
     </subsection>
     <transition />
     <subsection>
         <title>Evaluate Expressions-WE2-P2</title>
+
         <p>
             <term>Given</term>
         </p>
+
+
         <program language="python">
             <input>
 alpha = 2
 beta = 1
 delta = '3.0'
 theta = -1.3
-</input>
+            </input>
         </program>
+
         <exercises>
         <exercise>
             <statement>
-                <p>Q15: What is the value of gamma?<program language="python"><input>gamma = beta + alpha </input></program><var/>  </p>
+                <p>
+                    Q15: What is the value of gamma?
+                    <program language="python">
+                        <input>gamma = beta + alpha </input>
+                    </program>
+                    <var/>
+                </p>
             </statement>
-            <setup>
-                <var>
-                    <condition number="3">
-                        <feedback>
-                            <p>Correct</p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                            <feedback>
-                                <p>Incorrect</p>
-                            </feedback>
-                    </condition>
-                </var>
-            </setup>
+            <setup> <var> <condition number="3">
+            <feedback>
+                <p>
+                    Correct
+                </p>
+            </feedback>
+            </condition> <condition string='.*'>
+
+            <feedback>
+                <p>
+                    Incorrect
+                </p>
+            </feedback>
+            </condition> </var> </setup>
         </exercise>
+
         <exercise>
             <statement>
-                <p>Q16: What is the value of rho?<program language="python"><input>rho = alpha + theta</input></program><var/></p>
+                <p>
+                    Q16: What is the value of rho?
+                    <program language="python">
+                        <input>rho = alpha + theta</input>
+                    </program>
+                    <var/>
+                </p>
             </statement>
-            <setup>
-                <var>
-                    <condition number="0.7" tolerance=".001">
-                        <feedback>
-                            <p>Correct</p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                            <feedback>
-                                <p>Incorrect</p>
-                            </feedback>
-                    </condition>
-                </var>
-            </setup>
+            <setup> <var> <condition number="0.7" tolerance=".001">
+            <feedback>
+                <p>
+                    Correct
+                </p>
+            </feedback>
+            </condition> <condition string='.*'>
+
+            <feedback>
+                <p>
+                    Incorrect
+                </p>
+            </feedback>
+            </condition> </var> </setup>
         </exercise>
-    <exercise xml:id="m-Expr-WE2-P2-16">
-        <statement>
 
-            <p>Q17: <program language="python"><input>alpha = delta</input></program></p>
-            <p>What type of value is stored in alpha?</p>
+        <exercise xml:id="m-Expr-WE2-P2-16">
+            <statement>
+                <p>
+                    Q17:
+                    <program language="python">
+                        <input>alpha = delta</input>
+                    </program>
+                </p>
 
-        </statement>
+                <p>
+                    What type of value is stored in alpha?
+                </p>
+            </statement>
+
+
             <choices>
-
                 <choice>
                     <statement>
-                        <p>Number (integer)</p>
+                        <p>
+                            Number (integer)
+                        </p>
                     </statement>
+
                     <feedback>
                         <p/>
                     </feedback>
@@ -82,8 +112,11 @@ theta = -1.3
 
                 <choice correct="yes">
                     <statement>
-                        <p>String</p>
+                        <p>
+                            String
+                        </p>
                     </statement>
+
                     <feedback>
                         <p/>
                     </feedback>
@@ -91,8 +124,11 @@ theta = -1.3
 
                 <choice>
                     <statement>
-                        <p>Number (double)</p>
+                        <p>
+                            Number (double)
+                        </p>
                     </statement>
+
                     <feedback>
                         <p/>
                     </feedback>
@@ -100,21 +136,23 @@ theta = -1.3
 
                 <choice>
                     <statement>
-                        <p>This is an invalid operation</p>
+                        <p>
+                            This is an invalid operation
+                        </p>
                     </statement>
+
                     <feedback>
                         <p/>
                     </feedback>
                 </choice>
             </choices>
-
-    </exercise>
-</exercises>
+        </exercise>
+        </exercises>
     </subsection>
+
 
     <program xml:id="ac-express-we2-p2" interactive="activecode" language="python">
         <input>
-
         </input>
     </program>
 </section>

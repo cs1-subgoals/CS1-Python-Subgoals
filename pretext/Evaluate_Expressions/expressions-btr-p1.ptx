@@ -1,152 +1,407 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <section xml:id="expressions-btr-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Evaluate Expressions-WE10-P1</title>
-        <xi:include href='./subgoals_evaluate_expressions.ptx' />
-        <subsection>
-            <p>For all given problems below, evaluate what value is assigned to the variable . 
-                Each problem is independent of the others (e.g. Question 2 does not depend 
-                on Question 1, only the &#8220;Given&#8221; code).</p>
-        </subsection>
-        <transition/>
-        <subsection>
-            <title>Expressions-WE10-P1</title>
-            <p><term>Given</term></p>
-            <program language="python"><input>
+    <title>Evaluate Expressions-WE10-P1</title>
+
+    <xi:include href='./subgoals_evaluate_expressions.ptx' />
+    <subsection>
+        <p>
+            For all given problems below, evaluate what value is assigned to the variable .
+            Each problem is independent of the others (e.g.
+            Question 2 does not depend on Question 1, only the &#8220;Given&#8221; code).
+        </p>
+    </subsection>
+    <transition/>
+    <subsection>
+        <title>Expressions-WE10-P1</title>
+
+        <p>
+            <term>Given</term>
+        </p>
+
+
+        <program language="python">
+            <input>
 alpha = 10
 beta = 0
 gamma = -2.5
 delta = 'string'
-            </input></program>
-            <exercises>
-                <exercise xml:id="m-Expr-WE10_-P1-68">
-                    <statement><p>Q68: What is the value stored in result?</p>
-                        <program language="python"><input>result = alpha and beta</input></program></statement>
-                    <choices>
-                        <choice correct="yes">
-                            <statement><p>0</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>10</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>False</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>True</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                    </choices>
-                </exercise>
-                <exercise xml:id="m-Expr-WE10_-P1-69">
-                    <statement><p>Q69: What is the value stored in result?</p>
-                        <program language="python"><input>result = beta or alpha or gamma + 5</input></program></statement>
-                    <choices>
-                        <choice correct="yes">
-                            <statement><p>10</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>15</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>0.0</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>2.5</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>-2.5</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                    </choices>
-                </exercise>
-                <exercise xml:id="m-Expr-WE10_-P1-70">
-                    <statement><p>Q70: What is the value stored in result?</p>
-                        <program language="python"><input>result = True or alpha</input></program></statement>
-                    <choices>
-                        <choice correct="yes">
-                            <statement><p>True</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>False</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>1</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>10</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>Invalid Code</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                    </choices>
-                </exercise>
-                <exercise xml:id="m-Expr-WE10_-P1-71">
-                    <statement><p>Q71: What is the value stored in result?</p>
-                        <program language="python"><input>result = delta or alpha</input></program></statement>
-                    <choices>
-                        <choice>
-                            <statement><p>10</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>True</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>False</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice correct="yes">
-                            <statement><p>'string'</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>Invalid Code</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                    </choices>
-                </exercise>
-                <exercise xml:id="m-Expr-WE10_-P1-72">
-                    <statement><p>Q72: What is the value stored in result?</p>
-                        <program language="python"><input>result = delta or gamma</input></program></statement>
-                    <choices>
-                        <choice>
-                            <statement><p>-2.5</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice correct="yes">
-                            <statement><p>'string'</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>True</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>False</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                        <choice>
-                            <statement><p>Invalid Code</p></statement>
-                            <feedback><p/></feedback>
-                        </choice>
-                    </choices>
-                </exercise>
-            </exercises>
-        </subsection>
-        <program xml:id="ac-express-WE10_-p1-77" interactive="activecode" language="python">
-            <input></input>
+            </input>
         </program>
-    </section>
+
+        <exercises>
+        <exercise xml:id="m-Expr-WE10_-P1-68">
+            <statement>
+                <p>
+                    Q68: What is the value stored in result?
+                </p>
+
+
+                <program language="python">
+                    <input>result = alpha and beta</input>
+                </program>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            0
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            10
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE10_-P1-69">
+            <statement>
+                <p>
+                    Q69: What is the value stored in result?
+                </p>
+
+
+                <program language="python">
+                    <input>result = beta or alpha or gamma + 5</input>
+                </program>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            10
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            15
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            0.0
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            2.5
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            -2.5
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE10_-P1-70">
+            <statement>
+                <p>
+                    Q70: What is the value stored in result?
+                </p>
+
+
+                <program language="python">
+                    <input>result = True or alpha</input>
+                </program>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            1
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            10
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid Code
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE10_-P1-71">
+            <statement>
+                <p>
+                    Q71: What is the value stored in result?
+                </p>
+
+
+                <program language="python">
+                    <input>result = delta or alpha</input>
+                </program>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            10
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            'string'
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid Code
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="m-Expr-WE10_-P1-72">
+            <statement>
+                <p>
+                    Q72: What is the value stored in result?
+                </p>
+
+
+                <program language="python">
+                    <input>result = delta or gamma</input>
+                </program>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            -2.5
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            'string'
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            True
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            False
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            Invalid Code
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+        </exercises>
+    </subsection>
+
+
+    <program xml:id="ac-express-WE10_-p1-77" interactive="activecode" language="python">
+        <input></input>
+    </program>
+</section>

@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="expressions-bop-p1"
-    xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<section xml:id="expressions-bop-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Expressions-WE3-P1</title>
+
     <xi:include href='./subgoals_evaluate_expressions.ptx' />
-        <subsection>
-        <p>For all given problems below indicate if the code is valid or invalid. Each problem is
-            independent of the others (e.g. Question 2 does not depend on Question 1, only the
-            &#8220;Given&#8221; code).</p>
+    <subsection>
+        <p>
+            For all given problems below indicate if the code is valid or invalid.
+            Each problem is independent of the others (e.g.
+            Question 2 does not depend on Question 1, only the &#8220;Given&#8221; code).
+        </p>
     </subsection>
     <transition />
     <subsection>
         <title>Evaluate Expressions-WE3-P1</title>
+
         <p>
             <term>Given</term>
         </p>
+
+
         <program language="python">
             <input>
 alpha = 2
@@ -24,156 +29,205 @@ eta = 10
 omega = 2.5
 theta = -1.3
 kappa = '3'
-</input>
+            </input>
         </program>
+
         <exercises>
-    <exercise xml:id="m-Expr-WE3-P1-18">
-        <statement>
+        <exercise xml:id="m-Expr-WE3-P1-18">
+            <statement>
+                <p>
+                    Q18:
+                    <program language="python">
+                        <input>rho = beta * theta</input>
+                    </program>
+                </p>
+            </statement>
 
-            <p>Q18: <program language="python"><input>rho = beta * theta</input></program></p>
-        </statement>
-<choices>
 
-            <choice correct="yes">
-                <statement>
-                    <p>valid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            valid
+                        </p>
+                    </statement>
 
-            <choice>
-                <statement>
-                    <p>invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-</choices>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
 
-    </exercise>
+                <choice>
+                    <statement>
+                        <p>
+                            invalid
+                        </p>
+                    </statement>
 
-    <exercise xml:id="m-Expr-WE3-P1-19">
-        <statement>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
 
-            <p>Q19: <program language="python"><input>eta = alpha * kappa - eta</input></program></p>
+        <exercise xml:id="m-Expr-WE3-P1-19">
+            <statement>
+                <p>
+                    Q19:
+                    <program language="python">
+                        <input>eta = alpha * kappa - eta</input>
+                    </program>
+                </p>
+            </statement>
 
-        </statement>
-<choices>
 
-            <choice>
-                <statement>
-                    <p>valid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            valid
+                        </p>
+                    </statement>
 
-            <choice correct="yes">
-                <statement>
-                    <p>invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-</choices>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
 
-    </exercise>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            invalid
+                        </p>
+                    </statement>
 
-    <exercise xml:id="m-Expr-WE3-P1-20">
-        <statement>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
 
-            <p>Q20: <program language="python"><input>alpha = beta + gamma</input></program></p>
+        <exercise xml:id="m-Expr-WE3-P1-20">
+            <statement>
+                <p>
+                    Q20:
+                    <program language="python">
+                        <input>alpha = beta + gamma</input>
+                    </program>
+                </p>
+            </statement>
 
-        </statement>
-<choices>
 
-            <choice>
-                <statement>
-                    <p>valid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            valid
+                        </p>
+                    </statement>
 
-            <choice correct="yes">
-                <statement>
-                    <p>invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-</choices>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
 
-    </exercise>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            invalid
+                        </p>
+                    </statement>
 
-    <exercise xml:id="m-Expr-WE3-P1-21">
-        <statement>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
 
-            <p>Q21: <program language="python"><input>eta = eta // omega</input></program></p>
+        <exercise xml:id="m-Expr-WE3-P1-21">
+            <statement>
+                <p>
+                    Q21:
+                    <program language="python">
+                        <input>eta = eta // omega</input>
+                    </program>
+                </p>
+            </statement>
 
-        </statement>
-<choices>
 
-            <choice correct="yes">
-                <statement>
-                    <p>valid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            valid
+                        </p>
+                    </statement>
 
-            <choice>
-                <statement>
-                    <p>invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-</choices>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
 
-    </exercise>
-    <exercise xml:id="m-Expr-WE3-P1-22">
-        <statement>
+                <choice>
+                    <statement>
+                        <p>
+                            invalid
+                        </p>
+                    </statement>
 
-            <p>Q22: <program language="python"><input>kappa = kappa - '2'</input></program></p>
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
 
-        </statement>
-        <choices>
+        <exercise xml:id="m-Expr-WE3-P1-22">
+            <statement>
+                <p>
+                    Q22:
+                    <program language="python">
+                        <input>kappa = kappa - '2'</input>
+                    </program>
+                </p>
+            </statement>
 
-            <choice>
-                <statement>
-                    <p>valid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>invalid</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
-        </choices>
-    </exercise>
-</exercises>
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            valid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            invalid
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+        </exercises>
     </subsection>
+
 
     <program xml:id="ac-express-we3-p1" interactive="activecode" language="python">
         <input>
-
         </input>
     </program>
 </section>

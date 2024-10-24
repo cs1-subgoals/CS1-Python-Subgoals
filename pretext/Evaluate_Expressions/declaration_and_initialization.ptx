@@ -2,27 +2,55 @@
 
 <section xml:id="declaration_and_initialization" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Declaration and Initialization</title>
+
     <xi:include href='./subgoals_evaluate_expressions.ptx' />
     <subsection>
-        <!-- <p>You can watch this video or read through the content below it.</p> -->
-        <p>Given the following code snippet, evaluate the final statement (the last line). If invalid, give the reason. If valid, what value is assigned to the variable?</p>
-        <program language="python"><input>
+        <!--
+        <p>
+            You can watch this video or read through the content below it.
+        </p>
+        -->
+        <p>
+            Given the following code snippet, evaluate the final statement (the last line).
+            If invalid, give the reason.
+            If valid, what value is assigned to the variable?
+        </p>
+
+
+        <program language="python">
+            <input>
 beta = 1
 omega = 2.5
 alpha = 42
 theta = 4
-</input></program>
-</subsection>
-<subsection xml:id="subsec-dec-initSG1">
-    <title>SG1: Decide order of operations</title>
-    <p>There are no operators, so the only order is the order of the individual lines.</p>
-</subsection>
-<subsection xml:id="subsec-dec-initSG2">
-    <title>SG2: Determine operator behavior based on operands</title>
-    <p>NOT USED IN THIS EXAMPLE.</p>
-</subsection>
-<subsection xml:id="subsec-dec-initSG3">
-    <title>SG3: Solve arithmetic, expression, or operation</title>
-    <p>The value <c>1</c> is stored in <c>beta</c>, the value <c>2.5</c> is stored in <c>omega</c>, the value <c>42</c> is stored in <c>alpha</c>, and the value <c>4</c> is stored in the variable <c>theta</c>.</p>
-</subsection>
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection xml:id="subsec-dec-initSG1">
+        <title>SG1: Decide order of operations</title>
+
+        <p>
+            There are no operators, so the only order is the order of the individual lines.
+        </p>
+    </subsection>
+
+
+    <subsection xml:id="subsec-dec-initSG2">
+        <title>SG2: Determine operator behavior based on operands</title>
+
+        <p>
+            NOT USED IN THIS EXAMPLE.
+        </p>
+    </subsection>
+
+
+    <subsection xml:id="subsec-dec-initSG3">
+        <title>SG3: Solve arithmetic, expression, or operation</title>
+
+        <p>
+            The value <c>1</c> is stored in <c>beta</c>, the value <c>2.5</c> is stored in <c>omega</c>, the value <c>42</c> is stored in <c>alpha</c>, and the value <c>4</c> is stored in the variable <c>theta</c>.
+        </p>
+    </subsection>
 </section>

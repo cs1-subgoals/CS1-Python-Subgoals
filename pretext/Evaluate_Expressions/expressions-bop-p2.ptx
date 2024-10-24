@@ -2,19 +2,24 @@
 
 <section xml:id="expressions-bop-p2" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Expressions-WE3-P2</title>
+
     <xi:include href='./subgoals_evaluate_expressions.ptx' />
     <subsection>
-        <p>For the assignment statements below, either give the new value of the assigned variable,
-            or enter &#8220;invalid&#8221; if the statement would result in an error.
-            Each problem is independent of the others (e.g. Question 2
-            does not depend on Question 1, only the &#8220;Given&#8221; code).</p>
+        <p>
+            For the assignment statements below, either give the new value of the assigned variable, or enter &#8220;invalid&#8221; if the statement would result in an error.
+            Each problem is independent of the others (e.g.
+            Question 2 does not depend on Question 1, only the &#8220;Given&#8221; code).
+        </p>
     </subsection>
     <transition />
     <subsection>
         <title>Evaluate Expressions-WE3-P2</title>
+
         <p>
             <term>Given</term>
         </p>
+
+
         <program language="python">
             <input>
 alpha = 2
@@ -24,110 +29,145 @@ eta = 10
 omega = 2.5
 theta = -1.3
 kappa = '3'
-</input>
+            </input>
         </program>
+
         <exercises>
         <exercise>
             <statement>
-                <p>Q23: What is the value of rho?<program language="python"><input>rho = beta * theta </input></program><var/>  </p>
+                <p>
+                    Q23: What is the value of rho?
+                    <program language="python">
+                        <input>rho = beta * theta </input>
+                    </program>
+                    <var/>
+                </p>
             </statement>
-            <setup>
-                <var>
-                    <condition number="-1.3" tolerance=".01">
-                        <feedback>
-                            <p>Correct</p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                            <feedback>
-                                <p>Incorrect</p>
-                            </feedback>
-                    </condition>
-                </var>
-            </setup>
+            <setup> <var> <condition number="-1.3" tolerance=".01">
+            <feedback>
+                <p>
+                    Correct
+                </p>
+            </feedback>
+            </condition> <condition string='.*'>
+
+            <feedback>
+                <p>
+                    Incorrect
+                </p>
+            </feedback>
+            </condition> </var> </setup>
         </exercise>
+
         <exercise>
             <statement>
-                <p>Q24: What is the value of eta?<program language="python"><input>eta = alpha / beta</input></program><var/>  </p>
+                <p>
+                    Q24: What is the value of eta?
+                    <program language="python">
+                        <input>eta = alpha / beta</input>
+                    </program>
+                    <var/>
+                </p>
             </statement>
-            <setup>
-                <var>
-                    <condition number="2">
-                        <feedback>
-                            <p>Correct</p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                            <feedback>
-                                <p>Incorrect</p>
-                            </feedback>
-                    </condition>
-                </var>
-            </setup>
+            <setup> <var> <condition number="2">
+            <feedback>
+                <p>
+                    Correct
+                </p>
+            </feedback>
+            </condition> <condition string='.*'>
+
+            <feedback>
+                <p>
+                    Incorrect
+                </p>
+            </feedback>
+            </condition> </var> </setup>
         </exercise>
+
         <exercise>
             <statement>
-                <p>Q25: What is the value of eta?<program language="python"><input>eta = beta + kappa</input></program> <var/>  </p>
+                <p>
+                    Q25: What is the value of eta?
+                    <program language="python">
+                        <input>eta = beta + kappa</input>
+                    </program>
+                    <var/>
+                </p>
             </statement>
-            <setup>
-                <var>
-                    <condition string="(i|I)nvalid">
-                        <feedback>
-                            <p>Correct</p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                            <feedback>
-                                <p>Incorrect</p>
-                            </feedback>
-                    </condition>
-                </var>
-            </setup>
+            <setup> <var> <condition string="(i|I)nvalid">
+            <feedback>
+                <p>
+                    Correct
+                </p>
+            </feedback>
+            </condition> <condition string='.*'>
+
+            <feedback>
+                <p>
+                    Incorrect
+                </p>
+            </feedback>
+            </condition> </var> </setup>
         </exercise>
+
         <exercise>
             <statement>
-                <p>Q26: What is the value of beta?<program language="python"><input>beta = beta / alpha</input></program> <var/>  </p>
+                <p>
+                    Q26: What is the value of beta?
+                    <program language="python">
+                        <input>beta = beta / alpha</input>
+                    </program>
+                    <var/>
+                </p>
             </statement>
-            <setup>
-                <var>
-                    <condition number=".5" tolerance=".01">
-                        <feedback>
-                            <p>Correct</p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                            <feedback>
-                                <p>Incorrect</p>
-                            </feedback>
-                    </condition>
-                </var>
-            </setup>
+            <setup> <var> <condition number=".5" tolerance=".01">
+            <feedback>
+                <p>
+                    Correct
+                </p>
+            </feedback>
+            </condition> <condition string='.*'>
+
+            <feedback>
+                <p>
+                    Incorrect
+                </p>
+            </feedback>
+            </condition> </var> </setup>
         </exercise>
+
         <exercise>
             <statement>
-                <p>Q27: What is the value of kappa?<program language="python"><input>kappa = kappa + '123'</input></program> <var/>  </p>
+                <p>
+                    Q27: What is the value of kappa?
+                    <program language="python">
+                        <input>kappa = kappa + '123'</input>
+                    </program>
+                    <var/>
+                </p>
             </statement>
-            <setup>
-                <var>
-                    <condition string="(&quot;|')3123('|&quot;)">
-                        <feedback>
-                            <p>Correct</p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                            <feedback>
-                                <p>Incorrect</p>
-                            </feedback>
-                    </condition>
-                </var>
-            </setup>
+            <setup> <var> <condition string="(&quot;|')3123('|&quot;)">
+            <feedback>
+                <p>
+                    Correct
+                </p>
+            </feedback>
+            </condition> <condition string='.*'>
+
+            <feedback>
+                <p>
+                    Incorrect
+                </p>
+            </feedback>
+            </condition> </var> </setup>
         </exercise>
-</exercises>
+        </exercises>
     </subsection>
+
 
     <program xml:id="ac-express-we3-p2" interactive="activecode" language="python">
         <input>
-
         </input>
     </program>
 </section>
