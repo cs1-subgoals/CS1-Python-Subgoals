@@ -1,176 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="conditional-wc-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US"> 
-        <title>WriteConditional-WE2-P1</title>
-        <xi:include href='./subgoals_write_conditional.ptx' />
-        <transition/>
-        <subsection>
-            <title>WrCond-WE2-P1</title>
-    <exercises>
+<section xml:id="conditional-wc-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>WriteConditional-WE2-P1</title>
+
+    <xi:include href='./subgoals_write_conditional.ptx' />
+    <transition/>
+    <subsection>
+        <title>WrCond-WE2-P1</title>
+
+        <exercises>
         <exercise xml:id="parsons-WrCond-WE2-P1-5" indent="show" language="python">
             <statement>
-                <p>Put the code in the right order to create a program that will ask the user for an integer between 0 and 25, 
-                    print the value, and if the value is greater than 18, print a message saying &#8220;This is an overload&#8221;; 
-                    otherwise print a message saying &#8220;Not an overload&#8221;.</p>
+                <p>
+                    Put the code in the right order to create a program that will ask the user for an integer between 0 and 25, print the value, and if the value is greater than 18, print a message saying &#8220;This is an overload&#8221;; otherwise print a message saying &#8220;Not an overload&#8221;.
+                </p>
             </statement>
             <blocks><block order="1">
-                <cline>x = int(input("Please enter an integer between 0 and 25: "))</cline>
-                <cline>print(x)</cline>
-                </block><block order="2">
-                <cline>if x &gt; 18:</cline>
-                </block><block order="3">
-                <cline>    print("This is an overload.")</cline>
-                </block><block order="4">
-                <cline>else:</cline>
-                </block><block order="5">
-                <cline>    print("Not an overload.")</cline>
-                </block>
-            </blocks>
+            <cline>x = int(input("Please enter an integer between 0 and 25: "))</cline>
+            <cline>print(x)</cline>
+            </block><block order="2">
+            <cline>if x &gt; 18:</cline>
+            </block><block order="3">
+            <cline>    print("This is an overload.")</cline>
+            </block><block order="4">
+            <cline>else:</cline>
+            </block><block order="5">
+            <cline>    print("Not an overload.")</cline>
+            </block> </blocks>
         </exercise>
+
         <exercise xml:id="parsons-WrCond-WE2-P1-6" indent="show" language="python">
             <statement>
-                <p>Put the code in the right order to create a program that will ask the user for an integer value between 3 and 7, 
-                    print the value, and if the value is equal to 5 then set the string variable class_type equal to &#8216;G&#8217;, 
-                    and print a message saying &#8220;graduate student&#8221;; otherwise set class_type equal to &#8216;U&#8217; and print 
-                    a message saying &#8220;undergraduate&#8221;. Finally, print the class_type.</p>
+                <p>
+                    Put the code in the right order to create a program that will ask the user for an integer value between 3 and 7, print the value, and if the value is equal to 5 then set the string variable class_type equal to &#8216;G&#8217;, and print a message saying &#8220;graduate student&#8221;; otherwise set class_type equal to &#8216;U&#8217; and print a message saying &#8220;undergraduate&#8221;.
+                    Finally, print the class_type.
+                </p>
             </statement>
-            <blocks>
-                <block order="1">
-                    <cline>class_type = 'x'</cline>
-                    <cline>x = 3 + int(input("Please enter an integer between 0 and 4: "))</cline>
-                    <cline>print(x)</cline>
-                </block><block order="2">
-                    <cline>if x == 5:</cline>
-                </block><block order="3">
-                    <cline>    class_type = 'G'</cline>
-                    <cline>    print("graduate student")</cline>
-                </block><block order="4">
-                    <cline>else:</cline>
-                </block><block order="5">
-                    <cline>    class_type = 'U'</cline>
-                    <cline>    print("undergraduate student")</cline>
-                </block><block order="6">
-                    <cline>print(class_type)</cline>
-                </block>
-            </blocks>
+            <blocks> <block order="1">
+            <cline>class_type = 'x'</cline>
+            <cline>x = 3 + int(input("Please enter an integer between 0 and 4: "))</cline>
+            <cline>print(x)</cline>
+            </block><block order="2">
+            <cline>if x == 5:</cline>
+            </block><block order="3">
+            <cline>    class_type = 'G'</cline>
+            <cline>    print("graduate student")</cline>
+            </block><block order="4">
+            <cline>else:</cline>
+            </block><block order="5">
+            <cline>    class_type = 'U'</cline>
+            <cline>    print("undergraduate student")</cline>
+            </block><block order="6">
+            <cline>print(class_type)</cline>
+            </block> </blocks>
         </exercise>
+
         <exercise xml:id="parsons-WrCond-WE2-P1-7" indent="show" language="python">
             <statement>
-                <p>Put the code in the right order to create a program that will ask the user for an integer to represent a year (1500 to 3000 inclusive) and print the value. 
-                    Then it will print <em>true</em> if the year is a leap year, otherwise the program prints <em>false</em>. A leap year is a multiple of 4, 
-                    with one exception: if the year is a multiple of 100 but <em>not</em> 400, then it is <em>not</em> a leap year. For example, the year 1900 
-                    was not a leap year, but the year 2000 was indeed a leap year.</p>
+                <p>
+                    Put the code in the right order to create a program that will ask the user for an integer to represent a year (1500 to 3000 inclusive) and print the value.
+                    Then it will print <em>true</em> if the year is a leap year, otherwise the program prints <em>false</em>.
+                    A leap year is a multiple of 4, with one exception: if the year is a multiple of 100 but <em>not</em> 400, then it is <em>not</em> a leap year.
+                    For example, the year 1900 was not a leap year, but the year 2000 was indeed a leap year.
+                </p>
             </statement>
-            <blocks>
-                <block order="1">
-                    <cline>x = int(input("Please enter an year between 1500 and 3000: "))</cline>
-                    <cline>result = False</cline>
-                </block><block order="2">
-                    <cline>print(x)</cline>
-                </block><block order="3">
-                    <cline>if x % 4 == 0:</cline>
-                </block><block order="4">
-                    <cline>    if x % 100 == 0:</cline>
-                </block><block order="5">
-                    <cline>        if x % 400 == 0:</cline>
-                    <cline>            result = True</cline>
-                    <cline>        else:</cline>
-                    <cline>            result = False</cline>
-                </block><block order="6">
-                    <cline>    else:</cline>
-                    <cline>        result = True</cline>
-                </block><block order="7">
-                    <cline>else:</cline>
-                    <cline>    result = False</cline>
-                </block><block order="8">
-                    <cline>print(result)</cline>
-                </block>
-            </blocks>
+            <blocks> <block order="1">
+            <cline>x = int(input("Please enter an year between 1500 and 3000: "))</cline>
+            <cline>result = False</cline>
+            </block><block order="2">
+            <cline>print(x)</cline>
+            </block><block order="3">
+            <cline>if x % 4 == 0:</cline>
+            </block><block order="4">
+            <cline>    if x % 100 == 0:</cline>
+            </block><block order="5">
+            <cline>        if x % 400 == 0:</cline>
+            <cline>            result = True</cline>
+            <cline>        else:</cline>
+            <cline>            result = False</cline>
+            </block><block order="6">
+            <cline>    else:</cline>
+            <cline>        result = True</cline>
+            </block><block order="7">
+            <cline>else:</cline>
+            <cline>    result = False</cline>
+            </block><block order="8">
+            <cline>print(result)</cline>
+            </block> </blocks>
         </exercise>
+
         <exercise xml:id="parsons-WrCond-WE2-P1-8" indent="show" language="python">
             <statement>
-                <p>Put the code in the right order to create a program that will ask the user for an integer grade (0 to 100 inclusive) 
-                    and print the value. Then determine the letter grade where 90 to 100 is an &#8216;A&#8217;, 80 to 89 is a &#8216;B&#8217;, 
-                    70 to 79 is a &#8216;C&#8217;, 60 to 69 is a &#8216;D&#8217;, and 0 to 59 is an &#8216;F&#8217;. Then print the letter grade.</p>
+                <p>
+                    Put the code in the right order to create a program that will ask the user for an integer grade (0 to 100 inclusive) and print the value.
+                    Then determine the letter grade where 90 to 100 is an &#8216;A&#8217;, 80 to 89 is a &#8216;B&#8217;, 70 to 79 is a &#8216;C&#8217;, 60 to 69 is a &#8216;D&#8217;, and 0 to 59 is an &#8216;F&#8217;.
+                    Then print the letter grade.
+                </p>
             </statement>
-            <blocks>
-                <block order="1">
-                    <cline>grade = int(input("Please enter an integer grade between 0 and 100: "))</cline>
-                </block><block order="2">
-                    <cline>print(grade)</cline>
-                </block><block order="3">
-                    <cline>if grade &gt;= 90:</cline>
-                </block><block order="4">
-                    <cline>    letter_grade = "A"</cline>
-                </block><block order="5">
-                    <cline>elif grade &gt;= 80:</cline>
-                </block><block order="6">
-                    <cline>    letter_grade = "B"</cline>
-                </block><block order="7">
-                    <cline>elif grade &gt;= 70:</cline>
-                </block><block order="8">
-                    <cline>    letter_grade = "C"</cline>
-                </block><block order="9">
-                    <cline>elif grade &gt;= 60:</cline>
-                </block><block order="10">
-                    <cline>    letter_grade = "D"</cline>
-                </block><block order="11">
-                    <cline>else:</cline>
-                </block><block order="12">
-                    <cline>    letter_grade = "F"</cline>
-                </block><block order="13">
-                    <cline>print(letter_grade)</cline>
-                </block>
-            </blocks>
+            <blocks> <block order="1">
+            <cline>grade = int(input("Please enter an integer grade between 0 and 100: "))</cline>
+            </block><block order="2">
+            <cline>print(grade)</cline>
+            </block><block order="3">
+            <cline>if grade &gt;= 90:</cline>
+            </block><block order="4">
+            <cline>    letter_grade = "A"</cline>
+            </block><block order="5">
+            <cline>elif grade &gt;= 80:</cline>
+            </block><block order="6">
+            <cline>    letter_grade = "B"</cline>
+            </block><block order="7">
+            <cline>elif grade &gt;= 70:</cline>
+            </block><block order="8">
+            <cline>    letter_grade = "C"</cline>
+            </block><block order="9">
+            <cline>elif grade &gt;= 60:</cline>
+            </block><block order="10">
+            <cline>    letter_grade = "D"</cline>
+            </block><block order="11">
+            <cline>else:</cline>
+            </block><block order="12">
+            <cline>    letter_grade = "F"</cline>
+            </block><block order="13">
+            <cline>print(letter_grade)</cline>
+            </block> </blocks>
         </exercise>
+
         <exercise xml:id="parsons-WrCond-WE2-P1-9" indent="show" language="python">
             <statement>
-                <p>Put the code in the right order to create a program that will ask the user for 3 numbers (1 to 10 inclusive) 
-                    for variables a, b, and c, and print the value of each variable. Then compare a to b, a to c, and b to c, and print statements for each 
-                    comparison, reporting for each pair of variables if they are equal, greater than, or less than. </p>
+                <p>
+                    Put the code in the right order to create a program that will ask the user for 3 numbers (1 to 10 inclusive) for variables a, b, and c, and print the value of each variable.
+                    Then compare a to b, a to c, and b to c, and print statements for each comparison, reporting for each pair of variables if they are equal, greater than, or less than.
+                </p>
             </statement>
-            <blocks>
-                <block order="1">
-                    <cline>a = int(input("Please enter an integer between 1 and 10: "))</cline>
-                    <cline>b = int(input("Please enter an integer between 1 and 10: "))</cline>
-                    <cline>c = int(input("Please enter an integer between 1 and 10: "))</cline>
-                </block><block order="2">
-                    <cline>print(a)</cline>
-                    <cline>print(b)</cline>
-                    <cline>print(c)</cline>
-                    <cline>if a == b:</cline>
-                </block><block order="3">
-                    <cline>    print("a and b are equal")</cline>
-                </block><block order="4">
-                    <cline>elif a > b:</cline>
-                    <cline>    print("a is greater than b")</cline>
-                    <cline>else:</cline>
-                    <cline>    print("a is less than b")</cline>
-                    <cline>if a == c:</cline>
-                </block><block order="5">
-                    <cline>    print("a and c are equal")</cline>
-                </block><block order="6">
-                    <cline>elif a > c:</cline>
-                    <cline>    print("a is greater than c")</cline>
-                    <cline>else:</cline>
-                    <cline>    print("a is less than c")</cline>
-                </block><block order="7">
-                    <cline>if b == c:</cline>
-                </block><block order="8">
-                    <cline>    print("b and c are equal")</cline>
-                </block><block order="9">
-                    <cline>elif b > c:</cline>
-                </block><block order="10">
-                    <cline>    print("b is greater than c")</cline>
-                </block><block order="11">
-                    <cline>else:</cline>
-                </block><block order="12">
-                    <cline>    print("b is less than c")</cline>
-                </block>
-            </blocks>
+            <blocks> <block order="1">
+            <cline>a = int(input("Please enter an integer between 1 and 10: "))</cline>
+            <cline>b = int(input("Please enter an integer between 1 and 10: "))</cline>
+            <cline>c = int(input("Please enter an integer between 1 and 10: "))</cline>
+            </block><block order="2">
+            <cline>print(a)</cline>
+            <cline>print(b)</cline>
+            <cline>print(c)</cline>
+            <cline>if a == b:</cline>
+            </block><block order="3">
+            <cline>    print("a and b are equal")</cline>
+            </block><block order="4">
+            <cline>elif a > b:</cline>
+            <cline>    print("a is greater than b")</cline>
+            <cline>else:</cline>
+            <cline>    print("a is less than b")</cline>
+            <cline>if a == c:</cline>
+            </block><block order="5">
+            <cline>    print("a and c are equal")</cline>
+            </block><block order="6">
+            <cline>elif a > c:</cline>
+            <cline>    print("a is greater than c")</cline>
+            <cline>else:</cline>
+            <cline>    print("a is less than c")</cline>
+            </block><block order="7">
+            <cline>if b == c:</cline>
+            </block><block order="8">
+            <cline>    print("b and c are equal")</cline>
+            </block><block order="9">
+            <cline>elif b > c:</cline>
+            </block><block order="10">
+            <cline>    print("b is greater than c")</cline>
+            </block><block order="11">
+            <cline>else:</cline>
+            </block><block order="12">
+            <cline>    print("b is less than c")</cline>
+            </block> </blocks>
         </exercise>
-    </exercises>
-</subsection>
+        </exercises>
+    </subsection>
+
 
     <program xml:id="ac-writeselect-we2-p1" interactive="activecode" language="python">
         <input></input>

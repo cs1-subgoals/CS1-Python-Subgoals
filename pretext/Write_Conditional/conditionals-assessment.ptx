@@ -1,55 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="conditional-assess" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US"> 
+<section xml:id="conditional-assess" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Assessment: Conditionals</title>
+
     <xi:include href='./subgoals_write_conditional.ptx' />
     <transition/>
     <exercises time-limit="10" pause="no">
-        <TimedNode line="27" runestone_options="{'nofeedback': None, 'subchapter': 'wrloops-assess1', 'chapter': 'WriteLoops', 'basecourse': 'Subgoals', 'optional': '', 'optclass': '', 'divid': 'assess-wrloops-1', 'qnumber': '', 'question_label': '6.2.1'}" 
-                source="/Users/bmiller/Runestone/books/thinkcspy/Subgoals/_sources/WriteLoops/wrloops-assess1.rst">
+    <TimedNode line="27" runestone_options="{'nofeedback': None, 'subchapter': 'wrloops-assess1', 'chapter': 'WriteLoops', 'basecourse': 'Subgoals', 'optional': '', 'optclass': '', 'divid': 'assess-wrloops-1', 'qnumber': '', 'question_label': '6.2.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/Subgoals/_sources/WriteLoops/wrloops-assess1.rst">
+    <exercise xml:id="Cond-Assess-1">
+        <statement>
+            <p>
+                Q1: What is the output of the following code?
+            </p>
 
-        <exercise xml:id="Cond-Assess-1">
-            <statement><p>Q1: What is the output of the following code?</p>
-                <program language="python"><input>
+
+            <program language="python">
+                <input>
 a = 10
 b = 20
 if 2 * a >= b:
     print("Yes")
 else
     print("No")                    
-                </input></program></statement>
-            <choices>
-                <choice><statement><p>Yes</p></statement>
-                <feedback><p/></feedback></choice>
-                <choice><statement><p>No</p></statement>
-                <feedback><p/></feedback></choice>
-                <choice correct="yes"><statement><p>There is no output because a compiler error occurs</p></statement>
-                <feedback><p/></feedback></choice>
-                <choice><statement><p>There is no output because an exception occurs</p></statement>
-                <feedback><p/></feedback></choice>
-            </choices>
-        </exercise>
-        <exercise xml:id="Cond-Assess-2">
-            <statement>
-                <p>Q2: Click on all conditions that are true in the following code prior to the code being executed:</p>
-            </statement>
-            <areas language="python">
-                <cline><area correct="no">a = 5</area></cline>
-                <cline><area correct="no">b = 20</area></cline>
-                <cline><area correct="no">c = 15</area></cline>
-                <cline><area correct="no">if 2 * a >= b:</area></cline>
-                <cline>    <area correct="no">print("Double a")</area></cline>
-                <cline><area correct="yes">elif 2 * c >= b:</area></cline>
-                <cline>    <area correct="no">print("Double c")</area></cline>
-                <cline><area correct="yes">elif 2 * b >= b:</area></cline>
-                <cline>    <area correct="no">print(“Double b”)</area></cline>
-            </areas>
-        </exercise>
-        <exercise>
-            <statement>
-                <p>Q3: What is the output of the following code?</p>
-                <program language="python">
-                    <input>
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        Yes
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        No
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        There is no output because a compiler error occurs
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        There is no output because an exception occurs
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="Cond-Assess-2">
+        <statement>
+            <p>
+                Q2: Click on all conditions that are true in the following code prior to the code being executed:
+            </p>
+        </statement>
+        <areas language="python">
+        <cline><area correct="no">a = 5</area></cline>
+        <cline><area correct="no">b = 20</area></cline>
+        <cline><area correct="no">c = 15</area></cline>
+        <cline><area correct="no">if 2 * a >= b:</area></cline>
+        <cline>    <area correct="no">print("Double a")</area></cline>
+        <cline><area correct="yes">elif 2 * c >= b:</area></cline>
+        <cline>    <area correct="no">print("Double c")</area></cline>
+        <cline><area correct="yes">elif 2 * b >= b:</area></cline>
+        <cline>    <area correct="no">print(“Double b”)</area></cline>
+        </areas>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Q3: What is the output of the following code?
+            </p>
+
+
+            <program language="python">
+                <input>
 if 5 == (10 // 2):
     if 5 % 2 > 0:
         if 0:
@@ -67,30 +123,38 @@ if conditions:
         print("Even")
 else:
     print("Conditions not met")                                                 
-                    </input>
-                </program>
-                <p><var /></p>
-            </statement>
-            <setup>
-                <var>
-                    <condition string="Odd">
-                        <feedback>
-                            <p>Correct</p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                        <feedback>
-                            <p>Incorrect</p>
-                        </feedback>
-                    </condition>
-                </var>
-            </setup>
-        </exercise>
-        <exercise>
-            <statement>
-                <p>Q4: Enter the value of each variable after the following code is executed:</p>
-                <program language="python">
-                    <input>
+                </input>
+            </program>
+
+            <p>
+                <var />
+            </p>
+        </statement>
+        <setup> <var> <condition string="Odd">
+        <feedback>
+            <p>
+                Correct
+            </p>
+        </feedback>
+        </condition> <condition string='.*'>
+
+        <feedback>
+            <p>
+                Incorrect
+            </p>
+        </feedback>
+        </condition> </var> </setup>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Q4: Enter the value of each variable after the following code is executed:
+            </p>
+
+
+            <program language="python">
+                <input>
 a = 0
 b = 1
 c = 2
@@ -108,118 +172,128 @@ elif b:
     b = 2*(a + c)
 elif a:
     a = 2*(b + c)                           
-                    </input>
-                </program>
-                <p>The value of variable <c>a</c> is <var />,
-                    the value of variable <c>b</c> is <var />,
-                    and the value of variable <c>c</c> is <var />.</p>
-            </statement>
-            <setup>
-                <var>
-                    <condition number="2">
-                        <feedback>
-                            <p>Correct value of <c>a</c></p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                        <feedback>
-                            <p>Incorrect value of <c>a</c></p>
-                        </feedback>
-                    </condition>
-                </var>
-                <var>
-                    <condition number="4">
-                        <feedback>
-                            <p>Correct value of <c>b</c></p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                        <feedback>
-                            <p>Incorrect value of <c>b</c></p>
-                        </feedback>
-                    </condition>
-                </var>
-                <var>
-                    <condition number="0">
-                        <feedback>
-                            <p>Correct value of <c>c</c></p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                        <feedback>
-                            <p>Incorrect value of <c>c</c></p>
-                        </feedback>
-                    </condition>
-                </var>
-            </setup>
-        </exercise>
-        <exercise xml:id="Cond-Assess-5" indent="show" language="python">
-            <statement>
-                <p>Put the code in the right order to create a program that will ask the user for a number between -20 and 20 
-                    (inclusive).Print the number. Then check if the number is positive, negative, or neither. Print the result. </p>
-            </statement>
-            <blocks>
-                <block order="1">
-                    <cline>x = int(input("Please enter an integer between -20 and 20: "))</cline>
-                </block><block order="2">
-                    <cline>print(x)</cline>
-                </block><block order="3">
-                    <cline>if x > 0:</cline>
-                </block><block order="4">
-                    <cline>    result = "Positive"</cline>
-                </block><block order="5">
-                    <cline>elif x &lt; 0:</cline>
-                </block><block order="6">
-                    <cline>    result = "Negative"</cline>
-                </block><block order="7">
-                    <cline>else:</cline>
-                </block><block order="8">
-                    <cline>    result = "Neither"</cline>
-                </block><block order="9">
-                    <cline>print(result)</cline>
-                </block>
-            </blocks>
-        </exercise>
-        <exercise xml:id="Cond-Assess-6" indent="show" language="python">
-            <statement>
-                <p>Put the code in the right order to create a program that will generate a random number (1 to 100 inclusive), 
-                    and print the number. Check if the number is a multiple of 2 and print the result. Then check if the number 
-                    is a multiple of 3 and print the result. Then check if the number is a multiple of 5 and print the result.</p>
-            </statement>
-            <blocks>
-                <block order="1">
-                    <cline>x = int(input("Please enter an integer between 1 and 100: "))</cline>
-                </block><block order="2">
-                    <cline>print(x)</cline>
-                </block><block order="3">
-                    <cline>if x % 2 == 0:</cline>
-                </block><block order="4">
-                    <cline>    print(x, "is a multiple of 2.")</cline>
-                </block><block order="5">
-                    <cline>elif x % 2 != 0:</cline>
-                </block><block order="6">
-                    <cline>    print(x, "is not a multiple of 2.")</cline>
-                </block><block order="7">
-                    <cline>if x % 3 == 0:</cline>
-                </block><block order="8">
-                    <cline>    print(x, "is a multiple of 3.")</cline>
-                </block><block order="9">
-                    <cline>elif x % 3 != 0:</cline>
-                </block><block order="10">
-                    <cline>    print(x, "is not a multiple of 3.")</cline>
-                </block><block order="11">
-                    <cline>if x % 5 == 0:</cline>
-                </block><block order="12">
-                    <cline>    print(x, "is a multiple of 5.")</cline>
-                </block><block order="13">
-                    <cline>elif x % 5 != 0:</cline>
-                </block><block order="14">
-                    <cline>    print(x, "is not a multiple of 5.")</cline>
-                </block>
-            </blocks>
-        </exercise>
-        </TimedNode>
-    </exercises>
+                </input>
+            </program>
+
+            <p>
+                The value of variable <c>a</c> is <var />, the value of variable <c>b</c> is <var />, and the value of variable <c>c</c> is <var />.
+            </p>
+        </statement>
+        <setup> <var> <condition number="2">
+        <feedback>
+            <p>
+                Correct value of <c>a</c>
+            </p>
+        </feedback>
+        </condition> <condition string='.*'>
+
+        <feedback>
+            <p>
+                Incorrect value of <c>a</c>
+            </p>
+        </feedback>
+        </condition> </var> <var> <condition number="4">
+
+        <feedback>
+            <p>
+                Correct value of <c>b</c>
+            </p>
+        </feedback>
+        </condition> <condition string='.*'>
+
+        <feedback>
+            <p>
+                Incorrect value of <c>b</c>
+            </p>
+        </feedback>
+        </condition> </var> <var> <condition number="0">
+
+        <feedback>
+            <p>
+                Correct value of <c>c</c>
+            </p>
+        </feedback>
+        </condition> <condition string='.*'>
+
+        <feedback>
+            <p>
+                Incorrect value of <c>c</c>
+            </p>
+        </feedback>
+        </condition> </var> </setup>
+    </exercise>
+
+    <exercise xml:id="Cond-Assess-5" indent="show" language="python">
+        <statement>
+            <p>
+                Put the code in the right order to create a program that will ask the user for a number between -20 and 20 (inclusive).Print the number.
+                Then check if the number is positive, negative, or neither.
+                Print the result.
+            </p>
+        </statement>
+        <blocks> <block order="1">
+        <cline>x = int(input("Please enter an integer between -20 and 20: "))</cline>
+        </block><block order="2">
+        <cline>print(x)</cline>
+        </block><block order="3">
+        <cline>if x > 0:</cline>
+        </block><block order="4">
+        <cline>    result = "Positive"</cline>
+        </block><block order="5">
+        <cline>elif x &lt; 0:</cline>
+        </block><block order="6">
+        <cline>    result = "Negative"</cline>
+        </block><block order="7">
+        <cline>else:</cline>
+        </block><block order="8">
+        <cline>    result = "Neither"</cline>
+        </block><block order="9">
+        <cline>print(result)</cline>
+        </block> </blocks>
+    </exercise>
+
+    <exercise xml:id="Cond-Assess-6" indent="show" language="python">
+        <statement>
+            <p>
+                Put the code in the right order to create a program that will generate a random number (1 to 100 inclusive), and print the number.
+                Check if the number is a multiple of 2 and print the result.
+                Then check if the number is a multiple of 3 and print the result.
+                Then check if the number is a multiple of 5 and print the result.
+            </p>
+        </statement>
+        <blocks> <block order="1">
+        <cline>x = int(input("Please enter an integer between 1 and 100: "))</cline>
+        </block><block order="2">
+        <cline>print(x)</cline>
+        </block><block order="3">
+        <cline>if x % 2 == 0:</cline>
+        </block><block order="4">
+        <cline>    print(x, "is a multiple of 2.")</cline>
+        </block><block order="5">
+        <cline>elif x % 2 != 0:</cline>
+        </block><block order="6">
+        <cline>    print(x, "is not a multiple of 2.")</cline>
+        </block><block order="7">
+        <cline>if x % 3 == 0:</cline>
+        </block><block order="8">
+        <cline>    print(x, "is a multiple of 3.")</cline>
+        </block><block order="9">
+        <cline>elif x % 3 != 0:</cline>
+        </block><block order="10">
+        <cline>    print(x, "is not a multiple of 3.")</cline>
+        </block><block order="11">
+        <cline>if x % 5 == 0:</cline>
+        </block><block order="12">
+        <cline>    print(x, "is a multiple of 5.")</cline>
+        </block><block order="13">
+        <cline>elif x % 5 != 0:</cline>
+        </block><block order="14">
+        <cline>    print(x, "is not a multiple of 5.")</cline>
+        </block> </blocks>
+    </exercise>
+    </TimedNode> </exercises>
+
+
     <program xml:id="ac-writeconditional-we2-p1" interactive="activecode" language="python">
         <input></input>
     </program>
