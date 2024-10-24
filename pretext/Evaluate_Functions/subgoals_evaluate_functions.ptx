@@ -1,24 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <introduction>
-<title>Subgoals for evaluating a function call:</title>
+    <title>Subgoals for evaluating a function call:</title>
+
     <p>
         <ol marker="1">
             <li>
-                <p>Create stack frame for global variables</p>
+                <p>
+                    Create stack frame for global variables
+                </p>
             </li>
+
             <li>
-                <p>Ensure function is defined before function call before beginning body of function</p>
+                <p>
+                    Ensure function is defined before function call before beginning body of function
+                </p>
             </li>
+
             <li>
-                <p>Determine parameter values based on positional arguments, keyword arguments, and default values to initialize local variables</p>
+                <p>
+                    Determine parameter values based on positional arguments, keyword arguments, and default values to initialize local variables
+                </p>
             </li>
+
             <li>
-                <p>Use stack frame for function to trace local variables</p>
+                <p>
+                    Use stack frame for function to trace local variables
+                </p>
             </li>
+
             <li>
-                <p>At return to call site, pass values back to call site</p>
+                <p>
+                    At return to call site, pass values back to call site
+                </p>
             </li>
+
             <li>
-                <p>Delete stack frame with local variables after return to call site</p>
+                <p>
+                    Delete stack frame with local variables after return to call site
+                </p>
             </li>
         </ol>
     </p>

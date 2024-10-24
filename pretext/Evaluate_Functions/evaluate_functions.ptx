@@ -1,53 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <section xml:id="eval_funcs"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Functions</title>
+
     <xi:include href='./subgoals_evaluate_functions.ptx' />
     <subsection>
         <title>Simple Call</title>
+
         <p>
             <ul>
                 <li>
-                    <p>One argument</p>
-                </li>
-                <li>
-                    <p>No arguments</p>
-                </li>
-                <li>
-                    <p>Two arguments</p>
-                </li>
                     <p>
-                        <ul>
-                            <li>
-                                <p>Int, Int</p>
-                            </li>
-                            <li>
-                                <p>Int, float</p>
-                            </li>
-                            <li>
-                                <p>Int, String</p>
-                            </li>
-                            <li>
-                                <p>String, String</p>
-                            </li>
-                        </ul>
+                        One argument
                     </p>
+                </li>
+
+                <li>
+                    <p>
+                        No arguments
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Two arguments
+                    </p>
+                </li>
+
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                Int, Int
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Int, float
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Int, String
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                String, String
+                            </p>
+                        </li>
+                    </ul>
+                </p>
             </ul>
         </p>
-        <program language="python"><input>
+
+
+        <program language="python">
+            <input>
 def foo(alpha, beta, gamma):
     delta = alpha * beta - gamma
     return delta * 2
-
 alpha = 9
 kappa = foo(7, alpha, 1)
 gamma = kappa + 1
-</input></program>
+            </input>
+        </program>
     </subsection>
+
+
     <subsection xml:id="eval_func_key_args">
         <title>Keyword Arguments</title>
-        <program language="python"><input>
+
+        <program language="python">
+            <input>
 def subtract(a, b, c=1):
     return a*c - b
-
 # P1
 print(subtract(a=7, b=9))
 # P2
@@ -60,20 +90,23 @@ print(subtract(10, 5, 2))
 print(subtract(c=2, b=5, a=10))
 # P6
 print(subtract(100, 50, c=.1))
-        </input></program>
+            </input>
+        </program>
     </subsection>
+
+
     <subsection xml:id="eval_func_nested_calls">
         <title>Nested Calls</title>
-        <program language="python"><input>
+
+        <program language="python">
+            <input>
 def add5(number):
     number = number + 5
     return number
-
 def double(num):
     result = num * 2
     num = num + 1 # Have this useless thing in there at least once
     return result
-
 answer = 10
 # One with assignments
 answer = add5(answer)
@@ -85,39 +118,37 @@ double(answer)
 print(answer)
 # Nested
 print(add5(double(answer)))
-        </input></program>
+            </input>
+        </program>
     </subsection>
 
 
- <subsection xml:id="eval_func_calls_within_calls">
+    <subsection xml:id="eval_func_calls_within_calls">
         <title>Calls within Calls</title>
-        <program language="python"><input>
+
+        <program language="python">
+            <input>
         # Example
 def third(value):
     result = round(value/3)
     return result
-
 def chop_third(text):
     result = text
     length = third(len(result))
     result = text[:length]
     return result
-
 print(chop_third("something"))
 # P1
 def is_month(value):
     result = value > 0
     result = result and value &lt;= 12
     return result
-
 def is_day(value):
     result = value > 0 and value &lt;= 31
     return result
-
 def is_date(day, month):
     result = is_day(day) and is_month(month)
     return result
-
 print(is_date(1, 30))
 print(is_date(30, 1))
 # P2
@@ -125,20 +156,17 @@ def a(x, y=1):
     z = 3
     x = x * 2
     return x + y + z
-
 def b(x, z):
     y = 3
     z = z + z
     return x + y + z
-
 def c(x, y, z):
     x = a(x, y)
     y = z(z, y)
     z = a(x) - y
     return x + y + z
-
 print(c(1, 2, 3))
-        </input></program>
+            </input>
+        </program>
     </subsection>
 </section>
-
