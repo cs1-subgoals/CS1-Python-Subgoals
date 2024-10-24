@@ -1,48 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="functions-assess" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US"> 
+<section xml:id="functions-assess" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Assessment: Functions</title>
+
     <xi:include href='./subgoals_write_function.ptx' />
     <transition/>
     <exercises xml:id="function-assessment-exercises" label="function-assessment-exercises" time-limit="10" pause="no">
-        <exercise xml:id="Func-Assess-1">
-            <statement>
-                <p>Q1: Enter the output of the following program or enter “invalid” if the statement would result in an error.</p>
-                <program language="python"><input>
+    <exercise xml:id="Func-Assess-1">
+        <statement>
+            <p>
+                Q1: Enter the output of the following program or enter “invalid” if the statement would result in an error.
+            </p>
+
+
+            <program language="python">
+                <input>
                     def first_func(a, b):
                         return a + b * c
-
+                    
                     def second_func(b, c):
                         return b / c
-
+                    
                     a = 10
                     b = 2
                     c = 6
                     print(first_func(a, second_func(b, c)))
-                </input></program><var/>
-            </statement>
-            <setup>
-                <var>
-                    <condition string="(I|i)nvalid">
-                        <feedback>
-                            <p>Correct</p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                        <feedback>
-                            <p>Incorrect</p>
-                        </feedback>
-                    </condition>
-                </var>
-            </setup>
-        </exercise>
-        <exercise xml:id="Func-Assess-2">
-            <statement>
-                <p>Q2: How many times will the function <c>add_variables</c> execute in the following program?</p>
-                <program language="python"><input>
+                </input>
+            </program>
+            <var/>
+        </statement>
+        <setup> <var> <condition string="(I|i)nvalid">
+        <feedback>
+            <p>
+                Correct
+            </p>
+        </feedback>
+        </condition> <condition string='.*'>
+
+        <feedback>
+            <p>
+                Incorrect
+            </p>
+        </feedback>
+        </condition> </var> </setup>
+    </exercise>
+
+    <exercise xml:id="Func-Assess-2">
+        <statement>
+            <p>
+                Q2: How many times will the function <c>add_variables</c> execute in the following program?
+            </p>
+
+
+            <program language="python">
+                <input>
                     def add_variables(a, b):
                         return a + b
-
+                        
                     numbers = [6, 1, -2, 0, 2, 5, -3]
                     sum = 0
                     for number in numbers:
@@ -50,54 +64,71 @@
                         if sum &gt; 10:
                             break
                     print(sum)
-                </input></program><var/>
-            </statement>
-            <setup>
-                <var>
-                    <condition number="6">
-                        <feedback>
-                            <p>Correct</p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                        <feedback>
-                            <p>Incorrect</p>
-                        </feedback>
-                    </condition>
-                </var>
-            </setup>
-        </exercise>
-        <exercise xml:id="Func-Assess-3">
-            <statement>
-                <p>Q3: Enter the output of the following program or enter “invalid” if the statement would result in an error.</p>
-                <program language="python"><input>
+                </input>
+            </program>
+            <var/>
+        </statement>
+        <setup> <var> <condition number="6">
+        <feedback>
+            <p>
+                Correct
+            </p>
+        </feedback>
+        </condition> <condition string='.*'>
+
+        <feedback>
+            <p>
+                Incorrect
+            </p>
+        </feedback>
+        </condition> </var> </setup>
+    </exercise>
+
+    <exercise xml:id="Func-Assess-3">
+        <statement>
+            <p>
+                Q3: Enter the output of the following program or enter “invalid” if the statement would result in an error.
+            </p>
+
+
+            <program language="python">
+                <input>
                     my_var = 10
+
                     def update_my_var(new_val):
                         my_var = new_val
 
                     update_my_var(15)
                     print(my_var)
-                </input></program><var/>
-            </statement>
-            <setup>
-                <var>
-                    <condition number="10">
-                        <feedback>
-                            <p>Correct</p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                        <feedback>
-                            <p>Incorrect</p>
-                        </feedback>
-                    </condition>
-                </var>
-            </setup>
-        </exercise>
-        <exercise xml:id="Func-Assess-4">
-            <statement>
-                <p>Q4: Enter the output of the following program or enter “invalid” if the statement would result in an error.</p>
-                <program language="python"><input>
+                </input>
+            </program>
+            <var/>
+        </statement>
+        <setup> <var> <condition number="10">
+        <feedback>
+            <p>
+                Correct
+            </p>
+        </feedback>
+        </condition> <condition string='.*'>
+
+        <feedback>
+            <p>
+                Incorrect
+            </p>
+        </feedback>
+        </condition> </var> </setup>
+    </exercise>
+
+    <exercise xml:id="Func-Assess-4">
+        <statement>
+            <p>
+                Q4: Enter the output of the following program or enter “invalid” if the statement would result in an error.
+            </p>
+
+
+            <program language="python">
+                <input>
                     def multiply(value):
                         return value * 2
 
@@ -115,57 +146,54 @@
                             val = divide(val)
                         else:
                             val = subtract_and_multiply(val)
-
                     print(val)
-                </input></program><var/>
-            </statement>
-            <setup>
-                <var>
-                    <condition number="-4">
-                        <feedback>
-                            <p>Correct</p>
-                        </feedback>
-                    </condition>
-                    <condition string='.*'>
-                        <feedback>
-                            <p>Incorrect</p>
-                        </feedback>
-                    </condition>
-                </var>
-            </setup>
-        </exercise>
-        <exercise xml:id="Func-Assess-5" indent="show" language="python">
-            <statement>
-                <p>Q5: Put the code in the right order to create a program that prints all prime numbers between 1 and 30 (inclusive).</p>
-            </statement>
-            <blocks>
-                <block order="1">
-                    <cline>def is_prime(number):</cline>
-                </block>
-                <block order="2">
-                    <cline>    for i in range(2, number):</cline>
-                </block>
-                <block order="3">
-                    <cline>        if number % i == 0:</cline>
-                </block>
-                <block order="4">
-                    <cline>            return False</cline>
-                </block>
-                <block order="5">
-                    <cline>    return True</cline>
-                </block>
-                <block order="6">
-                    <cline>for i in range(1, 31):</cline>
-                </block>
-                <block order="7">
-                    <cline>    if is_prime(i):</cline>
-                </block>
-                <block order="8">
-                    <cline>        print(i, end=" ")</cline>
-                </block>
-            </blocks>
-        </exercise>
+                </input>
+            </program>
+            <var/>
+        </statement>
+        <setup> <var> <condition number="-4">
+        <feedback>
+            <p>
+                Correct
+            </p>
+        </feedback>
+        </condition> <condition string='.*'>
+
+        <feedback>
+            <p>
+                Incorrect
+            </p>
+        </feedback>
+        </condition> </var> </setup>
+    </exercise>
+
+    <exercise xml:id="Func-Assess-5" indent="show" language="python">
+        <statement>
+            <p>
+                Q5: Put the code in the right order to create a program that prints all prime numbers between 1 and 30 (inclusive).
+            </p>
+        </statement>
+        <blocks> <block order="1">
+        <cline>def is_prime(number):</cline>
+        </block> <block order="2">
+        <cline>    for i in range(2, number):</cline>
+        </block> <block order="3">
+        <cline>        if number % i == 0:</cline>
+        </block> <block order="4">
+        <cline>            return False</cline>
+        </block> <block order="5">
+        <cline>    return True</cline>
+        </block> <block order="6">
+        <cline>for i in range(1, 31):</cline>
+        </block> <block order="7">
+        <cline>    if is_prime(i):</cline>
+        </block> <block order="8">
+        <cline>        print(i, end=" ")</cline>
+        </block> </blocks>
+    </exercise>
     </exercises>
+
+
     <program xml:id="function-assess-p1" interactive="activecode" language="python">
         <input></input>
     </program>

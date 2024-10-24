@@ -1,32 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <introduction>
-<title>Subgoals for writing functions:</title>
+    <title>Subgoals for writing functions:</title>
+
     <p>
         <ol>
             <li>
-                <p>Define and initialize global variables</p>
+                <p>
+                    Define and initialize global variables
+                </p>
             </li>
+
             <li>
-                <p>Write function header with function name and parameters (must include () even without
-                    parameters)</p>
+                <p>
+                    Write function header with function name and parameters (must include () even without parameters)
+                </p>
+
                 <ol>
                     <li>
-                        <p>Optional -- Set default values for parameters</p>
+                        <p>
+                            Optional -- Set default values for parameters
+                        </p>
                     </li>
                 </ol>
             </li>
+
             <li>
-                <p>Write function body</p>
+                <p>
+                    Write function body
+                </p>
+
                 <ol>
                     <li>
-                        <p>Distinguish between global and local variables based on indentation</p>
+                        <p>
+                            Distinguish between global and local variables based on indentation
+                        </p>
                     </li>
                 </ol>
             </li>
+
             <li>
-                <p>Determine what to return, if anything, to call site</p>
+                <p>
+                    Determine what to return, if anything, to call site
+                </p>
             </li>
+
             <li>
-                <p>Call function with appropriate arguments</p>
+                <p>
+                    Call function with appropriate arguments
+                </p>
             </li>
         </ol>
     </p>
