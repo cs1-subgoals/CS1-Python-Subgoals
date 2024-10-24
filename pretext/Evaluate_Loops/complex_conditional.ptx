@@ -1,10 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <section xml:id="complex_conditional"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Complex Conditional</title>
-        <xi:include href='./subgoals_evaluate_loops.ptx' />
-        <subsection>
-            <!-- <p>You can watch this video or read through the content below it.</p> -->
-            <p>Problem: Given the following code, what is the output if the user enters 50, 70, 80, 65, 90, 100, 0, 5, 102?</p>
-            <program language="python"><input>
+
+    <xi:include href='./subgoals_evaluate_loops.ptx' />
+    <subsection>
+        <!--
+        <p>
+            You can watch this video or read through the content below it.
+        </p>
+        -->
+        <p>
+            Problem: Given the following code, what is the output if the user enters 50, 70, 80, 65, 90, 100, 0, 5, 102?
+        </p>
+
+
+        <program language="python">
+            <input>
 print("Enter a value. An invalid value will end input.")
 passing = 0
 failing = 0
@@ -17,33 +29,60 @@ while value >= 0 and value &lt;= 100:
     value = int(input("Score: "))
 print("Total number of scores:", passing+failing)
 print("Passing:", passing, "   Failing:", failing)
-</input></program>
-        </subsection>
+            </input>
+        </program>
+    </subsection>
+
+
     <subsection xml:id="subsec-ccSG1">
         <title>Determine loop components</title>
-        <p>Starting values:</p>
-        <program language="python"><input>
+
+        <p>
+            Starting values:
+        </p>
+
+
+        <program language="python">
+            <input>
 passing = 0
 failing = 0
 # value will be the 50 since that is the first value entered by the user
-</input></program>
-        <p>Termination condition: When <code>value</code> is between 0 and 100 (inclusive)</p>
-        <p>Body that is repeated based on indentation:</p>
-        <program language="python"><input>
+            </input>
+        </program>
+
+        <p>
+            Termination condition: When <code>value</code> is between 0 and 100 (inclusive)
+        </p>
+
+        <p>
+            Body that is repeated based on indentation:
+        </p>
+
+
+        <program language="python">
+            <input>
 if value >= 70:
     passing+= 1
 else:
     failing+= 1
 value = int(input("Score: "))
-</input></program>
+            </input>
+        </program>
     </subsection>
+
+
     <subsection xml:id="subsec-ccSG2">
         <title>Trace the loop, writing updated values for every iteration or until you identify the pattern</title>
-        <p>For every iteration of loop, write down values.</p>
+
+        <p>
+            For every iteration of loop, write down values.
+        </p>
+
         <image source="Evaluate_Loops/Figures/WL1CSlide6.png" width="90%"/>
-        <answer>
-            <pre>Total number of scores: 8
+            <answer>
+                <pre>
+Total number of scores: 8
 Passing: 4   Failing: 4</pre>
-        </answer>
-    </subsection>
-</section>
+            </answer>
+        </subsection>
+    </section>

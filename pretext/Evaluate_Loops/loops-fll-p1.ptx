@@ -2,193 +2,459 @@
 
 <section xml:id="loops-fll-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Loops-WE5-P1</title>
+
     <xi:include href='./subgoals_evaluate_loops.ptx' />
     <transition/>
     <subsection>
         <title>Evaluate Loops-WE5-P1</title>
-        <p>All of the following problems use the same setup, but they are independent of each other.</p>
-        <program language="python"><input>
+
+        <p>
+            All of the following problems use the same setup, but they are independent of each other.
+        </p>
+
+
+        <program language="python">
+            <input>
 high_numbers = [300, 200, 100, 400, 500, 300]
 low_numbers = [1, 3, 2, 4, 5, 3]
 mixed_numbers = [5, 3, -4, 7, 2]
-        </input></program>
-    <exercises>
+            </input>
+        </program>
+
+        <exercises>
         <exercise xml:id="m-Loops-WE5-P1-21">
             <statement>
-                <p>Q21: What is the output of the following loop?</p>
-                <program language="python"><input>
+                <p>
+                    Q21: What is the output of the following loop?
+                </p>
+
+
+                <program language="python">
+                    <input>
 total = 0
 for number in high_numbers:
     total = total + number // 100
 print(total)
-</input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p>3</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            3
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>6</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            6
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p>18</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            18
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>18.0</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            18.0
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>300</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            300
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>1800</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            1800
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
+
         <exercise xml:id="m-Loops-WE5-P1-22">
             <statement>
-                <p>Q22: What is the output of the following loop?</p>
-                <program language="python"><input>
+                <p>
+                    Q22: What is the output of the following loop?
+                </p>
+
+
+                <program language="python">
+                    <input>
 total = 0
 for number in high_numbers:
     total = total + 100
 print(total)
-                </input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p>6</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            6
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>18</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            18
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p>600</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            600
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>1800</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            1800
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>1900</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            1900
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>2400</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            2400
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
+
         <exercise xml:id="m-Loops-WE5-P1-23">
             <statement>
-                <p>Q23: What is the output of the following loop?</p>
-                <program language="python"><input>
+                <p>
+                    Q23: What is the output of the following loop?
+                </p>
+
+
+                <program language="python">
+                    <input>
 combined = ""
 for number in low_numbers:
     combined = combined + str(number)
 print(combined)
-</input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p>18</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            18
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>"18"</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            "18"
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p>"132453"</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            "132453"
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>6</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            6
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>"354231"</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            "354231"
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
+
         <exercise xml:id="m-Loops-WE5-P1-24">
             <statement>
-                <p>Q24: What is the output of the following loop?</p>
-                <program language="python"><input>
+                <p>
+                    Q24: What is the output of the following loop?
+                </p>
+
+
+                <program language="python">
+                    <input>
 max = 0
 for number in low_numbers:
     if number &gt; max:
         max = number
 print(max)                    
-</input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice correct="yes">
-                    <statement><p>5</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            5
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>4</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            4
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>3</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            3
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>2</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            2
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>1</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            1
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
+
         <exercise xml:id="m-Loops-WE5-P1-25">
             <statement>
-                <p>Q25: What is the output of the following loop?</p>
-                <program language="python"><input>
+                <p>
+                    Q25: What is the output of the following loop?
+                </p>
+
+
+                <program language="python">
+                    <input>
 sum = 0
 for number in high_numbers:
     sum += number
 print(sum / len(high_numbers))
-</input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p>150</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            150
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>400</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            400
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>250</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            250
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>360</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            360
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p>300</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            300
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
-    </exercises>
+        </exercises>
     </subsection>
+
+
     <program xml:id="ac-loops-WE5-p1" interactive="activecode" language="python">
         <input></input>
     </program>

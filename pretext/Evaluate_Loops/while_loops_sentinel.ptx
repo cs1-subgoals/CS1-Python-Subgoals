@@ -1,10 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <section xml:id="while_loops_sentinel"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>While Loops Sentinel</title>
-        <xi:include href='./subgoals_evaluate_loops.ptx' />
-        <subsection>
-            <!-- <p>You can watch this video or read through the content below it.</p> -->
-            <p>Problem: Given the following code, what is the output if the user enters the values: 10, 15, 20, 25, 30, 35, -1?</p>
-            <program language="python"><input>
+
+    <xi:include href='./subgoals_evaluate_loops.ptx' />
+    <subsection>
+        <!--
+        <p>
+            You can watch this video or read through the content below it.
+        </p>
+        -->
+        <p>
+            Problem: Given the following code, what is the output if the user enters the values: 10, 15, 20, 25, 30, 35, -1?
+        </p>
+
+
+        <program language="python">
+            <input>
 print("Enter a negative score to signal the end of input.")
 good_scores = 0
 score = int(input("Score: "))
@@ -13,27 +25,60 @@ while score >= 0:
         good_scores += 1
     score = int(input("Score: "))
 print("Number of good scores: ", good_scores)
-</input></program>
-        </subsection>
+            </input>
+        </program>
+    </subsection>
+
+
     <subsection xml:id="subsec-wlsSG1">
         <title>Determine loop components</title>
-        <p>Starting values:</p>
-        <program language="python"><input>
+
+        <p>
+            Starting values:
+        </p>
+
+
+        <program language="python">
+            <input>
 good_scores = 0
 # score will be the integer 10 since that is the first value the user entered
-</input></program>
-        <p>Termination condition: When <code>score</code> is greater than or equal to 0</p>
-        <p>Body that is repeated based on indentation:</p>
-        <program language="python"><input>
+            </input>
+        </program>
+
+        <p>
+            Termination condition: When <code>score</code> is greater than or equal to 0
+        </p>
+
+        <p>
+            Body that is repeated based on indentation:
+        </p>
+
+
+        <program language="python">
+            <input>
 if score >= 20:
     good_scores += 1
 score = int(input("Score: "))
-</input></program>
+            </input>
+        </program>
     </subsection>
+
+
     <subsection xml:id="subsec-wlsSG2">
         <title>Trace the loop, writing updated values for every iteration or until you identify the pattern</title>
-        <p>For every iteration of loop, write down values.</p>
-        <image source="Evaluate_Loops/Figures/WL2Slide6.png" width="90%"/>
-        <pre>Number of good scores: 4</pre>
+
+        <p>
+            For every iteration of loop, write down values.
+        </p>
+
+        <image source="Evaluate_Loops/Figures/WL2Slide6.png" width="90%">
+            <shortdescription>
+                Trace of the loop for the code in the problem
+            </shortdescription>
+        </image>
+
+        <pre>
+            Number of good scores: 4
+        </pre>
     </subsection>
 </section>

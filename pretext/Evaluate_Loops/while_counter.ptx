@@ -1,10 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <section xml:id="while_counter"  xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>While Counter</title>
-        <xi:include href='./subgoals_evaluate_loops.ptx' />
-        <subsection>
-            <!-- <p>You can watch this video or read through the content below it.</p> -->
-            <p>Problem: Given the following code, what is the output?</p>
-            <program language="python"><input>
+
+    <xi:include href='./subgoals_evaluate_loops.ptx' />
+    <subsection>
+        <!--
+        <p>
+            You can watch this video or read through the content below it.
+        </p>
+        -->
+        <p>
+            Problem: Given the following code, what is the output?
+        </p>
+
+
+        <program language="python">
+            <input>
 counter = 0
 total = 0
 while counter &lt; 50:
@@ -12,37 +24,85 @@ while counter &lt; 50:
         total += counter
     counter += 1
 print(total)
-</input></program>
-        </subsection>
+            </input>
+        </program>
+    </subsection>
+
+
     <subsection xml:id="subsec-wcSG1">
         <title>Determine loop components</title>
-        <p>Starting values:</p>
-        <program language="python"><input>
+
+        <p>
+            Starting values:
+        </p>
+
+
+        <program language="python">
+            <input>
 counter = 0
 total = 0
-</input></program>
-        <p>Termination condition:</p>
-        <program language="python"><input>
+            </input>
+        </program>
+
+        <p>
+            Termination condition:
+        </p>
+
+
+        <program language="python">
+            <input>
 while counter &lt; 50:
-</input></program>
-        <p>Body that is repeated based on indentation:</p>
-        <program language="python"><input>
+            </input>
+        </program>
+
+        <p>
+            Body that is repeated based on indentation:
+        </p>
+
+
+        <program language="python">
+            <input>
     if counter % 5 == 0:
         total += counter
     counter += 1
-</input></program>
+            </input>
+        </program>
     </subsection>
+
+
     <subsection xml:id="subsec-wcSG2">
         <title>Trace the loop, writing updated values for every iteration or until you identify the pattern</title>
-        <p>For every iteration of loop, write down values.</p>
-        <image source="Evaluate_Loops/Figures/Slide6.png" width="90%"/>
-        <p><c>counter</c> increments by <c>1</c> But only when the <c>counter</c> is evenly divisible by <c>5</c> is the value added to <c>total</c>.</p>
-        <image source="Evaluate_Loops/Figures/WL1Whlie-Slide7.png" width="90%"/>
-        <image source="Evaluate_Loops/Figures/WL1While-Slide8.png" width="90%"/>
+
+        <p>
+            For every iteration of loop, write down values.
+        </p>
+
+        <image source="Evaluate_Loops/Figures/WL1While-Slide6.png" width="90%">
+            <shortdescription>
+                Trace of the loop (counter is 0 to 10)
+            </shortdescription>
+        </image>
+
+        <p>
+            <c>counter</c> increments by <c>1</c> But only when the <c>counter</c> is evenly divisible by <c>5</c> is the value added to <c>total</c>.
+        </p>
+
+        <image source="Evaluate_Loops/Figures/WL1While-Slide7.png" width="90%">
+            <shortdescription>
+                Trace of the loop (counter is 10 to 35)
+            </shortdescription>
+        </image>
+
+        <image source="Evaluate_Loops/Figures/WL1While-Slide8.png" width="90%">
+            <shortdescription>
+                Trace of the loop (counter is 35 to 50)
+            </shortdescription>
+        </image>
+
         <answer>
-                <p>
-                    Output is <c>225</c>
-                </p>
+            <p>
+                Output is <c>225</c>
+            </p>
         </answer>
     </subsection>
 </section>

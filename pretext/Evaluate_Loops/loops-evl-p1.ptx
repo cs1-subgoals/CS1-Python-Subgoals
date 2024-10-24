@@ -2,159 +2,384 @@
 
 <section xml:id="loops-evl-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Loops-WE1-P1</title>
+
     <xi:include href='./subgoals_evaluate_loops.ptx' />
     <transition/>
     <subsection>
-        <title>Evaluate Loops-WEN-P1</title> <!-- insert WE number -->
-    <exercises>
-        <exercise xml:id="m-Loops-WEN-P1-1"> <!-- insert WE number -->
+        <title>Evaluate Loops-WEN-P1</title>
+
+        <!-- insert WE number -->
+        <exercises>
+        <exercise xml:id="m-Loops-WEN-P1-1">
+            <!-- insert WE number -->
             <statement>
-                <p>Q1:</p>
-                <program language="python"><input>
-                </input></program>
+                <p>
+                    Q1:
+                </p>
+
+
+                <program language="python">
+                    <input>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
-        <exercise xml:id="m-Loops-WEN-P1-2"> <!-- insert WE number -->
+
+        <exercise xml:id="m-Loops-WEN-P1-2">
+            <!-- insert WE number -->
             <statement>
-                <p>Q2:</p>
-                <program language="python"><input>
-                </input></program>
+                <p>
+                    Q2:
+                </p>
+
+
+                <program language="python">
+                    <input>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
-        <exercise xml:id="m-Loops-WEN-P1-3"> <!-- insert WE number -->
+
+        <exercise xml:id="m-Loops-WEN-P1-3">
+            <!-- insert WE number -->
             <statement>
-                <p>Q3:</p>
-                <program language="python"><input>
-                </input></program>
+                <p>
+                    Q3:
+                </p>
+
+
+                <program language="python">
+                    <input>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
-        <exercise xml:id="m-Loops-WEN-P1-4"> <!-- insert WE number -->
+
+        <exercise xml:id="m-Loops-WEN-P1-4">
+            <!-- insert WE number -->
             <statement>
-                <p>Q4:</p>
-                <program language="python"><input>
-                </input></program>
+                <p>
+                    Q4:
+                </p>
+
+
+                <program language="python">
+                    <input>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
-        <exercise xml:id="m-Loops-WEN-P1-5"> <!-- insert WE number -->
+
+        <exercise xml:id="m-Loops-WEN-P1-5">
+            <!-- insert WE number -->
             <statement>
-                <p>Q5:</p>
-                <program language="python"><input>
-                </input></program>
+                <p>
+                    Q5:
+                </p>
+
+
+                <program language="python">
+                    <input>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p></p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
-    </exercises>
+        </exercises>
     </subsection>
-    <program xml:id="ac-loops-WEN-p1" interactive="activecode" language="python"> <!-- insert WE number -->
+
+
+    <program xml:id="ac-loops-WEN-p1" interactive="activecode" language="python">
+        <!-- insert WE number -->
         <input></input>
     </program>
 </section>

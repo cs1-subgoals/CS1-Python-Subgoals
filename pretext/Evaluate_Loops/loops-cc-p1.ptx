@@ -1,78 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="loops-cc-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US"> 
+<section xml:id="loops-cc-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Conditionals-WE3-P1</title>
+
     <xi:include href='./subgoals_evaluate_loops.ptx' />
     <transition/>
     <subsection>
         <title>Evaluate Loops-WE3-P1</title>
-    <exercises>
+
+        <exercises>
         <exercise xml:id="parsons-Loops-WE3-P1-11" indent="show" language="python">
             <statement>
-                <p>Q11: Put the code in the right order to create a program that will continue to generate 
-                    integers between 1 and 100 (inclusive) until the value generated is less than 
-                    6 or greater than 95. Print the numbers generated.</p>
+                <p>
+                    Q11: Put the code in the right order to create a program that will continue to generate integers between 1 and 100 (inclusive) until the value generated is less than 6 or greater than 95.
+                    Print the numbers generated.
+                </p>
             </statement>
-            <blocks>
-                <block order="1">
-                    <cline>from random import randint</cline>
-                </block>
-                <block order="2">
-                    <cline>repeat = True</cline>
-                </block>
-                <block order="3">
-                    <cline>while repeat:</cline>
-                </block>
-                <block order="4">
-                    <cline>    x = randint(1, 100)</cline>
-                </block>
-                <block order="5">
-                    <cline>    print("Value is", x)</cline>
-                </block>
-                <block order="6">
-                    <cline>    repeat = x >= 6 and x &lt;= 95</cline>
-                </block>
-            </blocks>
+            <blocks> <block order="1">
+            <cline>from random import randint</cline>
+            </block> <block order="2">
+            <cline>repeat = True</cline>
+            </block> <block order="3">
+            <cline>while repeat:</cline>
+            </block> <block order="4">
+            <cline>    x = randint(1, 100)</cline>
+            </block> <block order="5">
+            <cline>    print("Value is", x)</cline>
+            </block> <block order="6">
+            <cline>    repeat = x >= 6 and x &lt;= 95</cline>
+            </block> </blocks>
         </exercise>
+
         <exercise xml:id="m-Loops-WE3-P1-12">
             <statement>
-                <p>Q12: What is the output of the following code if the user enters -10, 100, 101, 54, 1, 98, 0?</p>
-                <program language="python"><input>
+                <p>
+                    Q12: What is the output of the following code if the user enters -10, 100, 101, 54, 1, 98, 0?
+                </p>
+
+
+                <program language="python">
+                    <input>
 num_bad_inputs = 0
 num = int(input("Input a number between 1 and 100: "))
 while num &lt; 1 or num &gt; 100:
     num_bad_inputs += 1
     num = int(input("Input a number between 1 and 100: "))
 print("failed inputs: " + num_bad_inputs)
-                </input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p>failed inputs: 2</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            failed inputs: 2
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p>failed inputs: 3</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            failed inputs: 3
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>failed inputs: 4</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            failed inputs: 4
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>failed inputs: 5</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            failed inputs: 5
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>no output</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            no output
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
+
         <exercise xml:id="m-Loops-WE3-P1-13">
             <statement>
-                <p>Q13: What is the output of the following code if the user enters 12 18 49 36 50 -1?</p>
-                <program language="python"><input>
+                <p>
+                    Q13: What is the output of the following code if the user enters 12 18 49 36 50 -1?
+                </p>
+
+
+                <program language="python">
+                    <input>
 evens = 0
 odds = 0
 num = int(input("Enter a number: "))
@@ -83,35 +133,83 @@ while num &gt; 0 and num &lt; 50:
         odds += 1
     num = int(input("Enter a number: "))
 print(evens + "even(s) entered and " + odds + " odd(s) entered")
-                </input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p>3 even(s) entered and 2 odd(s) entered</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            3 even(s) entered and 2 odd(s) entered
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p>3 even(s) entered and 1 odd(s) entered</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            3 even(s) entered and 1 odd(s) entered
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>4 even(s) entered and 2 odd(s) entered</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            4 even(s) entered and 2 odd(s) entered
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>4 even(s) entered and 1 odd(s) entered</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            4 even(s) entered and 1 odd(s) entered
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>Compiler Error</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Compiler Error
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
+
         <exercise xml:id="m-Loops-WE3-P1-14">
             <statement>
-                <p>Q14: What is the output of the following code if the user enters 98 68 82 77 45 100 104?</p>
-                <program language="python"><input>
+                <p>
+                    Q14: What is the output of the following code if the user enters 98 68 82 77 45 100 104?
+                </p>
+
+
+                <program language="python">
+                    <input>
 sum = 0
 num_scores = 0
 num = int(input(“Score: ”))
@@ -120,35 +218,83 @@ while num &gt;= 0 and num &lt;= 100:
     num_scores += 1
     num = int(input(“Score: ”))
 print(sum / num_scores)
-                </input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p>74</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            74
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>92.5</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            92.5
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>81</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            81
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p>81.25</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            81.25
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>78.33</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            78.33
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
+
         <exercise xml:id="m-Loops-WE3-P1-15">
             <statement>
-                <p>Q15: What is the output of the following code?</p>
-                <program language="python"><input>
+                <p>
+                    Q15: What is the output of the following code?
+                </p>
+
+
+                <program language="python">
+                    <input>
                     a = 10
                     b = 5
                     counter = 1
@@ -158,33 +304,76 @@ print(sum / num_scores)
                         else:
                             counter += 1
                     print(counter)
-                </input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p>1</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            1
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>8</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            8
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>2</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            2
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>5</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            5
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p>16</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            16
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
-    </exercises>
-</subsection>
+        </exercises>
+    </subsection>
+
 
     <program xml:id="ac-loops-we3-p1" interactive="activecode" language="python">
         <input></input>

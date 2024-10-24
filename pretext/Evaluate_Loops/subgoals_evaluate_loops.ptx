@@ -1,28 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <introduction>
-<title>Subgoals for Evaluating a Loop</title>
+    <title>Subgoals for Evaluating a Loop</title>
+
     <p>
         <ol marker="1">
             <li>
-                <p>Determine Loop Components</p>
+                <p>
+                    Determine Loop Components
+                </p>
+
                 <p>
                     <ol marker="a">
                         <li>
-                            <p>Start condition and values</p>
+                            <p>
+                                Start condition and values
+                            </p>
                         </li>
+
                         <li>
-                            <p>Iteration variable and/or update condition</p>
+                            <p>
+                                Iteration variable and/or update condition
+                            </p>
                         </li>
+
                         <li>
-                            <p>Termination/final condition</p>
+                            <p>
+                                Termination/final condition
+                            </p>
                         </li>
+
                         <li>
-                            <p>Body that is repeated based on indentation</p>
+                            <p>
+                                Body that is repeated based on indentation
+                            </p>
                         </li>
                     </ol>
                 </p>
             </li>
+
             <li>
-                <p>Trace the loop, writing updated values for every iteration or until you identify the pattern</p>
+                <p>
+                    Trace the loop, writing updated values for every iteration or until you identify the pattern
+                </p>
             </li>
         </ol>
     </p>

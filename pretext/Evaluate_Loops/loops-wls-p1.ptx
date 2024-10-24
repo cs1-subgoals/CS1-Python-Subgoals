@@ -2,15 +2,22 @@
 
 <section xml:id="loops-wls-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluate Loops-WE4-P1</title>
+
     <xi:include href='./subgoals_evaluate_loops.ptx' />
     <transition/>
     <subsection>
         <title>Evaluate Loops-WE4-P1</title>
-    <exercises>
+
+        <exercises>
         <exercise xml:id="m-Loops-WE4-P1-16">
             <statement>
-                <p>Q16: What is the output of the following loop if the user input is: 10, 20, 30, 35, 40, -1</p>
-                <program language="python"><input>
+                <p>
+                    Q16: What is the output of the following loop if the user input is: 10, 20, 30, 35, 40, -1
+                </p>
+
+
+                <program language="python">
+                    <input>
 print("Enter a negative score to signal the end of the input.")
 total = 0
 count = 0
@@ -20,35 +27,83 @@ while score >= 0:
     total += score
     score = int(input("Score: "))
 print(total/count)
-</input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice correct="yes">
-                    <statement><p>27.0</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            27.0
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>27</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            27
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>22.5</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            22.5
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>22</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            22
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>Runtime error</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Runtime error
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
+
         <exercise xml:id="m-Loops-WE4-P1-17">
             <statement>
-                <p>Q17: What is the output of the following loop if the user input is: 10, 20, 30, 35, 40, -1?</p>
-                <program language="python"><input>
+                <p>
+                    Q17: What is the output of the following loop if the user input is: 10, 20, 30, 35, 40, -1?
+                </p>
+
+
+                <program language="python">
+                    <input>
 print("Enter a negative score to signal the end of the input.")
 total = 0
 count = 0
@@ -58,35 +113,83 @@ while score >= 0:
     count += 1
     total += score
 print(total/count)
-                </input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p>27.0</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            27.0
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>22.5</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            22.5
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p>24.8</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            24.8
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>20.666667</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            20.666667
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>Runtime error</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Runtime error
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
+
         <exercise xml:id="m-Loops-WE4-P1-18">
             <statement>
-                <p>Q18: What is the output of the following loop if the user input is: 10, 20, 30, 35, 40, -1</p>
-                <program language="python"><input>
+                <p>
+                    Q18: What is the output of the following loop if the user input is: 10, 20, 30, 35, 40, -1
+                </p>
+
+
+                <program language="python">
+                    <input>
 print("Enter a negative score to signal the end of the input.")
 total = 0
 count = 0
@@ -96,35 +199,83 @@ while score >= 0:
     score = int(input("Score: "))
     count += 1
 print(total/count)
-</input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice correct="yes">
-                    <statement><p>27.0</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            27.0
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>27</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            27
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>22.5</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            22.5
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>22</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            22
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>Runtime error</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Runtime error
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
+
         <exercise xml:id="m-Loops-WE4-P1-19">
             <statement>
-                <p>Q19: What is the output of the following loop if the user input is: 20, 60, 75, 35, 95, -1</p>
-                <program language="python"><input>
+                <p>
+                    Q19: What is the output of the following loop if the user input is: 20, 60, 75, 35, 95, -1
+                </p>
+
+
+                <program language="python">
+                    <input>
 print("Enter a negative score to signal the end of the input.")
 passing = 0
 failing = 0
@@ -136,35 +287,83 @@ while score &gt;= 0:
         failing += 1
     score = int(input(“Score: ”))
 print("Percent passing: " + (passing / (passing + failing) * 100))
-</input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice>
-                    <statement><p>Percent passing: 60</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Percent passing: 60
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>Percent passing: 75</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Percent passing: 75
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice correct="yes">
-                    <statement><p>Percent passing: 80</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Percent passing: 80
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>Percent passing: 85</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Percent passing: 85
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>Percent passing: 90</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Percent passing: 90
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
+
         <exercise xml:id="m-Loops-WE4-P1-20">
             <statement>
-                <p>Q20: What is the output of the following loop if the user input is: 1, 3, 9, 6, 9, 2, -1</p>
-                <program language="python"><input>
+                <p>
+                    Q20: What is the output of the following loop if the user input is: 1, 3, 9, 6, 9, 2, -1
+                </p>
+
+
+                <program language="python">
+                    <input>
 print(“Enter a negative value to signal the end of the input.”)
 val = int(input(“Value: “))
 max = value
@@ -177,33 +376,77 @@ while val &gt;= 0:
         min = val
     val = int(input(“Value: “))
 print(“Maximum value was “ + max + “ and minimum value was “ + min)                 
-</input></program>
+                    </input>
+                </program>
             </statement>
+
+
             <choices>
                 <choice correct="yes">
-                    <statement><p>Maximum value was 9 and minimum value was 1</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Maximum value was 9 and minimum value was 1
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>Maximum value was 6 and minimum value was 1</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Maximum value was 6 and minimum value was 1
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>Maximum value was 9 and minimum value was -1</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Maximum value was 9 and minimum value was -1
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>Maximum value was 3 and minimum value was 1</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Maximum value was 3 and minimum value was 1
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
+
                 <choice>
-                    <statement><p>Maximum value was 9 and minimum value was 2</p></statement>
-                    <feedback><p/></feedback>
+                    <statement>
+                        <p>
+                            Maximum value was 9 and minimum value was 2
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
                 </choice>
             </choices>
         </exercise>
-    </exercises>
+        </exercises>
     </subsection>
+
+
     <program xml:id="ac-loops-we4-p1" interactive="activecode" language="python">
         <input></input>
     </program>

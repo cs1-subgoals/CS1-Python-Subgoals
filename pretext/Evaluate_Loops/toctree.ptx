@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Evaluate Loops</title>
-        <xi:include href='./while_counter.ptx' />
-        <xi:include href='./loops-whc-p1.ptx' />
-        <xi:include href='./for_loop_range.ptx' />
-        <xi:include href='./loops-flr-p1.ptx' />
-        <xi:include href='./complex_conditional.ptx' />
-        <xi:include href='./loops-cc-p1.ptx' />
-        <xi:include href='./while_loops_sentinel.ptx' />
-        <xi:include href='./loops-wls-p1.ptx' />
-        <xi:include href="./for_loops_lists.ptx" />
-        <xi:include href='./loops-fll-p1.ptx' />
-        <xi:include href="./nested_loops.ptx" />
-        <xi:include href='./loops-nl-p1.ptx' />
-        <!--<xi:include href='./evaluate_loop.ptx' />
-        <xi:include href='./loops-evl-p1.ptx' />-->
-    </chapter>
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluate Loops</title>
+
+    <xi:include href='./while_counter.ptx' />
+    <xi:include href='./loops-whc-p1.ptx' />
+    <xi:include href='./for_loop_range.ptx' />
+    <xi:include href='./loops-flr-p1.ptx' />
+    <xi:include href='./complex_conditional.ptx' />
+    <xi:include href='./loops-cc-p1.ptx' />
+    <xi:include href='./while_loops_sentinel.ptx' />
+    <xi:include href='./loops-wls-p1.ptx' />
+    <xi:include href="./for_loops_lists.ptx" />
+    <xi:include href='./loops-fll-p1.ptx' />
+    <xi:include href="./nested_loops.ptx" />
+    <xi:include href='./loops-nl-p1.ptx' />
+    <!--
+    <xi:include href='./evaluate_loop.ptx' />
+    <xi:include href='./loops-evl-p1.ptx' />
+    -->
+</chapter>
