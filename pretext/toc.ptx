@@ -18,5 +18,6 @@
     <xi:include href="Use_Library/toctree.ptx"/>
     <xi:include href="Evaluate_Functions/toctree.ptx"/>
     <xi:include href="Write_Function/toctree.ptx"/>
+    <xi:include href="Write_List/toctree.ptx"/>
   </book>
 </pretext>

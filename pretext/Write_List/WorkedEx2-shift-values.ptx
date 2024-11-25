@@ -1,0 +1,74 @@
+<section xml:id="write-lists_worked-example-writing-lists-shifting-array-values" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Worked Example: Writing Lists - Shifting List Values</title>
+    <xi:include href='./subgoals_write_list.ptx' />
+    <subsection>
+        <p>Problem: You were to write the Python code that will declare a list of integers with 
+            the values  5, 10, 15, … 55 (multiples of 5). But then you remember you were 
+            supposed to start at 1, not 5 - so write the Python code that will shift all the 
+            values to the right by 1. In other words, the value 5 will shift from index 0 to index 1. 
+            And then you can put the value 1 at index 0.</p>
+    </subsection>
+    <subsection>
+        <title>SG1: Instantiating a list variable</title>
+        <p>We will use the generic name <c>alpha</c> for the list variable, because we do not know anything else about the list in this case.</p>
+        <p>The list should start with the multiples of five, skipping over the 0.</p>
+        <program language="python"><input>
+alpha = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]
+        </input></program>
+    </subsection>
+    <subsection>SG4: 
+        <title>SG4: Adding or changing value of a list element</title>
+        <p>
+            To shift the values to the right, we just need to insert a new value at the
+            beginning of the list. We can use the <c>insert</c> method to insert the value
+            <c>1</c> at index <c>0</c>.
+        </p>
+        <program language="python">
+            <input>
+alpha.insert(0, 1)
+            </input>
+        </program>
+    </subsection>
+
+    <subsection>
+        <answer>
+            <program language="python">
+                <input>
+alpha = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]
+alpha.insert(0, 1)
+                </input>
+            </program>
+
+            <p>
+                To verify we have the correct values, we can print out the values of the list:
+            </p>
+
+
+            <program language="python">
+                <input>
+print(alpha)
+                </input>
+            </program>
+
+            <p>
+                Since we do not need to do anything with the values, we can just print the entire list out all at once.
+            </p>
+        </answer>
+    </subsection>
+
+    <program xml:id="ac-Writing-Lists-WE2" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+
+    <subsection>
+        <title>Practice Pages</title>
+        <p><ul marker="disc">
+            <li>
+                <xref text="title" ref="write-lists_write-lists-we2-p1" />
+            </li>
+        </ul></p>
+    </subsection>
+</section>
+

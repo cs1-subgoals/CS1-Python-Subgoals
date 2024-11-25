@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="write-lists_worked-example-writing-lists-storing-multiplication-table" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Worked Example: Writing Lists - Storing Multiplication Table</title>
+
+    <xi:include href='./subgoals_write_list.ptx' />
+    <subsection>
+        <p>
+            Problem: Write the Python code to store the multiplication table for the value 13.
+            The first element should be 0 (13 * 0), the second element should be 13 (13 * 1), the third element should be 26 (13 * 2), etc.
+            There should be a total of 51 elements in the list, representing the numbers 0 through 50.
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <title>SG1: Instantiating a list variable</title>
+
+        <p>
+            We will name the variable <c>mult13</c>.
+            The list will be instantiated with a sequence of 51 numbers from 0 to 50.
+            We will use the <c>range</c> function to generate the numbers from 0 to 50, incrementing by 1 each time, and then convert the range to a list.
+        </p>
+
+
+        <program language="python">
+            <input>
+mult13 = list(range(51))
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection>
+        <title>SG5: Traversing a list</title>
+
+        <p>
+            Before we actually access or update the list (SG3 and SG4), it is important for us to realize that we will need to update all the elements of the list.
+            As currently instantiated the list <c>mult13</c> has the values 0, 1, 2, ..., 50.
+            So we will first discuss the traversal of the list.
+        </p>
+
+        <p>
+            We will be traversing the entire list, updating all the elements.
+            Because we will be updating the values within the list, we need to use the <c>range</c> function to generate the indices based on the length of the list.
+        </p>
+
+
+        <program language="python">
+            <input>
+for i in range(len(mult13)):
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection>
+        <title>SG4: Changing the value of a list element</title>
+
+        <p>
+            Inside the loop, we want to change the current value stored in that list element (at index <c>i</c>).
+            The expression for the RHS, should be the literal value 13 multiplied by the loop control variable (<c>i</c>).
+            So the statement inside the loop should be:
+        </p>
+
+
+        <program language="python">
+            <input>
+mult13[i] = 13 * i
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection>
+        <answer>
+            <program language="python">
+                <input>
+mult13 = list(range(51))
+for i in range(len(mult13)):
+    mult13[i] = 13 * i
+                </input>
+            </program>
+
+            <p>
+                To verify we have the correct values, we can print out the values of the list:
+            </p>
+
+
+            <program language="python">
+                <input>
+for i in range(len(mult13)):
+    print("13 *", i, "is", mult13[i])
+                </input>
+            </program>
+
+            <p>
+                Although we are only accessing the values in the list, we still need to use the <c>range</c> function to generate the indices based on the length of the list.
+                This is because we want to print the number that 13 is multiplied by (which is identical to the index).
+                If we didn't want to print out the number, then we could simply use a <c>for</c> loop that traverses the list directly.
+            </p>
+        </answer>
+    </subsection>
+
+
+    <program xml:id="ac-Writing-Lists-WE1" interactive="activecode" language="python">
+        <input>
+        </input>
+    </program>
+
+
+    <subsection>
+        <title>Practice Pages</title>
+
+        <p>
+            <ul marker="disc">
+                <li>
+                    <xref text="title" ref="write-lists_write-lists-we1-p1" />
+                </li>
+            </ul>
+        </p>
+    </subsection>
+</section>

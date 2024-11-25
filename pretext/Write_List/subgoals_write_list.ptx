@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<introduction>
+    <title>Subgoals for Writing Lists</title>
+
+    <p>
+        <ol marker="1">
+            <li>
+                <p>
+                    Instantiating a list variable
+                </p>
+
+                <p>
+                    <ol marker="A">
+                        <li>
+                            <p>
+                                Craft name of variable
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Determine if the list is empty or contains initial values.
+                                The initial values can be specific values, but they can also be the result of calling a function like <c>range</c> to generate a sequence of numbers and then converting that to a list.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Assign the values to be stored in the list using square brackets or the appropriate function call.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Accessing list element
+                </p>
+
+                <p>
+                    <ol marker="A">
+                        <li>
+                            <p>
+                                Determine value of index for element to be accessed; a positive value if counting from the beginning, or a negative value if counting from the end.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <c>listName[index]</c> returns value stored at that index
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Index must be between <c>0</c> and <c>len(listName)-1</c>, inclusive, or a negative value; otherwise an IndexError exception occurs at runtime
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Slicing multiple values from a list
+                </p>
+
+                <p>
+                    <ol marker="A">
+                        <li>
+                            <p>
+                                Determine the range of indexes for the elements to be sliced
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <c>listName[startIndex:endIndex]</c> returns a new list containing the elements from <c>startIndex</c> to <c>endIndex-1</c> (inclusive)
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Negative numbers can be used for <c>startIndex</c> and <c>endIndex</c> to count from the end of the list
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Omitting <c>startIndex</c> starts from the beginning of the list, and omitting <c>endIndex</c> goes to the end of the list
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Adding or changing value of a list element
+                </p>
+
+                <p>
+                    <ol marker="A">
+                        <li>
+                            <p>
+                                Decide if adding a new value to the end, adding a value elsewhere in the list, or changing an existing value inside of the list.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                If adding to the end, use the <c>append</c> method to add the new value to the end of the list.
+                                Note that you do not use an assignment statement, it is just a method call.
+                            </p>
+
+                            <p>
+                                <ol marker="a">
+                                    <li>
+                                        <p>
+                                            <c>collection_name.append(new_value)</c> - add a new element to the end of the list.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                If adding a value elsewhere in the list, use the <c>insert</c> method to add the new value at the specified index.
+                                Note that you do not use an assignment statement, it is just a method call.
+                            </p>
+
+                            <p>
+                                <ol marker="a">
+                                    <li>
+                                        <p>
+                                            <c>collection_name.insert(index, new_value)</c> - add a new element at the specified index in the list.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                If changing a value already in the list, use an assignment statement to update the value at the appropriate index.
+                            </p>
+
+                            <p>
+                                <ol marker="a">
+                                    <li>
+                                        <p>
+                                            Determine value of index of element to be changed (remember rules for index values)
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            Determine the expression for RHS
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            Write assignment statement to update list element
+                                        </p>
+                                    </li>
+                                </ol>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Traversing a list
+                </p>
+
+                <p>
+                    <ol marker="A">
+                        <li>
+                            <p>
+                                Decide if updating in place or if only accessing.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                If accessing, write a normal <c>for</c> loop:
+                            </p>
+
+                            <p>
+                                <ol marker="a">
+                                    <li>
+                                        <p>
+                                            <c>for var_name in collection_name</c> - traverses collection_name from first element to last element storing a copy of each element from collection_name in var_name for each iteration of the loop.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                If updating in place, write a <c>for</c> loop using <c>range</c> and <c>len</c>:
+                            </p>
+
+                            <p>
+                                <ol marker="a">
+                                    <li>
+                                        <p>
+                                            <c>for i in range(len(collection_name))</c> - traverses <c>collection_name</c> from first element to last element storing the index of each element in <c>i</c> for each iteration of the loop.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Inside iteration, use loop control variable <c>i</c> as index into list, or <c>var_name</c> as value of list element
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Whole list actions
+                </p>
+
+                <p>
+                    <ol marker="A">
+                        <li>
+                            <p>
+                                Passing a list as an argument
+                            </p>
+
+                            <p>
+                                <ol marker="a">
+                                    <li>
+                                        <p>
+                                            Determine that the entire list must be passed as an argument to a method by consulting documentation.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            When calling a function, put variable name that represents the list as an argument in the method call.
+                                            (Remember that when passing a list as an argument that changes made by the function to the list are persistent.)
+                                        </p>
+                                    </li>
+                                </ol>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                List Assignment
+                            </p>
+
+                            <p>
+                                <ol marker="a">
+                                    <li>
+                                        <p>
+                                            Determine that the reference to the list needs to be changed, not just its contents.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            The LHS of the assignment is the list reference needing to be changed
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            The RHS of the assignment is the new list reference
+                                        </p>
+                                    </li>
+                                </ol>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+        </ol>
+    </p>
+</introduction>
