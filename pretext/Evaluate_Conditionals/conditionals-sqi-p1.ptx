@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="conditionals-sqi-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluation Conditionals-WE4-P1</title>
+
+    <xi:include href='./subgoals_evaluate_conditionals.ptx' />
+    <transition />
+    <subsection>
+        <p>
+            Use this given setup
+        </p>
+
+
+        <program language="python">
+            <input>
+alpha = 2
+beta = 1
+delta = 3
+eta = 0
+gamma = 0
+            </input>
+        </program>
+
+        <exercises>
+        <exercise>
+            <statement>
+                <p>
+                    Q1: After executing the following code:
+                </p>
+                <program language="java">
+                    <input>
+if alpha &gt; beta:
+    alpha = alpha + 2;
+if alpha &gt; delta:
+    gamma = alpha + 5;
+                    </input>
+                </program>
+                <p>
+                    The value of variable <c>alpha</c> is <var /> and the value of variable <c>gamma</c> is <var />.
+                </p>
+            </statement>
+
+            <setup> <var> <condition string="4">
+                <feedback>
+                    <p>
+                        Correct
+                    </p>
+                </feedback>
+            </condition> <condition string=".*">
+                <feedback>
+                    <p>
+                        Incorrect.
+                    </p>
+                </feedback>
+            </condition> </var>
+            <var> <condition string="9">
+                <feedback>
+                    <p>
+                        Correct
+                    </p>
+                </feedback>
+            </condition> <condition string=".*">
+                <feedback>
+                    <p>
+                        Incorrect.
+                    </p>
+                </feedback>
+            </condition> </var> </setup>
+        </exercise>
+
+        <exercise xml:id="fb-WE3-P1-10a">
+            <statement>
+                <p>
+                    Q10a: After executing the following code:
+                </p>
+
+
+                <program language="python">
+                    <input>
+if (alpha * beta) &gt; delta:
+    gamma = alpha * beta
+if eta &gt; (alpha / beta):
+    eta = alpha / beta
+                    </input>
+                </program>
+                <p>
+                    The value in variable <c>alpha</c> is <var/> and the value in variable <c>gamma</c> is <var/>.
+                </p>
+            </statement>
+            <setup> <var> <condition string="2">
+                <feedback>
+                    <p>
+                        Correct
+                    </p>
+                </feedback>
+            </condition> <condition string=".*">
+                <feedback>
+                    <p>
+                        Incorrect.
+                    </p>
+                </feedback>
+            </condition> </var>
+            <var> <condition string="0">
+                <feedback>
+                    <p>
+                        Correct
+                    </p>
+                </feedback>
+            </condition>
+            <condition string=".*">
+                <feedback>
+                    <p>
+                        Incorrect.
+                    </p>
+                </feedback>
+            </condition> </var> </setup>
+        </exercise>
+        </exercises>
+    </subsection>
+
+
+    <program xml:id="ac-conditional-we4-p1" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</section>
