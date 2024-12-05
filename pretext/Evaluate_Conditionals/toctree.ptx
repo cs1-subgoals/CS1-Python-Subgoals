@@ -9,4 +9,5 @@
     <xi:include href='./conditionals-ies-p1.ptx' />
     <xi:include href='./apply_truthiness.ptx' />
     <xi:include href='./conditionals-atr-p1.ptx' />
+    <xi:include href="./sequential_if.ptx" />
 </chapter>

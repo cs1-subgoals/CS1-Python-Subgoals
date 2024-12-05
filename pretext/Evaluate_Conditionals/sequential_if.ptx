@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="seq-if" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>If Statements</title>
+
+    <xi:include href='./subgoals_evaluate_conditionals.ptx' />
+    <subsection>
+        <p>
+            Given the following declarations:
+        </p>
+
+
+        <program language="python">
+            <input>
+alpha = 2
+beta = 1
+delta = 3
+eta = 0
+gamma = 0
+            </input>
+        </program>
+
+        <p>
+            Evaluate these statements and determine the value of all variables used.
+        </p>
+
+        <figure align="">
+            <image source="Evaluate_Conditionals/Figures/we3-seq-if-both.png" width="90%">
+                <shortdescription>
+                    The figure shows the two if statements, each highlighted in a different color.
+                </shortdescription>
+            </image>
+        </figure>
+
+
+        <program language="python">
+            <input>
+if alpha &gt; beta:
+    eta = alpha + 2
+if alpha &gt; delta:
+    gamma = alpha + 5
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection xml:id="subsec-seq-if1">
+        <title>1. Diagram which statements go together by indentation</title>
+
+        <p>
+            There is a single indented statement in the body of the first <c>if</c> statement, and a single indented statement in the body of the second <c>if</c> statement.
+        </p>
+    </subsection>
+
+
+    <subsection xml:id="subsec-seq-if2">
+        <title>2. For conditional, determine whether expression is true</title>
+
+        <p>
+            Because there are 2 sequential if-statements, we start with the first one, and then repeat SG2 and SG3 for the other.
+        </p>
+
+        <p>
+            First we evaluate alpha &gt; beta:
+        </p>
+
+        <p>
+            <c>2 &gt; 1</c> is <c>True</c>.
+        </p>
+    </subsection>
+
+
+    <subsection xml:id="subsec-seq-if3">
+        <title>3. If true, follow true branch; If false, follow next elif/else branch or exit conditional if no else branch</title>
+
+        <p>
+            The condition is <c>True</c>, so we execute the true branch.
+        </p>
+
+
+        <program language="python">
+            <input>
+eta = alpha + 2
+= 2 + 2
+= 4
+            </input>
+        </program>
+
+        <figure align="">
+            <image source="Evaluate_Conditionals/Figures/we3-seq-if-1.png" width="90%">
+                <shortdescription>
+                    The figure shows the first if statement, highlighted in blue.
+                </shortdescription>
+            </image>
+        </figure>
+    </subsection>
+
+
+    <subsection xml:id="subsec-seq-if4">
+        <title>SG2: For if statement, determine whether expression is true</title>
+
+        <p>
+            Because there are 2 sequential if-statements, we need to repeat SG2 and SG3 for the second if-statement in the sequence.
+        </p>
+
+        <p>
+            First we evaluate alpha &gt; delta:
+        </p>
+
+        <p>
+            <c>2 &gt; 3</c> is <c>False</c>
+        </p>
+    </subsection>
+
+    <subsection xml:id="subsec-seq-if4">
+        <title>SG2.2: If false, follow next elif/else branch or exit conditional if no else branch</title>
+        <p>The condition is FALSE and there is no else branch, so we do nothing.</p>
+        <figure align="">
+            <image source="Evaluate_Conditionals/Figures/we3-seq-if-2.png" width="90%">
+                <shortdescription>
+                    The figure shows the second if statement, highlighted in yellow.
+                </shortdescription>
+            </image>
+        </figure>
+    </subsection>
+
+    <answer>
+        <p><c>alpha</c> = 2, <c>beta</c> = 1, <c>delta</c> = 3, <c>eta</c> = 4, <c>gamma</c> = 0</p>
+    </answer>
+    <conclusion>
+        <title>Practice Pages</title>
+        <p><ul marker="disc">
+            <li>
+                <xref text="title" ref="evaluate_conditional-we3-p1" />
+            </li>
+        </ul></p>
+    </conclusion>
+</section>
