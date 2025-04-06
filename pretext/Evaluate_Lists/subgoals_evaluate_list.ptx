@@ -202,6 +202,47 @@
 
             <li>
                 <p>
+                    Traversing a List
+                </p>
+
+                <p>
+                    <ol marker="A">
+                        <li>
+                            <p>
+                                Determine the list that is being iterated over.
+                                If the expression also involves a <c>range(len(list_name))</c>, then the list is being traversed by index.
+                                Otherwise, the list is being traversed by value.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Determine the loop control variable that is being used to iterate over the list.
+                                The loop control variable will take on each value or index in the list, one at a time, depending on whether we are iterating by value or by index.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The loop control variable is used to access the list element in the body of the loop.
+                                If iterating by index, the loop control variable is used as an index to access or update the list element.
+                                If iterating by value, the loop control variable is used directly to access the list element (no updates are possible).
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The list can also be added to with the <c>append</c> or <c>insert</c> methods.
+                                The <c>append</c> method adds a new value to the end of the list, while the <c>insert</c> method adds a new value at the specified index.
+                                Existing values starting from that index are shifted to the right.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+
+            <li>
+                <p>
                     Whole list actions
                 </p>
 

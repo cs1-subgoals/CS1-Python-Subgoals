@@ -1,0 +1,131 @@
+<section xml:id="lists_lists-we2-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Lists-WE2-P1</title>
+
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+        <p>
+            Give the contents of <c>alpha</c> after the execution of these statements.
+        </p>
+
+
+        <program language="python">
+            <input>
+alpha = [0, 0, 0, 0]
+for i in range(len(alpha)):
+    alpha[i] = i * i          
+            </input>
+        </program>
+
+        <exercises>
+        <exercise xml:id="lists_we2-p1-4">
+            <statement>
+                <p>
+                    Q4: Enter the values of <c>alpha</c> in the blanks.
+                </p>
+
+                <p>
+                    The value of <c>alpha[0]</c> is <var/>.
+                </p>
+            </statement>
+            <setup><var><condition string="0">
+            <feedback>
+                <p>
+                    Correct.
+                </p>
+            </feedback>
+            </condition> <condition string='.*'>
+
+            <feedback>
+                <p>
+                    Incorrect
+                </p>
+            </feedback>
+            </condition> </var></setup>
+        </exercise>
+
+        <exercise xml:id="lists_we2-p1-5">
+            <statement>
+                <p>
+                    Q5: Enter the values of <c>alpha</c> in the blanks.
+                </p>
+
+                <p>
+                    The value of <c>alpha[1]</c>  is <var/>.
+                </p>
+            </statement>
+            <setup><var><condition string="1">
+            <feedback>
+                <p>
+                    Correct.
+                </p>
+            </feedback>
+            </condition> <condition string='.*'>
+
+            <feedback>
+                <p>
+                    Incorrect
+                </p>
+            </feedback>
+            </condition> </var></setup>
+        </exercise>
+
+        <exercise xml:id="lists_we2-p1-6">
+            <statement>
+                <p>
+                    Q6: Enter the values of <c>alpha</c> in the blanks.
+                </p>
+
+                <p>
+                    The value of <c>alpha[2]</c>  is <var/>.
+                </p>
+            </statement>
+            <setup><var><condition string="4">
+            <feedback>
+                <p>
+                    Correct.
+                </p>
+            </feedback>
+            </condition> <condition string='.*'>
+
+            <feedback>
+                <p>
+                    Incorrect
+                </p>
+            </feedback>
+            </condition> </var></setup>
+        </exercise>
+
+        <exercise xml:id="lists_we2-p1-7">
+            <statement>
+                <p>
+                    Q7: Enter the values of <c>alpha</c> in the blanks.
+                </p>
+
+                <p>
+                    The value of <c>alpha[3]</c>  is <var/>.
+                </p>
+            </statement>
+            <setup><var><condition string="9">
+            <feedback>
+                <p>
+                    Correct.
+                </p>
+            </feedback>
+            </condition> <condition string='.*'>
+
+            <feedback>
+                <p>
+                    Incorrect
+                </p>
+            </feedback>
+            </condition> </var></setup>
+        </exercise>
+        </exercises>
+    </subsection>
+
+
+    <program xml:id="ac-Lists-WE2-P1" interactive="activecode" language="python">
+        <input>
+        </input>
+    </program>
+</section>

@@ -1,0 +1,210 @@
+<section xml:id="lists_worked-example-lists-traverse" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Worked Example: Lists - Traverse</title>
+
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+        <p>
+            Problem:
+        </p>
+
+        <p>
+            Given the initialized list:
+        </p>
+
+
+        <program language="python">
+            <input>
+alpha = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            </input>
+        </program>
+
+        <p>
+            Evaluate these statements and determine the value of all variables.
+            If any error occurs, give the reason.
+        </p>
+
+
+        <program language="python">
+            <input>
+for i in range(len(alpha)):
+    alpha[i] = i * 10
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection>
+        <title>SG1: Declaring and initialization of list</title>
+
+        <program language="python">
+            <input>
+alpha = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            </input>
+        </program>
+
+        <figure>
+            <image source="Evaluate_Lists/Figures/we2-init.png">
+                <shortdescription>
+                    The figure shows a table with 11 columns and 2 rows.
+                    The top row is labeled with the indexes of the list, and the bottom row is labeled with the values of the list.
+                    The first column is labeled 0, and the last column is labeled 9.
+                    The second row contains all zeros.
+                </shortdescription>
+            </image>
+        </figure>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <c>alpha</c> is declared as a list of integers.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        This statement allocates 10 slots for integers (first line is indexes, second line is values).
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Declared size of list is 10, so last valid index value is 9.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <title>SG2: Determine access or action</title>
+
+        <p>
+            In this example, a list is declared and instantiated to hold 10 new integers.
+            We are traversing the list, so we will need SG7 Within the loop.
+            Then, since we will be changing values within the list, we also look to SG5.
+        </p>
+    </subsection>
+
+
+    <subsection xml:id="subsec-lists-we2-p1">
+        <title>SG7: Traversing the list</title>
+
+        <p>
+            The loop header is:
+        </p>
+
+
+        <program language="python">
+            <input>
+for i in range(len(alpha)):
+            </input>
+        </program>
+
+        <p>
+            The list expression is <c>range(len(alpha))</c>.
+            The <c>len</c> function returns the number of elements in the list, which is 10.
+            The <c>range</c> function returns a list of integers from 0 to 9.
+            So the loop control variable (<c>i</c>) will take on the values 0, 1, 2, ..., 9.
+            The loop will iterate 10 times, once for each index in the list.
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <title>SG5: Change array element</title>
+
+        <p>
+            The body of the loop is:
+        </p>
+
+
+        <program language="python">
+            <input>
+alpha[i] = i * 10
+            </input>
+        </program>
+
+        <p>
+            The statement <c>alpha[i] = i * 10</c> assigns the value of <c>i * 10</c> to the element at index <c>i</c> in the list <c>alpha</c>.
+            Notice that the loop control variable (<c>i</c>) is used as both the index for the element within the array to be changed and for its value on the RHS of the assignment statement.
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        When <c>i</c> is 0 (the first iteration of the loop), 0 is copied into <c>alpha[0]</c>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        When <c>i</c> is 1 (the second iteration of the loop), 10  (1 * 10) is copied into <c>alpha[1]</c>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        This pattern continues until <c>i</c> is 9, where 90 (9 * 10) is copied into <c>alpha[9]</c>.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            Note that we have to verify that the index values are all within the list bounds.
+            They are fine in this case.
+        </p>
+
+        <p>
+            The resulting list is:
+        </p>
+
+        <figure>
+            <image source="Evaluate_Lists/Figures/we2-result.png">
+                <shortdescription>
+                    The table from before, but now the second row contains the values 0, 10, 20, 30, 40, 50, 60, 70, 80, and 90.
+                </shortdescription>
+            </image>
+        </figure>
+
+
+        <program xml:id="ac-lists-we2" interactive="activecode" language="python">
+            <input>
+alpha = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+for i in range(len(alpha)):
+    alpha[i] = i * 10
+for i in range(len(alpha)):
+    print(i, " [", alpha[i], "]")
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection>
+        <title>Practice Pages</title>
+
+        <p>
+            <ul marker="disc">
+                <li>
+                    <xref text="title" ref="lists_lists-we2-p1" />
+                </li>
+
+                <li>
+                    <xref text="title" ref="lists_lists-we2-p2" />
+                </li>
+                <!--
+                <li>
+                    <xref text="title" ref="lists_lists-we2-p3" />
+                </li>
+
+                <li>
+                    <xref text="title" ref="lists_lists-we2-p4" />
+                </li>
+                -->
+            </ul>
+        </p>
+    </subsection>
+</section>

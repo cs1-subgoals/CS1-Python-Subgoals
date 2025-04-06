@@ -6,8 +6,8 @@
     <xi:include href='./WorkedEx-1-instantiate-alter.ptx' />
     <xi:include href='./lists-we1-p1.ptx' />
     <xi:include href='./WorkedEx-2-traverse.ptx' />
-    <xi:include href='./arrays-we2-p1.ptx' />
-    <xi:include href='./arrays-we2-p2.ptx' />
+    <xi:include href='./lists-we2-p1.ptx' />
+    <xi:include href='./lists-we2-p2.ptx' />
     <!--
     <xi:include href='./arrays-we2-p3.ptx' />
     <xi:include href='./arrays-we2-p4.ptx' />
