@@ -1,0 +1,351 @@
+<section xml:id="lists_worked-example-lists-instantiate-and-alter" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Worked Example: Lists - Instantiate and Alter</title>
+
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+        <!--
+        <p>
+            You can watch this video or read through the content below it.
+        </p>
+        <video xml:id="video-lists-we1" youtube="WqQSlxGUQxY"/>-->
+        <p>
+            Problem:
+        </p>
+
+        <p>
+            Evaluate these statements and determine the value of all variables.
+            If any error occurs, give the reason.
+        </p>
+
+
+        <program language="python">
+            <input>
+alpha = [0, 0, 0, 0, 0]
+alpha[4] = 22
+alpha[0] = 10
+alpha[1] = alpha[4] - alpha[0]
+alpha[2] = alpha[1] - alpha[0]
+alpha[3] = alpha[alpha[2] - 1]
+alpha[4] = alpha[alpha[3]]
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection>
+        <title>SG1: Declaring and initializing a list</title>
+
+        <program language="python">
+            <input>
+alpha = [0, 0, 0, 0, 0]
+            </input>
+        </program>
+
+        <figure>
+            <image source="Evaluate_Lists/Figures/we1-init.png">
+                <shortdescription>
+                    The figure shows a table with 6 columns and 2 rows.
+                    The top row is labeled with the indexes of the list, and the bottom row is labeled with the values of the list.
+                    The first column is labeled 0, and the last column is labeled 4.
+                    The second row contains all zeros.
+                </shortdescription>
+            </image>
+        </figure>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <c>alpha</c> is declared as a list of integers.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        This statement allocates 5 slots for integers (first line are indexes, second line are values/content):
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        The declared size of the list is 5, so the last valid index value is 4.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Notice that the list contains values of 0 because there was a 0 in each of the slots in the list.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <title>SG2: Determine access or action</title>
+
+        <program language="python">
+            <input>
+alpha[4] = 22
+alpha[0] = 10
+alpha[1] = alpha[4] - alpha[0]
+alpha[2] = alpha[1] - alpha[0]
+alpha[3] = alpha[alpha[2] - 1]
+alpha[4] = alpha[alpha[3]]
+            </input>
+        </program>
+
+        <p>
+            In this example, whenever <c>alpha[index]</c> is used on the LHS of an assignment statement, then we will be changing the list element.
+            When <c>alpha[index]</c> is used on the RHS of an assignment statement, then we are accessing an element.
+        </p>
+
+        <p>
+            For each of the lines in the example code, we will walk through the evaluation steps indicating the appropriate subgoals.
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <program language="python">
+            <input>
+alpha[4] = 22
+alpha[0] = 10
+            </input>
+        </program>
+
+        <p>
+            For the first statement, we will be changing the value of a list element (SG5).
+        </p>
+
+        <p>
+            First, we evaluate the expression within <c>[ ]</c>, which is just the literal value 4, which is within the bounds of the list (index 0 to index 4).
+            We will be changing the value at index 4 within the list.
+            So the last element (or element at index 4) will become the value 22.
+        </p>
+
+        <p>
+            For the second statement, we will be changing the first value (or element at index 0) to 10, which is also an integer and index 0 is within the list bounds.
+        </p>
+
+        <p>
+            The list <c>alpha</c> now contains the values:
+        </p>
+
+        <figure>
+            <image source="Evaluate_Lists/Figures/we1-trace-1-2.png">
+                <shortdescription>
+                    The same table as before, but now the first and last elements are 10 and 22 respectively.
+                </shortdescription>
+            </image>
+        </figure>
+    </subsection>
+
+
+    <subsection>
+        <program language="python">
+            <input>
+alpha[1] = alpha[4] - alpha[0]
+            </input>
+        </program>
+
+        <p>
+            For this statement we are changing the value of an list element (SG5) and also accessing list elements (SG3).
+        </p>
+
+        <p>
+            For SG5, we will be changing the element at index 1 within the list.
+            We now have to determine the value to be placed at that index, which is the value of the expression on the RHS of the assignment statement.
+            This means we will need to access list elements - so let's look at SG3.
+        </p>
+
+        <p>
+            In looking at the RHS: <c>alpha[4] - alpha[0]</c>
+        </p>
+
+        <p>
+            Evaluating what is within the [ ] is easy for both accesses, as they are literal values and both values are within list bounds.
+            So we replace the list access with its value from the list:
+        </p>
+
+
+        <program>
+            <input>
+alpha[4] - alpha[0]
+22 - 10
+12
+            </input>
+        </program>
+
+        <p>
+            So the value 12 (an integer) is copied into index 1 of the list.
+        </p>
+
+        <figure>
+            <image source="Evaluate_Lists/Figures/we1-trace-3.png">
+                <shortdescription>
+                    The same table as before, but now the second element is 12.
+                </shortdescription>
+            </image>
+        </figure>
+    </subsection>
+
+
+    <subsection>
+        <program language="python">
+            <input>
+alpha[2] = alpha[1] - alpha[0]
+            </input>
+        </program>
+
+        <p>
+            For this statement we are changing the value of an list element (SG5) and also accessing list elements (SG3).
+        </p>
+
+        <p>
+            For SG5, we will be changing the element at index 2 within the list.
+            We now have to determine the value to be placed at that index, which is the value of the expression on the RHS of the assignment statement.
+            This means we will need to access list elements - so let's look at SG3.
+        </p>
+
+        <p>
+            In looking at the RHS: <c>alpha[1] - alpha[0]</c>
+        </p>
+
+        <p>
+            Evaluating what is within the [ ] is easy for both accesses, as they are literal values and both values are within list bounds.
+            So we replace the list access with its value from the list:
+        </p>
+
+
+        <program>
+            <input>
+alpha[1] - alpha[0]
+12 - 10
+2
+            </input>
+        </program>
+
+        <p>
+            So the value 2 (an integer) is copied into index 2 of the list.
+        </p>
+
+        <figure>
+            <image source="Evaluate_Lists/Figures/we1-trace-5.png">
+                <shortdescription>
+                    The same table as before, but now the third element is 2.
+                </shortdescription>
+            </image>
+        </figure>
+    </subsection>
+
+
+    <subsection>
+        <program language="python">
+            <input>
+alpha[3] = alpha[alpha[2] - 1]
+            </input>
+        </program>
+
+        <p>
+            For this statement we are changing the value of an list element (SG5) and also accessing list elements (SG3).
+        </p>
+
+        <p>
+            For SG5, we will be changing the element at index 3 within the list (within list bounds).
+            We now have to determine the value to be placed at that index, which is the value of the expression on the RHS of the assignment statement.
+            This means we will need to access list elements - so let's look at SG3.
+        </p>
+
+        <p>
+            In looking at the RHS: <c>alpha[alpha[2]-1]</c>
+        </p>
+
+        <p>
+            Evaluating what is within the [ ] requires another list access.
+            Notice that we are basically reading this from the inside to the outside.
+            So the first access is <c>alpha[2]</c> (2 is within the bounds of the list) and the value is 12.
+        </p>
+
+
+        <program>
+            <input>
+alpha[alpha[2] - 1]
+alpha[2 - 1]
+alpha[1]
+12
+            </input>
+        </program>
+
+        <p>
+            So the value 12 (an integer) is copied into index 3 of the list.
+        </p>
+
+        <figure>
+            <image source="Evaluate_Lists/Figures/we1-trace-4.png">
+                <shortdescription>
+                    The same table as before, but now the fourth element is 12.
+                </shortdescription>
+            </image>
+        </figure>
+    </subsection>
+
+
+    <subsection>
+        <program language="python">
+            <input>
+alpha[4] = alpha[alpha[3]]
+            </input>
+        </program>
+
+        <p>
+            For this statement we are changing the value of an list element (SG5) and also accessing list elements (SG3).
+        </p>
+
+        <p>
+            For SG5, we will be changing the element at index 4 within the list (within list bounds).
+            We now have to determine the value to be placed at that index, which is the value of the expression on the RHS of the assignment statement.
+            This means we will need to access list elements - so let's look at SG3.
+        </p>
+
+        <p>
+            In looking at the RHS:  <c>alpha[alpha[3]]</c>
+        </p>
+
+        <p>
+            evaluating what is within the [ ] requires another list access.
+        </p>
+
+
+        <program>
+            <input>
+alpha[alpha[3]]
+alpha[12]
+            </input>
+        </program>
+
+        <p>
+            12 is not a valid index, it is out of bounds of the list, so an <c>IndexError</c> exception occurs.
+        </p>
+    </subsection>
+
+
+    <program xml:id="ac-lists-we1" interactive="activecode" language="python">
+        <input>
+        </input>
+    </program>
+
+
+    <subsection>
+        <title>Practice Pages</title>
+
+        <p>
+            <ul marker="disc">
+                <li>
+                    <xref text="title" ref="lists_lists-we1-p1" />
+                </li>
+            </ul>
+        </p>
+    </subsection>
+</section>
