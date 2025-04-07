@@ -1,0 +1,41 @@
+<section xml:id="lists_lists-we5-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Lists-WE5-P1</title>
+
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+        <exercises>
+        <exercise xml:id="parsons-Lists-WE5-P1-20" indent="show" language="python">
+            <statement>
+                <p>
+                    Q20: Put the following code in order to create a program that will declare and instantiate an list of 10 random values between 1 and 100 and then find the maximum value in the list.
+                </p>
+            </statement>
+            <blocks> <block order="7">
+            <cline>import random</cline>
+            </block> <block order="10">
+            <cline>arr = []</cline>
+            </block> <block order="1">
+            <cline>for i in range(10):</cline>
+            <cline>    arr.append(random.randint(1, 100))</cline>
+            <cline>    print("arr["+str(i)+"] is " + str(arr[i]))</cline>
+            </block> <block order="3">
+            <cline>      max = arr[0]</cline>
+            </block> <block order="5">
+            <cline>      for i in range(1, len(arr)):</cline>
+            </block> <block order="4">
+            <cline>         if arr[i] &gt; max:</cline>
+            </block> <block order="6">
+            <cline>            max = arr[i]</cline>
+            </block> <block order="9">
+            <cline>      print("Maximum value is", max);</cline>
+            </block> </blocks>
+        </exercise>
+        </exercises>
+    </subsection>
+
+
+    <program xml:id="ac-Lists-WE5-P1" interactive="activecode" language="python">
+        <input>
+        </input>
+    </program>
+</section>

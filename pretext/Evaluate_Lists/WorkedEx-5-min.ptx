@@ -1,0 +1,212 @@
+<section xml:id="lists_worked-example-lists-minimum-value" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Worked Example: Lists - Minimum Value</title>
+
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+        <p>
+            Problem: Assume that the integer list <c>alpha</c> has been properly declared and initialized with non-zero values.
+            What does this code accomplish?
+        </p>
+
+
+        <program language="python">
+            <input>
+min = alpha[0]
+for i in range(1, len(alpha)):
+    if alpha[i] &lt; min:
+        min = alpha[i]
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection>
+        <title>SG1: Declaring and initialization of list</title>
+
+        <p>
+            There is no explicit declaration or initialization of a list within the code.
+            However, the instructions describe that the list <c>alpha</c> has been properly initialized with non-zero values.
+        </p>
+
+        <figure>
+            <image source="Evaluate_Lists/we4-init.png">
+                <shortdescription>
+                    This figure shows a table with 6 columns and 2 rows.
+                    The top row is labeled with the indexes of the list, and the bottom row is labeled with the values of the list, which are currently blank.
+                    The first index is 0, and the last index is size-1.
+                </shortdescription>
+            </image>
+        </figure>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <c>alpha</c> is a list of integers and has values, but we don&#8217;t know what those values are
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        However, we can still diagram a representation of this list
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        notice that the largest index is size - 1
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <title>SG2: Determine access or action</title>
+
+        <p>
+            Within the loop, we are accessing list elements.
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <title> Evaluating code</title>
+
+        <program language="python">
+            <input>
+min = alpha[0]
+            </input>
+        </program>
+
+        <p>
+            The first line of the code sample initializes <c>min</c> to copy the value from <c>alpha[0]</c>, which in our sample is 12.
+        </p>
+
+
+        <program language="python">
+            <input>
+for i in range(1, len(alpha)):
+    if alpha[i] &lt; min:
+        min = alpha[i]
+            </input>
+        </program>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        This loop has index <c>i</c> go from 1 to size-1 (&lt;<c>len(alpha)</c>) by increments of 1.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Then the value at <c>alpha[i]</c> is compared to <c>min</c>.
+                        If the value at <c>alpha[i]</c> is less than <c>min</c>, then <c>alpha[i]</c> is copied into <c>min</c>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        All indexes into the list are valid.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            Let us trace with a sample list.
+        </p>
+
+        <figure>
+            <image source="Evaluate_Lists/we4-sample.png">
+                <shortdescription>
+                    This figure shows a table with 6 columns and 2 rows.
+                    The top row is labeled with the indexes of the list, and the bottom row is labeled with the values of the list.
+                    The first index is 0, and the last index is size-1.
+                    The values row is now populated with the values 12, 22, 8, 15, 2.
+                </shortdescription>
+            </image>
+        </figure>
+
+        <p>
+            The first line of the code sample initializes <c>min</c> to copy the value from <c>alpha[0]</c>, which in our sample is 12, and then a for-loop is used to traverse the list.
+            The chart below uses one line to represent the memory and calculations during each iteration of the loop, starting when <c>i</c> has a value of zero.
+        </p>
+
+        <table>
+            <title>Tracing an Example of Min</title>
+
+            <tabular>
+                <row>
+                    <cell>i</cell>
+                    <cell>alpha[i]</cell>
+                    <cell>min</cell>
+                    <cell>alpha[i] &lt; min ?</cell>
+                    <cell></cell>
+                </row>
+
+                <row>
+                    <cell>1</cell>
+                    <cell>22</cell>
+                    <cell>12</cell>
+                    <cell>False</cell>
+                    <cell></cell>
+                </row>
+
+                <row>
+                    <cell>2</cell>
+                    <cell>8</cell>
+                    <cell>12</cell>
+                    <cell>True</cell>
+                    <cell>min changes to 8</cell>
+                </row>
+
+                <row>
+                    <cell>3</cell>
+                    <cell>15</cell>
+                    <cell>8</cell>
+                    <cell>False</cell>
+                    <cell></cell>
+                </row>
+
+                <row>
+                    <cell>4</cell>
+                    <cell>2</cell>
+                    <cell>8</cell>
+                    <cell>True</cell>
+                    <cell>min changes to 2</cell>
+                </row>
+            </tabular>
+        </table>
+
+        <p>
+            We can see that each time a smaller value is located in the list, that value is stored in <c>min</c>.
+        </p>
+
+        <p>
+            What does this code accomplish?
+        </p>
+
+        <answer>
+            <p>
+                <c>min</c> contains the smallest value found in the list <c>alpha</c>.
+            </p>
+        </answer>
+    </subsection>
+
+
+    <subsection>
+        <title>Practice Pages</title>
+
+        <p>
+            <ul marker="disc">
+                <li>
+                    <xref text="title" ref="lists_lists-we5-p1" />
+                </li>
+            </ul>
+        </p>
+    </subsection>
+</section>
