@@ -1,0 +1,223 @@
+<section xml:id="lists_worked-example-lists-reverse-traverse" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Worked Example: Lists - Reverse Traverse</title>
+
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+        <p>
+            Problem: Evaluate these statements and determine their output
+        </p>
+
+
+        <program language="python">
+            <input>
+alpha = [15, 24, 7, 6, -4, 0, 13]
+print(len(alpha))
+for i in range(len(alpha)-1, -1, -1):
+    alpha[i] = alpha[i]+1
+for i in range(len(alpha)):
+    print(alpha[len(alpha)-1-i])
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection>
+        <title>SG1: Declaring and initialization a List</title>
+
+        <program language="python">
+            <input>
+alpha = [15, 24, 7, 6, -4, 0, 13]
+            </input>
+        </program>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <c>alpha</c> is declared as a list of integers.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        This statement allocates 7 slots for integers because there are 7 literal values given in the initialization list.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <figure>
+            <image source="Evaluate_Lists/we3-init.png">
+                <shortdescription>
+                    The figure shows a table with 8 columns and 2 rows.
+                    The top row is labeled with the indexes of the list, and the bottom row is labeled with the values of the list.
+                    The first column is labeled 0, and the last column is labeled 6.
+                    The second row contains the values 15, 24, 7, 6, -4, 0, and 13.
+                </shortdescription>
+            </image>
+        </figure>
+    </subsection>
+
+
+    <subsection>
+        <title>SG2: Determine access or action</title>
+
+        <p>
+            Within the loop (SG7), there is both access (SG3) and changing of elements (SG5).
+            We are also printing out the entire list by passing it as an argument to <c>print</c> (SG8).
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <title>SG8: Passing a list as an argument</title>
+
+        <program language="python">
+            <input>
+print(len(alpha))
+            </input>
+        </program>
+
+        <p>
+            The statement <c>print(len(alpha))</c> passes the entire list to <c>len</c>, which returns the length of the list (in this case 7).
+            Then, that value is passed to <c>print</c>, will print the value 7 and then a newline return, so that the next output will begin on a new line.
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <title>SG7: Traversing the list</title>
+
+        <p>
+            The first <c>for</c> loop iterates through the list by using the <c>range</c> function with the following parameters:
+            <ul>
+                <li>
+                    <p>
+                        The first parameter is the starting index, which is the last index of the list: <c>len(alpha)-1</c>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        The second parameter is the ending index, which is -1 (the loop will stop before this value).
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        The third parameter is the step size, which is -1 (the loop will decrement by 1 each time).
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+
+        <program language="python">
+            <input>
+for i in range(len(alpha)-1, -1, -1):
+            </input>
+        </program>
+
+        <p>
+            The loop control variable <c>i</c> will take on the values 6, 5, 4, 3, 2, 1, and 0.
+            The loop will iterate 7 times, once for each index in the list.
+            The first iteration will access the last element of the list (index 6), the second iteration will access the second to last element (index 5), and so on.
+            The last iteration will access the first element of the list (index 0).
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <title>SG5 and SG3: Changing and accessing elements</title>
+
+        <p>
+            The statement <c>>alpha[i] = alpha[i]+1</c> accesses the element at index <c>i</c> in the list <c>alpha</c>, adds 1 to it, and assigns the result back to the same index.
+            This means that the value at index <c>i</c> is changed to its original value plus 1.
+        </p>
+
+        <p>
+            The resulting array is:
+        </p>
+
+        <figure>
+            <image source="Evaluate_Lists/we3-result.png">
+                <shortdescription>
+                    This is the same table structure as before, but the values in the second row are now 16, 25, 8, 7, -3, 1, and 14.
+                </shortdescription>
+            </image>
+        </figure>
+    </subsection>
+
+
+    <subsection>
+        <title>SG7: Traversing the List</title>
+
+        <p>
+            The second <c>for</c> loop iterates through the list in forward order by using the single parameter <c>len(alpha)</c> in the <c>range</c> function.
+            This means that the loop will iterate from 0 to 6 (the length of the list minus 1).
+        </p>
+
+
+        <program language="python">
+            <input>
+for i in range(len(alpha)):
+            </input>
+        </program>
+
+        <p>
+            However, the statement inside the loop is <c>print(alpha[len(alpha)-1-i])</c>.
+            This means that the loop will print the elements of the list in reverse order.
+            The first iteration will print the last element of the list (index 6), the second iteration will print the second to last element (index 5), and so on.
+            The last iteration will print the first element of the list (index 0).
+        </p>
+
+        <p>
+            <input>
+14
+1
+-3
+7
+8
+25
+16
+            </input>
+        </p>
+
+        <answer>
+            <p>
+                <p>
+                    The complete output of the program is:
+                </p>
+                <input>
+7
+14
+1
+-3
+7
+8
+25
+16
+                </input>
+            </p>
+        </answer>
+    </subsection>
+
+
+    <program xml:id="ac-lists-we3" interactive="activecode" language="python">
+        <input>
+        </input>
+    </program>
+
+
+    <subsection>
+        <title>Practice Pages</title>
+
+        <p>
+            <ul marker="disc">
+                <li>
+                    <xref text="title" ref="lists_lists-we3-p1" />
+                </li>
+            </ul>
+        </p>
+    </subsection>
+</section>

@@ -42,7 +42,7 @@ alpha = [0, 0, 0, 0, 0]
         </program>
 
         <figure>
-            <image source="Evaluate_Lists/Figures/we1-init.png">
+            <image source="Evaluate_Lists/we1-init.png">
                 <shortdescription>
                     The figure shows a table with 6 columns and 2 rows.
                     The top row is labeled with the indexes of the list, and the bottom row is labeled with the values of the list.
@@ -134,7 +134,7 @@ alpha[0] = 10
         </p>
 
         <figure>
-            <image source="Evaluate_Lists/Figures/we1-trace-1-2.png">
+            <image source="Evaluate_Lists/we1-trace-1-2.png">
                 <shortdescription>
                     The same table as before, but now the first and last elements are 10 and 22 respectively.
                 </shortdescription>
@@ -183,7 +183,7 @@ alpha[4] - alpha[0]
         </p>
 
         <figure>
-            <image source="Evaluate_Lists/Figures/we1-trace-3.png">
+            <image source="Evaluate_Lists/we1-trace-3.png">
                 <shortdescription>
                     The same table as before, but now the second element is 12.
                 </shortdescription>
@@ -232,7 +232,7 @@ alpha[1] - alpha[0]
         </p>
 
         <figure>
-            <image source="Evaluate_Lists/Figures/we1-trace-5.png">
+            <image source="Evaluate_Lists/we1-trace-5.png">
                 <shortdescription>
                     The same table as before, but now the third element is 2.
                 </shortdescription>
@@ -283,7 +283,7 @@ alpha[1]
         </p>
 
         <figure>
-            <image source="Evaluate_Lists/Figures/we1-trace-4.png">
+            <image source="Evaluate_Lists/we1-trace-4.png">
                 <shortdescription>
                     The same table as before, but now the fourth element is 12.
                 </shortdescription>

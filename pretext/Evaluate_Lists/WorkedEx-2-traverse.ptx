@@ -43,7 +43,7 @@ alpha = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         </program>
 
         <figure>
-            <image source="Evaluate_Lists/Figures/we2-init.png">
+            <image source="Evaluate_Lists/we2-init.png">
                 <shortdescription>
                     The figure shows a table with 11 columns and 2 rows.
                     The top row is labeled with the indexes of the list, and the bottom row is labeled with the values of the list.
@@ -163,7 +163,7 @@ alpha[i] = i * 10
         </p>
 
         <figure>
-            <image source="Evaluate_Lists/Figures/we2-result.png">
+            <image source="Evaluate_Lists/we2-result.png">
                 <shortdescription>
                     The table from before, but now the second row contains the values 0, 10, 20, 30, 40, 50, 60, 70, 80, and 90.
                 </shortdescription>

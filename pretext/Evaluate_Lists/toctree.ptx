@@ -12,7 +12,7 @@
     <xi:include href='./arrays-we2-p3.ptx' />
     <xi:include href='./arrays-we2-p4.ptx' />
     -->
-    <xi:include href='./WorkedEx-3-initializer-reverse.ptx' />
+    <xi:include href='./WorkedEx-3-reverse.ptx' />
     <xi:include href='./arrays-we3-p1.ptx' />
     <xi:include href='./arrays-assess1.ptx' />
     <xi:include href='./WorkedEx-4-sum.ptx' />
