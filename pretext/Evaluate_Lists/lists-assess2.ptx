@@ -1,0 +1,477 @@
+<section xml:id="lists_assessment-lists-2" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Assessment: Lists 2</title>
+
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <exercises time-limit="10" pause="no"> <TimedNode line="24" runestone_options="{'nofeedback': None, 'subchapter': 'lists-assess2', 'chapter': 'Lists', 'basecourse': 'Subgoals', 'optional': '', 'optclass': '', 'divid': 'assess-lists-2', 'qnumber': '', 'question_marker': '9.8.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/Subgoals/_sources/Lists/lists-assess2.rst">
+    <exercise xml:id="assess-lists-2-1">
+        <statement>
+            <p>
+                Q1: The following code is intended to store the sum of all the values in the integer list <c>arr</c> in the variable <c>total</c>.
+                Which of the following code segments can be used to replace <c># missing code/</c> so that the code works as intended?
+            </p>
+
+
+            <program language="python">
+                <input>
+total = 0
+# missing code
+print(total)
+                </input>
+            </program>
+
+
+            <program language="python">
+                <input>
+# I.
+for pos in range(len(arr)):
+    total += arr[pos]
+# ----
+# II.
+for pos in range(len(arr), 0, -1):
+    total += arr[pos]
+# ----
+# III.
+pos = 0
+while pos &lt; len(arr):
+    total += arr[pos]
+    pos += 1
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        I only
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        II only
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        III only
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        I and III only
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        II and III only
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-lists-2-2">
+        <statement>
+            <p>
+                Q2: Assuming that <c>nums</c> has been declared and initialized as a list of integer values, which of the following best describes what this code does?
+            </p>
+
+
+            <program language="python">
+                <input>
+index = 0
+count = 0
+m = -1
+for outer in range(len(nums)):
+    count = 0
+    for inner in range(outer+1, len(nums)):
+        if nums[outer] == nums[inner]:
+            count += 1
+    if count &gt; m:
+        index = outer
+        m = count
+print(index)
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        Prints the maximum value that occurs in the list nums
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        Prints the index of the maximum value that occurs in the list nums
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        Prints the number of times that the maximum value occurs in the list nums
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        Prints the value that occurs most often in the list nums
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        Prints the index of the value that occurs the most often in the list nums
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-lists-2-3">
+        <statement>
+            <p>
+                Q3: The following code is intended to store the largest value in the integer list arr in the variable <c>max_val</c>.
+                Which of the following best describes the conditions under which the code will not work as intended?
+            </p>
+
+
+            <program language="python">
+                <input>
+max_val = 0
+for val in arr:
+    if val &gt; max_val:
+        max_val = val
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        The largest value in arr occurs only once and is in arr[0].
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The largest value in arr occurs only once and is in arr[len(arr)-1].
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        The largest value in arr is negative.
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The largest value in arr is 0.
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        The largest value in arr occurs more than once.
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-lists-2-4">
+        <statement>
+            <p>
+                Q4: The following code segments are supposed to find the maximum value in a list of integers.
+                Assuming that the list <c>arr</c> has been declared and contains integer values, which of the following code segments will correctly assign the maximum value in the list to the variable <c>max</c>?
+            </p>
+
+
+            <program language="python">
+                <input>
+# I.
+max = 100
+for value in arr:
+    if max &lt; value:
+        max = value
+# ----
+# II.
+max = 0
+first = True
+for value in arr:
+    if first:
+        max = value
+        first = False
+    elif max &lt; value:
+        max = value
+# ----
+# III.
+max = arr[0]
+for k in range(1, len(arr)):
+    if max &lt; arr[k]:
+        max = arr[k]
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        I only
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        II only
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        III only
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        II and III
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        I, II, and III
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-lists-2-5">
+        <statement>
+            <p>
+                Q5: The following function is intended to return the index of the first occurrence of the value <c>val</c> beyond the position <c>start</c> in the list <c>arr</c>.
+            </p>
+
+
+            <program language="python">
+                <input>
+# returns index of first occurrence of val in arr after
+# position start;
+# returns len(arr) if val is not found
+def find_next(arr, val, start):
+    pos = start + 1
+    while (CONDITION):
+        pos += 1
+    return pos
+                </input>
+            </program>
+
+            <p>
+                For example, the execution of the following code segment should result in the value <c>4</c> being printed:
+            </p>
+
+
+            <program language="python">
+                <input>
+arr = [11, 22, 100, 33, 100, 11, 44, 100]
+print(find_next(arr, 100, 2))
+                </input>
+            </program>
+
+            <p>
+                Which of the following expressions could be used to replace <c>(CONDITION)</c> so that <c>find_next</c> will work as intended?
+            </p>
+        </statement>
+
+
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        (pos &lt; len(arr)) and (arr[pos] != val)
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        (arr[pos] != val) and (pos &lt; len(arr))
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        (pos &lt; len(arr)) or (arr[pos] != val)
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        (arr[pos] == val) and (pos &lt; len(arr))
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        (pos &lt; len(arr)) or (arr[pos] == val)
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+    </TimedNode> </exercises>
+</section>

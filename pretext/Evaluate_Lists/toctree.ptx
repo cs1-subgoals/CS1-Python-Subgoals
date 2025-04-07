@@ -19,15 +19,5 @@
     <xi:include href='./lists-we5-p1.ptx' />
     <xi:include href='./WorkedEx-7-find.ptx' />
     <xi:include href='./lists-we7-p1.ptx' />
-    <xi:include href='./WorkedEx-8-enhanced-for.ptx' />
-    <xi:include href='./arrays-we8-p1.ptx' />
-    <xi:include href='./WorkedEx-9-parameters.ptx' />
-    <xi:include href='./arrays-we9-p1.ptx' />
-    <xi:include href='./arrays-assess2.ptx' />
-    <!--
-    <xi:include href='./WorkedEx-8-shift.ptx' />
-    <xi:include href='./WorkedEx-9-write-reverse.ptx' />
-    <xi:include href='./arrays-we9-p1.ptx' />
-    <xi:include href='./arrays-assess3.ptx' />
-    -->
+    <xi:include href='./lists-assess2.ptx' />
 </chapter>
