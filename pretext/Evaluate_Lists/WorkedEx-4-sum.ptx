@@ -1,0 +1,182 @@
+<section xml:id="lists_worked-example-lists-sum" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Worked Example: Lists - Sum</title>
+
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+        <p>
+            Problem: Assume that the integer list <c>alpha</c> has been properly initialized with non-zero values.
+            What does this code accomplish?
+        </p>
+
+
+        <program language="python">
+            <input>
+sum = 0
+for value in alpha:
+    sum += value
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection>
+        <title>SG1: Declaring and initialization of list</title>
+
+        <p>
+            There is no explicit declaration or initialization of an list within the code.
+            However, the instructions describe that the list <c>alpha</c> has been properly initialized with non-zero values.
+        </p>
+
+        <figure align="">
+            <image source="Evaluate_Lists/we4-init.png" alt="Instantiated List"/>
+            </figure>
+
+            <figure>
+                <image source="Evaluate_Lists/we4-init.png">
+                    <shortdescription>
+                        This figure shows a table with 6 columns and 2 rows.
+                        The top row is labeled with the indexes of the list, and the bottom row is labeled with the values of the list, which are currently blank.
+                        The first index is 0, and the last index is size-1.
+                    </shortdescription>
+                </image>
+            </figure>
+
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            <c>alpha</c> is an list of integers and has values, but we don&#8217;t know what those values are
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            However, we can still diagram a representation of this list.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </subsection>
+
+
+        <subsection>
+            <title>SG2: Determine access or action</title>
+
+            <p>
+                Within the loop, we are accessing list elements by value.
+            </p>
+
+
+            <program language="python">
+                <input>
+for value in alpha:
+                </input>
+            </program>
+
+            <p>
+                In each iteration of the loop, the variable <c>value</c> is assigned the value of the list element at index <c>i</c>.
+                The first iteration of the loop assigns the value of the first element in the list to <c>value</c>, and so on.
+                The loop continues until all elements in the list have been accessed.
+            </p>
+        </subsection>
+
+
+        <subsection>
+            <title>Evaluating code</title>
+
+            <p>
+                Let us trace with a sample list.
+            </p>
+
+            <figure>
+                <image source="Evaluate_Lists/we4-sample.png">
+                    <shortdescription>
+                        This figure shows a table with 6 columns and 2 rows.
+                        The top row is labeled with the indexes of the list, and the bottom row is labeled with the values of the list.
+                        The first index is 0, and the last index is size-1.
+                        The values row is now populated with the values 12, 22, 8, 15, 2.
+                    </shortdescription>
+                </image>
+            </figure>
+
+            <p>
+                The first line of the code sample initializes <c>sum</c> to a have a value of zero, and then a for-loop is used to traverse the list.
+                The chart below uses one line to represent the memory and calculations during each iteration of the loop, starting when <c>i</c> has a value of zero.
+            </p>
+
+            <table>
+                <title>Trace Table of Example Data</title>
+
+                <tabular>
+                    <row>
+                        <cell>i</cell>
+                        <cell>value</cell>
+                        <cell>original sum</cell>
+                        <cell>new sum</cell>
+                    </row>
+
+                    <row>
+                        <cell>0</cell>
+                        <cell>12</cell>
+                        <cell>0</cell>
+                        <cell>12</cell>
+                    </row>
+
+                    <row>
+                        <cell>1</cell>
+                        <cell>22</cell>
+                        <cell>12</cell>
+                        <cell>34</cell>
+                    </row>
+
+                    <row>
+                        <cell>2</cell>
+                        <cell>8</cell>
+                        <cell>34</cell>
+                        <cell>42</cell>
+                    </row>
+
+                    <row>
+                        <cell>3</cell>
+                        <cell>15</cell>
+                        <cell>42</cell>
+                        <cell>57</cell>
+                    </row>
+
+                    <row>
+                        <cell>4</cell>
+                        <cell>2</cell>
+                        <cell>57</cell>
+                        <cell>59</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <p>
+                The final value of <c>sum</c> is 59, which is the sum of all values in the list.
+            </p>
+
+            <p>
+                What does this code accomplish?
+            </p>
+
+            <answer>
+                <p>
+                    <c>sum</c> contains the sum of all the values in the list <c>alpha</c>.
+                </p>
+            </answer>
+        </subsection>
+
+
+        <subsection>
+            <title>Practice Pages</title>
+
+            <p>
+                <ul marker="disc">
+                    <li>
+                        <xref text="title" ref="lists_lists-we4-p1" />
+                    </li>
+                </ul>
+            </p>
+        </subsection>
+    </section>

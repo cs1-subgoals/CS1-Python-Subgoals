@@ -1,0 +1,80 @@
+<section xml:id="lists_lists-we4-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Lists-WE4-P1</title>
+
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+        <exercises>
+        <exercise xml:id="lists_we4-p1-16">
+            <statement>
+                <p>
+                    Q16: Given the following code, what is the value in <c>sum</c> after execution? <var/>
+                </p>
+
+
+                <program language="python">
+                    <input>
+alpha = [2, 4, 6, 8, 10, 12, 14]
+sum = 0
+for k in range(0, len(alpha), 2):
+    sum = sum + alpha[k]
+                    </input>
+                </program>
+            </statement>
+            <setup> <var> <condition string="32">
+            <feedback>
+                <p>
+                    Correct.
+                </p>
+            </feedback>
+            </condition> <condition string=".*">
+
+            <feedback>
+                <p>
+                    Incorrect.
+                </p>
+            </feedback>
+            </condition> </var> </setup>
+        </exercise>
+
+        <exercise xml:id="lists_we4-p1-17">
+            <statement>
+                <p>
+                    Q17: Given the following code, what is the value in <c>sum</c> after execution? <var/>
+                </p>
+
+
+                <program language="python">
+                    <input>
+beta = []
+sum = 0
+for i in range(0, 5):
+    beta.append(i * 2 + 1)
+for i in range(1, len(beta)):
+    sum += beta[i]
+                    </input>
+                </program>
+            </statement>
+            <setup> <var> <condition string="24">
+            <feedback>
+                <p>
+                    Correct.
+                </p>
+            </feedback>
+            </condition> <condition string=".*">
+
+            <feedback>
+                <p>
+                    Incorrect.
+                </p>
+            </feedback>
+            </condition> </var> </setup>
+        </exercise>
+        </exercises>
+    </subsection>
+
+
+    <program xml:id="ac-Lists-WE4-P1" interactive="activecode" language="python">
+        <input>
+        </input>
+    </program>
+</section>
