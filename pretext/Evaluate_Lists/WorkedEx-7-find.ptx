@@ -1,0 +1,283 @@
+<section xml:id="lists_worked-example-lists-find-value" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Worked Example: Lists - Find Value</title>
+
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+        <p>
+            Problem: Assume that the integer list <c>alpha</c> has been properly declared and initialized with non-zero values, and that the variable <c>target</c> is an integer.
+            What does this code accomplish? How would you describe the value in <c>loc</c>?
+        </p>
+
+
+        <program language="python">
+            <input>
+loc = -1
+found = False
+for i in range(len(alpha)):
+    if not found and alpha[i] == target:
+        loc = i
+        found = True
+            </input>
+        </program>
+    </subsection>
+
+
+    <subsection>
+        <title>SG1: Declaring and initialization of list</title>
+
+        <p>
+            There is no explicit declaration or initialization of an list within the code.
+            However, the instructions describe that the list <c>alpha</c> has been properly initialized with non-zero values.
+        </p>
+
+        <figure>
+            <image source="Evaluate_Lists/we4-init.png">
+                <shortdescription>
+                    This figure shows a table with 6 columns and 2 rows.
+                    The top row is labeled with the indexes of the list, and the bottom row is labeled with the values of the list, which are currently blank.
+                    The first index is 0, and the last index is size-1.
+                </shortdescription>
+            </image>
+        </figure>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        alpha is a list of integers and has value, but we don&#8217;t know what those values are.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        however, we can still diagram a representation of this list.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <title>SG2: Determine access or action</title>
+
+        <p>
+            Within the loop, we are accessing list elements.
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <title>Evaluating code</title>
+
+        <program language="python">
+            <input>
+loc = -1
+found = False
+            </input>
+        </program>
+
+        <p>
+            The first two lines are declaring an integer variable (<c>loc</c>) and assigning it a value of -1.
+            This variable will represent the "location" of the target variable, if found.
+            A second variable, <c>found</c>, is declared and given an initial value of False.
+            This variable represents whether or not we have located the target within the list.
+        </p>
+
+
+        <program language="python">
+            <input>
+for i in range(len(alpha)):
+    if not found and alpha[i] == target:
+        loc = i
+        found = True
+            </input>
+        </program>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        This loop has index <c>i</c> go from 0 to <c>len(alpha)</c> - 1 (&lt;<c>length</c>) by increments of 1.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Then we check whether we have not yet found the value in the list, and that the value at <c>alpha[i]</c> is compared to the value of <c>target</c>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        If the value at <c>alpha[i]</c> is equal to <c>target</c>, then the value <c>i</c> is copied into <c>loc</c>.
+                        Additionally, the value of <c>found</c> is set to true, indicating that we have found the target value in the list.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            Let us trace with a sample list and assume the value of <c>target</c> is 15.
+        </p>
+
+        <figure>
+            <image source="Evaluate_Lists/we4-sample.png">
+                <shortdescription>
+                    This figure shows a table with 6 columns and 2 rows.
+                    The top row is labeled with the indexes of the list, and the bottom row is labeled with the values of the list.
+                    The first index is 0, and the last index is size-1.
+                    The values row is now populated with the values 12, 22, 8, 15, 2.
+                </shortdescription>
+            </image>
+        </figure>
+
+        <p>
+            The first statement, <c>loc = -1</c> gives <c>loc</c> a temporary default value (which will also indicate if the value is not found in the list).
+            The second statement, <c>found = false</c> gives <c>found</c> establishes that we have not yet found the target value in the list.
+        </p>
+
+        <p>
+            Then a for-loop is used to traverse the list and compare each element to <c>target</c>.
+            The chart below uses one line to represent the memory and comparisons during each iteration of the loop, starting when <c>i</c> has a value of zero.
+        </p>
+
+        <table>
+            <title>Example Trace of Find</title>
+
+            <tabular>
+                <row>
+                    <cell>i</cell>
+                    <cell>alpha[i]</cell>
+                    <cell>target</cell>
+                    <cell>alpha[i] == target</cell>
+                    <cell>loc</cell>
+                    <cell>found</cell>
+                </row>
+
+                <row>
+                    <cell>0</cell>
+                    <cell>12</cell>
+                    <cell>15</cell>
+                    <cell>False</cell>
+                    <cell>-1</cell>
+                    <cell>False</cell>
+                </row>
+
+                <row>
+                    <cell>1</cell>
+                    <cell>22</cell>
+                    <cell>15</cell>
+                    <cell>False</cell>
+                    <cell>-1</cell>
+                    <cell>False</cell>
+                </row>
+
+                <row>
+                    <cell>2</cell>
+                    <cell>8</cell>
+                    <cell>15</cell>
+                    <cell>False</cell>
+                    <cell>-1</cell>
+                    <cell>False</cell>
+                </row>
+
+                <row>
+                    <cell>3</cell>
+                    <cell>15</cell>
+                    <cell>15</cell>
+                    <cell>True</cell>
+                    <cell>3</cell>
+                    <cell>True</cell>
+                </row>
+
+                <row>
+                    <cell>4</cell>
+                    <cell>2</cell>
+                    <cell>15</cell>
+                    <cell>False</cell>
+                    <cell>3</cell>
+                    <cell>True</cell>
+                </row>
+            </tabular>
+        </table>
+
+        <p>
+            When we find the target value in the list, we store the index of where the value was found into the variable <c>loc</c>.
+            We also update the variable <c>found</c> to True, indicating that we have found the target value in the list.
+        </p>
+
+        <p>
+            The last iteration of the loop is when <c>i</c> is 4, and the value of <c>found</c> is True.
+            Therefore, the if statement will not even evaluate the expression <c>alpha[i] == target</c> because the first part of the if statement is false.
+        </p>
+
+        <p>
+            Some questions to consider:
+        </p>
+
+        <p>
+            <ol marker="1">
+                <li>
+                    <p>
+                        What would happen if the <c>target</c> value is not in the list?
+                        <answer>
+                            <p>
+                                Then the selection statement is never true, and <c>loc</c> is never changed from its initial value of -1.
+                            </p>
+                        </answer>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Why is -1 a potentially problematic initial value for <c>loc</c>?
+                        <answer>
+                            <p>
+                                The -1 indicates that the target value was not found in the list.
+                                If <c>loc</c> is never changed from -1, then we know that the target value was not found in the list.
+                                This requires everyone to know that -1 is a special value that indicates the target was not found, and not the last index of the list.
+                            </p>
+                        </answer>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        What would happen if there were 2 occurrences of the target value in the list?
+                        <answer>
+                            <p>
+                                The loop does not end when the <c>target</c> value is found, so no additional occurrences would be evaluated.
+                                The first occurrence would be stored in <c>loc</c>, and the loop would continue until the end of the list.
+                                The second occurrence would be ignored, and <c>loc</c> would not be updated.
+                            </p>
+                        </answer>
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+        <p>
+            What does this code accomplish?
+        </p>
+
+        <answer>
+            <p>
+                <c>loc</c> contains the index of the first occurrence of <c>target</c> in the list <c>alpha</c> or -1 if <c>target</c> is not in the list.
+            </p>
+        </answer>
+    </subsection>
+
+
+    <subsection>
+        <title>Practice Pages</title>
+
+        <p>
+            <ul marker="disc">
+                <li>
+                    <xref text="title" ref="lists_lists-we7-p1" />
+                </li>
+            </ul>
+        </p>
+    </subsection>
+</section>
