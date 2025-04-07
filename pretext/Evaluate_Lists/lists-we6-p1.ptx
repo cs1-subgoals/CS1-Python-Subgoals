@@ -1,0 +1,70 @@
+<section xml:id="lists_lists-we6-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Lists-WE6-P1</title>
+
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+        <exercises>
+        <exercise xml:id="parsons-Lists-WE6-P1-18" indent="show" language="python">
+            <statement>
+                <p>
+                    Q18: Put the following code in order to create a program that will declare and instantiate an list of 20 random values between 1 and 100 and then calculate and print the average of the first 10 numbers.
+                </p>
+            </statement>
+            <blocks> <block order="6">
+            <cline>import random</cline>
+            </block> <block order="4">
+            <cline>arr = []</cline>
+            <cline>sum = 0</cline>
+            </block> <block order="5">
+            <cline>for i in range(20):</cline>
+            <cline>    arr.append(random.randint(1, 100))</cline>
+            <cline>    print("arr["+str(i)+"] is " + str(arr[i]))</cline>
+            </block> <block order="3">
+            <cline>for i in range(10):</cline>
+            </block> <block order="2">
+            <cline>    sum += arr[i]</cline>
+            </block> <block order="1">
+            <cline>print("Avg of first 10 is", sum / 10);</cline>
+            </block> </blocks>
+        </exercise>
+
+        <exercise xml:id="parsons-Lists-WE6-P1-19" indent="show" language="python">
+            <statement>
+                <p>
+                    Q19: Put the following code in order to create a program that will declare and instantiate an list of 20 random values between 1 and 100 and then calculate and print the average of the last n numbers.
+                </p>
+            </statement>
+            <blocks> <block order="9">
+            <cline>import random</cline>
+            </block> <block order="5">
+            <cline>arr = []</cline>
+            <cline>size = 20</cline>
+            <cline>sum = 0</cline>
+            <cline>n = random.randint(0, size)</cline>
+            </block> <block order="3">
+            <cline>for i in range(size):</cline>
+            <cline>    arr.append(random.randint(1, 100))</cline>
+            <cline>    print("arr["+str(i)+"] is " + str(arr[i]))</cline>
+            </block> <block order="11">
+            <cline>if n &lt;= 0:</cline>
+            </block> <block order="7">
+            <cline>    print("There are no last n numbers")</cline>
+            </block> <block order="10">
+            <cline>else:</cline>
+            </block> <block order="2">
+            <cline>    for i in range(size-n, size):</cline>
+            </block> <block order="6">
+            <cline>        sum += arr[i]</cline>
+            </block> <block order="4">
+            <cline>        print("Avg of last n is", sum/n);</cline>
+            </block> </blocks>
+        </exercise>
+        </exercises>
+    </subsection>
+
+
+    <program xml:id="ac-Lists-WE6-P1" interactive="activecode" language="python">
+        <input>
+        </input>
+    </program>
+</section>

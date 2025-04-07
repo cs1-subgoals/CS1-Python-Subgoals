@@ -1,10 +1,10 @@
-<section xml:id="lists_worked-example-lists-sum" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <title>Worked Example: Lists - Sum</title>
+<section xml:id="lists_worked-example-lists-average" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Worked Example: Lists - Average</title>
 
     <xi:include href='./subgoals_evaluate_list.ptx' />
     <subsection>
         <p>
-            Problem: Assume that the integer list <c>alpha</c> has been properly initialized with non-zero values.
+            Problem: Assume that the integer list <c>alpha</c> has been properly declared and initialized with non-zero values.
             What does this code accomplish?
         </p>
 
@@ -12,8 +12,11 @@
         <program language="python">
             <input>
 sum = 0
+avg = 0.0
 for value in alpha:
     sum += value
+if len(alpha) != 0:
+    avg = sum / len(alpha)
             </input>
         </program>
     </subsection>
@@ -23,7 +26,7 @@ for value in alpha:
         <title>SG1: Declaring and initialization of list</title>
 
         <p>
-            There is no explicit declaration or initialization of an list within the code.
+            There is no explicit declaration or initialization of a list within the code.
             However, the instructions describe that the list <c>alpha</c> has been properly initialized with non-zero values.
         </p>
 
@@ -41,7 +44,7 @@ for value in alpha:
             <ul>
                 <li>
                     <p>
-                        <c>alpha</c> is an list of integers and has values, but we don&#8217;t know what those values are
+                        alpha is a list of integers and has values, but we don&#8217;t know what those values are
                     </p>
                 </li>
 
@@ -59,26 +62,77 @@ for value in alpha:
         <title>SG2: Determine access or action</title>
 
         <p>
-            Within the loop, we are accessing list elements by value.
-        </p>
-
-
-        <program language="python">
-            <input>
-for value in alpha:
-            </input>
-        </program>
-
-        <p>
-            In each iteration of the loop, the variable <c>value</c> is assigned the value of the list element at index <c>i</c>.
-            The first iteration of the loop assigns the value of the first element in the list to <c>value</c>, and so on.
-            The loop continues until all elements in the list have been accessed.
+            Within the loop, we are accessing list elements.
         </p>
     </subsection>
 
 
     <subsection>
         <title>Evaluating code</title>
+
+        <program language="python">
+            <input>
+sum = 0
+avg = 0.0
+            </input>
+        </program>
+
+        <p>
+            The first two lines are declaring two variables, an integer to hold the sum of all the values in the list and a double to hold the average of the values.
+        </p>
+
+        <p>
+            References to the list are in the loop and selection statements.
+            First, let's look at the loop:
+        </p>
+
+
+        <program language="python">
+            <input>
+for value in alpha:
+    sum += value
+            </input>
+        </program>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        This loop has a loop control variable <c>value</c> that is assigned the value of the list element at index <c>i</c>.
+                        The first iteration of the loop assigns the value of the first element in the list to <c>value</c>, and so on.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        In each iteration of the loop, the variable <c>value</c> is added to the sum of all previous values in the list.
+                        The loop continues until all elements in the list have been accessed.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            This is the same loop from the <xref text="Worked Example: Lists - Sum" ref="lists_worked-example-lists-sum" /> example.
+        </p>
+
+
+        <program language="python">
+            <input>
+if len(alpha) != 0:
+    avg = sum / len(alpha)
+            </input>
+        </program>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        If the size of the list is not 0, then it is divided by the number of values in alpha.
+                    </p>
+                </li>
+            </ul>
+        </p>
 
         <p>
             Let us trace with a sample list.
@@ -96,60 +150,70 @@ for value in alpha:
         </figure>
 
         <p>
-            The first line of the code sample initializes <c>sum</c> to a have a value of zero, and then a for-loop is used to traverse the list.
+            First, <c>sum</c> and <c>avg</c> are both initialized to zero values, and then a for-loop is used to traverse the list to calculate the sum.
             The chart below uses one line to represent the memory and calculations during each iteration of the loop, starting when <c>i</c> has a value of zero.
         </p>
 
         <table>
-            <title>Trace Table of Example Data</title>
+            <title>Example Trace of Average</title>
 
             <tabular>
                 <row>
-                    <cell>i</cell>
+                    <cell>index</cell>
                     <cell>value</cell>
-                    <cell>original sum</cell>
-                    <cell>new sum</cell>
+                    <cell>sum</cell>
                 </row>
 
                 <row>
                     <cell>0</cell>
                     <cell>12</cell>
-                    <cell>0</cell>
                     <cell>12</cell>
                 </row>
 
                 <row>
                     <cell>1</cell>
                     <cell>22</cell>
-                    <cell>12</cell>
                     <cell>34</cell>
                 </row>
 
                 <row>
                     <cell>2</cell>
                     <cell>8</cell>
-                    <cell>34</cell>
                     <cell>42</cell>
                 </row>
 
                 <row>
                     <cell>3</cell>
                     <cell>15</cell>
-                    <cell>42</cell>
                     <cell>57</cell>
                 </row>
 
                 <row>
                     <cell>4</cell>
-                    <cell>2</cell>
-                    <cell>57</cell>
-                    <cell>59</cell>
+                    <cell>3</cell>
+                    <cell>60</cell>
                 </row>
             </tabular>
         </table>
 
         <p>
-            The final value of <c>sum</c> is 59, which is the sum of all values in the list.
+            Next we look at the selection statement:
+        </p>
+
+
+        <program language="python">
+            <input>
+if len(alpha) != 0:
+    avg = sum / len(alpha)
+            </input>
+        </program>
+
+        <p>
+            In our sample, <c>len(alpha)</c> is 5, and 60 divided by 5 is 12, for a final value of 12 in <c>avg</c>.
+        </p>
+
+        <p>
+            Why have the selection statement? What if the list has been declared, but has no values? Then its size is 0 &#8211; and we would be dividing by 0! An exception!  So we guard against this by checking the length.
         </p>
 
         <p>
@@ -158,7 +222,7 @@ for value in alpha:
 
         <answer>
             <p>
-                <c>sum</c> contains the sum of all the values in the list <c>alpha</c>.
+                <c>avg</c> contains the average of the values in the list <c>alpha</c> or 0 if <c>alpha</c> is empty.
             </p>
         </answer>
     </subsection>
@@ -170,7 +234,7 @@ for value in alpha:
         <p>
             <ul marker="disc">
                 <li>
-                    <xref text="title" ref="lists_lists-we4-p1" />
+                    <xref text="title" ref="lists_lists-we6-p1" />
                 </li>
             </ul>
         </p>

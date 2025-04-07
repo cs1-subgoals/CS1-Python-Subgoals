@@ -19,15 +19,15 @@
             <cline>    arr.append(random.randint(1, 100))</cline>
             <cline>    print("arr["+str(i)+"] is " + str(arr[i]))</cline>
             </block> <block order="3">
-            <cline>      max = arr[0]</cline>
+            <cline>max = arr[0]</cline>
             </block> <block order="5">
-            <cline>      for i in range(1, len(arr)):</cline>
+            <cline>for i in range(1, len(arr)):</cline>
             </block> <block order="4">
-            <cline>         if arr[i] &gt; max:</cline>
+            <cline>    if arr[i] &gt; max:</cline>
             </block> <block order="6">
-            <cline>            max = arr[i]</cline>
+            <cline>        max = arr[i]</cline>
             </block> <block order="9">
-            <cline>      print("Maximum value is", max);</cline>
+            <cline>print("Maximum value is", max);</cline>
             </block> </blocks>
         </exercise>
         </exercises>
