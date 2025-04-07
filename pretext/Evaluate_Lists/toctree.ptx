@@ -8,13 +8,9 @@
     <xi:include href='./WorkedEx-2-traverse.ptx' />
     <xi:include href='./lists-we2-p1.ptx' />
     <xi:include href='./lists-we2-p2.ptx' />
-    <!--
-    <xi:include href='./arrays-we2-p3.ptx' />
-    <xi:include href='./arrays-we2-p4.ptx' />
-    -->
     <xi:include href='./WorkedEx-3-reverse.ptx' />
-    <xi:include href='./arrays-we3-p1.ptx' />
-    <xi:include href='./arrays-assess1.ptx' />
+    <xi:include href='./lists-we3-p1.ptx' />
+    <xi:include href='./lists-assess1.ptx' />
     <xi:include href='./WorkedEx-4-sum.ptx' />
     <xi:include href='./arrays-we4-p1.ptx' />
     <xi:include href='./WorkedEx-6-avg.ptx' />

@@ -211,7 +211,10 @@
                             <p>
                                 Determine the list that is being iterated over.
                                 If the expression also involves a <c>range(len(list_name))</c>, then the list is being traversed by index.
-                                Otherwise, the list is being traversed by value.
+                                The <c>range</c> function can either take one argument (the length of the list) or 3 arguments (the starting index, ending index, and step size).
+                                If the <c>range</c> function takes one argument, it will start at 0 and go to the length of the list - 1.
+                                If the <c>range</c> function takes 3 arguments, it will start at the first argument and go to the second argument - 1, incrementing by the third argument.
+                                Otherwise, if <c>range</c> is not used, then the list is being traversed by value.
                             </p>
                         </li>
 

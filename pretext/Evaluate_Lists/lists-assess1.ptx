@@ -1,0 +1,351 @@
+<section xml:id="lists_assessment-arrays-1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Assessment: Lists 1</title>
+
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <exercises time-limit="10" pause="no"> <TimedNode line="24" runestone_options="{'nofeedback': None, 'subchapter': 'lists-assess1', 'chapter': 'Lists', 'basecourse': 'Subgoals', 'optional': '', 'optclass': '', 'divid': 'assess-lists-1', 'qnumber': '', 'question_marker': '9.4.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/Subgoals/_sources/Arrays/arrays-assess1.rst">
+    <exercise xml:id="assess-arrays-1-1">
+        <statement>
+            <p>
+                Q1: Assuming that the following declaration has been made, which of the following code segments correctly interchanges the value of <c>arr[0]</c> and <c>arr[5]</c>?
+            </p>
+
+
+            <program language="python">
+                <input>
+arr = [5, 12, -22, 6, 11, 0, 26, 42, 99, 75];
+# ----
+# A
+arr[0] = 5
+arr[5] = 0
+# ----
+# B
+arr[0] = arr[5]
+arr[5] = arr[0]
+# ----
+# C
+k = arr[5]
+arr[0] = arr[5]
+arr[5] = k
+# ----
+# D
+k = arr[0]
+arr[0] = arr[5]
+arr[5] = k
+# ----
+# E
+k = arr[5]
+arr[5] = arr[0]
+arr[0] = arr[5]
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        See answer A above
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        See answer B above
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        See answer C above
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        See answer D above
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        See answer E above
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+    <!--
+    <exercise xml:id="assess-arrays-1-2">
+        <statement>
+            <p>
+                Q2: Consider the following code that is intended to print <c>true</c> if all the elements in array <c>arr</c> are even numbers; otherwise it should print <c>false</c>.
+                You may assume that <c>arr</c> has been declared and contains valid integer values.
+            </p>
+
+
+            <program language="python">
+                <input>
+boolean isEven = /* expression */ ;
+for (int k = 0; k &lt; arr.length; k++) {
+   /* loop body */
+}
+if (isEven)
+   System.out.println("TRUE");
+else
+   System.out.println("FALSE");
+                </input>
+            </program>
+
+            <p>
+                Which of the following replacements for <c>/* expression */</c> and <c>/* loop body */</c> should be used so that the code works as intended?
+            </p>
+
+            <figure align="">
+                <image source="Arrays/Figures/assess-arrays-1-q2.png" width="50%" alt="answers for Q2"/>
+                </figure>
+            </statement>
+
+
+            <choices>
+                <choice>
+                    <statement>
+                        <p>
+                            See diagram for answer A
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            See diagram for answer B
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            See diagram for answer C
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            See diagram for answer D
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            See diagram for answer E
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+        -->
+        <exercise xml:id="assess-lists-1-2">
+            <statement>
+                <p>
+                    Considering the following code, what are the values in numbers after execution?
+                </p>
+
+
+                <program language="python">
+                    <input>
+size = 8
+numbers = [0, 0, 0, 0, 0, 0, 0, 0]
+for k in range(size//2, size):
+    numbers[k] = numbers[k-1] + size
+                    </input>
+                </program>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            <c>[0, 0, 0, 0, 8, 16, 24, 32]</c>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            <c>[0, 0, 0, 0, 8, 8, 8, 8]</c>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            <c>[0, 1, 2, 3, 8, 16, 24, 32]</c>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            <c>[8, 16, 24, 32, 40, 48, 52, 60]</c>
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+
+        <exercise xml:id="assess-lists-1-3">
+            <statement>
+                <p>
+                    Q3: Considering the following code, what are the values in numbers after execution?
+                </p>
+
+
+                <program language="python">
+                    <input>
+numbers = [17, 34, 21, 42, 15, 69, 48, 25, 39]
+x = 3
+for k in range(1, 8, 3):
+    numbers[k] = numbers[k-1] + x
+                    </input>
+                </program>
+            </statement>
+
+
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            [17, 20, 21, 42, 45, 69, 48, 51, 39]
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            [17, 20, 23, 26, 29, 32, 35, 38, 41]
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            [17, 37, 21, 42, 18, 69, 48, 28, 39]
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            [20, 23, 21, 42, 45, 69, 51, 54, 39]
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>
+                            [20, 34, 21, 45, 15, 69, 51, 25, 39]
+                        </p>
+                    </statement>
+
+                    <feedback>
+                        <p/>
+                    </feedback>
+                </choice>
+            </choices>
+        </exercise>
+        </TimedNode> </exercises>
+    </section>
