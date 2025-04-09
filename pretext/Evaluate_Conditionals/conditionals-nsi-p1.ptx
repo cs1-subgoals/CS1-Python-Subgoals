@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<section xml:id="selection_selection-we5-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<section xml:id="conditionals-nsi-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Evaluation Conditionals-WE5-P1</title>
 
     <xi:include href='./subgoals_evaluate_conditionals.ptx' />

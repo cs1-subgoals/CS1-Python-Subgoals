@@ -15,4 +15,6 @@
     <xi:include href='./conditionals-sqe-p1.ptx' />
     <xi:include href="./nested_if.ptx" />
     <xi:include href='./conditionals-nsi-p1.ptx' />
+    <xi:include href="./nested_if_else.ptx" />
+    <xi:include href='./conditionals-nse-p1.ptx' />
 </chapter>
