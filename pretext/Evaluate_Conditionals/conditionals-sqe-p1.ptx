@@ -1,13 +1,26 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<section xml:id="conditionals-sqi-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <title>Evaluation Conditionals-WE3-P1</title>
+<section xml:id="conditionals-sqe-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Evaluate Conditionals WE5-P1</title>
 
     <xi:include href='./subgoals_evaluate_conditionals.ptx' />
-    <transition />
     <subsection>
+        <exercises>
+        <exercise xml:id="ca-Select-WE4-P1-11">
+            <statement>
+                <p>
+                    Q11: Click on the statements belonging to the body of the else-branch in the following code
+                </p>
+            </statement>
+            <areas>
+            <cline><area correct="no">if alpha &lt; delta:</area></cline>
+            <cline>    <area correct="no">gamma = alpha + 5</area></cline>
+            <cline><area correct="no">else:</area></cline>
+            <cline>    <area correct="yes">gamma = beta + 5</area></cline>
+            <cline><area correct="no">eta = beta + 2</area></cline>
+            </areas>
+        </exercise>
+
         <p>
-            Use this given setup
+            Use this given setup for each of the questions below.
         </p>
 
 
@@ -21,28 +34,24 @@ gamma = 0
             </input>
         </program>
 
-        <exercises>
-        <exercise>
+        <exercise xml:id="fb-WE4-P1-12">
             <statement>
                 <p>
-                    Q1: After executing the following code:
+                    Q12: After executing the following code, the value in variable <c>gamma</c> is <var/> and the value in variable <c>eta</c> is <var/>.
                 </p>
 
 
-                <program language="java">
+                <program language="python">
                     <input>
-if alpha &gt; beta:
-    alpha = alpha + 2;
-if alpha &gt; delta:
-    gamma = alpha + 5;
+if alpha &lt; delta:
+    gamma = alpha + 5
+else:
+    gamma = beta + 5
+eta = beta + 2
                     </input>
                 </program>
-
-                <p>
-                    The value of variable <c>alpha</c> is <var /> and the value of variable <c>gamma</c> is <var />.
-                </p>
             </statement>
-            <setup> <var> <condition string="4">
+            <setup> <var> <condition string="7">
             <feedback>
                 <p>
                     Correct
@@ -55,7 +64,7 @@ if alpha &gt; delta:
                     Incorrect.
                 </p>
             </feedback>
-            </condition> </var> <var> <condition string="9">
+            </condition> </var> <var> <condition string="3">
 
             <feedback>
                 <p>
@@ -72,27 +81,25 @@ if alpha &gt; delta:
             </condition> </var> </setup>
         </exercise>
 
-        <exercise xml:id="fb-WE3-P1-10a">
+        <exercise xml:id="fb-WE4-P1-13">
             <statement>
                 <p>
-                    Q10a: After executing the following code:
+                    Q13: After executing the following code, the value in variable <c>gamma</c> is <var/> and the value in variable <c>eta</c> is <var/>.
                 </p>
 
 
                 <program language="python">
                     <input>
-if (alpha * beta) &gt; delta:
-    gamma = alpha * beta
-if eta &gt; (alpha / beta):
-    eta = alpha / beta
+if alpha &gt; beta:
+    eta = alpha + 2
+    gamma = alpha + 5
+else:
+    eta = alpha - 1
+    gamma = beta - 1
                     </input>
                 </program>
-
-                <p>
-                    The value in variable <c>alpha</c> is <var/> and the value in variable <c>gamma</c> is <var/>.
-                </p>
             </statement>
-            <setup> <var> <condition string="2">
+            <setup> <var> <condition string="7">
             <feedback>
                 <p>
                     Correct
@@ -105,7 +112,7 @@ if eta &gt; (alpha / beta):
                     Incorrect.
                 </p>
             </feedback>
-            </condition> </var> <var> <condition string="0">
+            </condition> </var> <var> <condition string="4">
 
             <feedback>
                 <p>
@@ -125,7 +132,7 @@ if eta &gt; (alpha / beta):
     </subsection>
 
 
-    <program xml:id="ac-conditional-we4-p1" interactive="activecode" language="python">
+    <program xml:id="ac-select-we4-p1" interactive="activecode" language="python">
         <input>
         </input>
     </program>

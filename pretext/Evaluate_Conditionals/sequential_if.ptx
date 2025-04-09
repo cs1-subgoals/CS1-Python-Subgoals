@@ -112,9 +112,14 @@ eta = alpha + 2
         </p>
     </subsection>
 
+
     <subsection xml:id="subsec-seq-if4">
         <title>SG2.2: If false, follow next elif/else branch or exit conditional if no else branch</title>
-        <p>The condition is FALSE and there is no else branch, so we do nothing.</p>
+
+        <p>
+            The condition is FALSE and there is no else branch, so we do nothing.
+        </p>
+
         <figure align="">
             <image source="Evaluate_Conditionals/Figures/we3-seq-if-2.png" width="90%">
                 <shortdescription>
@@ -125,14 +130,20 @@ eta = alpha + 2
     </subsection>
 
     <answer>
-        <p><c>alpha</c> = 2, <c>beta</c> = 1, <c>delta</c> = 3, <c>eta</c> = 4, <c>gamma</c> = 0</p>
+        <p>
+            <c>alpha</c> = 2, <c>beta</c> = 1, <c>delta</c> = 3, <c>eta</c> = 4, <c>gamma</c> = 0
+        </p>
     </answer>
+
     <conclusion>
         <title>Practice Pages</title>
-        <p><ul marker="disc">
-            <li>
-                <xref text="title" ref="evaluate_conditional-we3-p1" />
-            </li>
-        </ul></p>
+
+        <p>
+            <ul marker="disc">
+                <li>
+                    <xref text="title" ref="conditionals-sqi-p1" />
+                </li>
+            </ul>
+        </p>
     </conclusion>
 </section>
