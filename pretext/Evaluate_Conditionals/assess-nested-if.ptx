@@ -1,0 +1,532 @@
+<section xml:id="selection_assessment-nested-if-statements" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Assessment: Nested If-Statements</title>
+
+    <xi:include href='./subgoals_evaluate_conditionals.ptx' />
+    <exercises time-limit="25" pause="no"> <TimedNode line="19" runestone_options="{'nofeedback': None, 'subchapter': 'select-assess-seqif', 'chapter': 'Selection', 'basecourse': 'Subgoals', 'optional': '', 'optclass': '', 'divid': 'assess-select-seqif', 'qnumber': '', 'question_marker': '3.5.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/Subgoals/_sources/Selection/select-assess-seqif.rst">
+    <exercise xml:id="assess-select-nestedif-1">
+        <statement>
+            <p>
+                Q1: Following this code what is the value of <c>delta</c>?
+            </p>
+
+
+            <program language="python">
+                <input>
+alpha = 5
+beta = 2
+gamma = 3
+delta = 0
+eta = 0
+if alpha &gt; beta:
+    if beta &gt; gamma:
+        delta = 10
+    else:
+        delta = 20
+else:
+    if gamma &gt; beta:
+        delta = 30
+    else:
+        delta = 40
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        0
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        10
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        20
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        30
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        40
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-select-nestedif-2">
+        <statement>
+            <p>
+                Q2: Following this code, what is the value of <c>eta</c>?
+            </p>
+
+
+            <program language="python">
+                <input>
+alpha = 5
+beta = 2
+gamma = 3
+delta = 0
+eta = 0
+if alpha &gt; beta:
+    if (beta * gamma) &lt;= alpha:
+        eta = 50
+    else:
+        eta = 60
+else:
+    if delta &gt; beta:
+        eta = 70
+    else:
+        eta = 80
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        0
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        50
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        60
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        70
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        80
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-select-nestedif-3">
+        <statement>
+            <p>
+                Q3: Following this code, what is the value of <c>delta</c>?
+            </p>
+
+
+            <program language="python">
+                <input>
+alpha = 5
+beta = 2
+gamma = 3
+delta = 0
+eta = 0
+if alpha &gt; gamma:
+    if gamma &gt; beta:
+        delta += 1
+    if gamma &gt; alpha:
+        delta += 2
+if (beta + gamma) &gt;= alpha:
+    if (alpha - beta) &gt; gamma:
+        delta += 3
+    else:
+        delta += 4
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        1
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        3
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        4
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        5
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        6
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-select-nestedif-4">
+        <statement>
+            <p>
+                Q4: Following this code, what is the value of <c>delta</c> and <c>eta</c>?
+            </p>
+
+
+            <program language="python">
+                <input>
+alpha = 5
+beta = 2
+gamma = 3
+delta = 0
+eta = 0
+if (alpha &gt; beta) and (alpha &gt; gamma):
+    if alpha &gt; delta:
+        delta += 1
+        eta += 2
+    if beta &gt; delta:
+        delta += 1
+        eta += 2
+if (beta &lt; gamma) and (beta &lt;= delta):
+    if eta &gt; gamma:
+        delta += 2
+        eta += 3
+    else:
+        delta += 3
+        eta += 4
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        delta = 1, eta = 2
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        delta = 2, eta = 4
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        delta = 4, eta = 7
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        delta = 5, eta = 8
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        delta = 6, eta = 9
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-select-nestedif-5">
+        <statement>
+            <p>
+                Q5: What is printed after this code is executed?
+            </p>
+
+
+            <program language="python">
+                <input>
+a = 'A'
+b = 'B'
+c = 'C'
+if a &lt; b:
+    if a &lt; c:
+        print("a is smallest")
+    else:
+        print("c is smallest")
+elif b &lt; c:
+    print("b is smallest")
+else:
+    print("clueless")
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        a is smallest
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        b is smallest
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        c is smallest
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        clueless
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-select-nestedif-6">
+        <statement>
+            <p>
+                Q6: What is printed after this code is executed?
+            </p>
+
+
+            <program language="python">
+                <input>
+a = 'C'
+b = 'B'
+c = 'A'
+if a &lt; b:
+    if a &lt; c:
+        print("a is smallest")
+    else:
+        print("c is smallest")
+elif b &lt; c:
+    print("b is smallest")
+else:
+    print("clueless")
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        a is smallest
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        b is smallest
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        c is smallest
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        clueless
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+    </TimedNode> </exercises>
+</section>

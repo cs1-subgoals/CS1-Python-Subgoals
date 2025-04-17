@@ -1,0 +1,232 @@
+<section xml:id="expressions-statements_assessment-boolean-logical-operators" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Assessment: Boolean Logical Operators</title>
+
+    <xi:include href='./subgoals_evaluate_expressions.ptx' />
+    <exercises time-limit="10" pause="no"> <TimedNode line="19" runestone_options="{'nofeedback': None, 'subchapter': 'expressions-assess-bool2', 'chapter': 'ExpressionsStatements', 'basecourse': 'Subgoals', 'optional': '', 'optclass': '', 'divid': 'assess-expr-bool2', 'qnumber': '', 'question_marker': '1.13.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/Subgoals/_sources/ExpressionsStatements/expressions-assess-bool2.rst">
+    <exercise xml:id="assess-exp-bool2-1">
+        <statement>
+            <p>
+                Q1: Given the following, what value is stored in variable <c>answer</c>?
+            </p>
+
+
+            <program language="python">
+                <input>
+x = 5
+y = 3
+z = 1
+answer = (x &lt; y) and (z &lt; y)
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        True
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        False
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-exp-bool2-2">
+        <statement>
+            <p>
+                Q2: Given the following, what value is stored in variable <c>answer</c>?
+            </p>
+
+
+            <program language="python">
+                <input>
+x = 5
+y = 3
+z = 1
+answer = (x &lt; y) or not (z &lt; y)
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        True
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        False
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-exp-bool2-3">
+        <statement>
+            <p>
+                Q3: Given the following, what value is stored in variable <c>answer</c>?
+            </p>
+
+
+            <program language="python">
+                <input>
+x = 5
+y = 3
+z = 1
+answer = (x &lt;= 5) and (y &gt;= 2)
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        True
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        False
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-exp-bool2-4">
+        <statement>
+            <p>
+                Q4: Given the following, what value is stored in variable <c>answer</c>?
+            </p>
+
+
+            <program language="python">
+                <input>
+x = 5
+y = 3
+z = 1
+answer = (y == z) or (z == x)
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        True
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        False
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+
+    <exercise xml:id="assess-exp-bool2-5">
+        <statement>
+            <p>
+                Q5: Given the following, what value is stored in variable <c>answer</c>?
+            </p>
+
+
+            <program language="python">
+                <input>
+x = 5
+y = 3
+z = 1
+answer = (x &lt;= 3) or ((z &lt;= y) and (z == 1))
+                </input>
+            </program>
+        </statement>
+
+
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        True
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+                        False
+                    </p>
+                </statement>
+
+                <feedback>
+                    <p/>
+                </feedback>
+            </choice>
+        </choices>
+    </exercise>
+    </TimedNode>
+    </exercises>
+</section>
