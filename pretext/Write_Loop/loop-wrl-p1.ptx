@@ -59,147 +59,121 @@ for x in range(__A__, __B__):
                     Blank E: <var/>
                 </p>
             </statement>
-            <setup>
-            <var>
-            <condition number="1">
+            <setup> <var> <condition number="1">
             <feedback>
                 <p>
                     A is Correct
                 </p>
             </feedback>
-            </condition>
-            <condition string='.*'>
+            </condition> <condition string='.*'>
+
             <feedback>
                 <p>
                     A is Incorrect
                 </p>
             </feedback>
-            </condition>
-            </var>
-            <var>
-            <condition number="21">
+            </condition> </var> <var> <condition number="21">
+
             <feedback>
                 <p>
                     B is Correct
                 </p>
             </feedback>
-            </condition>
-            <condition string='.*'>
+            </condition> <condition string='.*'>
+
             <feedback>
                 <p>
                     B is Incorrect
                 </p>
             </feedback>
-            </condition>
-            </var>
-            <var>
-            <condition string="x">
+            </condition> </var> <var> <condition string="x">
+
             <feedback>
                 <p>
                     C is Correct
                 </p>
             </feedback>
-            </condition>
-            <condition string='.*'>
+            </condition> <condition string='.*'>
+
             <feedback>
                 <p>
                     C is Incorrect
                 </p>
             </feedback>
-            </condition>
-            </var>
-            <var>
-            <condition number="2">
+            </condition> </var> <var> <condition number="2">
+
             <feedback>
                 <p>
                     D is Correct
                 </p>
             </feedback>
-            </condition>
-            <condition string='.*'>
+            </condition> <condition string='.*'>
+
             <feedback>
                 <p>
                     D is Incorrect
                 </p>
             </feedback>
-            </condition>
-            </var>
-            <var>
-            <condition number="0">
+            </condition> </var> <var> <condition number="0">
+
             <feedback>
                 <p>
                     E is Correct
                 </p>
             </feedback>
-            </condition>
-            <condition string='.*'>
+            </condition> <condition string='.*'>
+
             <feedback>
                 <p>
                     E is Incorrect
                 </p>
             </feedback>
-            </condition>
-            </var>
-            </setup>
+            </condition> </var> </setup>
         </exercise>
 
         <exercise xml:id="parsons-WrLoops-WE1-P1-3" indent="show" language="python">
             <statement>
                 <p>
-                    Q3: Put the code in the right order to create a program that will generate an integer between 0 and 10,000 (inclusive),
-                    print the number, calculate and print the number of digits in the number.
+                    Q3: Put the code in the right order to create a program that will generate an integer between 0 and 10,000 (inclusive), print the number, calculate and print the number of digits in the number.
                 </p>
             </statement>
-            <blocks>
-            <block order="1">
+            <blocks> <block order="1">
             <cline>import random</cline>
             <cline>x = random.randint(0, 10000)</cline>
-            </block>
-            <block order="2">
+            </block> <block order="2">
             <cline>digits = 0</cline>
             <cline>y = x</cline>
-            </block>
-            <block order="3">
+            </block> <block order="3">
             <cline>while y &gt; 0:</cline>
-            </block>
-            <block order="4">
+            </block> <block order="4">
             <cline>    digits += 1</cline>
             <cline>    y = y // 10</cline>
-            </block>
-            <block order="5">
+            </block> <block order="5">
             <cline>print(x, "has", digits, "digits.")</cline>
-            </block>
-            </blocks>
+            </block> </blocks>
         </exercise>
 
         <exercise xml:id="parsons-WrLoops-WE1-P1-4" indent="show" language="python">
             <statement>
                 <p>
                     Q4: Put the code in the right order to create a program that will print out all Armstrong numbers between 1 and 500.
-                    If the sum of the cubes of each digit of the number is equal to the number itself, then the number is called an
-                    Armstrong number.
+                    If the sum of the cubes of each digit of the number is equal to the number itself, then the number is called an Armstrong number.
                     For example, 153 = (1*1*1) + (5*5*5) + (3*3*3)
                 </p>
             </statement>
-            <blocks>
-            <block order="1">
-            <cline>for i in range(1, 500)</cline>
-            </block>
-            <block order="2">
+            <blocks> <block order="1">
+            <cline>for i in range(1, 500):</cline>
+            </block> <block order="2">
             <cline>    dig1 = i // 100</cline>
             <cline>    dig2 = (i // 10) % 10</cline>
             <cline>    dig3 = i % 10</cline>
-            </block>
-            <block order="3">
+            </block> <block order="3">
             <cline>    total = dig1**3 + dig2**3 + dig3**3</cline>
-            </block>
-            <block order="8">
+            </block> <block order="8">
             <cline>    if total == i:</cline>
-            </block>
-            <block order="1">
+            </block> <block order="7">
             <cline>        print(i, "is an Armstrong number.")</cline>
-            </block>
-            </blocks>
+            </block> </blocks>
         </exercise>
 
         <exercise xml:id="parsons-WrLoops-WE1-P1-5" indent="show" language="python">
@@ -208,23 +182,17 @@ for x in range(__A__, __B__):
                     Q5: Put the code in the right order to create a program that will print out the squares and cubes of the first 10 natural numbers.
                 </p>
             </statement>
-            <blocks>
-            <block order="1">
+            <blocks> <block order="1">
             <cline>powers = [1, 2, 3]</cline>
-            </block>
-            <block order="2">
+            </block> <block order="2">
             <cline>for num in range(1, 11):</cline>
-            </block>
-            <block order="3">
+            </block> <block order="3">
             <cline>    for power in powers:</cline>
-            </block>
-            <block order="4">
+            </block> <block order="4">
             <cline>        print(num ** power, end=" ")</cline>
-            </block>
-            <block order="5">
+            </block> <block order="5">
             <cline>    print()</cline>
-            </block>
-            </blocks>
+            </block> </blocks>
         </exercise>
         </exercises>
     </subsection>
