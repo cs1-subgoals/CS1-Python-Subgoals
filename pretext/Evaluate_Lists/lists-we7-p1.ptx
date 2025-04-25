@@ -7,17 +7,21 @@
         <exercise xml:id="parsons-Lists-WE7-P1-21" indent="show" language="python">
             <statement>
                 <p>
-                    Q21: Put the following code in order to find the last occurrence of a target value and return the index of where that value is located.
+                    Q21: Put the following code in order to create a function that will find the last occurrence of a target value and return the index of where that value is located.
                 </p>
             </statement>
-            <blocks><block order="4">
-            <cline>loc = -1</cline>
+            <blocks> <block order="4">
+            <cline>def find(arr, target):</cline>
             </block> <block order="7">
-            <cline>for i in range(arr):</cline>
-            </block> <block order="2">
-            <cline>    if arr[i] == target:</cline>
+            <cline>    loc = -1</cline>
             </block> <block order="5">
-            <cline>        loc = i</cline>
+            <cline>    for i in range(len(arr)):</cline>
+            </block> <block order="3">
+            <cline>        if arr[i] == target:</cline>
+            </block> <block order="6">
+            <cline>            loc = i</cline>
+            </block> <block order="2">
+            <cline>    return loc</cline>
             </block> </blocks>
         </exercise>
 
@@ -32,12 +36,11 @@
             </block> <block order="5">
             <cline>    for value in arr:</cline>
             </block> <block order="3">
-            <cline>        if arr[i] == target:</cline>
+            <cline>        if value == target:</cline>
             </block> <block order="6">
             <cline>            return True</cline>
             </block> <block order="2">
             <cline>    return False</cline>
-            <cline>}</cline>
             </block> </blocks>
         </exercise>
 
@@ -54,7 +57,7 @@
             </block> <block order="4">
             <cline>    for value in arr:</cline>
             </block> <block order="7">
-            <cline>        if arr[i] == target:</cline>
+            <cline>        if value == target:</cline>
             </block> <block order="3">
             <cline>            num += 1</cline>
             </block> <block order="5">
