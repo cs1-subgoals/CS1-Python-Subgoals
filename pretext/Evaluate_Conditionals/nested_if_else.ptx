@@ -62,7 +62,7 @@ else:
         </p>
 
         <figure>
-            <image source="Selection/Figures/we6-nest-ifelse.png" width="50%" alt="Nested If-Else Diagram"/>
+            <image source="Evaluate_Conditionals/Figures/we6-nest-ifelse.png" width="50%" alt="Nested If-Else Diagram"/>
             </figure>
         </subsection>
 
@@ -92,7 +92,7 @@ else:
             </p>
 
             <figure>
-                <image source="Selection/Figures/we6-nest-ifelse-inner.png" width="50%" alt="nested if true branch"/>
+                <image source="Evaluate_Conditionals/Figures/we6-nest-ifelse-inner.png" width="50%" alt="nested if true branch"/>
                 </figure>
             </subsection>
 

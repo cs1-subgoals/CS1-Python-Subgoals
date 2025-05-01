@@ -57,7 +57,7 @@ rho = -1.0
         </p>
 
         <figure>
-            <image source="Selection/Figures/we6-nest-if-both.png" width="50%" alt="Nested-If Diagram"/>
+            <image source="Evaluate_Conditionals/Figures/we6-nest-if-both.png" width="50%" alt="Nested-If Diagram"/>
             </figure>
         </subsection>
 
@@ -87,7 +87,7 @@ rho = -1.0
             </p>
 
             <figure>
-                <image source="Selection/Figures/we6-nest-if-inner.png" width="50%" alt="nested if true branch"/>
+                <image source="Evaluate_Conditionals/Figures/we6-nest-if-inner.png" width="50%" alt="nested if true branch"/>
                 </figure>
             </subsection>
 

@@ -147,7 +147,7 @@ else
         </p>
 
         <figure align="">
-            <image source="Selection/Figures/we4-seq-ifelse-2.png" width="50%" alt="sequential if-else part 2"/>
+            <image source="Evaluate_Conditionals/Figures/we5-seq-ifelse-2.png" width="50%" alt="sequential if-else part 2"/>
             </figure>
         </subsection>
 
