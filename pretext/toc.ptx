@@ -4,7 +4,7 @@
   <xi:include href="./examples/meta_docinfo.ptx" />
   <book xml:id="cs1-python-subgoals">
     <docinfo>
-      <document-id>CS1 Python Subgoals</document-id>
+      <document-id>CS1-Python-Subgoals</document-id>
     </docinfo>
     <title>CS1 Python Subgoals</title>
 
