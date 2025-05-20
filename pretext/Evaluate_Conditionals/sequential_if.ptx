@@ -113,7 +113,7 @@ eta = alpha + 2
     </subsection>
 
 
-    <subsection xml:id="subsec-seq-if4">
+    <subsection xml:id="subsec-seq-if5">
         <title>SG2.2: If false, follow next elif/else branch or exit conditional if no else branch</title>
 
         <p>

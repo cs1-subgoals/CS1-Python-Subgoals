@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <section xml:id="conditionals-sqi-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <title>Evaluation Conditionals-WE3-P1</title>
+    <title>Evaluate Conditionals-WE3-P1</title>
 
     <xi:include href='./subgoals_evaluate_conditionals.ptx' />
     <transition />
@@ -75,7 +75,7 @@ if alpha &gt; delta:
         <exercise xml:id="fb-WE3-P1-10a">
             <statement>
                 <p>
-                    Q10a: After executing the following code:
+                    Q2: After executing the following code:
                 </p>
 
 

@@ -138,7 +138,7 @@ kappa = '3'
                 <choice correct="yes">
                     <statement>
                         <p>
-                            cannot multiple by a non-integer value
+                            cannot multiply a string by a non-integer value
                         </p>
                     </statement>
 

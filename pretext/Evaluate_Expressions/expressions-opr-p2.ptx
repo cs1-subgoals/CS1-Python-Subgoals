@@ -132,7 +132,7 @@ zeta = '2.5'
                 <choice correct="yes">
                     <statement>
                         <p>
-                            Cannot perform math operations on a string
+                            Cannot perform addition or subtration on a string
                         </p>
                     </statement>
 

@@ -22,7 +22,7 @@
 alpha = 2
 beta = 3.0
 delta = 3
-gamma = alpha + beta
+gamma = alpha + delta
             </input>
         </program>
     </subsection>
@@ -41,7 +41,7 @@ gamma = alpha + beta
         <title>SG2: Determine operator behavior based on operands</title>
 
         <p>
-            The expression <c>alpha + beta</c> is an addition between two integer values.
+            The expression <c>alpha + delta</c> is an addition between two integer values.
             This is a valid operation, and will produce an integer.
         </p>
     </subsection>
@@ -52,7 +52,7 @@ gamma = alpha + beta
 
         <p>
             The variable <c>alpha</c> is substituted for the value <c>2</c> and the variable <c>delta</c> is substituted for the value <c>3</c>.
-            Adding them together produces the value <c>4</c>.
+            Adding them together produces the value <c>5</c>.
             This value is stored in <c>gamma</c>.
         </p>
     </subsection>

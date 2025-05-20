@@ -22,7 +22,7 @@
 alpha = 42
 beta = 1
 gamma = 5
-result = beta &lt;= alpha
+result = beta &lt;= alpha and gamma &lt;= alpha
             </input>
         </program>
     </subsection>
@@ -64,7 +64,7 @@ result = beta &lt;= alpha
         <p>
             2.
             In the second comparison, <c>gamma</c> is substituted for <c>5</c> and <c>alpha</c> is substituted for <c>42</c>.
-            Then, the &lt; determines if <c>5</c> is less than or equal to <c>42</c>, which it is.
+            Then, the &lt;= determines if <c>5</c> is less than or equal to <c>42</c>, which it is.
             Therefore, the expression evaluates to <c>True</c>.
         </p>
 

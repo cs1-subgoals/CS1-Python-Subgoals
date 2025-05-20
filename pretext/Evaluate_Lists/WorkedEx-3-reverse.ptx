@@ -131,7 +131,7 @@ for i in range(len(alpha)-1, -1, -1):
         <title>SG5 and SG3: Changing and accessing elements</title>
 
         <p>
-            The statement <c>>alpha[i] = alpha[i]+1</c> accesses the element at index <c>i</c> in the list <c>alpha</c>, adds 1 to it, and assigns the result back to the same index.
+            The statement <c>alpha[i] = alpha[i]+1</c> accesses the element at index <c>i</c> in the list <c>alpha</c>, adds 1 to it, and assigns the result back to the same index.
             This means that the value at index <c>i</c> is changed to its original value plus 1.
         </p>
 

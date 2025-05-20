@@ -293,8 +293,8 @@ print("Percent passing: " + (passing / (passing + failing) * 100))
 
 
             <choices>
-                <choice>
-                    <statement>
+                <choice correct="yes">
+                    <statement >
                         <p>
                             Percent passing: 60
                         </p>
@@ -317,7 +317,7 @@ print("Percent passing: " + (passing / (passing + failing) * 100))
                     </feedback>
                 </choice>
 
-                <choice correct="yes">
+                <choice >
                     <statement>
                         <p>
                             Percent passing: 80

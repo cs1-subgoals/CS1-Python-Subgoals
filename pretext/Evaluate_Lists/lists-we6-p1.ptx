@@ -54,9 +54,9 @@
             </block> <block order="2">
             <cline>    for i in range(size-n, size):</cline>
             </block> <block order="6">
-            <cline>        sum += arr[i]</cline>
+            <cline>     sum += arr[i]</cline>
             </block> <block order="4">
-            <cline>        print("Avg of last n is", sum/n);</cline>
+            <cline>    print("Avg of last n is", sum/n);</cline>
             </block> </blocks>
         </exercise>
         </exercises>

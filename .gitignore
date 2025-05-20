@@ -5,5 +5,5 @@ build_info
 output/
 .error_schema.log
 cli.log
-
+logs
 .vscode/

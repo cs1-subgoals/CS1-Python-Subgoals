@@ -37,7 +37,7 @@ if alpha &gt; delta:
     gamma = alpha + 5
 else
     gamma = beta + 5
-    eta = beta + 2;
+eta = beta + 2;
             </input>
         </program>
     </subsection>

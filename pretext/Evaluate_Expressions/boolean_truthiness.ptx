@@ -80,13 +80,13 @@ result = alpha &gt; beta or gamma
         <ol>
             <li>
                 <p>
-                    Would putting parentheses around <c>beta or gamme</c> change the result?
+                    Would putting parentheses around <c>beta or gamma</c> change the result?
                 </p>
 
                 <answer>
                     <p>
                         Yes, but not in the way you might expect.
-                        The expression <c>beta or gamme</c> will be evaluated first, and produce an integer (specifically <c>1</c> since that is a Truthy value).
+                        The expression <c>beta or gamma</c> will be evaluated first, and produce an integer (specifically <c>1</c> since that is a Truthy value).
                         Then, that result will be used as the right operand to the <c>></c> comparison, resulting in a boolean value (<c>False</c>, since <c>0 > 1</c>).
                     </p>
                 </answer>

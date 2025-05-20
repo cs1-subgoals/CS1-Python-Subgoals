@@ -257,10 +257,10 @@
                 </feedback>
             </choice>
 
-            <choice>
-                <statement correct="yes">
+            <choice correct="yes">
+                <statement >
                     <p>
-                        1
+                        1.0
                     </p>
                 </statement>
 

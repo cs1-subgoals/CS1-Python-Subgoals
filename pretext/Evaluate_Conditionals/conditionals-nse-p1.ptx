@@ -138,7 +138,7 @@ else:
                     Incorrect.
                 </p>
             </feedback>
-            </condition> </var> <var> <condition string="8">
+            </condition> </var> <var> <condition string="5">
 
             <feedback>
                 <p>
@@ -188,7 +188,7 @@ else:
                     Incorrect.
                 </p>
             </feedback>
-            </condition> </var> <var> <condition string="2">
+            </condition> </var> <var> <condition string="10">
 
             <feedback>
                 <p>

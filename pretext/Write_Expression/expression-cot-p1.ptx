@@ -12,7 +12,7 @@
         <exercise xml:id="parsons-WrExpression-WE1-P1-1">
             <statement>
                 <p>
-                    Q1: Write an expression that will calculate a 6% tax on the number variable <c>subtotal</c>
+                    Q1: Write an expression that will calculate a 6% tax on the number variable <c>subtotal</c> and assign it to a variable called <c>tax</c>.
                 </p>
                 <var/>
             </statement>
@@ -35,7 +35,7 @@
         <exercise xml:id="parsons-WrExpression-WE1-P1-2">
             <statement>
                 <p>
-                    Q2: Write an expression that will calculate the distance travelled in miles given the variables <c>speed</c> (in miles per hour) and <c>time</c> (in hours).
+                    Q2: Write an expression that will calculate the distance travelled in miles given the variables <c>speed</c> (in miles per hour) and <c>time</c> (in hours) and assign it to a variable called <c>miles</c>.
                 </p>
                 <var/>
             </statement>
@@ -58,7 +58,7 @@
         <exercise xml:id="parsons-WrExpression-WE1-P1-3">
             <statement>
                 <p>
-                    Q3: Write an expression that will calculate the number of pennies equivalent to a given an amount of money represented by the number variable <c>money</c>.
+                    Q3: Write an expression that will calculate the number of pennies equivalent to a given an amount of money represented by the number variable <c>money</c> and assign it to a variable called <c>pennies</c>.
                 </p>
                 <var/>
             </statement>
