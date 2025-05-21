@@ -347,7 +347,7 @@ for k in range(1, len(arr)):
                 </feedback>
             </choice>
 
-            <choice>
+            <choice correct="yes">
                 <statement>
                     <p>
                         II and III
@@ -359,7 +359,7 @@ for k in range(1, len(arr)):
                 </feedback>
             </choice>
 
-            <choice correct="yes">
+            <choice >
                 <statement>
                     <p>
                         I, II, and III
