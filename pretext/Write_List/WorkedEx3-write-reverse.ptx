@@ -1,0 +1,40 @@
+<section xml:id="write-lists_worked-example-write-lists-reverse" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Worked Example: Write Lists - Reverse</title>
+    <xi:include href='./subgoals_write_list.ptx' />
+    
+    <subsection>
+        <title>Solution 1 – copy to new list with reverse traverse</title>
+        <p>We will begin with a sample <c>list</c> called <c>original</c>, and another list of the same size called <c>copy</c>.</p>
+        <program language="python"><input>
+original = [2, 4, 6, 8, 10]
+copy = [0] * len(original)  # create list with placeholder values
+        </input></program>
+        <p>Then we loop in reverse through the <c>original</c> list, copying the elements in order and placing them starting at the beginning of the new list. The variable <c>place</c> helps us with traversing the new list in the opposite direction of our reversed traversal of the original.</p>
+        <program language="python"><input>
+place = 0
+for i in range(len(original) - 1, -1, -1):
+    copy[place] = original[i]
+    place += 1
+        </input></program>
+    </subsection>
+
+    <subsection>
+        <title>Solution 2 – same list with swaps</title>
+        <p>In this solution, we do not need the whole extra list in memory. The loop only traverses <term>half</term> of the list, swapping the value at <c>i</c> with the value at the mirrored/reflected position <c>len(list) - i - 1</c>.</p>
+        <program language="python"><input>
+for i in range(len(list) // 2):
+    temp = list[i]
+    list[i] = list[len(list) - i - 1]
+    list[len(list) - i - 1] = temp
+        </input></program>
+    </subsection>
+
+    <subsection>
+        <title>Practice Pages</title>
+        <p><ul marker="disc">
+            <li>
+                <xref text="title" ref="write-lists_write-lists-we3-p1" />
+            </li>
+        </ul></p>
+    </subsection>
+</section>

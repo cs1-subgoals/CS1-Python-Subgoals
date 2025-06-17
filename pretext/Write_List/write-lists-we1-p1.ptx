@@ -2,7 +2,134 @@
     <title>Writing-Lists-WE1-P1</title>
     <xi:include href='./subgoals_write_list.ptx' />
     <subsection>
-        <title></title>
-        
+        <exercises>
+
+            <exercise xml:id="parsons-Write-Lists-WE1-P1-1" indent="show" language="python">
+                <statement>
+                    <p>Q1: Put the code in the appropriate order so that a <c>list</c> of integers will store multiples of 5 (from 100 down to 0) in reverse order.</p>
+                </statement>
+                <blocks>
+                    <block order="1">
+                        <cline>def store_reverse():</cline>
+                    </block>
+                    <block order="2">
+                        <cline>    reverse_fives = []</cline>
+                    </block>
+                    <block order="3">
+                        <cline>    for i in range(20, -1, -1):</cline>
+                    </block>
+                    <block order="4">
+                        <cline>        reverse_fives.append(i * 5)</cline>
+                    </block>
+                    <block order="5">
+                        <cline>    return reverse_fives</cline>
+                    </block>
+                </blocks>
+            </exercise>
+
+            <exercise xml:id="m-Write-Lists-WE1-P1-2">
+                <statement>
+                    <p>Q2. Which of the following would it be easier to use a list literal for versus a loop when creating a <c>list</c>? (Select all that are appropriate)</p>
+                </statement>
+                <choices>
+
+                    <choice correct="yes">
+                        <statement>
+                            <p>Initialize a list of author names called <c>favorite_authors</c></p>
+                        </statement>
+                        <feedback/>
+                    </choice>
+
+                    <choice>
+                        <statement>
+                            <p>Initialize a list of numbers from 100 to 1000 called <c>nine_hundred</c></p>
+                        </statement>
+                        <feedback/>
+                    </choice>
+
+                    <choice correct="yes">
+                        <statement>
+                            <p>Initialize a list of ribbon colors called <c>ribbon_colors</c></p>
+                        </statement>
+                        <feedback/>
+                    </choice>
+
+                    <choice correct="yes">
+                        <statement>
+                            <p>Initialize a list with the top ten fastest times for your school's track team in the 100 meter race named <c>top_ten</c></p>
+                        </statement>
+                        <feedback/>
+                    </choice>
+
+                    <choice correct="yes">
+                        <statement>
+                            <p>Initialize a list with the height (in inches) of all the children in a classroom called <c>classroom_heights</c></p>
+                        </statement>
+                        <feedback/>
+                    </choice>
+
+                </choices>
+            </exercise>
+
+            <exercise xml:id="m-Write-Lists-WE1-P1-3">
+                <statement>
+                    <p>Q3. Suppose you are writing a function that adds one to all of the elements of a <c>list</c> named <c>numbers</c>. Which of the following code snippets would be best for this task?</p>
+                </statement>
+                <choices>
+
+                    <choice correct="yes">
+                        <statement>
+                            <program language="python"><input>
+                            def add_one(numbers):
+                                for i in range(len(numbers)):
+                                    numbers[i] = numbers[i] + 1
+                            </input></program>
+                        </statement>
+                        <feedback/>
+                    </choice>
+
+                    <choice>
+                        <statement>
+                            <program language="python"><input>
+                            def add_one(numbers):
+                                for num in numbers:
+                                    num += 1
+                            </input></program>
+                        </statement>
+                        <feedback>
+                            <p>This does not modify the original list because it only changes a copy of each value.</p>
+                        </feedback>
+                    </choice>
+
+                    <choice>
+                        <statement>
+                            <program language="python"><input>
+                            def add_one(numbers):
+                                for num in numbers:
+                                    numbers[num] = num + 1
+                            </input></program>
+                        </statement>
+                        <feedback>
+                            <p>This misuses <c>num</c> as both index and value.</p>
+                        </feedback>
+                    </choice>
+
+                    <choice>
+                        <statement>
+                            <program language="python"><input>
+                            def add_one(numbers):
+                                for i in range(len(numbers)):
+                                    numbers[i] = i + 1
+                            </input></program>
+                        </statement>
+                        <feedback>
+                            <p>This sets each element to its index plus one, not to the original value plus one.</p>
+                        </feedback>
+                    </choice>
+
+                </choices>
+            </exercise>
+
+        </exercises>
     </subsection>
 </section>

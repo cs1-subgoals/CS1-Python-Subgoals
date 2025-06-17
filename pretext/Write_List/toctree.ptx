@@ -7,7 +7,7 @@
     <xi:include href='./write-lists-we1-p1.ptx'/>
     <xi:include href='./WorkedEx2-shift-values.ptx'/>
     <xi:include href='./write-lists-we2-p1.ptx'/>
-    <!--<xi:include href='./WorkedEx3-write-reverse.ptx'/>
+    <xi:include href='./WorkedEx3-write-reverse.ptx'/>
     <xi:include href='./write-lists-we3-p1.ptx'/>
-    <xi:include href='./write-lists-assess.ptx'/>-->
+    <xi:include href='./write-lists-assess.ptx'/>
 </chapter>

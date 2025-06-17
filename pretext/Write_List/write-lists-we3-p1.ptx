@@ -1,0 +1,169 @@
+<section xml:id="write-lists_write-lists-we3-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Writing-Lists-WE3-P1</title>
+    <xi:include href='./subgoals_write_list.ptx' />
+    <subsection>
+<exercises>
+
+<exercise xml:id="m-Write-Lists-WE3-P1-7">
+    <statement>
+        <p>Q7: What does the following code do?</p>
+        <program language="python"><input>
+alpha = [10, 20, 30, 40, 50]
+beta = alpha.copy()
+beta.append(42)
+alpha = beta
+        </input></program>
+    </statement>
+    <choices>
+        <choice>
+            <statement><p>Inserts a new value into the first position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Inserts a new value into the middle position of the list</p></statement>
+        </choice>
+        <choice correct="yes">
+            <statement><p>Inserts a new value into the last position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Deletes a value from a specific position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Finds and deletes a value from the list</p></statement>
+        </choice>
+    </choices>
+</exercise>
+
+<exercise xml:id="m-Write-Lists-WE3-P1-8">
+    <statement>
+        <p>Q8: What does the following code do?</p>
+        <program language="python"><input>
+target = # some value
+delta = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+found = False
+i = 0
+while i &lt; len(delta) and not found:
+    if delta[i] == target:
+        found = True
+    else:
+        i += 1
+
+if found:
+    delta.pop(i)
+    delta.append(-999)
+        </input></program>
+    </statement>
+    <choices>
+        <choice>
+            <statement><p>Inserts a new value into the first position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Inserts a new value into the middle position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Inserts a new value into the last position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Deletes a value from a specific position of the list</p></statement>
+        </choice>
+        <choice correct="yes">
+            <statement><p>Finds and deletes a value from the list</p></statement>
+        </choice>
+    </choices>
+</exercise>
+
+<exercise xml:id="m-Write-Lists-WE3-P1-9">
+    <statement>
+        <p>Q9: What does the following code do?</p>
+        <program language="python"><input>
+alpha = [10, 20, 30, 40, 50]
+beta = [99]
+beta.extend(alpha)
+alpha = beta
+        </input></program>
+    </statement>
+    <choices>
+        <choice correct="yes">
+            <statement><p>Inserts a new value into the first position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Inserts a new value into the middle position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Inserts a new value into the last position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Deletes a value from a specific position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Finds and deletes a value from the list</p></statement>
+        </choice>
+    </choices>
+</exercise>
+
+<exercise xml:id="m-Write-Lists-WE3-P1-10">
+    <statement>
+        <p>Q10: What does the following code do?</p>
+        <program language="python"><input>
+pos = # some value
+rho = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+rho.pop(pos)
+rho.append(-999)
+        </input></program>
+    </statement>
+    <choices>
+        <choice>
+            <statement><p>Inserts a new value into the first position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Inserts a new value into the middle position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Inserts a new value into the last position of the list</p></statement>
+        </choice>
+        <choice correct="yes">
+            <statement><p>Deletes a value from a specific position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Finds and deletes a value from the list</p></statement>
+        </choice>
+    </choices>
+</exercise>
+
+<exercise xml:id="m-Write-Lists-WE3-P1-11">
+    <statement>
+        <p>Q11: What does the following code do?</p>
+        <program language="python"><input>
+alpha = [10, 20, 30, 40, 50]
+gamma = alpha.copy()
+gamma.insert(len(gamma) // 2, 11)
+alpha = gamma
+        </input></program>
+    </statement>
+    <choices>
+        <choice>
+            <statement><p>Inserts a new value into the first position of the list</p></statement>
+        </choice>
+        <choice correct="yes">
+            <statement><p>Inserts a new value into the middle position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Inserts a new value into the last position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Deletes a value from a specific position of the list</p></statement>
+        </choice>
+        <choice>
+            <statement><p>Finds and deletes a value from the list</p></statement>
+        </choice>
+    </choices>
+</exercise>
+
+</exercises>
+    </subsection>
+
+<program xml:id="ac-Write-Lists-WE3-P1" interactive="activecode" language="python">
+    <input>
+# Try out the practice exercises by modifying and running code here!
+    </input>
+</program>
+</section>
