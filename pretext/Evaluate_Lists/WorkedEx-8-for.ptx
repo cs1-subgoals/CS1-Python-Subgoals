@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="lists_worked-example-enhanced-for-loop" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Worked Example: Enhanced For Loops</title>
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+        <p>Problem: Assume that the integer list <c>alpha</c> has been properly declared and initialized with non-default values (not all values are 0). What does this code accomplish?</p>
+        <program language="python"><input>
+sum_total = 0
+for i in alpha:
+    sum_total += i
+        </input></program>
+    </subsection>
+    <subsection>
+        <title>SG1: Declaring and initialization of list</title>
+        <p>There is no explicit declaration or initialization of a list within the code. There aren't even any square brackets to signal a list! However, in Python you can use a for loop to iterate through a collection by value. A list is a collection in Python.</p>
+        <p>Here's how a for loop works when iterating by value:</p>
+        <program language="python"><input>
+for variable in collection_name:
+    # variable reference...
+        </input></program>
+        <p>Within the for loop header you declare a local variable followed by the keyword <c>in</c> followed by the name of the collection. This tells the system to iterate through the collection, assigning each value from the collection to the 
+            variable. In the first iteration of the loop, the variable will hold the first element of the collection, in the second iteration, the variable will hold the second element of the collection, etc. Notice that you can reference the value of the list element (just the 
+            variable name), but you do not have direct access to the index or position of the element with this type of for loop.</p>
+        <p>Another important thing to remember is that the variable is a copy of the element, not the original element, so updates to the value of the variable have no effect on the values in the collection.</p>
+    </subsection>
+    <subsection>
+        <title>SG2: Determine access or action</title>
+        <p>Because it is a for loop iterating by value, we are accessing list elements by traversing the list.</p>
+    </subsection>
+    <subsection>
+        <program language="python"><input>
+sum_total = 0
+for i in alpha:
+    sum_total += i
+        </input></program>
+        <p>This code example is equivalent to the code used in a traditional index-based loop; it will sum the values of the list.</p>
+        <p>Let us trace the code with a simple list.</p>
+        <figure align="">
+            <image source="Lists/Figures/we4-sample.png" alt="Trace the loop"/>
+        </figure>
+        <p>The first line of the code sample initializes <c>sum_total</c> to have a value of zero. Then, a for-loop is used to traverse the list. The chart below uses one line to represent the memory and calculations during each iteration of the loop, starting when <c>i</c> has the first value from the list.</p>
+        <figure align="">
+            <image source="Lists/Figures/we8-trace.png"/>
+        </figure>
+        <p>The final value of <c>sum_total</c> is 59, which is the sum of all values in the list.</p>
+        <p>What does this code accomplish?</p>
+        <answer>
+            <p><c>sum_total</c> contains the sum of all the values in the list <c>alpha</c>.</p>
+        </answer>
+    </subsection>
+</section>

@@ -1,0 +1,255 @@
+<section xml:id="lists_worked-example-parameters" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Worked Example: List Parameters</title>
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+        <p>Problem: Evaluate the following code - what is the output?</p>
+        <program language="python"><input>
+def list_method(list_one, list_obj):
+    temp = [6, 7, 8, 9, 10]
+    print("Inside function list_method:")
+    print("list_one is", print_int_list(list_one))
+    print("temp is", print_int_list(temp))
+    print("list_obj is", print_obj_list(list_obj))
+
+    # change values
+    for i in range(len(list_one)):
+        list_one[i] = list_one[i] + 1
+    
+    list_obj[0].set_name("Juan Valdez")
+    list_obj[0].set_id(362)
+    list_obj[2] = Person("Mary Smith", 548)
+
+    print("At end of function list_method:")
+    print("list_one is", print_int_list(list_one))
+    print("temp is", print_int_list(temp))
+    print("list_obj is", print_obj_list(list_obj))
+    return temp
+
+def main():
+    one = [0, 1, 2, 3, 4, 5]
+    two = [0, 0]
+    gamma = [Person("Maria Santos", 156), Person("Caiji Zheng", 742), None]
+    
+    print("Before function call:")
+    print("one is", print_int_list(one))
+    print("two is", print_int_list(two))
+    print("gamma is", print_obj_list(gamma))
+    
+    two = list_method(one, gamma)
+    
+    print("After function call:")
+    print("one is", print_int_list(one))
+    print("two is", print_int_list(two))
+    print("gamma is", print_obj_list(gamma))
+
+def print_int_list(arr_list):
+    result = ""
+    for o in arr_list:
+        result += str(o)
+        result += "  "
+    return result
+
+def print_obj_list(arr_list):
+    result = ""
+    for o in arr_list:
+        result += str(o)
+        result += "  "
+    return result
+
+if __name__ == "__main__":
+    main()
+        </input></program>
+        <p>This code also makes use of a <c>Person</c> class, which is defined here:</p>
+        <program language='python'><input>
+class Person:
+    def __init__(self, name="", person_id=0):
+        self.set_name(name)
+        self.set_id(person_id)
+
+    # Accessors and Mutators
+    def get_name(self):
+        return self.name
+    
+    def set_name(self, name):
+        if len(name) != 0:  # name must not be empty
+            self.name = name
+    
+    def get_id(self):
+        return self.person_id
+    
+    def set_id(self, person_id):
+        self.person_id = person_id
+    
+    # __str__ to allow conversion to String
+    def __str__(self):
+        return f"Person{{name='{self.name}', id={self.person_id}}}"
+        </input></program>             
+    </subsection>
+    <subsection>
+        <title>SG1: Declaring and initialization of list</title>
+        <p>The first several lines of the <c>main()</c> function are declaring and initializing lists:</p>
+        <program language="python"><input>
+one = [0, 1, 2, 3, 4, 5]
+two = [0, 0]
+gamma = [Person("Maria Santos", 156), Person("Caiji Zheng", 742), None]
+        </input></program>
+        <p>Here is a memory representation:</p>
+        <figure align="">
+            <image source="Lists/Figures/we9-fig1.png" width="70%"/>
+        </figure>
+    </subsection>
+    <subsection>
+        <title>SG2: Determine access or action</title>
+        <p>The list <c>gamma</c> is initialized with two new <c>Person</c> instances and a <c>None</c> value:</p>
+        <program language="python"><input>
+gamma = [Person("Maria Santos", 156), Person("Caiji Zheng", 742), None]
+        </input></program>
+        <p>We are creating and instantiating two new <c>Person</c> instances with the parameters in the 
+            constructor call, and adding them to the list. Once these statements are completed, here is a memory representation:</p>
+        <figure align="">
+            <image source="Lists/Figures/we9-fig2.png"/>
+        </figure>
+        <p>So these next statements:</p>
+        <program language="python"><input>
+print("Before function call:")
+print("one is", print_int_list(one))
+print("two is", print_int_list(two))
+print("gamma is", print_obj_list(gamma))
+        </input></program>
+        <p>Will generate this output:</p>
+        <program><input>
+Before function call:
+one is 0  1  2  3  4  5  
+two is 0  0  
+gamma is Person{name='Maria Santos', id=156}  Person{name='Caiji Zheng', id=742}  None  
+        </input></program>
+        <p>Notice there are two helper functions, <c>print_int_list</c> and <c>print_obj_list</c> that simply 
+            concatenate the <c>str()</c> results for each list element into a string that is 
+            returned. These functions are used to print out the contents of the lists.</p>
+    </subsection>
+    <subsection>
+        <title>SG2: Determine access or action</title>
+        <p>For the next line of code:</p>
+        <program language="python"><input>
+two = list_method(one, gamma)
+        </input></program>
+        <p>We are passing entire lists as parameters and assigning the return value of the function to a list, 
+            so we go to SG8. Let's break this function call down into two separate pieces: passing the 
+            parameter and then returning a list.</p>
+    </subsection>
+    <subsection>
+        <title>SG8: Whole list actions, parameter passing</title>
+        <p>When we call the function <c>list_method</c>, the references in the parameters <c>one</c> and <c>gamma</c> are passed to <c>list_one</c> 
+            and <c>list_obj</c> respectively. In Python, lists are passed by reference, so the function parameters point to the same list objects in memory.</p>
+        <p>The first line in <c>list_method</c> is declaring and initializing a new list:</p>
+        <program language="python"><input>
+temp = [6, 7, 8, 9, 10]
+        </input></program>
+        <p>Here is a memory representation of the parameter passing and new local list <c>temp</c>:</p>
+        <figure align="">
+            <image source="Lists/Figures/we9-fig3.png"/>
+        </figure>
+        <p>Now we are just printing the values:</p>
+        <program language="python"><input>
+print("Inside function list_method:")
+print("list_one is", print_int_list(list_one))
+print("temp is", print_int_list(temp))
+print("list_obj is", print_obj_list(list_obj))
+        </input></program>
+        <p>Which generates this output:</p>
+        <program><input>
+Inside function list_method:
+list_one is 0  1  2  3  4  5  
+temp is 6  7  8  9  10  
+list_obj is Person{name='Maria Santos', id=156}  Person{name='Caiji Zheng', id=742}  None  
+        </input></program>
+    </subsection>
+    <subsection>
+        <title>Evaluate code</title>
+        <program language="python"><input>
+# change values
+for i in range(len(list_one)):
+    list_one[i] = list_one[i] + 1
+
+list_obj[0].set_name("Juan Valdez")
+list_obj[0].set_id(362)
+list_obj[2] = Person("Mary Smith", 548)
+        </input></program>
+        <p>Next we have the loop that changes the values in the parameter <c>list_one</c>. Notice that 
+            <c>list_one</c> references the same list in memory as the argument <c>one</c> in the function call.</p>
+        <p>We then change values of the first element of the <c>list_obj</c> list and replace the third element - which references the same 
+            list in memory as the argument <c>gamma</c> in the function call.</p>
+        <p>After these changes, our memory representation would be:</p>
+        <figure align="">
+            <image source="Lists/Figures/we9-fig4.png"/>
+        </figure>
+        <p>Before we exit the function, we print the values again:</p>
+        <program language="python"><input>
+print("At end of function list_method:")
+print("list_one is", print_int_list(list_one))
+print("temp is", print_int_list(temp))
+print("list_obj is", print_obj_list(list_obj))
+        </input></program>
+        <p>Which generates this output:</p>
+        <program><input>
+At end of function list_method:
+list_one is 1  2  3  4  5  6  
+temp is 6  7  8  9  10  
+list_obj is Person{name='Juan Valdez', id=362}  Person{name='Caiji Zheng', id=742}  Person{name='Mary Smith', id=548}  
+        </input></program>
+        <p>The last line of the function:</p>
+        <program language="python"><input>
+return temp
+        </input></program>
+        <p>brings us to our next subgoal.</p>
+    </subsection>
+    <subsection>
+        <title>SG8: Whole list actions, list assignment</title>
+        <p>Recall the function call statement:</p>
+        <program language="python"><input>
+two = list_method(one, gamma)
+        </input></program>
+        <p>which will take the returned value from the function and assign it to the left hand side variable. Notice 
+            that this has the effect of assigning the reference to list <c>temp</c> to the variable <c>two</c>.</p>
+        <p>Here is a memory representation:</p>
+        <figure align="">
+            <image source="Lists/Figures/we9-fig5.png"/>
+        </figure>
+        <p>Afterwards, we print the values using:</p>
+        <program language="python"><input>
+print("After function call:")
+print("one is", print_int_list(one))
+print("two is", print_int_list(two))
+print("gamma is", print_obj_list(gamma))
+        </input></program>
+        <p>Which generates this output:</p>
+        <program><input>
+After function call:
+one is 1  2  3  4  5  6  
+two is 6  7  8  9  10  
+gamma is Person{name='Juan Valdez', id=362}  Person{name='Caiji Zheng', id=742}  Person{name='Mary Smith', id=548}  
+        </input></program>
+    </subsection>
+    <subsection>
+        <answer>
+            <program><input>
+Before function call:
+one is 0  1  2  3  4  5  
+two is 0  0  
+gamma is Person{name='Maria Santos', id=156}  Person{name='Caiji Zheng', id=742}  None  
+Inside function list_method:
+list_one is 0  1  2  3  4  5  
+temp is 6  7  8  9  10  
+list_obj is Person{name='Maria Santos', id=156}  Person{name='Caiji Zheng', id=742}  None  
+At end of function list_method:
+list_one is 1  2  3  4  5  6  
+temp is 6  7  8  9  10  
+list_obj is Person{name='Juan Valdez', id=362}  Person{name='Caiji Zheng', id=742}  Person{name='Mary Smith', id=548}  
+After function call:
+one is 1  2  3  4  5  6  
+two is 6  7  8  9  10  
+gamma is Person{name='Juan Valdez', id=362}  Person{name='Caiji Zheng', id=742}  Person{name='Mary Smith', id=548}  
+            </input></program>
+        </answer>
+    </subsection>
+</section>

@@ -1,0 +1,240 @@
+<section xml:id="lists_lists-we8-p1" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Lists-WE8-P1</title>
+    <xi:include href='./subgoals_evaluate_list.ptx' />
+    <subsection>
+<exercises>
+<exercise xml:id="m-Lists-WE8-P1-24">
+    <statement>
+        <p>Q24: What does the following code accomplish? Assume that <c>alpha</c> is a correctly declared list with non-default values and that the variable <c>target</c> contains a value.</p>
+        <program language="python"><input>
+place = -1
+index = 0
+for x in alpha:
+    if x == target:
+        place = index
+    index += 1
+        </input></program>
+    </statement>
+<choices>
+
+        <choice>
+            <statement>
+                <p><c>place</c> contains the index of the first occurrence of <c>target</c> within <c>alpha</c>, -1 otherwise</p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+
+        <choice correct="yes">
+            <statement>
+                <p><c>place</c> contains the index of the last occurrence of <c>target</c> within <c>alpha</c>, -1 otherwise</p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+
+        <choice>
+            <statement>
+                <p><c>place</c> always contains -1</p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+
+        <choice>
+            <statement>
+                <p>the code "finds" <c>target</c> within <c>alpha</c></p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+
+        <choice>
+            <statement>
+                <p>the code does not work because you can't get the index with a for-in loop</p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+</choices>
+
+</exercise>
+
+<exercise xml:id="m-Lists-WE8-P1-25">
+    <statement>
+
+        <p>Q25: What is the output of the following code?</p>
+        <program language="python"><input>
+beta = [5, 10, 15, 20, 25, 30, 35, 40]
+for x in beta:
+    x += 1
+for x in beta:
+    print(x, end="  ")
+</input></program>
+
+    </statement>
+<choices>
+
+        <choice correct="yes">
+            <statement >
+                <p><c>5  10  15  20  25  30  35  40</c></p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+
+        <choice>
+            <statement>
+                <p>6  11  16  21  26  31  36  41</p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+
+        <choice>
+            <statement>
+                <p>1  2  3  4  5  6  7  8</p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+
+        <choice>
+            <statement>
+                <p>6  10  15  20  25  30  35  40</p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+
+        <choice>
+            <statement>
+                <p>no output, the code does not work</p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+</choices>
+
+</exercise>
+
+<exercise xml:id="m-Lists-WE8-P1-26">
+    <statement>
+
+        <p>Q26: What does the following code accomplish? Assume that <c>alpha</c> is a correctly declared list with non-default values and that the variable <c>target</c> contains a value.</p>
+        <program language="python"><input>
+max_val = -1000
+for x in alpha:
+    if x > max_val:
+        max_val = x
+</input></program>
+
+    </statement>
+<choices>
+
+        <choice>
+            <statement>
+                <p><c>max_val</c> contains the index of the maximum value within <c>alpha</c> (provided the max is > -1000)</p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+
+        <choice>
+            <statement>
+                <p><c>max_val</c> contains the index of the maximum value within <c>alpha</c></p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+
+        <choice>
+            <statement>
+                <p><c>max_val</c> contains the maximum value within <c>alpha</c></p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+
+        <choice correct="yes">
+            <statement>
+                <p><c>max_val</c> contains the maximum value within <c>alpha</c> (provided the max is > -1000)</p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+
+        <choice>
+            <statement>
+                <p>The code does not work</p>
+            </statement>
+            <feedback>
+                <p/>
+            </feedback>
+        </choice>
+</choices>
+
+</exercise>
+
+<exercise xml:id="parsons-Lists-WE8-P1-27" indent="show" language="python">
+    <statement>
+        <p>Q27: Put the following code in order to create a function that will return the average of the values in the list parameter.</p>
+    </statement>
+<blocks>
+    <block order="6">
+        <cline>def average(arr):</cline>
+    </block>
+    <block order="3">
+        <cline>    sum_total = 0</cline>
+        <cline>    size = len(arr)</cline>
+    </block>
+    <block order="5">
+        <cline>    if size == 0:</cline>
+    </block>
+    <block order="1">
+        <cline>        return 0.0</cline>
+    </block>
+    <block order="8">
+        <cline>    for i in arr:</cline>
+    </block>
+    <block order="7">
+        <cline>        sum_total += i</cline>
+    </block>
+    <block order="2">
+        <cline>    return sum_total / size</cline>
+    </block>
+    <block order="4">
+        <cline># End of function</cline>
+    </block>
+</blocks>
+
+</exercise>
+</exercises>
+    </subsection>
+
+<program xml:id="ac-Lists-WE8-P1" interactive="activecode" language="python">
+    <input>
+# Python lists practice area
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+    </input>
+</program>
+</section>
