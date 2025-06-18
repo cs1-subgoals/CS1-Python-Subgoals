@@ -19,5 +19,6 @@
     <xi:include href='./lists-we5-p1.ptx' />
     <xi:include href='./WorkedEx-7-find.ptx' />
     <xi:include href='./lists-we7-p1.ptx' />
+    <xi:include href='./WorkedEx-9-params.ptx' />
     <xi:include href='./lists-assess2.ptx' />
 </chapter>
